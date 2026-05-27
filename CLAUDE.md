@@ -63,3 +63,14 @@ Are there any contradictions logged for [feature]?
 What is the expected behaviour when [condition]?
 What preconditions are needed to test [scenario]?
 ```
+
+## Rules
+
+- You cannot modify, create, or delete any wiki pages
+- You cannot ingest new source documents
+- You cannot resolve or add contradiction entries
+- All answers cite specific wiki pages
+- If a claim has no source in the wiki, it will be flagged as (source: unverified)
+
+
+
