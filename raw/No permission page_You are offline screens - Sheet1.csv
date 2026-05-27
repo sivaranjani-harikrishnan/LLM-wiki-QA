@@ -1,0 +1,53 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales ManageCourses> No permission page/You are offline screens,TC0001_Check for a paperflite user without access to hey sales tries login,arjun@paperflite.com,Validate paperflite user without access to hey sales should not be able to login,Manual,Medium,Functional,User is a valid paperflite user but has no HeySales access,NA,"1. Launch the app
+2. Enter valid PF credentials (no hey sales access)
+3. Tap Login
+4. Check the UI in no permission page","1. Login screen should be displayed.
+2. Credentials should be accepted in the input fields.
+3. “No Permission” page should be displayed with ""You don't have permission to this application"" and Back button.
+4. The UI elements in the No permission page should match with the UI screens",Paperflite user without access to hey sales is not able to login,Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0002_Check with the same paperflite user in case 1 and enable hey sales access,arjun@paperflite.com,Validate paperflite user without access to hey sales should be able to login,Manual,Medium,Functional,User is a valid paperflite user with HeySales access,NA,"1. Launch the app
+2. Enter valid PF credentials (with hey sales access)
+3. Tap Login","1. Login screen is displayed.
+2. Credentials are accepted in the input fields.
+3. Login succeeds, user is redirected to Home screen.",User is able to login via valid paperflite acount with hey sales enabled,Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0003_Check with a random user with no paperflite access tries hey sales login ,arjun@paperflite.com,"Validate An error message ""bad credentials error(invalid username/password)"" should be displayed",Manual,Medium,Functional,User has no paperflite account at all,NA,"1. Launch the app
+2. Enter random valid-looking credentials
+3. Tap Login","1. Login screen is displayed.
+2. Credentials are accepted in the input fields.
+3. Error message “Invalid username/password” appears. User remains on Login screen.","An error message ""bad credentials error(invalid username/password)"" is displayed",Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0004_Check the Back button navigation from No Permission page,arjun@paperflite.com,Validate Clicking on the back button user should land on the login page again,Manual,Medium,Functional,User landed on No Permission page,NA,1. Tap Go Back on No Permission page,1. User should be redirected back to the Login page.,Clicking on the back button user lands on the login page again,Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0005_Retry login after No Permission,arjun@paperflite.com,Validate User should be able to login via a valid paperflite acount with hey sales enabled,Manual,Medium,Functional,User is on No Permission page,NA,"1. Tap Go Back
+2. Enter valid PF credentials (with HeySales access)
+3. Tap Login","1. User should be navigated to Login page.
+2. Credentials should be accepted in the input fields.
+3. Login succeeds, user should redirected to Home screen [Hey there, XXX page].",User is able to login via valid paperflite acount with hey sales enabled,Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0006_Offline on Home page,arjun@paperflite.com,"Validate When the user goes to offline in home screen, “You are Offline” page should be displayed.",Manual,Medium,Functional,User is logged in,NA,"1. Navigate to Home
+2. Turn off internet connection
+3. Refresh/trigger action on Home","1. Home screen loads correctly with available data.
+2. App detects internet loss.
+3. “You are Offline” page should be displayed.","When the user goes to offline in home screen, “You are Offline” page is displayed.",Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0007_Offline on My Space page,arjun@paperflite.com,"Validate When the user goes to offline in My Space screen, “You are Offline” page should be displayed.",Manual,Medium,Functional,User is logged in,NA,"1. Navigate to My Space
+2. Turn off internet connection
+3. Refresh/trigger action","1. My Space screen loads correctly with available data.
+2. App detects internet loss.
+3. “You are Offline” page should be displayed.","When the user goes to offline in My Space screen, “You are Offline” page is displayed.",Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0008_Offline on Explore page,arjun@paperflite.com,"Validate When the user goes to offline in Explore screen, “You are Offline” page should be displayed.",Manual,Medium,Functional,User is logged in,NA,"1. Navigate to Explore
+2. Turn off internet connection
+3. Refresh/trigger action","1. Explore screen loads correctly with available data.
+2. App detects internet loss.
+3. “You are Offline” page should be displayed.","When the user goes to offline in Explore screen, “You are Offline” page is displayed.",Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0009_Offline during content consumption (learning preview),arjun@paperflite.com,"Validate When the user goes to offline in middle of a lesson viewer, assemment viewer, or course view, there should be no offline page, app should continue to render the UI as much as loaded and stop.",Manual,Medium,Functional,User has started a learning preview,NA,"1. Start any learning content
+2. Turn off internet mid-way
+3. Continue navigating inside preview","1. Content preview loads.
+2. Already loaded UI continues to render.
+3. No 'Offline page' shown, interaction continues with cached content.","When the user goes to offline in middle of a lesson viewer, assemment viewer, or course view, there is no offline page, app continues to render the UI as much as loaded and stop.",Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0010_Navigate back after going offline in content,arjun@paperflite.com,"Validate When user navigate from the learning preview, ""You are offline"" page should be displayed",Manual,Medium,Functional,User loses internet mid-content,NA,"1. Start learning preview
+2. Turn off internet mid-way
+3. Tap back to Home/My Space/Explore","1. Content preview loads.
+2. Loaded UI continues to display.
+3. “You are Offline” page should be displayed on the respective section.","When user navigate from the learning preview, ""You are offline"" page is displayed",Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0011_Reconnect internet from Offline page,arjun@paperflite.com,"Validate When is user is conncted to internet while in offline page, the respective screen should render",Manual,Medium,Functional,User is on Offline page,NA,"1. Turn internet back ON
+2. Tap refresh/try navigating","1. App detects restored connection.
+2. User is redirected back to the correct screen (Home/My Space/Explore) with updated content.","When is user is conncted to internet while in offline page, the respective screen renders",Devices
+HeySales ManageCourses> No permission page/You are offline screens,TC0012_UI validation of Offline page,arjun@paperflite.com,Validate The UI elements in the Offline page should match the UI screens,Manual,Medium,Functional,User is on Offline page,NA,1. Navigate to Offline page,1. All the elements in the screen should match the UI screen [Refer to the design file],The UI elements in the Offline page matchs the UI screens,Devices

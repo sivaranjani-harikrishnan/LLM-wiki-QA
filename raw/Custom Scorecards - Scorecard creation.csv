@@ -1,0 +1,230 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Studio> Custom Scorecards 1,TC0001_Check the Scorecard option in settings,arjun@paperflite.com,"Validate In the heysales enabled account Under settings for Admins and Content publishers there should be a new option ""Scorecard""",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Log in as admin / Content publisher
+2. Navigate to settings","1. User should be able to login in successfully
+2. In the heysales enabled account Under settings for Admins and Content publishers there should be a new option ""Scorecard"" ","In the heysales enabled account Under settings for Admins and Content publishers there is a new option ""Scorecard"" ",
+HeySales Studio> Custom Scorecards 1,TC0002_ Check the scorecard option in settings as a non admin user,arjun@paperflite.com,Validate In the heysales enabled account Under settings for Normal user and BI Analyst the scorecard option should not be available,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Normal user / BI Analyst access",NA,"1. Log in as admin / Content publisher
+2. Navigate to settings","1. User should be able to login in successfully
+2. In the heysales enabled account Under settings for Normal user and BI Analyst the scorecard option should not be available",In the heysales enabled account Under settings for Normal user and BI Analyst the scorecard option is not available,
+HeySales Studio> Custom Scorecards 1,TC0003_ Check the Scorecard option in settings in an account does not have heysales enabled,arjun@paperflite.com,"Validate If the heysales is not enabled, Under settings for for all the users the scorecard option should not be available",Manual,Medium,Functional,Hey sales should not bebe enabled,NA,"1. Log into the account
+2. Navigate to settings","1. User should be able to login in successfully
+2. If the heysales is not enabled, Under settings for for all the users the scorecard option should not be available","If the heysales is not enabled, Under settings for for all the users the scorecard option is not available",
+HeySales Studio> Custom Scorecards 1,TC0004_ Check the UI of the Scorecard ,arjun@paperflite.com,"Validate In the scorecard screen, heading ""scorecard"" and a sub text, a default scorecard, a delete button, Rename button, clone button, and Create new scorecard button should be displayed.",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Log in as admin / Content publisher
+2. Navigate to settings -> Scorecard","1. User should be able to login in successfully
+2. In the scorecard screen, heading ""scorecard"" and a sub text, a default scorecard, a delete button, Rename button, clone button, and Create new scorecard button should be displayed.","In the scorecard screen, heading ""scorecard"" and a sub text, a default scorecard, a delete button, Rename button, clone button, and Create new scorecard button are displayed.",
+HeySales Studio> Custom Scorecards 1,TC0005_ Check deleting the default scorecard,arjun@paperflite.com,"Valdiate User should not be able to delete the default scorecard, when user clicks on the delete button the default scorecard should not be available for selection",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open the scorecard screen
+2. Click on the delete button","1. User should be able to click on the scorecard screen, and the scorecard screen with the default scorecard should be displayed
+2. User should not be able to delete the default scorecard, when user clicks on the delete button the default scorecard should not be available for selection","User is not able to delete the default scorecard, when user clicks on the delete button the default scorecard is not available for selection",
+HeySales Studio> Custom Scorecards 1,TC0006_ Check the UI of the scorecard,arjun@paperflite.com,"Validate In the scorecard the card name, Active / draft, type of the card, default tag, Parameter count, sub-parameter count, and last updated date should be displayed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Log into the account
+2. Navigate to settings
+3. Click on the Scorecard","1. User should be able to login in successfully
+2. User should be able to navigate to the settings
+3. In the scorecard the card name, Active / draft, type of the card, default tag, Parameter count, sub-parameter count, and last updated date should be displayed","In the scorecard the card name, Active / draft, type of the card, default tag, Parameter count, sub-parameter count, and last updated date are displayed",
+HeySales Studio> Custom Scorecards 1,TC0007_ Check renaming the default scorecard,arjun@paperflite.com,"Valdiate User should not be able to rename the default scorecard, when user clicks on the rename button the default scorecard should not be available for selection",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open the scorecard screen
+2. Click on the rename button","1. User should be able to click on the scorecard screen, and the scorecard screen with the default scorecard should be displayed
+2. User should not be able to rename the default scorecard, when user clicks on the rename button the default scorecard should not be available for selection","User is not able to rename the default scorecard, when user clicks on the rename button the default scorecard is not available for selection",
+HeySales Studio> Custom Scorecards 1,TC0008_ Click on the Create new scorecard,arjun@paperflite.com,"Validate Clicking on the Create new scorecard, should bring the create new scorecard slider with name, description fields, create and cancel buttons",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open the scorecard screen
+2. Click on the create new scorecard button
+3. Check the name input field
+4. Check the description input field
+5. Check the max character limit of name input field
+6. Check the max character limit of description input field","1. User should be able to click on the scorecard screen, and the scorecard screen with the default scorecard should be displayed
+2. Clicking on the Create new scorecard, should bring the create new scorecard slider with name, description fields, create and cancel buttons
+3. User should be able to add any aplha numeric and Spl charater in the name input field
+4. User should be able to add any aplha numeric and Spl charater in the description input field
+5. Yet to confirm from product
+6. Yet to confirm from product","Clicking on the Create new scorecard, bring the create new scorecard slider with name, description fields, create and cancel buttons",
+HeySales Studio> Custom Scorecards 1,TC0009_ Check the UI of the scorecard creation screen,arjun@paperflite.com,"Validate In the scorecard creation screen, a back button with sub text, delete, discard, save, publish buttons, set as default toggle, type dropdown, parameter name input field, weightage input field, sub parameter with sub text, add sub parameter button, add parameter button, evaluate how well / if the rep input field, and an ideal rep should input field should be displayed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open the scorecard screen
+2. Click on create new scorecard button","1. User should be able to click on the scorecard screen, and the scorecard screen with the default scorecard should be displayed
+2. In the scorecard creation screen, a back button with sub text, delete, discard, save, publish buttons, set as default toggle, type dropdown, parameter name input field, weightage input field, sub parameter with sub text, add sub parameter button, add parameter button, evaluate how well / if the rep input field, and an ideal rep should input field should be displayed","In the scorecard creation screen, a back button with sub text, delete, discard, save, publish buttons, set as default toggle, type dropdown, parameter name input field, weightage input field, sub parameter with sub text, add sub parameter button, add parameter button, evaluate how well / if the rep input field, and an ideal rep should input field are displayed",
+HeySales Studio> Custom Scorecards 1,TC0010_ Check the newly created parameter,arjun@paperflite.com,Validate When a card is created an Untitled parameter should be created,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open the scorecard screen
+2. Click on create new scorecard button","1. User should be able to click on the scorecard screen, and the scorecard screen with the default scorecard should be displayed
+2. When a card is created an Untitled parameter should be created",When a card is created an Untitled parameter is created,
+HeySales Studio> Custom Scorecards 1,TC0011_ Check adding new parameters,arjun@paperflite.com,Validate User should be able to add any number of parameters using add parameter button,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open the scorecard screen
+2. Click on create new scorecard button
+3. Click on add new parameter","1. User should be able to click on the scorecard screen, and the scorecard screen with the default scorecard should be displayed
+2. When a card is created an Untitled parameter should be created
+3. User should be able to add any number of parameters using add parameter button",User is able to add any number of parameters using add parameter button,
+HeySales Studio> Custom Scorecards 1,TC0012_ Check the parameter naming input field,arjun@paperflite.com,Validate User should be able to add any aplha numeric and Spl charater in the name input field,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Click on create new scorecard button
+2. Check the parameter name field
+3. Check the max character limit of name input field","1. When a card is created an Untitled parameter should be created
+2. User should be able to add any aplha numeric and Spl charater in the name input field
+3. Yet to confirm with product",User is able to add any aplha numeric and Spl charater in the name input field,
+HeySales Studio> Custom Scorecards 1,TC0013_ Check scrolling through the parameter list,arjun@paperflite.com,Validate User should be able to scroll through the parameter list,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create more than 10 parameter
+2. Scroll through the list","1. User should be able to create more than 10 parameter
+2. User should be able to scroll through the parameter list",User is able to scroll through the parameter list,
+HeySales Studio> Custom Scorecards 1,TC0014_ Check the parameters matadata,arjun@paperflite.com,Validate Under the parameter name Count of the sub parameter and the weightage should be displayed,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a parameter with sub parameter and weightage
+2. Check the meta data","1. User should be able to create a parameter with sub parameter and weightage
+2. Under the parameter name Count of the sub parameter and the weightage should be displayed",Under the parameter name Count of the sub parameter and the weightage are displayed,
+HeySales Studio> Custom Scorecards 1,TC0015_ Try creating a parameter without any sub parameter,arjun@paperflite.com,"Validate User should not be able to create a parameter without sub parameter, when trying to publish error should be displayed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a parameter without sub-parameter
+2. Click on publish","1. User should be able to create a parameter without any sub parameter
+2. User should not be able to create a parameter without sub parameter, when trying to publish error should be displayed","User is not able to create a parameter without sub parameter, when trying to publish error is displayed",
+HeySales Studio> Custom Scorecards 1,TC0016_ Check the weightage input field,arjun@paperflite.com,Validate User should be able to add only numeric value in the weightage input field,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Check adding a numeric value
+2. Check adding any alphabet
+3. Check adding spl characters
+4. Check addinh -ve numeric value
+5. Check adding decimal value
+6. Check adding numeric value greater than 100","1. User should be able to add numeric value
+2. User should not be able to add any alphabet
+3. User should not be able to add any spl charater
+4. User should not be able to add any -ve numeric value
+5. User should not be able to add any decimal value
+6. User should not be able to add values greater than 100",User is able to add only numeric value in the weightage input field,
+HeySales Studio> Custom Scorecards 1,TC0017_ Check the sub-parameter field,arjun@paperflite.com,Validate When a parameter is created an untitled sub-parameter with 2 input fields [evaluate how well / if the rep and An ideal rep should] should be created  ,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a scorecard
+2. Create a parameter","1. User should be able to create a scorecard
+2. When a parameter is created an untitled sub-parameter with 2 input fields [evaluate how well / if the rep and An ideal rep should] should be created  ",When a parameter is created an untitled sub-parameter with 2 input fields [evaluate how well / if the rep and An ideal rep should] is created  ,
+HeySales Studio> Custom Scorecards 1,TC0018_ Check the naming field of the sub-parameter,arjun@paperflite.com,Validate User should be able to add any aplha numeric and Spl charater in the name input field,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Check the sub parameter name field
+2. Check the max character limit of name input field","1. User should be able to add any aplha numeric and Spl charater in the name input field
+2. Yet to confirm with product",User is able to add any aplha numeric and Spl charater in the name input field,
+HeySales Studio> Custom Scorecards 1,TC0019_ Check horizontal scroll for the sub-parameter,arjun@paperflite.com,Validate User should be able to horizontal scroll through the sub-parameter list,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Click on the ""+"" button  
+2.Create more than 10 sub-parameter
+3. Scroll through the list","1. Clicking on the ""+"" button should add a new untitled sub-parameter
+2. User should be able to create more than 10 sub-parameter
+3. User should be able to scroll through the parameter list",User is able to scroll through the sub-parameter list,
+HeySales Studio> Custom Scorecards 1,TC0020_ Check publishing the scorecard with empty name for parameter and sub-parameter,arjun@paperflite.com,Validate User should not be able to publish a scorecard with parameter and sub-parameter name empty,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a scorecard
+2. Remove the parameter name
+3. Remove the sub-parameter name
+4. Click on save
+5. Click on publish","1. User should be able to create a scorecard
+2. User should be able to remove the parameter name
+3. User should be able to remove the sub-parameter name
+4. Clicking on save should show an error message
+5. User should not be able to publish a scorecard with parameter and sub-parameter name empty",User is not able to publish a scorecard with parameter and sub-parameter name empty,
+HeySales Studio> Custom Scorecards 1,TC0021_ Check the evaluate how well / if the rep and An ideal rep should input fields of the sub-parameter,arjun@paperflite.com,Validate User should be able to add any aplha numeric and Spl charater in the name input field,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Check the sub parameters input field
+2. Check the max character limit of name input field","1. User should be able to add any aplha numeric and Spl charater in the name input field
+2. Yet to confirm with product",User is able to add any aplha numeric and Spl charater in the name input field,
+HeySales Studio> Custom Scorecards 1,TC0022_ Check the set as default toggle,arjun@paperflite.com,"Validate By default the ""set as default"" should be off and user should be able to toggle on the option and doing so will make the scorecard as default for every newly created simulations",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a scorecard
+2. Check the set as default toggle
+3. Toggle on set as default
+4. Create a simulation","1. User should be able to create a scorecard
+2. By default the set as default should be toggled off
+3. User should be able to toggle on set as default
+4. For scorecard should be the auto selected for every newly created simulations","By default the ""set as default"" is off and user is able to toggle on the option and doing so makes the scorecard as default for every newly created simulations",
+HeySales Studio> Custom Scorecards 1,TC0023_ Check the scorecard UI when an card is made as default,arjun@paperflite.com,"Validate When a scoredcard is made default, In the settings on the scorecard the default tag should be displayed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to settings
+2. Make a scorecard
+3. Check the UI of the scorecard in settings","1. User should be able to navigate to settings
+2. User should be able to make a scorecard as default
+3. When a scoredcard is made default, In the settings on the scorecard the default tag should be displayed","When a scoredcard is made default, In the settings on the scorecard the default tag is displayed",
+HeySales Studio> Custom Scorecards 1,TC0024_ Check having multiple scorecards as default,arjun@paperflite.com,Validate In an account there should be only one scorecard should be tagged as default,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open Scorecard A, make it default
+2. Check the UI of the scorecard A in settings
+3. Open scorecard B, make it default
+4. Check the UI of the scorecard B in settings","1. User should be able to make a scorecard A as default
+2. When scoredcard A is made default, In the settings on the scorecard A the default tag should be displayed
+3. User should be able to make a scorecard B as default
+4. When scoredcard B is made default, In the settings on the scorecard B the default tag should be displayed and scorecard A should be removed from default","When scoredcard B is made default, In the settings on the scorecard B the default tag is displayed and scorecard A is removed from default",
+HeySales Studio> Custom Scorecards 1,TC0025_ Check deleting the default scorecard,arjun@paperflite.com,"Validate When a default scorecard is deleted, the simulations to which the scorecard is tagged should not be affected. After the default scorecard is deleted system should make the paperflite scorecard as default",Manual,Medium,Functional,Simulation should be assigned to 5 learners and 2 learners should complete the call,NA,"1. Open scorecard X, make it default
+2. Create 2 simulation
+3. Assign it to 5 learners
+4. As learner [A and B], complete the simulation
+5. As admin delete the scorecard X
+6. Check the UI of scorecards in settings","1. Admin should be able to make scorecard X as default
+2. Admin should be able to create a simulation and scorecard X should be the tagged scorecard for the simulation
+3. Admin should be able to add learners to the simulation
+4. Learners shoudl be able to start the simulation and complete. The generated report should be based on scorecard X
+5. Admin should be able to delete the scorecard X
+6. When a default scorecard is deleted, the simulations to which the scorecard is tagged should not be affected. After the default scorecard is deleted system should make the paperflite scorecard as default","When a default scorecard is deleted, the simulations to which the scorecard is tagged are not affected. After the default scorecard is deleted the system makes the paperflite scorecard as default",
+HeySales Studio> Custom Scorecards 1,"TC0026_ Check completing the simulation [TC0026] as Learner C, D, and E",arjun@paperflite.com,"Validate For the rest of the learners after completing the call the report should be calculated based on the paperflite socrecard as the default scorecard is deleted. In a same simulation Learner A and B [TC0026] should have reports based on scorecard X and learners C, D, and E should have the report bases on paperflite scorecard",Manual,Medium,Functional,"Complete the simulation [TC0026] as learner C, D, and E",NA,"1. Login as learner C, D, and E and complete the simulation
+2. Check the report","1. Learners C, D, and E should be able to complete the simulation
+2. For the rest of the learners after completing the call the report should be calculated based on the paperflite socrecard as the default scorecard is deleted. In a same simulation Learner A and B [TC0026] should have reports based on scorecard X and learners C, D, and E should have the report bases on paperflite scorecard","For the rest of the learners after completing the call the report is calculated based on the paperflite socrecard as the default scorecard is deleted. In a same simulation Learner A and B [TC0026] has reports based on scorecard X and learners C, D, and E has the report bases on paperflite scorecard",
+HeySales Studio> Custom Scorecards 1,"TC0027_ Check when a socrecard is made default, it reflects to all the creators in the account",arjun@paperflite.com,"Validate When a scorecard O is made default by User A, For all the users in the account [admin / content publisher] while creating a simulation the scorecard O should be selected by default",Manual,Medium,Functional,"Make scorecard O as default as user A
+Login as User B and create a simulation",NA,"1. Login as admin A and make the scorecard O as default
+2. Login as Admin B and create a simulation","1. Admin A should be able to login and make the scorecard O as default
+2. When a scorecard O is made default by User A, For all the users in the account [admin / content publisher] while creating a simulation the scorecard O should be selected by default","When a scorecard O is made default by User A, For all the users in the account [admin / content publisher] while creating a simulation the scorecard O is selected by default",
+HeySales Studio> Custom Scorecards 1,TC0028_ Check the type of scorecard dropdown,arjun@paperflite.com,"Validate Clicking on the type dropdown, 4 radio buttons [all type, Discovery, cold call, and follow up], select  call type as heading and sub text should be displayed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open any scorecard
+2. Click on the call type dropdown
+3. Check the default selection","1. User should be able to open the created scorecard
+2. Clicking on the type dropdown, 4 radio buttons [all type, Discovery, cold call, and follow up], select  call type as heading and sub text should be displayed
+3. By default all type should be selected","Clicking on the type dropdown, 4 radio buttons [all type, Discovery, cold call, and follow up], select  call type as heading and sub text are displayed",
+HeySales Studio> Custom Scorecards 1,TC0029_ Check the scorecard UI after selecting a call type,arjun@paperflite.com,Validate In the settings on the scorecard the selected call type should be displayed indicating the scorecards type,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open any scorecard
+2. Click on the call type dropdown
+3. Choose Discovery ","1. User should be able to open the created scorecard
+2. Clicking on the type dropdown, 4 radio buttons [all type, Discovery, cold call, and follow up], select  call type as heading and sub text should be displayed
+3. In the settings on the scorecard the selected Discovery should be displayed indicating the scorecards type",In the settings on the scorecard the selected Discovery is displayed indicating the scorecards type,
+HeySales Studio> Custom Scorecards 1,TC0030_ Check the list of scorecards available while creating a discovery simulation,arjun@paperflite.com,"Validate While creating a discovery simulation, while choosing the scorecard only the list of cards tagged as Discovery and all type should be listed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a Discovery simulation
+2. Choose the scorecard","1. Admin should be able to create a discovery simulation
+2. While creating a discovery simulation, while choosing the scorecard only the list of cards tagged as Discovery and all type should be listed","While creating a discovery simulation, while choosing the scorecard only the list of cards tagged as Discovery and all type are listed",
+HeySales Studio> Custom Scorecards 1,TC0031_ Check the list of scorecards available while creating a Cold call simulation,arjun@paperflite.com,"Validate While creating a Cold call simulation, while choosing the scorecard only the list of cards tagged as Cold Call and all type should be listed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a Cold call simulation
+2. Choose the scorecard","1. Admin should be able to create a Cold call simulation
+2. While creating a Cold call simulation, while choosing the scorecard only the list of cards tagged as Cold call and all type should be listed","While creating a Cold call simulation, while choosing the scorecard only the list of cards tagged as Cold call and all type are listed",
+HeySales Studio> Custom Scorecards 1,TC0032_ Check the list of scorecards available while creating a follow up simulation,arjun@paperflite.com,"Validate While creating a Follow Up simulation, while choosing the scorecard only the list of cards tagged as Follow Up and all type should be listed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a Follow Up simulation
+2. Choose the scorecard","1. Admin should be able to create a Follow Up simulation
+2. While creating a Follow Up simulation, while choosing the scorecard only the list of cards tagged as Follow Up and all type should be listed","While creating a Follow Up simulation, while choosing the scorecard only the list of cards tagged as Follow Up and all type are listed",
+HeySales Studio> Custom Scorecards 1,TC0033_ Check the Clone button during scorecard creation,arjun@paperflite.com,"Validate While creating a scorecard after publishing the scorecard the clone button should be displayed, Clicking on it should clone the scorecard and name it as clone of ABC",Manual,Medium,Functional,Publish a scorecard and Clone it,NA,"1. Create a scorecard
+2. Save and Publish it
+3. Clone the scorecard","1. Admin should be able to create a scorecard
+2. While creating a scorecard after publishing the scorecard the clone button should be displayed
+3. Cloning the scorecard should create a new scorecard and name it as clone on ABC","While creating a scorecard after publishing the scorecard the clone button is displayed, Clicking on it clones the scorecard and name it as clone of ABC",
+HeySales Studio> Custom Scorecards 1,TC0034_ Check the Delete button in the scorecard ,arjun@paperflite.com,Validate Clicking on the delete button should detele the created scorecard,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a scorecard
+2. Save and Publish it
+3. Click the delete button","1. Admin should be able to create a scorecard
+2. Admin should be able to publish the scorecard
+3. Clicking on the delete button should detele the created scorecard",Clicking on the delete button deteles the created scorecard,
+HeySales Studio> Custom Scorecards 1,TC0035_ Check the discard button in the scorecard,arjun@paperflite.com,Validate Clicking on the discard button should make the scorecard fall back to the last saved version and discarding all the changes made,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open a published scorecard
+2. Make some edits 
+3. Click on discard","1. Admin should be able to open a published scorecard
+2. Make some edits in the scorecard
+3. Clicking on the discard button should make the scorecard fall back to the last saved version and discarding all the changes made",Clicking on the discard button makes the scorecard fall back to the last saved version and discarding all the changes made,
+HeySales Studio> Custom Scorecards 1,TC0036_ Check the save button in the scorecard,arjun@paperflite.com,Validate Clikcing on save should save all the edits made during the scorecard creation,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Click on create a new scorecard
+2. Name it, Add parameter, add sub-parameters
+3. Click on save","1. Admin should be able to create a new scorecard
+2. Admin should be able to name it, add parameter and sub-parameters
+3. Clikcing on save should save all the edits made during the scorecard creation",Clikcing on save saves all the edits made during the scorecard creation,
+HeySales Studio> Custom Scorecards 1,TC0037_ Check the draft cards in settings scorecard screen,arjun@paperflite.com,Validate Scorecard which are not published should be tagged as draft and should be listed in the settings scorecard screen,Manual,Medium,Functional,"Create a scorecard, do not publish it",NA,"1. Click on create a new scorecard
+2. Name it, Add parameter, add sub-parameters
+3. Click on Save
+4. Navigate back to settings scorecard screen","1. Admin should be able to create a new scorecard
+2. Admin should be able to name it, add parameter and sub-parameters
+3. Clikcing on save should save all the edits made during the scorecard creation
+4. Scorecard which are not published should be tagged as draft and should be listed in the settings scorecard screen",Scorecard which are not published are tagged as draft and listed in the settings scorecard screen,
+HeySales Studio> Custom Scorecards 1,TC0038_ Check if the darft scorecards are not available for selection during simulation creation,arjun@paperflite.com,Validate Draft simulations should not be available for selection during simulation creation,Manual,Medium,Functional,"Create a scorecard, do not publish it",NA,"1. Click on create a new scorecard
+2. Name it, Add parameter, add sub-parameters
+3. Click on Save, do not publish
+4. Create a simulation","1. Admin should be able to create a new scorecard
+2. Admin should be able to name it, add parameter and sub-parameters
+3. Clikcing on save should save all the edits made during the scorecard creation
+4. Draft simulations should not be available for selection during simulation creation",Draft simulations are not available for selection during simulation creation,
+HeySales Studio> Custom Scorecards 1,TC0039_ Check scroll in the settings scorecard screen,arjun@paperflite.com,Validate User should be able to scroll through the scorecards in the settings page,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to settings
+2. Scroll through the list","1. Admin should be able to navigate to the settings screen
+2. User should be able to scroll through the scorecards in the settings page",User is able to scroll through the scorecards in the settings page,
+HeySales Studio> Custom Scorecards 1,TC0040_ Check the sort order of scorecards in the settings,arjun@paperflite.com,Validate The scorecards should be sorted based on the last updated date and time,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to settings
+2. Check the sort order","1. Admin should be able to navigate to the settings screen
+2. The scorecards should be sorted based on the last updated date and time",The scorecards are sorted based on the last updated date and time,
+HeySales Studio> Custom Scorecards 1,TC0041_ Check the simulation creation flow,arjun@paperflite.com,"Validate During the simulation creation there should be 2 steps. 1st step to setup the Time, Difficulty level, and Scorecard selection. 2nd Step to create the profile",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation","1. Admin should be able to navigate to studio
+2. During the simulation creation there should be 2 steps. 1st step to setup the Time, Difficulty level, and Scorecard selection. 2nd Step to create the profile","During the simulation creation there are 2 steps. 1st step to setup the Time, Difficulty level, and Scorecard selection. 2nd Step to create the profile",
+HeySales Studio> Custom Scorecards 1,TC0042_ Check the prepopulated scorecard,arjun@paperflite.com,Validate By default the default scorecard should be tagged during the simulation creation,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation
+3. Check the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a simulation
+3. By default the default scorecard should be tagged during the simulation creation",By default the default scorecard is tagged during the simulation creation,
+HeySales Studio> Custom Scorecards 1,TC0043_ Check the preview button in the scorecard,arjun@paperflite.com,"Validate By clicking on the preview, user should be navigated to the detailed scorecard screen of the selected scorecard",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation
+3. Click on preview in the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a simulation
+3. By clicking on the preview, user should be navigated to the detailed scorecard screen of the selected scorecard","By clicking on the preview, user is navigated to the detailed scorecard screen of the selected scorecard",
+HeySales Studio> Custom Scorecards 1,TC0044_ Check the change button in the scorecard,arjun@paperflite.com,"Validate By clicking on the change, user should be navigated to the list of scorecard screen and user should be able to pick and choose the required scorecard for the call",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation
+3. Click on change in the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a simulation
+3. By clicking on the change, user should be navigated to the list of scorecard screen and user should be able to pick and choose the required scorecard for the call","By clicking on the change, user is navigated to the list of scorecard screen and user is able to pick and choose the required scorecard for the call",
+HeySales Studio> Custom Scorecards 1,TC0045_ Check the list of scorecards available in the selection screen,arjun@paperflite.com,Validate Scorecard which matchs the simulation type [eg: simulation is cold call] only those scorecards and scorecards which are tagged as all type should be displayed,Manual,Medium,Functional,"Create a coldcall simulation, and check changing the scorecard",NA,"1. Navigate to studio, heysales
+2. Create a cold call simulation
+3. Click on change in the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a cold simulation
+3. Scorecard which matchs the simulation type [eg: simulation is cold call] only those scorecards should be displayed and scorecards which are tagged as all type should be displayed",Scorecard which matchs the simulation type [eg: simulation is cold call] only those scorecards are displayed and scorecards which are tagged as all type are displayed,
+HeySales Studio> Custom Scorecards 1,TC0046_ Check the empty message in the selection screen if the simlation type [eg:discovery] does not have any scorecard,arjun@paperflite.com,"Validate If the account does not have any scorecard type with respect to the simulation type, in the selection screen an empty message should be displayed",Manual,Medium,Functional,"Create a discovery simulation, and account should have only coldcall scorecards",NA,"1. Navigate to studio, heysales
+2. Create a cold discovery simulation
+3. Click on change in the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a cold simulation
+3. If the account does not have any scorecard type with respect to the simulation type, in the selection screen an empty message should be displayed","If the account does not have any scorecard type with respect to the simulation type, in the selection screen an empty message is displayed",
+HeySales Studio> Custom Scorecards 1,TC0047_ Check the UI of the scorecard section during simulation creation,arjun@paperflite.com,"Validate Scorecard as heading and the scorecard name, a sub text, parameter count, sub-parameter count, preview and change button should be displayed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation
+3. Check the UI of the scorecard section","1. Admin should be able to navigate to studio
+2. Admin should be able to create a simulation
+3. Scorecard as heading and the scorecard name, a sub text, parameter count, sub-parameter count, preview and change button should be displayed","Scorecard as heading and the scorecard name, a sub text, parameter count, sub-parameter count, preview and change button is displayed",
+HeySales Studio> Custom Scorecards 1,TC0048_ Check the simulation completion flow,arjun@paperflite.com,"Validate Once after the learner completed a call, the report should be generated based on the tagged scorecard",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a simulation
+2. Assign a learner
+3. Login as the learner
+4. Start and complete the simulation","1. Admin should be able to create a simulation
+2. Admin should be able to assign learners to the simulation
+3. Learner should be able to login 
+4. Once after the learner completed a call, the report should be generated based on the tagged scorecard","Once after the learner completed a call, the report is generated based on the tagged scorecard",

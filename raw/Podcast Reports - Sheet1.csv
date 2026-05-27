@@ -1,0 +1,209 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Studio> Podcast Reports,TC0001_ Check the completion rate card in the podcast,arjun@paperflite.com,"Validate For admins and content publishers the completion card should be displayed in the top right of the podcast, and the completion percentage should be calculated based on total number of learners assigned versus total number learners completed the podcast",Manual,Medium,Functional,The podcast should be assigned to x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Podcast
+4. Check the Completion rate card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any Podcast
+4. The completion rate card should be displayed with respection percentage","For admins and content publishers the completion card is displayed in the top right of the simulation, and the completion percentage is calculated based on total number of learners assigned versus total number learners completed the podcast",
+HeySales Studio> Podcast Reports,TC0002_Check the completion rate card if the completion is 0%,arjun@paperflite.com,Validate When no learners have completed the podcast or not started the podcast the percentage should be 0 and the sub text should be 0 out of x number of learners have completed,Manual,Medium,Functional,The podcast should be assigned to 10 number of learners and no learner should complete the podcast,NA,"1. Create a podcast
+2. Assign the simulation to 10 learners
+3. Check the completion rate card","1. Admin / content publisher should be able to create a podcast
+2. User should be able to assign 10 learners to the podcast
+3. If no user has completed the podcast, on the completion card the percentage should be 0 and the sub text should read 0 of 10 learners have completed",When no learners have completed the podcast or not started the call the percentage is 0 and the sub text is 0 out of x number of learners have completed,
+HeySales Studio> Podcast Reports,TC0003_Check the completion rate card if the completion is X%,arjun@paperflite.com,"Validate When a certain number of learners have complete the podcast [eg: 2 learners], the percentage should be updated respectively. And the sub text should read X out of x number of learners have completed",Manual,Medium,Functional,The podcast should be assigned to 10 learners and 2 learner should complete the podcast,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the podcast and complete
+4. Repate the same for Learner B
+5. Now Login as admin
+6. Check the completion card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned podcast
+3. User should be able to start the podcast and successfully complete it
+4. User should be able to login as Learner B and should be able to start a podcast and successfully complete it
+5. Admin user should be able to login successfully
+6. In the completion card, the percenatge should be 20% and and the sub text should read 2 of 10 learners have completed","When a certain number of learners have complete the podcast [eg: 2 learners], the percentage is updated respectively. And the sub text reads X out of x number of learners have completed",
+HeySales Studio> Podcast Reports,TC0004_Check adding new learner to the simulation and validate the count updation in sub text of the completion rate card,arjun@paperflite.com,"Validate When new list of learners are added to the podcast or new learners enrolled themselves , the count of the learner and the percentage in the sub text should be updated respectively",Manual,Medium,Functional,The podcast should be assigned to 10 learners and add 2 new learner,NA,"1. Open a podcast with 10 assigned learners / Enroll as 2 learners
+2. Check the completion card 
+3. Assign 2 new learners
+4. Check the completion card","1. User should be able to open the podcast
+2. In the completion card number of total number learners count should be 10 and the completion rate should be X
+3. User should be able to assign 2 new learners to the simulation
+4. In the completion card number of total number learners count should be 12 and the completion rate should be updated respectively","When new list of learners are added to the podcast or new learners enrolled themselves , the count of the learner and the percentage in the sub text is updated respectively",
+HeySales Studio> Podcast Reports,TC0005_Check the completion rate card in a newly created podcast with no completion and no users assigned,arjun@paperflite.com,"Valdiate For a newly created podcast with no completion and no users assigned, the completion rate card should display 0% and subtext as 0 of 0 learners have completed",Manual,Medium,Functional,A new podcast with 0 learners assigned,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Create a podcast
+4. Check the Completion rate card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to create a podcast
+4. The completion rate card should be displayed 0% and sub text as 0 of 0 learners have completed","For a newly created podcast with no completion and no users assigned, the completion rate card displays 0% and subtext as 0 of 0 learners have completed",
+HeySales Studio> Podcast Reports,TC0006_ Check the inprogress learners are not accounted in the completion rate card,arjun@paperflite.com,"Validate When a certain number of learners have complete the podcast [eg: 2 learners], and certain number of learners are in progress [eg: 3 learners] the percentage should be updated only considering the 2 completed learners. And the sub text should read 2 out of 5 number of learners have completed",Manual,Medium,Functional,The podcast should be assigned to 5 learners,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the podcast and complete
+4. Repate the same for Learner B
+5. Login as a learner C
+6. Open My courses
+7. Start the podcast and stop it mid way
+8. Repate the same for Learner D
+9. Now Login as admin
+10. Check the completion card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned podcast
+3. User should be able to start the podcast and successfully complete it
+4. User should be able to login as Learner B and should be able to start a podcast and successfully complete it
+5. User should be able to login successfully as learner C
+6. User should be able to open My courses in hey sales and locate the assigned podcast
+7. User should be able to start the podcast and pause it midway
+8. User should be able to login as Learner D and should be able to start a podcast and pause it mid way
+9. Admin user should be able to login successfully
+10. In the completion card, the percenatge should be 20% and and the sub text should read 2 of 5 learners have completed","When a certain number of learners have complete the podcast [eg: 2 learners], and certain number of learners are in progress [eg: 3 learners] the percentage is updated only considering the 2 completed learners. And the sub text should read 2 out of 5 number of learners have completed",
+HeySales Studio> Podcast Reports,TC0007_Check the completion rate card when a learner replays the podcast,arjun@paperflite.com,Valdiate The completion rate should not be changed when a completed learner replays the podcast,Manual,Medium,Functional,The podcast should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the podcast and complete
+4. Now Login as admin
+5. Check the completion card in admin view
+6. Now Login. again as Learner A
+7. Replay the same podcast
+8. Now Login as admin
+9. Check the completion card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned podcast
+3. User should be able to start the podcast and successfully complete it
+4. Admin user should be able to login successfully
+5. In the completion card, the percenatge should updated
+6. User should be able to login successfully as Learner A
+7. User should be able to replay the same podcast and successfully complete it
+8. Admin user should be able to login successfully
+9. In the completion card, the percenatge should not be updated",The completion rate does not changed when a completed learner replays the podcast,
+HeySales Studio> Podcast Reports,TC0008_Check the UI of the completion rate card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The podcast should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any podcast
+4. Check the Completion rate card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any podcast
+4. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,
+HeySales Studio> Podcast Reports,TC0009_Check the total listen time card in the podcast,arjun@paperflite.com,"Validate For admins and content publishers the total listen time card should be displayed in the top right of the podcast, and the total listen time among the learners should be cumulated",Manual,Medium,Functional,The podcast should be completed to x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any podcast
+4. Check the total listen time card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any podcast
+4. The total listen time card should be displayed with respection score","For admins and content publishers the avg score card is displayed in the top right of the simulation, and the avg score among the learners are calculated based on total number of learners assigned versus total number learners completions including any number of attempts by a specific learner",
+HeySales Studio> Podcast Reports,TC0010_Check the total listen time card if no user has started the podcast,arjun@paperflite.com,Validate When no learners have started the podcast the podcast the total listen time should be 0,Manual,Medium,Functional,The podcast should be assigned to 10 number of learners and no learner should start the podcast,NA,"1. Create a podcast
+2. Assign the simulation to 10 learners
+3. Check the total listen time card","1. Admin / content publisher should be able to create a podcast
+2. User should be able to assign 10 learners to the podcast
+3. If no user has not started the podcast, on the total listen time card the data should be 0",When no learners have completed the podcast or not started the call the percentage is 0 and the sub text is 0 out of x number of learners have completed,
+HeySales Studio> Podcast Reports,TC0011_Check the total listen time card if no user has completed the podcast but few are in progress,arjun@paperflite.com,Validate When no learners have started the podcast but few are in progress the total listen time should be updated with the inprogres learners data,Manual,Medium,Functional,The podcast should be assigned to 10 number of learners few learners should be in progress and few should not start,NA,"1. Create a podcast
+2. Assign the simulation to 10 learners
+3. Login as a learner A
+4. Open My courses
+5. Start the podcast stop midway
+6. Login as a learner B
+7. Open My courses
+8. Start the podcast stop midway
+9. Now Login as admin
+10. Check the total listed time card in admin view","1. Admin / content publisher should be able to create a podcast
+2. User should be able to assign 10 learners to the podcast
+3. User should be able to login successfully as Learner A
+4. User should be able to open My courses in hey sales and locate the assigned podcast
+5. User should be able to start the podcast and stop it midway
+6. User should be able to login successfully as Learner B
+7. User should be able to open My courses in hey sales and locate the assigned podcast
+8. User should be able to start the podcast and stop it midway
+9. Admin user should be able to login successfully
+10. In the total listen time card, the in progress learners time spent should be cumulated",When no learners have started the podcast but few are in progress the total listen time is updated with the inprogres learners data,
+HeySales Studio> Podcast Reports,TC0012_Check the total listen time card when a learner replays the podcast,arjun@paperflite.com,Valdiate The total listen time should not be changed when a completed learner replays the podcast,Manual,Medium,Functional,The podcast should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the podcast and complete
+4. Now Login as admin
+5. Check the completion card in admin view
+6. Now Login. again as Learner A
+7. Replay the same podcast
+8. Now Login as admin
+9. Check the total listen time card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned podcast
+3. User should be able to start the podcast and successfully complete it
+4. Admin user should be able to login successfully
+5. In the completion card, the percenatge should updated
+6. User should be able to login successfully as Learner A
+7. User should be able to replay the same podcast and successfully complete it
+8. Admin user should be able to login successfully
+9. In the total listen time card, the data should not be updated",The completion rate does not changed when a completed learner replays the podcast,
+HeySales Studio> Podcast Reports,TC0013_ Check the data total listed time card and the data in the learners list matchs,arjun@paperflite.com,Valdiate The data in the total listed time card should match with all the completed learners time spent data are sumed,Manual,Medium,Functional,The podcast should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any podcast
+4. Check the total listen time card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any podcast
+4. The total listen time card should be displayed with respection score and it should be the sum of all the completed learners time spent data",The data in the total listed time card matchs with all the completed learners time spent data are sumed,
+HeySales Studio> Podcast Reports,TC0014_Check the UI of the total listed time card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The podcast should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any podcast
+4. Check the total listed time card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any podcast
+4. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,
+HeySales Studio> Podcast Reports,TC0015_Check the avg listen time card in the podcast,arjun@paperflite.com,"Validate For admins and content publishers the avg listen time card should be displayed in the top right of the podcast, and the avg listen time among the learners should be calculated based on total number of learners assigned versus total number learners completions by a specific learner",Manual,Medium,Functional,The podcast should be completed to x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any podcast
+4. Check the avg listen time card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any simulation
+4. The avg listen time card should be displayed with respection data","For admins and content publishers the avg listen time card is displayed in the top right of the podcast, and the avg listen time among the learners are calculated based on total number of learners assigned versus total number learners completions by a specific learner",
+HeySales Studio> Podcast Reports,TC0016_Check the avg listen time card if no learner has started the podcast,arjun@paperflite.com,Validate When no learners have started the podcast the Avg listen time card should display 0,Manual,Medium,Functional,The podcast should be assigned to 3 learners and no learner should start the podcast,NA,"1. Create a podcast
+2. Assign the podcast to 3 learners
+3. Check the avg score card","1. Admin / content publisher should be able to create a podcast
+2. User should be able to assign 3 learners to the podcast
+3. If no user has started the podcast, the avg listen time card should display as 0",When no learners have completed the call or not started the call the avg score card should display as NA with no sub text as no learners has completed,
+HeySales Studio> Podcast Reports,TC0017_ Check the avg listen time card when 1 learner has completed the podcast and 1 learner is still in progress,arjun@paperflite.com,Validate the avg listen time should be calculated based on the completed learners time spent and in progress learners time spent and divided by started / completed learners [The not staretd learners should not be accounted in the calculation],Manual,Medium,Functional,"The podcast should be assigned to 3 leaners and 1 learner should complete the podcast, 1 should be in progress and 1 should not start",NA,"1. Login as a learner A
+2. Open My courses
+3. Start the podcast and complete
+4. Login as a learner B
+5. Open My courses
+6. Start the podcast and pause is midway
+7. Now Login as admin
+8. Check the avg listen time card in admin view","1. User should be able to login successfully as Learner A
+2. User should be able to open My courses in hey sales and locate the assigned podcast
+3. User should be able to start the podcast and successfully complete it
+4. User should be able to login successfully as Learner B
+5. User should be able to open My courses in hey sales and locate the assigned podcast
+6. User should be able to start the podcast and pause it mid way
+7. Admin user should be able to login successfully
+8. The avg listen time should be calculated based on the completed learners time spent and in progress learners time spent and divided by started / completed learners",The avg listen time is calculated based on the completed learners time spent and in progress learners time spent and divided by started / completed learners,
+HeySales Studio> Podcast Reports,TC0018_ Check the avg listen time card when 2 learner is still in progress [no learner has completed the podcast],arjun@paperflite.com,Validate the avg listen time should be calculated based on the inprogress learners time spent divided by started learners [The not staretd learners should not be accounted in the calculation],Manual,Medium,Functional,The podcast should be assigned to 3 leaners and 2 should be in progress and 1 should not start,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the podcast and pause is midway
+4. Login as a learner B
+5. Open My courses
+6. Start the podcast and pause is midway
+7. Now Login as admin
+8. Check the avg listen time card in admin view","1. User should be able to login successfully as Learner A
+2. User should be able to open My courses in hey sales and locate the assigned podcast
+3. User should be able to start the podcast and pause it mid way
+4. User should be able to login successfully as Learner B
+5. User should be able to open My courses in hey sales and locate the assigned podcast
+6. User should be able to start the podcast and pause it mid way
+7. Admin user should be able to login successfully
+8. The avg listen time should be calculated based on the inprogress learners time spent and divided by started learners",The avg listen time is calculated based on the completed learners time spent and in progress learners time spent and divided by started / completed learners,
+HeySales Studio> Podcast Reports,TC0019_Check the avg listen time card when a learner replays the podcast,arjun@paperflite.com,Valdiate The avg listen time should not be changed when a completed learner replays the podcast,Manual,Medium,Functional,The podcast should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the podcast and complete
+4. Now Login as admin
+5. Check the completion card in admin view
+6. Now Login. again as Learner A
+7. Replay the same podcast
+8. Now Login as admin
+9. Check the avg listen time card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned podcast
+3. User should be able to start the podcast and successfully complete it
+4. Admin user should be able to login successfully
+5. In the completion card, the percenatge should updated
+6. User should be able to login successfully as Learner A
+7. User should be able to replay the same podcast and successfully complete it
+8. Admin user should be able to login successfully
+9. In the avg listen time card, the data should not be updated",The completion rate does not changed when a completed learner replays the podcast,
+HeySales Studio> Podcast Reports,TC0020_Check the UI of the avg listed time card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The podcast should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any podcast
+4. Check the avg listed time card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any podcast
+4. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,

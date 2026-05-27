@@ -1,0 +1,513 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0001_ Check creating a new podcast,arjun@paperflite.com,Validate Admins and content publishers should be able to create a podcast,Manual,Medium,Functional,User should have admin or Content publisher permission,NA,"1. Log in as admin / content publisher
+2. Navigate to hey sales module
+3. Click on Studio tab
+4. Click on Create Podcast Button","1. Admins should be able to login in successfully
+2. Hey sales module should render successfully
+3. Studio screen should render successfully
+4. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name and empty banner","Clicking on the Create Podcast button, creates an empty podcast with Untitled podcast as name and empty banner",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0002_ Check the default audio experience for a newly created podcast,arjun@paperflite.com,"Validate For the newly created podcast the audio experience type should be ""conversational""",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Check the type under the banner","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name and empty banner
+2. For the newly created podcast the audio experience type should be ""conversational""","For the newly created podcast the audio experience type is ""conversational""",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0003_ Check uploading banner to the podcast,arjun@paperflite.com,"Validate Admins should be able to add banner to a podcast via Pexels, Default paperflites source, and upload from local",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Click on the edit icon on the banner 
+3. Upload a Paperflite image banner
+4. Upload a Paperflite video banner
+5. Upload a Pexel image banner
+6. Upload a Pexel video banner
+7. Upload an image from local
+8. Upload a video from Loacl","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name and empty banner
+2. Clicking on the edit icon on the banner should ""Choose Media"" slider
+3. Admin should be able to select from the list of default images and confirm, the respective image should render as the podcast banner
+4. Admin should be able to select from the list of default video and confirm, the respective video should render as the podcast banner
+5. Admin should be able to select from the list of images from search result or the default onces and confirm, the respective image should render as the podcast banner
+6. Admin should be able to select from the list of video from search result or the default onces and confirm, the respective video should render as the podcast banner
+7. Clicking on Upload should open the local files, admin should be able to upload an image within 10mb and the respective image should render as the podcast banner
+8. Clicking on Upload should open the local files, admin should be able to upload a video within 10mb and the respective video should render as the podcast banner","Admins are able to add banner to a podcast via Pexels, Default paperflites source, and upload from local",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0004_ Check cropping the banner of the podcast,arjun@paperflite.com,Validate Admins should be able to crop the image banner and the respective selection should render as the podcasts banner,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Click on the edit icon on the banner 
+3. Upload a Paperflite image banner and crop
+4. Upload a Pexel image banner and crop
+5. Upload an image from local and crop
+6. Upload a video and try to crop","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name and empty banner
+2. Clicking on the edit icon on the banner should ""Choose Media"" slider
+3. After the image is choose from choose media screen, custimoze your banner slider should be displayed and admins should be able to crop the image, respective selection should render as the podcast banner
+4. After the image is choose from choose media screen, custimoze your banner slider should be displayed and admins should be able to crop the image, respective selection should render as the podcast banner
+5. After the image is choose from choose media screen, custimoze your banner slider should be displayed and admins should be able to crop the image, respective selection should render as the podcast banner
+6. If a video banner is choosen, the crop option should be available ",Admins are able to crop the image banner and the respective selection should render as the podcasts banner,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0005_ Check positioning the podcast banner,arjun@paperflite.com,Valdiate Admins should be able to position the image and the respective selection should render as the podcasts banner,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Click on the edit icon on the banner 
+3. Upload a Paperflite image banner and position
+4. Upload a Pexel image banner and position
+5. Upload an image from local and position
+6. Upload a video and try to position","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name and empty banner
+2. Clicking on the edit icon on the banner should ""Choose Media"" slider
+3. After the image is choose from choose media screen, custimoze your banner slider should be displayed and admins should be able to position the image, respective selection should render as the podcast banner
+4. After the image is choose from choose media screen, custimoze your banner slider should be displayed and admins should be able to position the image, respective selection should render as the podcast banner
+5. After the image is choose from choose media screen, custimoze your banner slider should be displayed and admins should be able to position the image, respective selection should render as the podcast banner
+6. If a video banner is choosen, the position option should not be available ",Admins are able to position the image banner and the respective selection should render as the podcasts banner,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0006_ Check the podcast naming field,arjun@paperflite.com,Validate Admin should be able to add any alpha numeric and spl characters in the naming field,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add any character in the naming field","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add any alpha numeric and spl characters in the naming field",Admin is able to add any alpha numeric and spl characters in the naming field,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0007_ Check the character limit in the naming field,arjun@paperflite.com,Valdiate The character limit of the naming field should be restricted to 200 character,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add any character in the naming field","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. The character limit of the naming field should be restricted to 200 character",The character limit of the naming field is restricted to 200 character,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0008_ Check the UI of the newly created Podcast,arjun@paperflite.com,"Validate In an empty podcast, default banner, Help test with subtext, add asset button, add skill button, Add learners dropdown, add learner button, audio type, and cancel & exit button should be displayed",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,1. Click on Create Podcast Button,"1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name, default banner, and ""You need to add assets to kick off your podcast journey!"" help text, ""After uploading the source, you'll have the option to select the type of podcast & time."" sub text, Add asset button, add skill button, add learner button, and cancel & exit button should be dsiplayed","Clicking on the Create Podcast button, creates an empty podcast with Untitled podcast as name, default banner, and ""You need to add assets to kick off your podcast journey!"" help text, ""After uploading the source, you'll have the option to select the type of podcast & time."" sub text, Add asset button, add skill button, add learner button, and cancel & exit button are dsiplayed",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0009_ Check the add asset button,arjun@paperflite.com,Validate Clicking on the add asset button should bring the add asset slider,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Click on the Add asset button","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Clicking on the add asset button should bring the add asset slider",Clicking on the add asset button brings the add asset slider,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0010_ Check adding asset to the podcast,arjun@paperflite.com,"Valdidate Admin should be able to add asset from streams & collections, Local device and URL",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Click on the Add asset button
+3. Add Assets","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Clicking on the add asset button should bring the add asset slider
+3. Admin should be able to add asset from streams & collections, Local device and URL","Admin is able to add asset from streams & collections, Local device and URL",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0011_ Check adding supported assets from streams & collections,arjun@paperflite.com,"Valdiate When admin add assets such as PDF, PPT's, docs,  and URL's from strems & collections the confirm button should be highlighted and cliking on it should take the admin to next step",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Click on the Add asset button
+3. Add Assets from stream & collection","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Clicking on the add asset button should bring the add asset slider
+3. When admin add assets such as PDF, PPT's, and URL's from strems & collections the confirm button should be highlighted and cliking on it should take the admin to next step","When admin add assets such as PDF, PPT's, and URL's from strems & collections the confirm button is highlighted and cliking on it takes the admin to next step",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0012_ Check adding unsupported assets from streams & collections,arjun@paperflite.com,"Validate Admins should not be able to choose the unsupported assets from streams and collection [Zip, excel, images, videos, scorm, HTML]",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Click on the Add asset button
+3. Add Assets from stream & collection","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Clicking on the add asset button should bring the add asset slider
+3. Admins should not be able to choose the unsupported assets from streams and collection",Admins are not able to choose the unsupported assets from streams and collection,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0013_ Check adding both supported and unsupported assets from Local device,arjun@paperflite.com,"Valdiate When admin add assets such as PDF, PPT's, images, videos from local device the confirm button should be highlighted and clicking on it should throw an error message ....",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Click on the Add asset button
+3. Add Assets from local device","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Clicking on the add asset button should bring the add asset slider
+3. When admin add assets such as PDF, PPT's, and images, videos from local device the confirm button should be highlighted and clicking on it should throw an error message ....","When admin add assets such as PDF, PPT's, images, videos from strems & collections the confirm button is highlighted and clicking on it throws an error message ....",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0014_ Check removing the unsupported assets and upload,arjun@paperflite.com,"Validate After removing the unsupports assets such as images, videos etc from the slider and clickng on confirm in the slider should take the admin to choose audio type and choose max duration screen",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Click on the Add asset button
+3. Add Assets from stream & collection
+4. Remove the unsupported assets
+5. Click on confirm","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Clicking on the add asset button should bring the add asset slider
+3. When admin add assets such as PDF, PPT's from strems & collections and Images from local the confirm button should be highlighted and clicking on it should throw an error message ....
+4. Admin should be able to remove the unsupported assets
+5. After removing the unsupports assets such as images from the slider and clickng on confirm in the slider should take the admin to choose audio type and choose max duration screen",After removing the unsupports assets such as ....... from the slider and clickng on confirm in the slidr takes the admin to choose audio type and choose max duration screen,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0015_ Check the UI after clicking on confirm in the add asset slider,arjun@paperflite.com,"Validate The list of added assets, the count and help text, an exclamatory mark, duration picker, audio type help text, audio type selector and generate podcast should be displayed",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Add Assets from stream & collection
+2. Check the list
+3. Check the duration selector
+4. Check the audio type selector
+5. Hover over the exclamatory mark","1. Admin should be able to add assets and click on confirm in the add asset slider
+2. All the added assets should be listed in the added order with their thumbnail
+3. The duration selector with default as i'm flexible and help text as "" # 3 assets has been added, now choose the max duration"" should be displayed
+4. Audio type selector by default as Conversational and help text as ""select the type of podcast you wanna listen"" shold be displayed
+5. Hovering on the exclamatory mark, tool tip with help text should be displayed","The list of added assets, the count and help text, an exclamatory mark, duration picker, audio type help text, audio type selector and generate podcast are displayed",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0016_ Click on generate podcast [configured in TC0015] ,arjun@paperflite.com,Validate Clicking on Genertae podcast button should trigger the creation process,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Generate podcase
+2. Check the UI
+3. Click on Details while creation is in progress
+4. Click on Details after generation is complete
+5. Click on Transcript while creation is in progress
+6. Click on Transcript after generation
+7. Check the audio generation 
+8. Check the audio generation ","1. Clicking on Genertae podcast button should trigger the creation process
+2. By Default they should land in Details 
+3. There Should be a skeletal loading while the topic generation is complete
+4. Upon completion of topic generation, the topics should be listed within the details tab.
+5. This tab should be clickable/openable only after transcript generation completion.
+6. The entire transcript of the podcast should be displayed and admins should be able to scroll through the transcript
+7. After transcript generation completion, the audio generation loader should appear at the bottom of the screen 
+8. Upon audio generation completion, the loader should convert to the audio player",Clicking on Genertae podcast button triggers the creation process,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0017_ Check the duration selector in podcast creation,arjun@paperflite.com,Validate The podcast duration should be defined by the duration selector,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on confirm
+4. Change the duration
+5. Set a duratio  [20 mins] 
+6. Click on Save
+7. Click on Generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. Clickng on confirm in the slider should take the admin to choose audio type and choose max duration screen
+4. The duration selector should have 5, 10, 15, 20, 25, 30, and i'm flexible options to choose between
+5. Admi should be able to set the duration to 20 mins
+6. Admin should be able to save the podcast
+7. The Podcast should be generated in the range of 20 mins, also note: Podcast duration is automatically optimized for uploaded content. The max duration sets an upper limit, not an exact length, and may result in stretched or shortened coverage",The podcast duration is defined by the duration selector,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0018_ Check the audio type in podcast creation,arjun@paperflite.com,Validate The podcast audio type wheather Conversational or Monologue or narrative should be defined by the audio selector,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on confirm
+4. Change the audio type to Monolog 
+5. Click on Save
+6. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. Clickng on confirm in the slider should take the admin to choose audio type and choose max duration screen
+4. Admin should be able to set the audio type to monolog
+5. Admin should be able to save the podcast
+6. The generated podcast should be a monolog not Conversational",The podcast audio type wheather Conversational or Monlologue is defined by the audio selector,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0019_ Check the audio type in podcast creation,porsudar@paperflite.com,Validate admin/content publisher is able to select the Narrative podcast type by clicking Next ( > ) in the podcast format selector,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on confirm
+4. Change the audio type to Narrative 
+5. Click on Save
+6. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. Clickng on confirm in the slider should take the admin to choose audio type and choose max duration screen
+4. Admin should be able to set the audio type to Narrative
+5. Admin should be able to save the podcast
+6. The generated podcast should be a Narrative",The podcast audio type Narrative is generated as defined by the audio selector,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0020_ Check narrative podcast audio quality (fillers & random voices,porsudar@paperflite.com,"Validate that the Narrative podcast audio is generated without fillers (hmm, hm hm), random voices, unnecessary pauses, or sentence breaks",Manual,High,Functional,Admin or Content publisher should create a podcast,NA,"1. Create a podcast
+2. Add supported assets from streams & collections
+3. Click on Confirm in add asset slider
+4. Select Narrative podcast type using format selector
+5. Click on Generate podcast
+6. Wait for generation to complete
+7. Play the podcast audio fully
+8. Observe audio at different timestamps for fillers, random voices, or long pauses","1. An empty podcast should be created successfully
+2. Admin should be able to add supported assets without errors
+3. Clicking on Confirm should navigate to duration and podcast format selection screen
+4. Narrative podcast type should be selected and reflected in the UI
+5. Podcast generation process should be triggered successfully
+6. Podcast generation should complete without failures and audio player should be displayed
+7. Podcast audio should play continuously without interruptions
+8. Audio should not contain fillers (hmm, hm hm), random voices (e.g., “ya”, “right”), awkward pauses, or self-corrections; narration should be smooth and use a single consistent voice","Narrative podcast audio does not contains fillers, random voices, and unwanted pauses at multiple timestamps",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0021_ Check the description field in podcast,arjun@paperflite.com,Validate Admin should be able to add any alpha numeric and spl characters in the description field,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on generate
+4. Add any character in the description field","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. Clicking on generate should generate the topics and the description field should be displayed
+4. Admin should be able to add any alpha numeric and spl characters in the description field",Admin is able to add any alpha numeric and spl characters in the description field,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0022_ Check the character limit in the description field,arjun@paperflite.com,Valdiate The character limit of the description field should be restricted to 1000 character,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on generate
+4. Add any character in the description field","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. Clicking on generate should generate the topics and the description field should be displayed
+4. The character limit of the naming field should be restricted to 1000 character",The character limit of the description field is restricted to 1000 character,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0023_ Check the help text while the pocast is generated,arjun@paperflite.com,"Valdiate While a podcast is generated ""generating topics... This may take a few minutes. Feel free to go back-we'll notify you once it's ready."" should be displayed",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. Clicking on generate should generate the podcast and help text """"generating topics... This may take a few minutes. Feel free to go back-we'll notify you once it's ready."" should be displayed","While a podcast is generated ""generating topics... This may take a few minutes. Feel free to go back-we'll notify you once it's ready."" is displayed",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0024_ Check navigating to other modules while the podcase is generating,arjun@paperflite.com,Validate Navigating to other modules while the podcast is generating should not stop the generation,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on generate
+4. Navigatet to hub
+5. Naigate back to the same podcast","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. Clicking on generate should generate the podcast and help text """"generating topics... This may take a few minutes. Feel free to go back-we'll notify you once it's ready."" should be displayed
+4. Admin should be able to navigate to Hub
+5. Admin should be able to navigate to the back to same podcast generate should be in progress",Navigating to other modules while the podcast is generating does not stop the generation,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0025_ Check the UI of the generated Podcast,arjun@paperflite.com,"Validate The Podcast banner, duration, Audio type, Details, Transcript, List of topics, audio playback contols, Skills, assigned learners list, Completion card, Total time spent card, avg time spent card should be displayed",Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. The Podcast banner, duration, Audio type, Details, Transcript, List of topics, audio playback contols, Skills, assigned learners list, Completion card, Total time spent card, avg time spent card should be displayed","The Podcast banner, duration, Audio type, Details, Transcript, List of topics, audio playback contols, Skills, assigned learners list, Completion card, Total time spent card, avg time spent card are displayed",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0026_ Check Uploading more than 5 assets while podcast creation,arjun@paperflite.com,Validate Admins should not be able to add more than 5 assets while creating podcast,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add 8 Assets from stream & collection
+3. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. When admins add more than 5 assets while creation, error message should be displayed","admins add more than 5 assets while creation, error message is displayed",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0027_ Check editing the generated podcast,arjun@paperflite.com,Validate Admins should be able to edit the generated podcast,Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"1. Open a generated podcast
+2. Click on edit in studio button","1. Admin should be able to open any generated podcast
+2. Clicking on edit in studio should navigate the user to the edit podcast screen",Clicking on edit in studio navigates the user to the edit podcast screen,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0028_ Check the UI in Edit screen,arjun@paperflite.com,"Validate In the edit screen, admin should be able to add or remove assets, change the audio type, duration, and voice of the podcast",Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"1. Open a generated podcast
+2. Click on edit in studio button
+3. Add a new asset
+4. Change the duration
+5. Change the audio type
+6. Change the voice
+7. Click on Generate","1. Admin should be able to open any generated podcast
+2. Clicking on edit in studio should navigate the user to the edit podcast screen
+3. Admin should be able to add new assets
+4. Admin should be able to change the duration
+5. Admin should be able to change the audio type
+6. Admin should be able to change the voice
+7. Clicking on generate should update the podcast with respect to all the edits","In the edit screen, admin is able to add or remove assets, change the audio type, duration, and voice of the podcast",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0029_ Check the UI in Edit screen-Conversational to Narrative,porsudar@paperflite.com,"Validate In the edit screen, admin should be able to add or remove assets, change the audio type, duration, and voice of the podcast",Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"""1. Open a generated podcast - Conversational
+2. Click on edit in studio button
+3. Add a new asset
+4. Change the duration
+5. Change the audio type - Narrative
+6. Change the voice
+7. Click on Generate""","""1. Admin should be able to open any generated podcast - Cnversational
+2. Clicking on edit in studio should navigate the user to the edit podcast screen
+3. Admin should be able to add new assets
+4. Admin should be able to change the duration
+5. Admin should be able to change the audio type - Narrative
+6. Admin should be able to change the voice
+7. Clicking on generate should update the podcast with respect to all the edits""","In the edit screen, admin is able to add or remove assets, change the audio type, duration, and voice of the podcast",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0030_ Check the UI in Edit screen - Monologue to Narrative,porsudar@paperflite.com,"Validate In the edit screen, admin should be able to add or remove assets, change the audio type, duration, and voice of the podcast",Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"1. Open a generated podcast - Monologue
+2. Click on edit in studio button
+3. Add a new asset
+4. Change the duration
+5. Change the audio type - Narrative
+6. Change the voice
+7. Click on Generate","""1. Admin should be able to open any generated podcast - Monologue
+2. Clicking on edit in studio should navigate the user to the edit podcast screen
+3. Admin should be able to add new assets
+4. Admin should be able to change the duration
+5. Admin should be able to change the audio type - Narrative
+6. Admin should be able to change the voice
+7. Clicking on generate should update the podcast with respect to all the edits""","In the edit screen, admin is able to add or remove assets, change the audio type, duration, and voice of the podcast",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0031_ Check the UI in Edit screen- Narrative to conversational,porsudar@paperflite.com,"Validate In the edit screen, admin should be able to add or remove assets, change the audio type, duration, and voice of the podcast",Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"""1. Open a generated podcast - Narrative
+2. Click on edit in studio button
+3. Add a new asset
+4. Change the duration
+5. Change the audio type - Conversational
+6. Change the voice
+7. Click on Generate""","""1. Admin should be able to open any generated podcast -Narrative
+2. Clicking on edit in studio should navigate the user to the edit podcast screen
+3. Admin should be able to add new assets
+4. Admin should be able to change the duration
+5. Admin should be able to change the audio type - Conversational
+6. Admin should be able to change the voice
+7. Clicking on generate should update the podcast with respect to all the edits""","In the edit screen, admin is able to add or remove assets, change the audio type, duration, and voice of the podcast",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0032_ Check the UI in Edit screen -  Narrative to Monologue ,porsudar@paperflite.com,"Validate In the edit screen, admin should be able to add or remove assets, change the audio type, duration, and voice of the podcast",Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"1. Open a generated podcast - Narrative
+2. Click on edit in studio button
+3. Add a new asset
+4. Change the duration
+5. Change the audio type - Monologue
+6. Change the voice
+7. Click on Generate","""1. Admin should be able to open any generated podcast - Narrative
+2. Clicking on edit in studio should navigate the user to the edit podcast screen
+3. Admin should be able to add new assets
+4. Admin should be able to change the duration
+5. Admin should be able to change the audio type - Monologue
+6. Admin should be able to change the voice
+7. Clicking on generate should update the podcast with respect to all the edits""","In the edit screen, admin is able to add or remove assets, change the audio type, duration, and voice of the podcast",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0033_ Check the seek option in edit screen,arjun@paperflite.com,Validate Admin should be able to make edits in the podcast using seek,Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"1. Open a generated podcast
+2. Click on edit in studio button
+3. Add a prompt ""Change the podcast duration to 10 mins""
+4. Add a prompt ""change the podcast type to monolog""
+5. Click on Generate","1. Admin should be able to open any generated podcast
+2. Clicking on edit in studio should navigate the user to the edit podcast screen
+3. Admin should be able to add add prompt in the seek bar
+4. Admin should be able to add add prompt in the seek bar
+5. Clicking on generate should update the podcast with respect to all the edits",Admin is able to make edits in the podcast using seek,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0034_ Check the seek option in edit screen,porsudar@paperflite.com,Validate Admin should be able to make edits in the podcast using seek,Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"1. Open a generated podcast
+2. Click on edit in studio button
+3. Add a prompt """"Change the podcast duration to 10 mins""""
+4. Add a prompt ""change the podcast type to Narative""
+5. Click on Generate","1. Admin should be able to open any generated podcast
+2. Clicking on edit in studio should navigate the user to the edit podcast screen
+3. Admin should be able to add add prompt in the seek bar
+4. Admin should be able to add add prompt in the seek bar
+5. Clicking on generate should update the podcast with respect to all the edits",Admin is able to make edits in the podcast using seek,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0035_ Check the error handling while creatig the podcast,arjun@paperflite.com,Validate Admins should not be able to publish the podcast until all the error are cleared,Manual,Medium,Functional,Admin or Content publisher should create a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on generate
+4. Try to publish
+5. Add skills
+6. Add description
+7. Publish the podcast","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. The podcast should be generated
+4. Admin should not be able to publish the podcast with, error related skills and description
+5. Admin shlould be able to add skills
+6. Admin should be able to add decsription
+7. Admin should be able to publish the podcast",Admins are not able to publish the podcast until all the error are cleared,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0036_ Check the congratulations screen after publishing the podcast,arjun@paperflite.com,Validate Once after the admin publish the podcast a congratulations screen should be displayed,Manual,Medium,Functional,Admin or Content publisher should Publish a podcast,NA,"1. Click on Create Podcast Button
+2. Add Assets from stream & collection
+3. Click on generate
+4. Click to publish","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. The podcast should be generated
+4. Admin should be able to publish the podcast, a congratulations screen should be displayed post publishing",Once after the admin publish the podcast a congratulations screen is displayed,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0037_ Check the error in the UI when an asset fails in processing,arjun@paperflite.com,Validate If the assets fails in processing a failure error should be displayed with which assests are failed,Manual,Medium,Functional,Admin or Content publisher should generate a podcast,NA,"1. Click on Create Podcast Button
+2. Add 5 Assets from stream & collection
+3. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. A failure error message should be displayed with all the failed assets",If the assets fails in processing a failure error is displayed with which assests are failed,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0038_ Check the UI of the error screen when an asset fails to process,arjun@paperflite.com,"Validate The List of failed assets with retry and Upload new assets and help text ""transcript generation failed"" and sub text ""this usually happens when the assets dont have enough content in them.."" should be displayed",Manual,Medium,Functional,Admin or Content publisher should generate a podcast,NA,"1. Click on Create Podcast Button
+2. Add 5 Assets from stream & collection
+3. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. The List of failed assets with retry and Upload new assets and help text ""transcript generation failed"" and sub text ""this usually happens when the assets dont have enough content in them.."" should be displayed","The List of failed assets with retry and Upload new assets and help text ""transcript generation failed"" and sub text ""this usually happens when the assets dont have enough content in them.."" are displayed",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0039_ Check retry option in the error screen when an asset fails to process,arjun@paperflite.com,"Validate When admin clicks on retry, the generation process should be retriggered",Manual,Medium,Functional,Admin or Content publisher should generate a podcast,NA,"1. Click on Create Podcast Button
+2. Add 5 Assets from stream & collection
+3. Click on generate
+4. Click on retry","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. A failure error message should be displayed with all the failed assets
+4. The generation process should be retriggered","When admin clicks on retry, the generation process is retriggered",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0040_ Check replacing the error assets when an asset fails to process,arjun@paperflite.com,Validate Admin should be able to remove the failed assets and upload new asstets and regenerate the podcast,Manual,Medium,Functional,Admin or Content publisher should generate a podcast,NA,"1. Click on Create Podcast Button
+2. Add 5 Assets from stream & collection
+3. Click on generate
+4. Click on Upload new assets
+5. Remove the failed asets
+6. Add new asssets
+7. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. A failure error message should be displayed with all the failed assets
+4. Add asset slider should be displayed with all the existing assets
+5. Admin should be able to remove the failed assets
+6. Admin should be able to add new asstes
+7. Admin should be able to generate the podcast ",Admin is able to remove the failed assets and upload new asstets and regenerate the podcast,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0041_ Check the error hangling error when an asset fails to process while editing the podcast,arjun@paperflite.com,Validate The same error handling should be triggered when the admin edits the podcast,Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"1. Click on Create Podcast Button
+2. Add 5 Assets from stream & collection
+3. Click on generate
+4. Click on edit
+5. Add new asset
+6. Click on generate
+7. Remove the failed asets
+8. Add new asssets
+9. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. The podcast should be successfully genertaed
+4. The podcast edit screen should be displayed
+5. Admin should be able to add assets
+6. A failure error message should be displayed with all the failed assets
+7. Admin should be able to remove the failed assets
+8. Admin should be able to add new asstes
+9. Admin should be able to generate the podcast ",The same error handling is triggered when the admin edits the podcast,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0042_ Check the max asset limit of 5 is followed while editing,arjun@paperflite.com,Validate When admin tries to upload more than 5 assets while editing the podcast an error should be displayed,Manual,Medium,Functional,Admin or Content publisher should edit a podcast,NA,"1. Click on Create Podcast Button
+2. Add 5 Assets from stream & collection
+3. Click on generate
+4. Click on edit
+5. Add new asset
+6. Click on generate","1. Clicking on the Create Podcast button, should create an empty podcast with Untitled podcast as name
+2. Admin should be able to add assets
+3. The podcast should be successfully genertaed
+4. The podcast edit screen should be displayed
+5. Admin should be able to add 5 more assets
+6. An error message should be displayed when trying to generate the podcast",When admin tries to upload more than 5 assets while editing the podcast an error is displayed,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0043_ Check assigning a podcast to learners,arjun@paperflite.com,Validated Admins should be able to assign generated podcast to learners,Manual,Medium,Functional,Assign a podcast to learners,NA,"1. Open a generation completed podcast
+2. Click on Add learners
+3. Assign the podcast to 5 learners","1. Admin should be able to open any podcast
+2. Clicking on the add learner slider should bring the adding learners slider with all users and user groups
+3. Admin should be able to add 5 learners to the podcast",Admins are able to assign generated podcast to learners,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0044_ Check assigning a podcast to learners [via User groups],arjun@paperflite.com,Validated Admins should be able to assign generated podcast to learners,Manual,Medium,Functional,Assign a podcast to learners,NA,"1. Open a generation completed podcast
+2. Click on Add learners
+3. Assign the podcast to a user group with 3 learners","1. Admin should be able to open any podcast
+2. Clicking on the add learner slider should bring the adding learners slider with all users and user groups
+3. Admin should be able to add 5 learners to the podcast",Admins are able to assign generated podcast to learners,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0045_ Check conversational podcast in learner view,arjun@paperflite.com,Validate In Learner view the audio playback should be conversational type where 2 persons voice should be used,Manual,Medium,Functional,Assign a podcast to learners,NA,"1. Open a generation completed podcast [conversational] 
+2. Click on Add learners
+3. Assign the podcast to a learner
+4. Login as a learner A
+5. Open My courses
+6. Start the podcast","1. Admin should be able to open any podcast [conversational] 
+2. Clicking on the add learner slider should bring the adding learners slider with all users and user groups
+3. Admin should be able assign a learner to the podcast
+4. Learner should be able to login successfully
+5. Learner should be able to open My courses in hey sales and locate the assigned podcast
+6. In Learner view the audio playback should be conversational type where 2 persons voice should be used",In Learner view the audio playback is conversational type where 2 persons voice are used,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0046_ Check Monologue podcast in learner view,arjun@paperflite.com,Validate In Learner view the audio playback should be Monologue type where only 1 persons voice should be used,Manual,Medium,Functional,Assign a podcast to learners,NA,"1. Open a generation completed podcast [Monologue] 
+2. Click on Add learners
+3. Assign the podcast to a learner
+4. Login as a learner A
+5. Open My courses
+6. Start the podcast","1. Admin should be able to open any podcast [Monologue] 
+2. Clicking on the add learner slider should bring the adding learners slider with all users and user groups
+3. Admin should be able assign a learner to the podcast
+4. Learner should be able to login successfully
+5. Learner should be able to open My courses in hey sales and locate the assigned podcast
+6. In Learner view the audio playback should be Monologue type where 1 person voice should be used",In Learner view the audio playback is Monologue type where 1 person voice is used,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0047_ Check Narrative podcast in learner view,porsudar@paperflite.com,"Validate In Learner view the audio playback should be Narrative without fillers (hmm, hm hm), random voices, unnecessary pauses, or sentence breaks",Manual,Medium,Functional,Assign a podcast to learners,NA,"""1. Open a generation completed podcast [Narrative] 
+2. Click on Add learners
+3. Assign the podcast to a learner
+4. Login as a learner A
+5. Open My courses
+6. Start the podcast","1. Admin should be able to open any podcast[Narrative]
+2. Clicking on the add learner slider should bring the adding learners slider with all users and user groups
+3. Admin should be able assign a learner to the podcast
+4. Learner should be able to login successfully
+5. Learner should be able to open My courses in hey sales and locate the assigned podcast
+6. In Learner view the audio playback should be Narrative without fillers (hmm, hm hm), random voices, unnecessary pauses, or sentence breaks","In Learner view the audio playback is Narrative type without fillers (hmm, hm hm), random voices, unnecessary pauses, or sentence breaks",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0048_ Check Narrative podcast in learner view - mobile (ios and Android),porsudar@paperflite.com,"Validate In Learner view the audio playback should be Narrative without fillers (hmm, hm hm), random voices, unnecessary pauses, or sentence breaks",Manual,Medium,Functional,Assign a podcast to learners,NA,"""1. Open a generation completed podcast [Narrative] 
+2. Click on Add learners
+3. Assign the podcast to a learner
+4. Login as a learner A in mobile (ios and Android)
+5. Open My courses
+6. Start the podcast","1. Admin should be able to open any podcast[Narrative]
+2. Clicking on the add learner slider should bring the adding learners slider with all users and user groups
+3. Admin should be able assign a learner to the podcast
+4. Learner should be able to login successfully in mobile (ios and android)
+5. Learner should be able to open My courses in hey sales and locate the assigned podcast
+6. In Learner view the audio playback should be Narrative without fillers (hmm, hm hm), random voices, unnecessary pauses, or sentence breaks","In Learner view the audio playback is Narrative type without fillers (hmm, hm hm), random voices, unnecessary pauses, or sentence breaks in mobile (android and ios)",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0049_ Check Narrative podcast display in Explore tiles,porsudar@paperflite.com,"Validate Narrative podcast is displayed correctly along with pill showing ""Narrative"" in Explore for learners",Manual,Medium,UI,Assign a podcast to learners,NA,"1. Login as Learner
+2. Navigate to HeySales → Explore section
+3. Locate Narrative podcast tile","1. Learner login should be successful
+2. Explore section should load successfully
+3. Narrative podcast tile should be visible with correct banner, title, duration, and Narrative type indicator",Narrative podcast tile is displayed correctly in Explore,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0050_ Check Narrative podcast display in My Courses tile,porsudar@paperflite.com,"Validate Narrative podcast appears correctly in My Courses along with pill showing ""Narrative"" after assignment",Manual,Medium,UI,Assign a podcast to learners,NA,"1. Login as Learner
+2. Navigate to My Courses
+3. Locate assigned Narrative podcast tile","1. Learner login should be successful
+2. My Courses section should load successfully
+3. Assigned Narrative podcast tile should display correct banner, title, duration, and Narrative type",Narrative podcast tile is displayed correctly in My Courses,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0051_ Check Narrative podcast inside playback view (Learner & Admin),porsudar@paperflite.com,Validate Narrative podcast shows Narrative pill below the name in Admin and Learner views,MAnual,Medium,UI,Assign a podcast to learners,NA,"1. Login as Admin and open generated Narrative podcast
+2. Verify podcast type -  ""Narrative"" is displayed below the name 
+3. Login as Learner and open the same podcast
+4.Verify podcast type -  ""Narrative"" is displayed below the name","1. Admin should be able to open Narrative podcast successfully
+2. Podcast type should be correct
+3. Learner should be able to open and play the podcast
+5. A single consistent narrative pill should be used throughout",Podcast - Narrative tile oill should be displayed inside podcast for admin and learner view,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0052_ Check the edits made in the podcast reflects to learner,arjun@paperflite.com,Validate After assigning a podcast to a learner all the edits made by the admin should reflect to the learner,Manual,Medium,Functional,Assign a podcast to learners,NA,"1. Log in as admin / Content publisher
+2. Create a podcast
+3. Assign to a learner
+4. Login as a learner A
+5. Open My courses
+6. Start the podcast and pause it midway
+7. Login as admin
+8. Edit the podcast [Change the tone]
+9. Edit the podcast [Change the audio type]
+10. Edit the podcast [Change the Duration]
+11. Edit the podcast [Change the Asset]","1. Admin should be able to login 
+2. Admin should be able to create a podcast
+3. Admin shoulb be able to assign a learner
+4. User should be able to login successfully
+5. User should be able to open My courses in hey sales and locate the assigned podcast
+6. User should be able to start the podcast and pause it midway
+7. Admin should be able to login 
+8. Admin should be able to edit the podcast tone, the same should reflect to the learner
+9.  Admin should be able to edit the podcast audio type, the same should reflect to the learner
+10.  Admin should be able to edit the podcast duration, the same should reflect to the learner
+11.  Admin should be able to edit the podcast asset, the updated transcript and audio should reflect to the learner",After assigning a podcast to a learner all the edits made by the admin reflects to the learner,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0053_ Check the edits made in the podcast reflects to learner (Mobile - ios and Android),porsudar@paperflite.com,Validate After assigning a podcast to a learner all the edits made by the admin should reflect to the learner,Manual,Medium,Functional,Assign a podcast to learners,NA,"""1. Log in as admin / Content publisher
+2. Create a podcast
+3. Assign to a learner
+4. Login as a learner A
+5. Open My courses
+6. Start the podcast and pause it midway
+7. Login as admin
+8. Edit the podcast [Change the tone]
+9. Edit the podcast [Change the audio type]
+10. Edit the podcast [Change the Duration]
+11. Edit the podcast [Change the Asset]""","""1. Admin should be able to login 
+2. Admin should be able to create a podcast
+3. Admin shoulb be able to assign a learner
+4. User should be able to login successfully
+5. User should be able to open My courses in hey sales and locate the assigned podcast
+6. User should be able to start the podcast and pause it midway
+7. Admin should be able to login 
+8. Admin should be able to edit the podcast tone, the same should reflect to the learner
+9.  Admin should be able to edit the podcast audio type, the same should reflect to the learner
+10.  Admin should be able to edit the podcast duration, the same should reflect to the learner
+11.  Admin should be able to edit the podcast asset, the updated transcript and audio should reflect to the learner""",After assigning a podcast to a learner all the edits made by the admin reflects to the learner,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0054_ Check uploading a new version of an asset which is used in a podcast creation,arjun@paperflite.com,"Validate After admin uploads a new version of an asset, the respective podcasts transcript and audio should be updated [Both Admin and Learner]",Manual,Medium,Functional,Assign a podcast to learners,NA,"1. Log in as admin / Content publisher
+2. Create a podcast
+3. Assign to a learner
+4. Login as a learner A
+5. Open My courses
+6. Start the podcast and pause it midway
+7. Login as admin
+8. Upload a new version of the asset
+9. Check the audio and transcript in admin view
+10. Check the audio and transcript in learner view","1. Admin should be able to login 
+2. Admin should be able to create a podcast
+3. Admin shoulb be able to assign a learner
+4. User should be able to login successfully
+5. User should be able to open My courses in hey sales and locate the assigned podcast
+6. User should be able to start the podcast and pause it midway
+7. Admin should be able to login 
+8. Admin should be able to upload a new version of the asset
+9. The transcript and the audio should be updated in admin view
+10. The transcript and the audio should be updated in learner view","After admin uploads a new version of an asset, the respective podcasts transcript and audio is updated [Both Admin and Learner]",
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0055_ Check the exisitng podcasts type,porsudar@paperflite.com,Validate For all the existing podcast the type conversational should be set,Manual,Medium,Functional,Assign a podcast to learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales
+3. Open any existing podcast
+4. Check the podcast Type","1. Admin should be able to login 
+2. Admin should be able to navigate to hey sales module
+3. Admin should be able to open any existing podcast
+4. For all the existing podcast the type conversational should be set",For all the existing podcast the type conversational is set,
+HeySales Studio> Podcast Enhancements - Audio type - Narrative,TC0056_ Check enrolling to a podcast as a learner,porsudar@paperflite.com,Validate Learner should be able to enrol to a podcast from explore page,Manual,Medium,Functional,Enrol a podcast to learners,,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales
+3. Create a podcast
+4. Login as learner
+5. Navigate to Heysales click on Explore
+6. Open the podcast and enroll","1. Admin should be able to login
+2. Admin should be able to navigate to hey sales module
+3. Admin should be able to be create a podcast
+4. Learner should be able to login
+5. Learner should be able to navigate to Heysales and Explore page should render
+6. Learner should be able to Enroll to a podcast",Learner is able to enrol to a podcast from explore page,

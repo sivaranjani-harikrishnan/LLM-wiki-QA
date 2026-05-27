@@ -1,0 +1,246 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Studio> Real call scoring - MS Dynamics,TC0001_Check the Zoom integration card in settings,porsudar@paperflite.com,"Validate for accounts with HeySales enabled, Zoom integration card should be displayed at account level",Manual,High,Functional,HeySales should be enabled,NA,"1. Login as Admin
+2. Navigate to Settings
+3. Click manage tech stack","1. Admin should login successfully
+2. Admin should navigate to settings
+3. Zoom integration card should be displayed for the account",Zoom integration card is displayed,
+HeySales Studio> Real call scoring - MS Dynamics,TC0002_Check the Zoom integration card in settings [HeySales disabled],porsudar@paperflite.com,"Validate for accounts with HeySales disabled, Zoom integration card should not be displayed",Manual,Medium,Functional,HeySales should be disabled,NA,"1. Login as Admin
+2. Navigate to Settings
+3. Click manage tech stack","1. Admin should login successfully
+2. Admin should navigate to settings
+3. Zoom integration card should not be displayed for the account",Zoom integration card is not displayed,
+HeySales Studio> Real call scoring - MS Dynamics,TC0003_Check Zoom integration visibility after enabling toggle in Manage Tech Stack,porsudar@paperflite.com,"Validate that after enabling Zoom toggle in Manage Tech Stack, Zoom integration card is displayed in Integrations",Manual,Medium,Functional,"HeySales should be enabled
+User should be Admin",NA,"1. Login as Admin
+2. Navigate to Manage Tech Stack
+3. Enable Zoom toggle
+4. Click on Integrations
+5.Check on the zoom integration card","1.Admin user should be able to log in successfully without any errors
+2.Admin should be able to navigate to the Manage Tech Stack page successfully
+3.Admin should be able to enable the Zoom toggle successfully 
+4.Admin should be able to navigate to the Integrations page successfully
+5.Zoom integration card should be displayed in the Integrations page ",,
+HeySales Studio> Real call scoring - MS Dynamics,TC0004_Check Zoom integration permission,porsudar@paperflite.com,Validate Zoom integration should be account-level and shared across users,Manual,High,Functional,HeySales should be enabled,NA,"1. Login as Admin
+2. Integrate Zoom
+3. Login as User B
+4. Check Zoom integration status","1. Admin should be logged in
+2.Admin should integrates Zoom successfully
+3. User B should be logged in
+4. User B should see Zoom as already integrated",Zoom integration is account-level,
+HeySales Studio> Real call scoring - MS Dynamics,TC0005_Check the call recording access toggle,porsudar@paperflite.com,Validate admin can toggle call recording access ,Manual,Medium,Functional,HeySales should be enabled,NA,"1. Integrate Zoom
+2. Toggle ON call recording 
+3. Toggle OFF call recording","1.User should be able to integrate Zoom
+2.User should be able toggle on the call recording 
+3.User should be able to toggle off the call recording",Toggle works as expected,
+HeySales Studio> Real call scoring - MS Dynamics,TC0006_Check report generation in MS Dynamics for active opportunity,porsudar@paperflite.com,Validate report is generated in MS Dynamics when there is an active opportunity and MS Dynamics is integrated,Manual,High,Functional,HeySales should be enabled,NA,"1. Integrate MS Dynamic
+2.Integrate Zoom
+3. Associate an active opportunity to a contact
+4. Invite associated contact to Zoom meeting
+5. Complete the Zoom meeting
+6. Check MS Dynamics","1.MS Dynamics is connected successfully.
+2.Zoom integration is active.
+3.Active deal should be mapped to contact
+4.Associated contact to a deal should be added in the zoom invite
+5.User should complete the call
+6.Reports should be pushed to activity and timelines",Call scoring is triggered,
+HeySales Studio> Real call scoring - MS Dynamics,TC0007_ Check the Fields in the call scoring,porsudar@paperflite.com,"Validate In the call report the Overall score, Parameter Breakdown, Sales rep positive, Prospect observation, and Suggestions should be listed",Manual,Medium,UI,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated",NA,"1. Map a Opportunity with a contact
+2. Have a zoom meeting with the contact
+3. Check the call report","1. User should be able to map a Opportunity with a contact
+2. User should be able to have a zoom meeting with the contact
+3. In the call report the Overall score, Parameter Breakdown, Sales rep positive, Prospect observation, and Suggestions should be listed","In the call report the Overall score, Parameter Breakdown, Sales rep positive, Prospect observation, and Suggestions are listed",
+HeySales Studio> Real call scoring - MS Dynamics,TC0008_Check real call scoring when Zoom is integrated but MS Dynamics is not integrated,porsudar@paperflite.com,Validate call scoring is not triggered if MS Dynamics is not integrated,Manual,Medium,Functional,"HeySales should be enabled
+MS Dynamic should not be enabled",NA,"1. Integrate Zoom
+2.Take a call with mapped contact in MS Dynamics
+3. Check call scoring","1.Zoom should be successfully integrated
+2.Zoom call should be taken
+3.Call scoring should not be triggered",Call scoring not triggered,
+HeySales Studio> Real call scoring - MS Dynamics,TC0009_Check real call scoring when MS Dynamics is integrated but Zoom is not integrated,porsudar@paperflite.com,Validate call scoring is not triggered if Zoom is not integrated,Manual,Medium,Functional,"HeySales should be enabled
+Zoom should not be enabled",NA,"1. Integrate MS Dynamics
+2.Take a call with mapped contact in MS Dynamics
+3. Check call scoring","1 MS Dynamic should be successfully integrated
+2.Zoom call should be taken
+3.Call scoring should not be triggered",Call scoring not triggered,
+HeySales Studio> Real call scoring - MS Dynamics,TC0010_Check real call scoring when oppurtunity is closed in the MS Dynamic,porsudar@paperflite.com,Validate call scoring should not be triggered when opportunity is closed,Manual,High,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in closed state
+",NA,"1.Take a call with mapped contact in MS Dynamics
+2.Check call scoring is not triggered when the it is in closed state","1.user should be able take a call
+2.Call scoring should not be triggered when the opporunity is not active",Call scoring not triggered,
+HeySales Studio> Real call scoring - MS Dynamics,TC0011_Check real call scoring when oppurtunity is Reopened in the MS Dynamic,porsudar@paperflite.com,Validate call scoring should be triggered when oppurtunity is reopened,Manual,High,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in open state
+",NA,"1.Take a call with mapped contact in MS Dynamics
+2.Check call scoring is triggered when the it is in open state","1.user should be able take a call
+2.Call scoring should be triggered when the opporunity is active",Call scoring is triggered,
+HeySales Studio> Real call scoring - MS Dynamics,"TC0012_ Check the real call scrong, after a contact is removed from the Opportunity",porsudar@paperflite.com,"Validate when a contact is removed from the Opportunity, call report should not be pushed after the zoom meeting",Manual,Medium,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in open state
+",NA,"1.Open the active opportunity in the MS Dynamics 
+2.Remove contact association
+3.Take Zoom call where the associated contact exist in the meeting
+4.Check call scoring is not triggered","1.Active opportunity should be opened in the MS Dynamics 
+2. contact associated should be removed
+3.Zoom call should be taken where the associated contact exist in the meeting
+4.call scoring should not be triggered when no contact is associated to the opportunity",Call scoring should not be  triggered,
+HeySales Studio> Real call scoring - MS Dynamics,"TC0013_ Check the real call scoring, when the invitee in the zoom meeting does not have a opportunity in MS Dyanamic ",porsudar@paperflite.com,Validate call scoring is not triggered if contact in meeting is not mapped to any Opportunity,Manual,Medium,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated",NA,"1. Take Zoom call with contact that is not mapped to any opportunity
+2. Check call scoring should not be triggered","1. Zoom call with contact that is not mapped to any Opportunity should be completed 
+2. Call scoring should not be triggered",Call scoring should not be  triggered,
+HeySales Studio> Real call scoring - MS Dynamics,TC0014_Check call scoring when call recording is OFF,porsudar@paperflite.com,Validate call scoring is not triggered when call recording access is disabled,Manual,Medium,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in open state
+",NA,"1. Disable call recording
+2. Take Zoom call with mapped contact
+3. Check call scoring ","1. User should Disable call recording toggle
+2. Zoom call should be taken by the user 
+3. Call scoring should not be triggered",Call scoring not triggered,
+HeySales Studio> Real call scoring - MS Dynamics,TC0015_ Check the call scoring is generated based on the accounts default scorecard,porsudar@paperflite.com,Validate reports generated using account default scorecard,Manual,Medium,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in open state
+",NA,"1. Take Zoom call
+2. Check report scorecard","1. Zoom call should be taken by the user
+2. Report should be generated with default scorecard that is chosen is settings",Reports is generated using account default scorecard,
+HeySales Studio> Real call scoring - MS Dynamics,TC0016_ Check the call scoring when the integration is expired,porsudar@paperflite.com,Validate When either of the integration is expired [Zoom / MS Dynamic] the call report should not be pushed,Manual,Medium,Functional,"Hey sales should be enabled
+Integration should be expired",NA,"1. Map a Opportunity with a contact
+2. Expire the integration
+3. Have a zoom meeting with the contact
+4. Check the call report","1. User should be able to map a Opportunity with a contact
+2. User should be able to expire the integration
+3. User should be able to have a zoom meeting with the contact
+4. When either of the integration is expired [Zoom / MS Dynamics ] the call report should not be pushed",When either of the integration is expired [Zoom / MS Dynamic] the call report is not pushed,
+HeySales Studio> Real call scoring - MS Dynamics,TC0017_Check Reauthenticate UI state when integration is expired (Admin visibility),porsudar@paperflite.com,"Validate that when Zoom or MS Dynamics integration expires, the integration status is shown as Reauthenticate for all Admin users",Manual,Medium,UI,"Hey sales should be enabled
+Integration should be expired",NA,"1. Login as Admin A
+2. Navigate to Integrations 
+3. Verify integration status as Re-Authenticate in Zoom or MS Dynamics
+4.Login as Admin B
+5..Verify integration status as Re-Authenticate in Zoom or MS Dynamics
+
+","1. Admin A should be logged in
+2. Admin should be navigated to Integration
+3.Reauthenticate CTA should be visible
+4. Admin B shoud be logged in
+5. Status should be consistent across all admins",Reauthenticate state is visible for all admins,
+HeySales Studio> Real call scoring - MS Dynamics,TC0018_Check successful reauthentication and report generation,porsudar@paperflite.com,"Validate that on clicking Reauthenticate, the integration is authenticated successfully and call reports are generated after taking a call",Manual,High,Functional,"HeySales  should be enabled
+Zoom and/or MS Dynamics integration in Reauthenticate state",NA,"1. Login as Admin
+2. Navigate to Integrations
+3. Click Reauthenticate for the expired integration
+4. Complete authentication successfully
+5. Verify integration status is Active
+6. Map an active opportunity with a contact
+7. Take a Zoom call with the mapped contact
+8. Check MS Dynamics for reports ","1.Admin should be logged in 
+2.Admin should be navigated to Integration 
+3.Admin should click Reauthenticate
+4.Authentication should successfully completed
+5.Integration should be active
+6.Opportunity should be active along with contact mapped
+7.Zoom call should be taken with the mapped contact
+8.Reports should be pushed to activity and timelines in MS Dynamics",Report generated successfully after reauthentication,
+HeySales Studio> Real call scoring - MS Dynamics,TC0019_ Check the call duration for reports processing,porsudar@paperflite.com,Validate If the call is less 2 mins the report should be generated,Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active Opportunity mapped in MS Dynamics",NA,"1. Map a Opportunity with a contact
+2. Have a zoom meeting with the contact and end it witnin 2 mins
+3. Check the call report","1. User should be able to map a Opportunity with a contact
+2. User should be able to have a zoom meeting with the contact
+3. If the call is less 2 mins the report should be generated",If the call is less 2 mins the report is generated,
+HeySales Studio> Real call scoring - MS Dynamics,TC0020_ Check multiple note to same contact,porsudar@paperflite.com,Valdiate for every call a new report should be pushed as notes to the Opportunity,,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active Opportunity mapped in MS Dynamics",NA,"1. Map a Opportunity with a contact
+2. Have a zoom meeting with the contact
+3. Check the call report
+4. Have another Zoom meeting with the contact
+5.  Check the call report","1. User should be able to map a Opportunity with a contact
+2. User should be able to have a zoom meeting with the contact
+3. Call Report should be sent as report to the Opportunity
+4. User should be able to have an another zoom meeting with the contact
+5. For every call a new report should be pushed as reports",For every call a new report is pushed as reports to the Opportunity,
+HeySales Studio> Real call scoring - MS Dynamics,TC0021_Check multiple contacts to one opportunity – report pushed only once,porsudar@paperflite.com,"Validate that when multiple contacts are associated with a single opportunity, only one call report is pushed to Activity and Timeline",Manual,High,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in open state
+",NA,"1. Open active opportunity in MS Dynamics
+2. Verify multiple contacts are mapped to the opportunity
+3. Schedule a Zoom meeting
+4. Invite all mapped contacts
+5. Complete the Zoom call
+6. Check Activity and Timeline in MS Dynamics","1.Active Oppourtunity should exist in the MS Dynamics
+2.Multiple contacts should be mapped to the same Opporutunity
+3.Zoom meeting should be created with all of the contacts
+4.All the mapped contact should be invited
+5.Zoom call should be completed
+6.Reports should be pushed to Activity and Timelines in MS Dynamics only one time","Multiple contacts are associated with a single opportunity, only one call report is pushed to Activity and Timeline",
+HeySales Studio> Real call scoring - MS Dynamics,TC0022_Check Zoom access token auto-refresh after 1 hour,porsudar@paperflite.com,Validate that Zoom access token is refreshed automatically after 1 hour and integration does not expire,Manual,High,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in open state
+",NA,"1. Login as Admin
+2. Integrate Zoom successfully
+3. Note access token creation time
+4. Wait for access token to reach 1 hour expiry
+5. Trigger any Zoom API action (take a Zoom call / fetch meeting details)
+6.Check report generation in the MS Dynamics","1.Admin should be logged in
+2.Zoom should be successfult integrated
+3.Admin should note the access token creation time 
+4.Admin should wait for 1 hour 
+5.Zoom call should be taken
+6.Report should be generated successfully",Zoom access token is refreshed automatically after 1 hour and integration does not expire and reports are generated successfully,
+HeySales Studio> Real call scoring - MS Dynamics,TC0023_Check report generation after deactivating integration,porsudar@paperflite.com,"Validate that when Zoom or MS Dynamics integration is deactivated, call reports are not generated in MS Dynamics",Manual,High,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in open state
+",NA,"1. Login as Admin
+2. Navigate to Integrations / Manage Tech Stack
+3. Deactivate Zoom or MS Dynamics integration
+4. Verify integration status is Inactive
+5. Take a Zoom call with mapped contact
+6. Check MS Dynamics","1.Admin should be logged in 
+2.Admin should navigate to the Integrations
+3.User should deactivate Zoom or MS Dynamics
+4.Integration status should be Inactive
+5.Zoom call  should be taken with mapped contact
+6.Report should not be pushed to MS Dynamic",Call scoring is not triggered,
+HeySales Studio> Real call scoring - MS Dynamics,TC0024_Check report generation after reactivating integration,porsudar@paperflite.com,"Validate that after reactivating Zoom or MS Dynamics integration, call reports are generated successfully",Manual,High,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in open state
+",NA,"1. Login as Admin
+2. Navigate to Integrations / Manage Tech Stack
+3. Activate Zoom and MS Dynamics integration
+4. Verify integration status is Active
+5. Map active opportunity with contact
+6. Take a Zoom call
+7. Check MS Dynamics","1.Admin should be logged in 
+2.Admin should navigate to the Integrations
+3.User should activate Zoom or MS Dynamics
+4.Integration status should be active
+5.Zoom call  should be taken with mapped contact
+6.Report should be pushed to MS Dynamic",Call scoring is triggered,
+HeySales Studio> Real call scoring - MS Dynamics,TC0025_Check account-level Zoom integration using different Zoom users,porsudar@paperflite.com,"Validate that Zoom integration is account-level, and calls taken by a different Zoom user still generate reports in MS Dynamics",Manual,High,Functional,"HeySales should be enabled
+MS Dynamic and Zoom should be integrated
+An opportunity exists in open state
+",NA,"1. Login as Admin
+2. Integrate Zoom using priya@paperflite.com
+ account
+3. Verify Zoom integration status is Active
+4. Map an active opportunity with a contact in MS Dynamics
+5. Schedule and complete a Zoom call using anton@paperflite.com
+6. Check MS Dynamics","1. Admin should be logged in successfully
+2.Zoom should be integrated successfully using priya@paperflite.com
+3. Zoom integration should be available at account level
+4.Active Opportunity should be mapped to contact in MS Dynamics
+5. User anton@paperflite.com should be able to take Zoom call
+6. Call report should be pushed to MS Dynamics activity and timeline",Report generated successfully,
+HeySales Studio> Real call scoring - MS Dynamics,TC0026_Check report generation to both MS Dynamics and HubSpot for same contact,porsudar@paperflite.com,"Validate that when MS Dynamics, HubSpot, and Zoom are integrated, call reports are successfully pushed to both CRMs for the same contact mapped to an active deal",Manual,High,Functional,"HeySales should be enabled
+MS Dynamic , hubspot and Zoom should be integrated
+",NA,"1. Login as Admin
+2. Integrate MS Dynamics successfully
+3. Integrate HubSpot successfully
+4. Integrate Zoom successfully
+5. Verify contact xyz@mail.com
+ exists in both CRMs
+6. Map contact to an active deal/opportunity in both CRMs
+7. Schedule and complete a Zoom call with the contact
+8. Check MS Dynamics activity and timeline
+9. Check HubSpot deal","1.Admin user should be logged in successfully
+2.MS Dynamics should be integrated successfully and status should be Active
+3.HubSpot should be integrated successfully and status should be Active
+4.Zoom should be integrated successfully and status should be Active
+5.Contact xyz@mail.com should be present in MS Dynamics and Hubspot
+6.Contact should be successfully mapped to an active opportunity and open deal in hubspot
+7.Zoom meeting should be completed successfully with the contact
+8.Call scoring should be triggered and report should be pushed to MS Dynamics Activity and Timeline
+9.Call report should be pushed to HubSpot deal - notes",Reports pushed successfully to both CRMs,

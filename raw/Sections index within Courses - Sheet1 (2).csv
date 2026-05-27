@@ -1,0 +1,334 @@
+Sprint Name,Test Case Title,Module,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result
+HeySales ManageCourses> Sections index within Courses,TC0001_Check creating a course,Manage Course,arjun@paperflite.com,Validate Admins / Content publishers should be able to create a course,Manual,Medium,Functional,"1. Log in to account
+2. Navigate to hey sales
+3. Click on Manage course
+4. Click on create a new course",NA,"1. Log in as Admin or Content publisher
+2. Navigate to Manage course
+3. Click on create new course","1. Admins / Content publishers should be able to login successfully
+2. The system should allow navigation to “Manage Courses” and display the list of available learnings, and a create new course button should be displayed
+3. Clicking on create new course button should create a new empty course",Admins / Content publishers are able to create a course
+HeySales ManageCourses> Sections index within Courses,TC0002_Check the course structure of an empty course [Newly created],Manage Course,arjun@paperflite.com,Validate In course structure along with add lesson and add assessment buttons add new section buttom in primary color should be displayed,Manual,Medium,Functional,"1. Navigate to hey sales
+2. Click on Manage course
+3. Click on create a new course
+4. Click on ""create course structure""",NA,"1. Click on ""Create course structure"" in the empty course
+2. Navigate to settings, Viewer settings
+3. Change the primary color of the account
+4. Navigate back to the empty course","1. In course structure along with add lesson and add assessment button, add new section button in primary color should be displayed
+2. User should be able to navigat to settings, viewer settings
+3. User should be able to change the primary color successfully
+4. The Add lesson, add assessment, and add sections should reflect in the new primary color",In course structure along with add lesson and add assessment CTA's add new section CTA in primary color is displayed
+HeySales ManageCourses> Sections index within Courses,TC0003_Check creating a section in course,Manage Course,arjun@paperflite.com,Validate Clicking on add new section should create a section with name as Untitled section and series number to it,Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Click on add a new section
+2. Hover under the created section
+3. Click on Add section button","1. Clicking on add new section should create a section with name as Untitled section and series number to it
+2. Hovering under the created section should display add section icon
+3. Clicking on add section should create a section with name as Untitled section and series number to it",Clicking on add new section creates a section with name as Untitled section and series number to it
+HeySales ManageCourses> Sections index within Courses,TC0004_Check naming the section,Manage Course,arjun@paperflite.com,Validate User should be able to add any alpha numeric and spl chars in the section naming field,Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,1. Name the section,1. User should be able to add any alpha numeric and spl chars in the section naming field,User is able to add any alpha numeric and spl chars in the section naming field
+HeySales ManageCourses> Sections index within Courses,TC0005_Check adding a long name in section naming field,Manage Course,arjun@paperflite.com,"Validate When user adds a long name in section naming field, the system should truncate the name and onhover tool tip should be displayed",Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Name the section 
+2. Add a long name in the naming field","1. User should be able to add any alpha numeric and spl chars in the section naming field 
+2. When user adds a long name in section naming field, the system should truncate the name and onhover tool tip should be displayed","When user adds a long name in section naming field, the system truncates the name and onhover tool tip is displayed"
+HeySales ManageCourses> Sections index within Courses,TC0006_Check the description field of the section,Manage Course,arjun@paperflite.com,Validate User should be able to add any alpha numeric and spl chars in the section description field,Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,1. Add any description,1. User should be able to add any alpha numeric and spl chars in the section description field,User is able to add any alpha numeric and spl chars in the section description field
+HeySales ManageCourses> Sections index within Courses,TC0007_Check the character limit of the description field ,Manage Course,arjun@paperflite.com,"Validate System should enforce a character limit for the description filed, and user should be able to scroll within the description field",Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Add any description
+2. Add a long description. eg:1000 characters","1. User should be able to add any alpha numeric and spl chars in the section description field
+2.System should enforce a character limit for the description filed, and user should be able to scroll within the description field","System enforces a character limit for the description filed, and user is able to scroll within the description field"
+HeySales ManageCourses> Sections index within Courses,TC0008_Check renaming the section,Manage Course,arjun@paperflite.com,"Validate Clicking on the section name, cursor should be displayed and user should be able to rename the section",Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Name the section
+2. Rename the section","1.User should be able to add any alpha numeric and spl chars in the section naming field
+2.Clicking on the section name, cursor should be displayed and user should be able to rename the section","Clicking on the section name, cursor is displayed and user is able to rename the section"
+HeySales ManageCourses> Sections index within Courses,TC0009_Check the UI after the section is added,Manage Course,arjun@paperflite.com,"Validate After adding a section only Add lesson and Add assessment button with placeholder images ""nothing added yet!"" should be displayed, add new section should not be displayed",Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Click on Add a section
+2. Add a section and check the asset viewer screen","1. User should be able to add a new section successfully
+2.After adding a section only Add lesson and Add assessment CTA with placeholder images should be displayed, add new section should not be displayed","After adding a section only Add lesson and Add assessment CTA with placeholder images is displayed, add new section is not displayed"
+HeySales ManageCourses> Sections index within Courses,TC0010_Check adding lessons or assessments in a section,Manage Course,arjun@paperflite.com,Validate User should be able to add any number of assessment and lessons in a section and the scroll within the section should work as expected,Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Click on Add a section
+2. Add lessons and assessments to a section","1. User should be able to add a new section successfully
+2. User should be able to add any number of assessment and lessons in a section and the scroll within the section should work as expected",User is able to add any number of assessment and lessons in a section and the scroll within the section works as expected
+HeySales ManageCourses> Sections index within Courses,TC0011_Check adding a new section under the existing section,Manage Course,arjun@paperflite.com,"Validate Hovering on the bottom of any section, Add section with a icon in primary color should be displayed and clicking on it should create a new section with untitled section as name and respective order number",Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Click on create a new section
+2. Hover under the created section
+3. Click on Add section button","1. User should be able to add a new section successfully
+2. Hovering on the bottom of any section, Add section with a icon in primary color should be displayed
+3. Clicking on it should create a new section with untitled section as name and respective order number","Hovering on the bottom of any section, Add section with a icon in primary color is displayed and clicking on it creates a new section with untitled section as name and respective order number"
+HeySales ManageCourses> Sections index within Courses,TC0012_Check creating multiple sections within course,Manage Course,arjun@paperflite.com,Validate User should be able to create any number sections in a course and the scroll should work as expected,Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Create a new section
+2. Scroll through the sections","1. User should be able to create any number sections in a course
+2. The scroll should work as expected",User is able to create any number sections in a course and the scroll works as expected
+HeySales ManageCourses> Sections index within Courses,TC0013_Check creating a section with no name,Manage Course,arjun@paperflite.com,"Validate user should not be able to create a section with no name, while trying to publish a proper error message should be displayed",Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Create a new section
+2. Remove the default name and try to publish","1. User should be able to create any number sections in a course
+2. While trying to publish a proper error message should be displayed","User is not able to create a section with no name, while trying to publish a proper error message is displayed"
+HeySales ManageCourses> Sections index within Courses,TC0014_Check creating a section from the CTA available next to Course structure heading,Manage Course,arjun@paperflite.com,"Validate Next to the course structure header there should be three icons, hovering on them should read sections, lesson and assessment. User should be able to add new section by clicking on the icon",Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Click on add lesson
+2. Click on add assessment
+3. Click on add section","1. Add asset slider should be displayed and user should be able to add lessons outside the sections
+2. Assessments should be added outside the section
+3. User should be able to add sections outside an other section","Next to the course structure there are three icons, hovering on them reads as sections, lesson and assessment. User is able to add new section by clicking on the section icon"
+HeySales ManageCourses> Sections index within Courses,TC0015_Check the Add new CTA inside a section,Manage Course,arjun@paperflite.com,"Validate On hovering the Add new button inside a section, Lessons or Assessment should be displayed and user should be able to add any number of lessons and assessments within the section",Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Create a new section 
+2.Hover on add new CTA inside a section
+3. Click on add lesson or assessment","1. User should be able to create any number sections in a course
+2. On hovering the Add new CTA Lessons or Assessment should be displayed 
+3. User should be able to add any number of lessons and assessments within the section",On hovering the Add new CTA Lessons or Assessment  is displayed and user is able to add any number of lessons and assessments within the section
+HeySales ManageCourses> Sections index within Courses,TC0016_Check adding lesson and assessment outside the section,Manage Course,arjun@paperflite.com,"Validate Clicking on Lesson or Assessment icons next to the ""course structure"" header should add respective lesson or assessment outside the section",Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add new section""",NA,"1. Click on add lesson button next to course structure
+2. Click on add assessment button next to course structure","1. Clicking on add Lesson icons next to the ""course structure"" header should add respective lesson outside the section
+2. Clicking on add Assessment icons next to the ""course structure"" header should add respective assessment outside the section","Clicking on Lesson or Assessment icons next to the ""course structure"" header adds respective lesson or assessment outside the section"
+HeySales ManageCourses> Sections index within Courses,TC0017_Check drag and drop lesson and assessment [rearranging] within sections,Manage Course,arjun@paperflite.com,Valdiate User should be able to drag and drop lessons and assessments within sections without any UI glitch or errors,Manual,Medium,Functional,"1. Click on ""add new section""
+2. Add lessons
+3. Add Assessments
+4. Rearrange the order within section",NA,1.Rearrange the content within the section,1. User should be able to drag and drop lessons and assessments within sections without any UI glitch or errors,User is able to drag and drop lessons and assessments within sections without any UI glitch or errors
+HeySales ManageCourses> Sections index within Courses,TC0018_Check drag and drop lesson and assessment [rearranging] across sections,Manage Course,arjun@paperflite.com,Valdiate User should be able to drag and drop lessons and assessments across sections without any UI glitch or errors,Manual,Medium,Functional,"1. Click on ""add new section""
+2. Add lessons
+3. Add Assessments
+4. Rearrange the order across section",NA,1. Rearrange the content across the section,1. User should be able to drag and drop lessons and assessments across sections without any UI glitch or errors,User is able to drag and drop lessons and assessments across sections without any UI glitch or errors
+HeySales ManageCourses> Sections index within Courses,TC0019_Check rearranging entire sections ,Manage Course,arjun@paperflite.com,"Validate On the first section next to the name a down arrow should be displayed and in the last section a up arrow should be displayed and for the all the sections in between both up and down arrow should be displayed, user should be able to click on the arrows and rearrange the sections in steps",Manual,Medium,Functional,"1. Click on ""add new section""
+2. Click on down icon
+3. Click Up icon",NA,"1.Create multiple section 
+2. Check the arrow in section 
+3. Click on the arrow","1. User should be able to create multiple section successfully
+2. On the first section next to the name a down arrow should be highlighted and in the last section a up arrow should be highlighted and for the all the sections in between both up and down arrows should be highlighted, 
+3. User should be able to click on the arrows and rearrange the sections in steps","On the first section next to the name a down arrow is displayed and in the last section a up arrow is displayed and for the all the sections in between both up and down arrows are displayed, user is able to click on the arrows and rearrange the sections in steps"
+HeySales ManageCourses> Sections index within Courses,TC0020_Check drag and drop lesson and assessment [rearranging] from a section to outside the section [Course structure screen],Manage Course,arjun@paperflite.com,Valdiate User should be able to drag and drop lessons and assessments from a sections to the course structure page without any UI glitch or errors,Manual,Medium,Functional,"1. Click on ""add new section""
+2. Add lessons
+3. Add Assessments
+4. Rearrange the order from section",NA,1. Rearrange a conent from section to course content,1. User should be able to drag and drop lessons and assessments from a sections to the course structure page without any UI glitch or errors,User is able to drag and drop lessons and assessments from a sections to the course structure page without any UI glitch or errors
+HeySales ManageCourses> Sections index within Courses,TC0021_Check deleting a section with content,Manage Course,arjun@paperflite.com,"Validate When user tries to delete a section with content a confirmation slider should be displayed with help text as ""deleting the section will also delete lessons with it - consider relocating them using drag/drop feature into the course if you want to keep them""",Manual,Medium,Functional,"1. Click on ""add new section""
+2. Add lessons
+3. Add Assessments
+4. Delete the section",NA,"1. Create a new section
+2. Add lesson
+3.Delete a section with content","1. User should be able to create a section
+2. User should be able to add lessons to the section
+3. When user tries to delete a section with content a confirmation slider should be displayed with help text as ""deleting the section will also delete lessons with it - consider relocating them using drag/drop feature into the course if you want to keep them""","When user tries to delete a section with content a confirmation slider is displayed with help text as ""deleting the section will also delete lessons with it - consider relocating them using drag/drop feature into the course if you want to keep them"""
+HeySales ManageCourses> Sections index within Courses,TC0022_Check deleting an empty section,Manage Course,arjun@paperflite.com,Validate User should be able to delete an empty section without any confirmation slider,Manual,Medium,Functional,"1. Click on ""add new section""
+2. Delete the section",NA,"1. Create a new section
+2. Delete a section without content","1. User should be able to create a new section successfully
+2. User should be able to delete an empty section without any confirmation slider",User is able to delete an empty section without any confirmation slider
+HeySales ManageCourses> Sections index within Courses,TC0023_Check the sections state change to empty,Manage Course,arjun@paperflite.com,"Validate If the user drag and drops all the content within the section or deletes all the content within the section, the section should be considered as empty and user should not be able to publish the course with an empty section",Manual,Medium,Functional,"1. Click on ""add new section""
+2. Drag and Drop lessons
+3. Delete the assessments",NA,"1. Create a new section
+2. Add lesson or assessment
+3. Delete all the content from a section
+4. Drag and drop all the content from a section","1. User should be able to create a section
+2. User should be able to add content to the section
+3. If user deletes all the content within the section, the section should be considered as empty and user should not be able to publish the course with an empty section
+4. If the user drag and drops out all the content within the section, the section should be considered as empty and user should not be able to publish the course with an empty section","If the user drag and drops all the content within the section or deletes all the content within the section, the section is considered as empty and user is not able to publish the course with an empty section"
+HeySales ManageCourses> Sections index within Courses,TC0024_Check the sections state change from empty,Manage Course,arjun@paperflite.com,"Validate If the user drag and drops any content into the section or add any content, the empty error message of the section should be removed",Manual,Medium,Functional,"1. Click on ""add new section""
+2. Drag and Drop lessons
+3. Add the assessments",NA,"1. Create a new section
+2. Add or drag and drop content to a section","1. User should be able to create a section
+2. If the user drag and drops any content into the section or add any content, the empty error message of the section should be removed","If the user drag and drops any content into the section or add any content, the empty error message of the section is removed"
+HeySales ManageCourses> Sections index within Courses,TC0025_Check discard changes reflects on Sections,Manage Course,arjun@paperflite.com,"Validate When user clears all the error they should be able to publish the course, after publishing doing any changes to sections and clicking on discard changes should make the course to fall back to the last published version",Manual,Medium,Functional,"1. Publish a course
+2. Rename a section
+3. Add lesson to a section
+4. Click on discard changes",NA,"1. Create a course
+2. Create a section
+3. Add content
+4. Publish the course
+5. Make any edit to the section
+6. Click on discard changes","1. User should be able to create a course
+2. User should be able to add a section
+3. User should be able to add content into the section
+4. When user clears all the error they should be able to publish the course
+5. After publishing user should be able to do any changes to sections
+6. Clicking on discard changes should make the course to fall back to the last published version","When user clears all the error they are able to publish the course, after publishing doing any changes to sections and clicking on discard changes makes the course to fall back to the last published version"
+HeySales ManageCourses> Sections index within Courses,TC0026_Check publishg a course with empty section,Manage Course,arjun@paperflite.com,Validate User should not be able to publish a course with empty sections an error message should be displayed,Manual,Medium,Functional,"1. Click on ""add new section""
+2. Publish the course",NA,"1. Create an empty section
+2. Publish a course with empty sections","1. User should be able to create an empty section
+2. User should not be able to publish a course with empty sections an error message should be displayed",User is not able to publish a course with empty sections an error message is displayed
+HeySales ManageCourses> Sections index within Courses,TC0027_Check the mandate fields of the section,Manage Course,arjun@paperflite.com,Validate Both name and description field of the section should be optional,Manual,Medium,Functional,"1. Click on ""add new section""",NA,"1. Create a new section
+2. Don't make any edit to name and description field","1. User should be able to create a section
+2. Both name and description field of the section should be optional",Both name and description field of the section is optional
+HeySales ManageCourses> Sections index within Courses,TC0028_Check creating a course without any sections,Manage Course,arjun@paperflite.com,Validate User should be able to create courses without any sections [Only lessons and assessments],Manual,Medium,Functional,"1. Click on Manage course
+2. Click on create a new course
+3. Click on ""create course structure""
+4. Click on ""add lesson""
+5. Click on ""add assessment""",NA,"1. Create a course
+2. Add lessons
+3. Add assessments
+4. Publish the course","1. User should be able to create a course
+2. User should be able to add lessons
+3. User should be able to add assesmments
+4. User should be able to publish courses without any sections [Only lessons and assessments]",User are able to create courses without any sections [Only lessons and assessments]
+HeySales ManageCourses> Sections index within Courses,TC0029_Check creating a course with sections [No lesson or assessment in the course structure],Manage Course,arjun@paperflite.com,Validate User should be able to create courses with only sections [Lessons and assessments inside section],Manual,Medium,Functional,"1. Click on create a new course
+2. Click on ""create course structure""
+3. Click on ""add section""
+4. Click on ""add assessment or lesson""",NA,"1. Create a course
+2. Create a section
+3. Add content
+4. Publish the course","1. User should be able to create a course
+2. User should be able to add a section
+3. User should be able to add content into the section
+4. User should be able to publish courses with only sections [Lessons and assessments inside section]",User is able to create courses with only sections [Lessons and assessments inside section]
+HeySales ManageCourses> Sections index within Courses,TC0030_Check creating a course with sections and contents in course structure,Manage Course,arjun@paperflite.com,Validate User should be able to create courses with both sections and contents in course structure [Lessons and assessments inside section and outside sections],Manual,Medium,Functional,"1. Click on create a new course
+2. Click on ""create course structure""
+3. Click on ""add section""
+4. Click on ""add assessment or lesson""",NA,"1. Create a course
+2. Create a section
+3. Add content
+4. Add lessons and assessments out side the sections
+5. Publish the course","1. User should be able to create a course
+2. User should be able to add a section
+3. User should be able to add content into the section
+4. User should be able to add content outside the section
+5. User should be able to publish courses with both sections and contents in course structure [Lessons and assessments inside section and outside sections]",User is able to create courses with both sections and contents in course structure [Lessons and assessments inside section and outside sections]
+HeySales ManageCourses> Sections index within Courses,TC0031_Check the learner view of the course,Manage Course,arjun@paperflite.com,"Validate For learners the course sturcture should display all the lessons, assessments, and sections as per the creator ordered",Manual,Medium,Functional,"1. Click on create a new course
+2. Click on ""add section""
+3. Click on ""add assessment or lesson""
+4. Assign a learner
+5. Log in as learner, view the course",NA,"1. Create a course
+2. Create a section
+3. Add content
+4. Assign the course to a learner
+5. Log in as a learner
+6. View the course as a learner","1. User should be able to create a course
+2. User should be able to add a section
+3. User should be able to add content into the section
+4. User should be able assign the course to a learner
+5. User should be able to log in as learner
+6. For learners the course sturcture should display all the lessons, assessments, and sections as per the creator ordered","For learners the course sturcture displays all the lessons, assessments, and sections as per the creator ordered"
+HeySales ManageCourses> Sections index within Courses,TC0032_Check the sections UI in learner view,Manage Course,arjun@paperflite.com,"Valdiate In Learner view, the sections should Expand and collapse with respective icons, all the lessons and assetsments within the section should display and scroll should work as expected with the section",Manual,Medium,Functional,"1. Click on create a new course
+2. Click on ""add section""
+3. Click on ""add assessment or lesson""
+4. Assign a learner
+5. Log in as learner, view the course",NA,"1. Click on the down arrow in the section
+2. Click on the up arrow in the section","1. In Learner view, clicking on the down arrow should in the section sections should Expand, all the lessons and assetsments within the section should display and scroll should work as expected with the section
+2. In Learner view, clicking on the Up arrow should in the section sections should Expand, all the lessons and assetsments within the section should display and scroll should work as expected with the section","In Learner view, the sections are Expand and collapse with respective icons, all the lessons and assetsments within the section is display and scroll works as expected with the section"
+HeySales ManageCourses> Sections index within Courses,TC0033_Check the data displayed in the section for learner,Manage Course,arjun@paperflite.com,"Validate The section name, description, no of lessons, and no of assessments should be displayed",Manual,Medium,Functional,"1. Click on create a new course
+2. Click on ""add section""
+3. Click on ""add assessment or lesson""
+4. Assign a learner
+5. Log in as learner, view the course",NA,"1. Log in as a learner
+2. View the course as a learner
+3. Check the sections as learner","1. User should be able to log in as learner
+2. For learners the course sturcture should display all the lessons, assessments, and sections as per the creator ordered
+3.The section name, description, no of lessons, and no of assessments should be displayed","The section name, description, no of lessons, and no of assessments are displayed"
+HeySales ManageCourses> Sections index within Courses,TC0034_Check the count of lesson and assessment displayed next to section name in learner view,Manage Course,arjun@paperflite.com,Validate The total number content count with respect to no of content completed should be displayed [eg: 2/5],Manual,Medium,Functional,"1. Click on create a new course
+2. Click on ""add section""
+3. Click on ""add assessment or lesson""
+4. Assign a learner
+5. Log in as learner, view the course",NA,"1. Log in as a learner
+2. View a lesson
+3. Complete a asseaament","1. User should be able to log in as learner
+2. The total number content count with respect to no of content completed should be displayed [eg: 2/5]
+3. The total number content count with respect to no of content completed should be displayed [eg: 2/5]",The total number content count with respect to no of content completed is displayed [eg: 2/5]
+HeySales ManageCourses> Sections index within Courses,TC0035_Check the progress bar for lessons inside the section for learner,Manage Course,arjun@paperflite.com,Validate For a completed content a tick mark (✓) should be displayed and for inprogress content the percentage of completion bar should be displayed,Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Complete an assessment
+3. View a lesson",NA,"1. Log in as a learner
+2. Complete a lesson or assessment","1. User should be able to log in as learner
+2. For a completed content a tick mark (✓) should be displayed and for inprogress content the percentage of completion bar should be displayed",For a completed content a tick mark (✓) is displayed and for inprogress content the percentage of completion bar is displayed
+HeySales ManageCourses> Sections index within Courses,TC0036_Check the scroll function in learner view,Manage Course,arjun@paperflite.com,"Validate In learner view scroll should work as expected in Course structure, within sections and description of the sections",Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Complete an assessment
+3. View a lesson",NA,"1. Log in as a learner
+2. As a learner, scroll through the course structure, within sections, and descriptions","1. User should be able to log in as learner
+2. In learner view scroll should work as expected in Course structure, within sections and description of the sections","In learner view scroll works as expected in Course structure, within sections and description of the sections"
+HeySales ManageCourses> Sections index within Courses,TC0037_Check ending a course,Manage Course,arjun@paperflite.com,Valdiate Without viewing all the lessons and completing all the assessments regardless if content are within sections or outside sections user should not be able to end the course,Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Complete an assessment
+3. View a lesson
+4. Click on end course",NA,"1. Log in as a learner
+2. Try to complete a course without completing a lesson or assessment","1. User should be able to log in as learner
+2. Without viewing all the lessons and completing all the assessments regardless if content are within sections or outside sections user should not be able to end the course",Without viewing all the lessons and completing all the assessments regardless if contents are within sections oroutside sections user is not able to end the course
+HeySales ManageCourses> Sections index within Courses,TC0038_Check the navigation when learner clicks on the section,Manage Course,arjun@paperflite.com,"Validate When the learner clicks on any section, they should be navigated to the first content of the section",Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Click on any section",NA,"1. Log in as a learner
+2. Click on any section name
+","1. User should be able to log in as learner
+2. When the learner clicks on any section, they should be navigated to the first content of the section","When the learner clicks on any section, they are navigated to the first content of the section"
+HeySales ManageCourses> Sections index within Courses,TC0039_Check the score calculation ,Manage Course,arjun@paperflite.com,Validate the existing score calculation logic should be followed for the courses with or without sections,Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Click on any section
+3. End the course",NA,"1. View all the lessons
+2. Finish all the assessment
+3. End the course","1. User should be able to view all the lessons
+2. User should be able to finish all the assessment
+3. The existing score calculation logic should be followed for the courses with or without sections",The existing score calculation logic is followed for the courses with or without sections
+HeySales ManageCourses> Sections index within Courses,TC0040_Check the sections in mobile app,Manage Course,arjun@paperflite.com,Validate The sections should not be displayed in mobile hey sales app,Manual,Medium,Functional,"1. Log in as learner, view the course in mobile app",NA,"1. Log in to mobile app
+2. View a course in mobile heysales app","1. User should be able to login to mobile app
+2. The sections should not be displayed in mobile hey sales app",The sections are not displayed in mobile hey sales app
+HeySales ManageCourses> Sections index within Courses,TC0041_Check the sections in Demo URL,Manage Course,arjun@paperflite.com,Validate The sections should be displayed in demo URL,Manual,Medium,Functional,"1. Log in as learner, view the course in Demo URL",NA,"1. Log in as a learmer
+2. View the course
+3. Generate a Demo URL
+4.View a course in Demo URL","1. User should be able to login as learner
+2. User should be able to view a course
+3. User should be able to generate Demo URL
+4. The sections should be displayed in demo URL",The sections are displayed in demo URL
+HeySales ManageCourses> Sections index within Courses,TC0042_Check the progress bar is available for learners,Manage Course,arjun@paperflite.com,"Validate In learner view, under Course Structure heading the progress bar should be displayed",Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Complete an assessment
+3. View a lesson",NA,"1. Log in as a learmer
+2. Open any assigned course","1. User should be able to login as learner
+2. In learner view, under Course Structure heading the progress bar should be displayed","In learner view, under Course Structure heading the progress bar is displayed"
+HeySales ManageCourses> Sections index within Courses,TC0043_Check the fill in the progress bar,Manage Course,arjun@paperflite.com,Validate The fill in the progress bar should be based on the number of elements [Lessons and assessments] completed,Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Complete an assessment
+3. View a lesson",NA,"1. Log in as learner, view the course
+2. Open any assigned course
+3. Complete an assessment
+4. View a lesson","1. User should be able to login as learner
+2. User should be able to view a course
+3.Complete an assessmentthe fill in the progress bar should be based on the number of elements [Lessons and assessments] completed
+4. View a lesson fill in the progress bar should be based on the number of elements [Lessons and assessments] completed",The fill in the progress bar is based on the number of elements [Lessons and assessments] completed
+HeySales ManageCourses> Sections index within Courses,TC0044_Check the UI of the fill in the progress bar,Manage Course,arjun@paperflite.com,Validate The fill should in the primary color of the account,Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Complete an assessment
+3. View a lesson",NA,"1. Log in as learner, view the course
+2. Open any assigned course
+3. Complete an assessment
+4. View a lesson
+5. Check the primary color","1. User should be able to login as learner
+2. User should be able to view a course
+3.Complete an assessmentthe fill in the progress bar should be based on the number of elements [Lessons and assessments] completed
+4. View a lesson fill in the progress bar should be based on the number of elements [Lessons and assessments] completed
+5. The fill should in the primary color of the account",The fill is in the primary color of the account
+HeySales ManageCourses> Sections index within Courses,TC0045_Check the completion fraction in progress bar,Manage Course,arjun@paperflite.com,Validate Next to progress bar the the completion fraction should be displayed for a fresh course the the completion fraction should be 0/x [x being number of elements],Manual,Medium,Functional,"1. Log in as learner, view the course",NA,"1. Log in as learner, view the course
+2. Open any assigned course
+3. Check the course","1. User should be able to login as learner
+2. User should be able to view a course
+3. Next to progress bar the the completion fraction should be displayed for a fresh course the the completion fraction should be 0/x [x being number of elements]",Next to progress bar the the completion fraction is displayed for a fresh course the the completion fraction is 0/x [x being number of elements]
+HeySales ManageCourses> Sections index within Courses,TC0046_Check the logic of completion fraction,Manage Course,arjun@paperflite.com,"Validate The denominator should be the total number of lessons/assessments in the course and the numerator will be the number of lessons/assessments in the course that has been completed, as the learner completed an assessment and lesson the numerator should be updated",Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Complete an assessment
+3. View a lesson",NA,"1.Open any assigned course, 
+2.Complete an assessment","1. User should be able to view a course
+2. The denominator should be the total number of lessons/assessments in the course and the numerator should be the number of lessons/assessments in the course that has been completed, as the learner completes an assessment and lesson the numerator should be updated","The denominator is the total number of lessons/assessments in the course and the numerator is the number of lessons/assessments in the course that has been completed, as the learner completes an assessment and lesson the numerator is updated"
+HeySales ManageCourses> Sections index within Courses,TC0047_Check the denominator is updated with respect to lessons and assessment added or deleted,Manage Course,arjun@paperflite.com,Validate When the admin or course creator adds or deletes a lesson or assessment the denominator count and the progress should update respectively,Manual,Medium,Functional,"1. Log in as Admin, edit the course
+2. Delete an assessment
+3. Delete a lesson",NA,"1. Log in as admin
+2. Delete a lesson or assessment","1. User should be able to login as admin
+2. When the admin or course creator adds or deletes a lesson or assessment the denominator count and the progress should update respectively",When the admin or course creator adds or deletes a lesson or assessment the denominator count and the progress updates respectively
+HeySales ManageCourses> Sections index within Courses,TC0048_Check the progress bar is displayed only when the course has more than 1 lesson or assessment,Manage Course,arjun@paperflite.com,Valdiate the progress bar should be displayed only when the course has more than 1 lesson or assessment,Manual,Medium,Functional,"1. Log in as learner, view the course",NA,"1. Log in as learner
+2. Open a course with only one lesson or assessment","1. User should be able to login as learner
+2. The progress bar should be displayed only when the course has more than 1 lesson or assessment",The progress bar is displayed only when the course has more than 1 lesson or assessment
+HeySales ManageCourses> Sections index within Courses,TC0049_Check the progress bar is calculated as expected for all the coursed,Manage Course,arjun@paperflite.com,"Valdiate The progress bar should fill as expected for course with section, without sections and both",Manual,Medium,Functional,"1. Log in as learner, view the course
+2. Complete an assessment
+3. View a lesson",NA,"1.Open any assigned course 
+2. Complete an assessment
+3. View any lesson","1. User should be able to view a course
+2. The progress bar should fill as expected for course with section, without sections and both
+3. The progress bar should fill as expected for course with section, without sections and both","The progress bar fills as expected for course with section, without sections and both"

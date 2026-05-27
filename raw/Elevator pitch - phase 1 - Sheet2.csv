@@ -1,0 +1,209 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Studio> Elevator pitch,TC0001_Check on navigation to Create Simulation screen to view the elevator pitch type,porsudar@paperflite.com,Validate that user can navigate from HeySales to Studio and click on Create Simulation to view Scenario Selection popup,Manual,High,Functional,"1. User must have valid login credentials
+",NA,"1. Login to the application
+2. Click on HeySales
+3. Navigate to Studio module
+4. Click on Create Simulation
+5.Verify on clicking create simulation: In the slider, Next to Discovery call, Cold call, Follow-on call, Elevator pitch type is available 
+","1.User should be logged into the application
+2.User should navigate to heysales module 
+3.User should navigate to studio
+4.Create Simulation should be clicked
+5.On clicking create simulation, Elevator pitch option should be visible next to Discovery call, Cold call,Follow-on call",User is successfully navigated to the Create Simulation screen and can view the Elevator Pitch option.,
+HeySales Studio> Elevator pitch,TC0002_Check on selecting “Elevator Pitch” navigates user to the Elevator Pitch type creation screen,porsudar@paperflite.com,Validate that selecting “Elevator Pitch” navigates user to the Elevator Pitch type creation screen,Manual,HIgh,Functional,1.User must have clicked elevator pitch type ,NA,"1.Verify on clikcing “Elevator Pitch” option from the slider, it navigated to the simulation creation screen
+","1.On clikcking elevator pitch type, it should navigated to the simulation creation screen",Selecting Elevator Pitch correctly opens the Elevator Pitch creation screen.,
+HeySales Studio> Elevator pitch,TC0003Check UI elements of Elevator Pitch type simulation creation screen,porsudar@paperflite.com,Validate UI elements of Elevator Pitch type simulation creation screen,Manual,HIgh,UI,1.user must be on the elevator pitch type landing screen,NA,"Verify following UI is displayed in the Elevator pitch type simulation creation screen:
+1.“Untitled Simulation” title should be visible along with default banner 
+2. Pitch Scenario section should be visible with description text
+3. Warning message should be displayed for mandatory Pitch Scenario
+4. Company and Audience section should be visible with warning message
+5. Format section should display Video and Audio options
+6. Time Bound section should display time slider (30 sec, 1 min, 1 min 30 sec, 2 min)
+7. Skills in Focus section should be visible
+8. All Learners section should be visible
+9. Save and Publish buttons should be visible
+10. Back button should be visible
+11.“Assessment Framework” section should be displayed
+12.Delete button should be visible 
+13.Review Error button should be visible ","The following UI should be displayed in the Elevator pitch type simulation creation screen:
+1.“Untitled Simulation” title should be visible along with default banner
+2. Pitch Scenario section should be visible with description text
+3. Warning message should be displayed for mandatory Pitch Scenario
+4. Company and Audience section should be visible with warning message
+5. Format section should display Video and Audio options
+6. Time Bound section should display time slider (30 sec, 1 min, 1 min 30 sec, 2 min)
+7. Skills in Focus section should be visible
+8. All Learners section should be visible
+9. Save and Publish buttons should be visible
+10. Back button should be visible
+11.“Assessment Framework” section should be displayed
+12.Delete button should be visible 
+13.Review Error button should be visible ","All UI elements (Scenario Description, Audience Description, Duration Slider, Format Selection, Assessment, Skills, Learners, Save/Publish buttons) are displayed as per design.",
+HeySales Studio> Elevator pitch,TC0004_Check user can enter details in Scenario Description textbox,porsudar@paperflite.com,Validate that user is able to enter description text in the Scenario Description textbox under Pitch Scenario section,Manual,High,Functional,1.user must be on the elevator pitch type landing screen,NA,"1. Locate Scenario Description textbox under Pitch Scenario section
+2. Click inside the textbox
+3.Verify on user is able to Enter valid description text about the pitch scenario
+and on entering text warning message is removed
+4.Verify no character limit for Scenario Description textbox","1.User should locate the Scenario description textbox
+2.User should be able to click inside the textbox
+3.Entered text should be displayed correctly in the textbox and on entering text warning message should be removed
+4.No character limit error message should be displayed",User is able to enter text in the Scenario Description textbox without validation issues.,
+HeySales Studio> Elevator pitch,TC0005_Check user can enter details in Audience Description textbox,porsudar@paperflite.com,Validate that user is able to enter description text in the Audience Description textbox under Company and Audience section,Manual,High,Functional,1.user must be on the elevator pitch type landing screen,NA,"1. Locate Audience Description textbox under Company and Audience section
+2. Click inside the textbox
+3. Verify user is able to enter valid description text about the target audience
+4. Verify on entering text warning message is removed","1.User should locate the Audience Description textbox
+2.User should be able to click inside the textbox
+3.Entered text should be displayed correctly in the textbox and on entering text warning message should be removed
+4.No character limit error message should be displayed",User is able to enter text in the Audience Description textbox successfully.,
+HeySales Studio> Elevator pitch,TC0006_Check user can select time using Time Duration slider,porsudar@paperflite.com,"Validate that user is able to select pitch duration using the Time Duration slider (30 seconds, 1 minute, 1 minute 30 seconds, 2 minutes)",Manual,High,Functional,1.user must be on the elevator pitch type landing screen,NA,"1. Locate the Time Duration section under Elevator Pitch configuration screen
+2. Verify available duration options: 30 seconds, 1 minute, 1 minute 30 seconds, 2 minutes
+3. Select each duration option one by one
+4. Verify the selected duration is highlighted/selected properly","1.User should Locate Time Duration 
+2.All four duration options should be visible.
+3.User should be able to select only one duration at a time
+4Selected duration should be highlighted/indicated clearly
+",Time Duration slider allows selection of duration and selected value is displayed correctly.,
+HeySales Studio> Elevator pitch,TC0007_Check Video/Audio selection and default option,porsudar@paperflite.com,Validate that user can select Video or Audio format for the pitch and verify Video is selected by default,Manual,High,Functional,1.user must be on the elevator pitch type landing screen,NA,"1. Navigate to the Format section
+2. Verify Video and Audio toggle options are visible
+3. Verify the default selected option as video
+4. Click on Audio option
+5. Switch back to Video option
+6.Verify one option is active and selected option is highlighted","1.Format section heading should be visible
+2.Video and Audio options should be displayed properly
+3.Video should be selected by default when page loads
+4.User should be able to choose Audio
+5..User should be able to switch between Video and Audio
+6.Only one option should be active at a time and Selected option should be clearly highlighted ",Video/Audio format selection is visible and default option is preselected. User can switch between formats.,
+HeySales Studio> Elevator pitch,TC0008_Check default Assessment Framework is displayed,porsudar@paperflite.com,Validate that the Assessment Framework set as default in Settings is displayed in Elevator Pitch screen,Manual,Medium,Functional,1.user must be on the elevator pitch type landing screen,NA,"1.Scroll to Assessment Framework section
+2.Verify displayed framework name","1.Assessment Framework section should be visible
+2.Default framework set in Settings should be displayed herealong with Framework name, parameters, and sub-parameters count should be visible",Default Assessment Framework is displayed automatically when the screen loads.,
+HeySales Studio> Elevator pitch,TC0009_Check user can change Assessment Framework using Review button,porsudar@paperflite.com,Validate that user can modify/change the Assessment Framework by clicking Review option,Manual,Medium,Functional,1.user must be on the elevator pitch type landing screen,NA,"1.Click on Review button in Assessment Framework section
+2.Select a different framework
+3.Save/Apply changes","1.Review screen should open
+2.User should be able to select a different framework
+3.Selected framework should be updated and displayed in Elevator Pitch screen",Clicking Review allows user to change the Assessment Framework successfully.,
+HeySales Studio> Elevator pitch,TC0010_Check updated default framework in Settings reflects in Elevator Pitch,porsudar@paperflite.com,"Validate that when default Assessment Framework is changed in Settings, the updated framework reflects in Elevator Pitch screen",Manual,Medium,Functional,1.user must be on the elevator pitch type landing screen,NA,"1.Navigate to Settings
+2.Change default Assessment Framework
+3.Save changes
+4.Navigate back to Studio → Elevator Pitch
+5.Verify Assessment Framework section","1.User should be navigated to settings 
+2.User should choose any other assessment framework to default
+3.And user should save the changes
+4.User should navigate back to the same studio
+5.Newly set default framework should be displayed in Elevator Pitch screen
+",Any update made to the default framework in Settings is reflected in newly created Elevator Pitch simulations.,
+HeySales Studio> Elevator pitch,TC0011_Check updated default framework in Settings is not reflected in published simulation (Includes all),porsudar@paperflite.com,"Validate that when default Assessment Framework is changed in Settings, the updated framework is not reflected in published simulations",Manual,Medium,Functioanal,1.user must be on the elevator pitch type landing screen,NA,"1.Navigate to Settings
+2.Change default Assessment Framework
+3.Save changes
+4.Navigate back to Studio → published simulations
+5.Verify Assessment Framework section","1.User should be navigated to settings 
+2.User should choose any other assessment framework to default
+3.And user should save the changes
+4.User should navigate back to the studio and open published simulation
+5.Newly set default framework should not be displayed in any published simulation
+",Updated framework does NOT affect already published simulations; they retain the original configuration.,
+HeySales Studio> Elevator pitch,TC0012_ Check Save Changes slider appears on clicking Back button,porsudar@paperflite.com,Validate that a Save Changes slider/prompt appears when user clicks Back button after making changes without saving,Manual,Medium,Functional,1.user must be on the elevator pitch type landing screen,NA,"1.Do not click Save
+2.Click on Back button","1.User should click back button
+2.Save Changes slider/prompt should appear andUser should be given options Save / Cancel 
+",Clicking Back prompts the Save Changes confirmation slider.,
+HeySales Studio> Elevator pitch,TC0013_ Check details are auto-saved when user clicks cancel without saving,porsudar@paperflite.com,Validate that all entered details are auto-saved when user clicks Back button without explicitly clicking Save,Manual,Medium,Functional,1.user must be on the elevator pitch type landing screen,NA,"1.Click on Back button without clicking Save
+2.In the toast, click cancel 
+3.Verify all the changes made remains same after navigating to same simulation","1.User should be navigated back successfully
+2.In the toast, user should click cancel
+3.All previously entered details should be retained
+","On clicking Cancel, entered details remain auto-saved and are restored when user revisits the screen.",
+HeySales Studio> Elevator pitch,TC0014_ Check user can save simulation after adding Skills and Learner,porsudar@paperflite.com,Validate that user is able to save the Elevator Pitch simulation after adding Skills and Learners,Manual,Medium,Functional,1.user must be on the elevator pitch type landing screen,NA,"1.Add one or more Skills in the Skills in Focus section
+2.Add one or more Learners in the All Learners section
+3.Click on Save button","1.User should add skills
+2.Usr should add leaarners to the simulation
+3.Simulation should be saved successfully on clicking save",User is able to save the simulation after adding mandatory fields like Skills and Learners.,
+HeySales Studio> Elevator pitch,TC0015_ Check Publish button is enabled after saving simulation,porsudar@paperflite.com,Validate that the Publish button becomes enabled after user successfully saves the Elevator Pitch simulation,Manual,Medium,Functional,1.user must be on the elevator pitch type landing screen,NA,"1.Fill all mandatory fields
+2.Click on Save button
+4.Observe the Publish button status
+4.Click publish ","1.USer should enter details in all the rrequired fields
+2.Simulation should be saved successfully
+3.Publish button should become enabled after successful save
+4.On clicking publish, simulation should be published",Publish button becomes enabled only after simulation is saved successfully.,
+HeySales Studio> Elevator pitch,TC0016_ Check Congratulations message is displayed after Publish,porsudar@paperflite.com,Validate that a “Congratulations” message is displayed after successfully publishing the Elevator Pitch simulation,Manual,Medium,Functional,1.user must be on the elevator pitch type landing screen,NA,"1.Click on Publish button
+2.Observe the screen after successful publish","1.Simulation should be published successfully
+2.“Congratulations” message should be displayed
+","After publishing, a Congratulations message is displayed confirming successful creation.",
+HeySales Studio> Elevator pitch,TC0017_ Check UI elements of created Elevator Pitch podcast,porsudar@paperflite.com,"Validate that the created Elevator Pitch podcast displays correct UI elements such as Elevator Pitch pill, duration, creator name, and avatar",Manual,Medium,UI,1.SImulation should be published,NA,"1.Navigate to the same Simulations after publishing
+2.Verify the displayed UI elements","1.User should be successfully navigated to the same simulation
+2.Following UI should be displayed 
+“Elevator Pitch” pill/tag,Duration y (e.g., 30 sec, 1 min, etc.), Creator name and Creator avatar/profile image should be displayed
+",Created Elevator Pitch podcast/simulation UI loads correctly with all configured details.,
+HeySales Studio> Elevator pitch,"TC0018_ Check Completion Rate, Avg Score and Avg Time Spent cards are displayed",porsudar@paperflite.com,"Validate that Completion Rate, Average Score, and Average Time Spent metric cards are displayed on the right side of the created Elevator Pitch simulation",Manual,Medium,UI,1.SImulation should be published,NA,"1.Navigate to the created Elevator Pitch simulation details page
+2.Verify the presence of analytics metric cards in the Right side","1.User should navigate to the Created Simulation
+2.All cards should be properly aligned and visible - Completion Rate ,Average Score card and Average Time Spent card
+","Analytics cards — Completion Rate, Avg Score, and Avg Time Spent — are displayed.",
+HeySales Studio> Elevator pitch,TC0019_ Check Elevator Pitch pill and duration are displayed in Studio sections for created simulation,porsudar@paperflite.com,"Validate that Elevator Pitch simulations display the Elevator Pitch pill,avatar and selected duration in all three Studio sections",Manual,Medium,UI,1.SImulation should be published,NA,"1.Navigate to Studio page
+2.Check all three sections in Studio (e.g., Draft, Published, etc.)
+3.Locate the Elevator Pitch simulation card in each section
+4.Verify UI elements on the card","1.User shoud navigate to the studio
+2.User should check on the all the three sections
+3.Locate the Elevator picth simulation card in each section
+4.Verify “Elevator Pitch” pill/tag, Selected duration (e.g., 30 sec, 1 min, 1 min 30 sec, 2 min) and avartar in the card is displayed in the card
+",Elevator Pitch pill and selected duration appear correctly in the Studio section.,
+HeySales Studio> Elevator pitch,TC0020_ Check Elevator Pitch pill and duration are displayed in Manage Course for created simulation,porsudar@paperflite.com,Validate that Elevator Pitch simulations show the Elevator Pitch pill and selected duration in the Manage Course section,Manual,Medium,UI,1.SImulation should be published,NA,"1.Navigate to Manage Course section
+2.Locate the published Elevator Pitch simulation
+3.Verify the UI elements displayed for the simulation","1.User shoud navigate to the manage course
+2.User should locate the published simulation
+3.Locate the Elevator picth simulation card in each section
+4.Verify “Elevator Pitch” pill/tag, Selected duration (e.g., 30 sec, 1 min, 1 min 30 sec, 2 min) and avartar in the card is displayed in the card
+",Elevator Pitch pill and duration are displayed correctly in Manage Course.,
+HeySales Studio> Elevator pitch,TC0021_ Check changes are discarded on clicking Discard Changes,porsudar@paperflite.com,Validate that all unsaved changes are removed when user clicks on Discard Changes option from the Save Changes slider/prompt,Manual,Medium,Functional,1.user must be on the elevator pitch type landing screen,NA,"1.Modify any field (e.g., Scenario Description, Audience Description, Time, Format)
+2.Click on Back button
+3.When Save Changes slider appears, click on Discard Changes
+4.Navigate back to the same simulation
+5.Observe changes made should be removed
+6.Make any changes 
+7.Click discard changes button
+","1.User should make any changes in the fields
+2.User should click back button
+3.USer should click discard in the Save changes slider 
+4.User should be navigated back to the screen
+5.All unsaved changes should be removed
+6.Make any changes 
+7.On clicking discard button , All the changes should be removed",Clicking Discard Changes removes all unsaved edits and reverts to last saved state.,
+HeySales Studio> Elevator pitch,TC0022_ Check entire simulation is deleted on clicking Delete,porsudar@paperflite.com,Validate that the entire Elevator Pitch simulation is permanently deleted when user clicks on Delete option,Manual,Medium,Functional,1.SImulation should be in draft version/published,NA,"1.Navigate to Studio page
+2.Locate an existing Elevator Pitch simulation
+3.Click on Delete option
+4.Click Confirm in confirmation slider
+","1.User should navigate to the studio 
+2.Navigate to the draft/pulished simulation
+3.User should click delete button
+4.After confirming in the slider, simulation should be deleted successfully and Deleted simulation should not appear in any Studio section and Simulation should not appear in Manage Course ",Clicking Delete removes the entire simulation after confirmation.,
+HeySales Studio> Elevator pitch,TC0023_ Check clicking cancel in the confirmation slider of delete,porsudar@paperflite.com,Validate that simulation is not deleted when user clicks Cancel in the deletion confirmation slide,Manual,Medium,Functioanal,1.SImulation should be in draft version/published,NA,"1.Navigate to Studio page
+2.Click on Delete option for an existing simulation
+3.When deletion confirmation slider appears, click on Cancel
+","1.User should navigate to the studio 
+2.User should click delete button
+3.After clicking cancel in confirming slider, simulation should not be deleted and should exist in the same screen
+",Clicking Cancel in delete confirmation closes the slider and simulation remains intact.,
+HeySales Studio> Elevator pitch,TC0024_ Check user can edit created simulation and changes are updated,porsudar@paperflite.com,Validate that user is able to edit an existing Elevator Pitch simulation and updated details are saved successfully,Manual,High,Functioanal,1.SImulation should be published,NA,"1.Navigate to Studio and open an existing Elevator Pitch simulation
+2.Edit Scenario Description
+3.Edit Audience Description
+4.Change Time Duration using slider
+5.Change Format (Video/Audio)
+6.Change Assessment Framework using Review option
+7.Click Save
+8.Publish the simulation
+9.Click back button","1.User should open the published simulation 
+2. modified Scenario Description should be displayed
+3.Updated Audience Description should be reflected
+4.New Time Duration should be displayed correctly
+5.Updated Format should be reflected
+6.New Assessment Framework should be displayed
+7.User should click save
+8.No previous values should persist after successful update
+9.On clicking back button and navigating to the same simulation, changes should be there",User can edit an existing simulation and updated values are saved and reflected across modules.,
+HeySales Studio> Elevator pitch,TC0025_ Check  selected duration reflects correctly in Studio and Manage Course pills,porsudar@paperflite.com,"Validate that when simulations are created with different time durations, the respective duration is correctly displayed in Studio pills and Manage Course pills",Manual,High,Functioanal,1.user must be on the elevator pitch type landing screen,NA,"1.Create a new Elevator Pitch simulation with 30 sec duration and publish
+2.Verify duration displayed in Studio pill and Manage Course pill
+3.Repeat steps for 1 min duration
+4.Repeat steps for 1 min 30 sec duration
+5.Repeat steps for 2 min duration","1.Simuation should be published with this duration
+2.For each created simulation of 30 sec, the selected duration should be displayed correctly in Studio pill and manage course
+3.For each created simulation of 1 min, the selected duration should be displayed correctly in Studio pill and manage course
+4.For each created simulation of 1 min 30 sec , the selected duration should be displayed correctly in Studio pill and manage course
+5.For each created simulation of 2 min, the selected duration should be displayed correctly in Studio pill and manage course
+",Selected duration is shown consistently and accurately in both Studio and Manage Course pills.,

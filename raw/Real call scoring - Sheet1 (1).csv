@@ -1,0 +1,135 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Studio> Real call scoring,TC0001_Check the Zoom integration card in settings,arjun@paperflite.com,"Validate For accounts with heysales enabled, in settings integration Zoom card should be displayed",Manual,Medium,Functional,Hey sales should be enabled,NA,"1. Login to the account
+2. Navigate to settings
+3. Click on Integrations","1. User should be able to login in successfully
+2. User should be able to navigate to settings
+3. For accounts with heysales enabled, in settings integration Zoom card should be displayed","For accounts with heysales enabled, in settings integration Zoom card is displayed",
+HeySales Studio> Real call scoring,TC0002_ Check the Zoom integration card in settings [Heysales disabled],arjun@paperflite.com,"Validate For accounts with heysales disable, in settings integration Zoom card should not be displayed",Manual,Medium,Functional,Hey sales should be disabled,NA,"1. Login to the account
+2. Navigate to settings
+3. Click on Integrations","1. User should be able to login in successfully
+2. User should be able to navigate to settings
+3. For accounts with heysales disable, in settings integration Zoom card should not be displayed","For accounts with heysales disable, in settings integration Zoom card is not displayed",
+HeySales Studio> Real call scoring,TC0003_ Check Zoom integrations permission,arjun@paperflite.com,Validate The Zoom integration should be User level not account level,Manual,Medium,Functional,Hey sales should be enabled,NA,"1. Login as User A
+2. Integrate Zoom
+3. Login as User B
+4. Check the Zoom integration","1. User A should be able to login in successfully
+2. User A should be able to integrate Zoom
+3. User B should be able to login in successfully
+4. For user B zoom card should be available but should not be integrated",The Zoom integration is User level not account level,
+HeySales Studio> Real call scoring,TC0004_ Check the Call recording access toggle in the integration,arjun@paperflite.com,Validate User should be able to toggle on or off the Call recording toggle in the integration,Manual,Medium,Functional,Hey sales should be enabled,NA,"1. Integrate Zoom
+2. Toggle On the call recording toggle
+3. Toggle off the call recording toggle","1. User should be able to integrate Zoom
+2. User should be able to toggle on the call recording access
+3. User should be able to toggle off the call recording access",User is able to toggle on or off the Call recording toggle in the integration,
+HeySales Studio> Real call scoring,TC0005_ Check the Real call scoring when zoom is integrated but hubspot is not integrated,arjun@paperflite.com,"Validate If either of the integration is not integrated, Call scoring should not be triggerd",Manual,Medium,Functional,Hey sales should be enabled,NA,"1. Integrate Zoom
+2. Take call in Zoom
+3. Check the real call scoring","1. User should be able to integrate Zoom
+2. User should be able to take in call in Zoom
+3. If either of the integration is not integrated, Call scoring should not be triggerd","If either of the integration is not integrated, Call scoring is not triggerd",
+HeySales Studio> Real call scoring,TC0006_ Check the Real call scoring when Hubspot is integrated but zoom is not integrated,arjun@paperflite.com,"Validate If either of the integration is not integrated, Call scoring should not be triggerd",Manual,Medium,Functional,Hey sales should be enabled,NA,"1. Integrate Hubspot
+2. Take call in Zoom
+3. Check the real call scoring","1. User should be able to integrate Hubspot
+2. User should be able to take in call in Zoom
+3. If either of the integration is not integrated, Call scoring should not be triggerd","If either of the integration is not integrated, Call scoring is not triggerd",
+HeySales Studio> Real call scoring,TC0007_ Check the Real call scoring when both zoom and Hubspot is integrated but call recording access is toggled off,arjun@paperflite.com,"Validate If the call recording access is toggled off, Call scoring should not be triggerd",Manual,Medium,Functional,Hey sales should be enabled,NA,"1. Integrate Hubspot
+2. 1. Integrate Zoom
+3. Take call in Zoom
+4. Check the real call scoring","1. User should be able to integrate Hubspot
+2. User should be able to take in call in Zoom
+3. User should be able to take in call in Zoom
+4. If the call recording access is toggled off, Call scoring should not be triggerd","If the call recording access is toggled off, Call scoring is not triggerd",
+HeySales Studio> Real call scoring,"TC0008_ Check the real call scoring, when the invitee in the zoom meeting does not have a deal in hubspot",arjun@paperflite.com,"Validate If the invitee does not have a deal mapped in hubspot, Call scoring should not be triggerd",Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should not have a deal mapped in hubspot
+Invitee should be a contact in Hubspot",NA,"1. Create a contact in hubspot [email ID: james@xyz.com]
+2. Do not map any deal to james
+3. Take call in zoom invitee as james@xyz.com]
+4. Check the real call scoring","1. User should be able to create a contact in hubspot [email ID: james@xyz.com]
+2. User should be able to map no deal with james
+3. User should be able to take a call in zoom
+4. If the invitee does not have a deal mapped in hubspot, Call scoring should not be triggerd","If the invitee does not have a deal mapped in hubspot, Call scoring is be triggerd",
+HeySales Studio> Real call scoring,"TC0009_ Check the real call scoring, when the invitee in the zoom meeting has a closed deal mapped to them",arjun@paperflite.com,"Validate If the deal is not active [closed deal], Call scoring should not be triggerd",Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have closed a deal mapped in hubspot",NA,"1. Map a closed deal to [email ID: gun@zxc.com]
+2. Take a call in zoom 
+3. Check the real call scoring","1. User should be able to map a closed deal to a contact
+2. User should be able to take a call in zoom
+3. If the deal is not active [closed deal], Call scoring should not be triggerd","If the deal is not active [closed deal], Call scoring is not triggerd",
+HeySales Studio> Real call scoring,"TC0010_ Check the real call scoring, when the invitee in the zoom meeting has an active deal mapped to them",arjun@paperflite.com,"Validate If the deal is active [open deal] and call recording access is toggled on, Call scoring should be triggerd. The call report should be pushed as a note to the contact in hubspot",Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active deal mapped in hubspot",NA,"1. Map an active deal to [email ID: smith@ac.com]
+2. Take a call in zoom 
+3. Check the real call scoring","1. User should be able to map an active deal to a contact
+2. User should be able to take a call in zoom
+3. If the deal is active [open deal] and call recording access is toggled on, Call scoring should be triggerd. The call report should be pushed as a note to the contact in hubspot","If the deal is active [open deal] and call recording access is toggled on, Call scoring is triggerd. The call report is pushed as a note to the contact in hubspot",
+HeySales Studio> Real call scoring,"TC0011_ Check the real call scoring, when there are multiple invitees in the zoom meeting",arjun@paperflite.com,"Validate When there are multiple invitees in a zoom meeting, call report should be puhsed only to the invitees with an active deal in hubspot",Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active deal mapped in hubspot",NA,"1. Map Deal A to contact 1
+2. Map Deal B to cantact 2
+3. Map Deal C to contact 3
+4. Invite Contact 1,2,3,4, & 5 in a zoom meeting
+5. Check the real call scoring","1. User should be able map Deal A to contact 1
+2. User should be able map Deal B to contact 2
+3. User should be able map Deal C to contact 3
+4. User should be able to invite contacts 1,2,3,4,& 5 in a zoom meeting
+5. When there are multiple invitees in a zoom meeting, call report should be puhsed only to the invitees with an active deal in hubspot","When there are multiple invitees in a zoom meeting, call report is puhsed only to the invitees with an active deal in hubspot",
+HeySales Studio> Real call scoring,"TC0012_ Check the real call scrong, after a contact is removed from the deal",arjun@paperflite.com,"Validate when a contact is removed from the deal, call report should not be pushed after the zoom meeting",Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should not have a deal mapped in hubspot",NA,"1. Map Deal Q to contact
+2. Have a zoom call with the contact
+3. Check the call scroing after the call
+4. Remove the contact from the deal
+5. Have a zoom call with the contact","1. User should be able to map deal Q to a contact
+2. User should be able to finish a zoom meeting with the contact
+3. After the zoom meeting, the call report should be pushed as a note to the contact
+4. User should be able to remove the deal association from the contact
+5. When a contact is removed from the deal, call report should not be pushed after the zoom meeting","hen a contact is removed from the deal, call report is not pushed after the zoom meeting",
+HeySales Studio> Real call scoring,TC0013_ Check the real call scoring when multiple contacts are associated with one deal,arjun@paperflite.com,"Validate When multiple contacts are associated in one deal, after the zoom meeting the call report should be sent to only the participants of the zoom meeting",Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active deal mapped in hubspot",NA,"1. Map a Deal with Contact 1,2,3,4,& 5
+2. Have a zoom meeting with 1,2,& 3
+3. Check the call report","1. User should be able to map a deal with contact 1,2,3,4,& 5
+2. User should be able to have a zoom meeting with contact 1,2,& 3
+3. When multiple contacts are associated in one deal, after the zoom meeting the call report should be sent to only the participants of the zoom meeting","When multiple contacts are associated in one deal, after the zoom meeting the call report is sent to only the participants of the zoom meeting",
+HeySales Studio> Real call scoring,TC0014_ Check the real call scoring when one contact is associated with multiple deals,arjun@paperflite.com,"Validate When multiple deals are associated with one contact, after the zoom meeting the call report should be sent to the contact",Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active deal mapped in hubspot",NA,"1. Map Deals 1,2,3,4, &5  with a Contact
+2. Have a zoom meeting with the contact
+3. Check the call report","1. User should be able to map deal 1,2,3,4,& 5 with one contact
+2. User should be able to have a zoom meeting with the contact
+3. When multiple deals are associated with one contact, after the zoom meeting the call report should be sent to the contact","When multiple deals are associated with one contact, after the zoom meeting the call report is sent to the contact",
+HeySales Studio> Real call scoring,TC0015_ Check the call scoring is generated based on the accounts default scorecard,arjun@paperflite.com,Validate After the zoom meeting the reports should be generated based on the accounts default scorecard,Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active deal mapped in hubspot",NA,"1. Map a deal with a contact
+2. Have a zoom meeting with the contact
+3. Check the call report","1. User should be able to map a deal with a contact
+2. User should be able to have a zoom meeting with the contact
+3. After the zoom meeting the reports should be generated based on the accounts default scorecard",After the zoom meeting the reports is generated based on the accounts default scorecard,
+HeySales Studio> Real call scoring,TC0016_ Check the Fields in the call scoring,arjun@paperflite.com,"Validate In the call report the Overall score, Parameter Breakdown, Sales rep positive, Prospect observation, and Suggestions should be listed",Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active deal mapped in hubspot",NA,"1. Map a deal with a contact
+2. Have a zoom meeting with the contact
+3. Check the call report","1. User should be able to map a deal with a contact
+2. User should be able to have a zoom meeting with the contact
+3. In the call report the Overall score, Parameter Breakdown, Sales rep positive, Prospect observation, and Suggestions should be listed","In the call report the Overall score, Parameter Breakdown, Sales rep positive, Prospect observation, and Suggestions are listed",
+HeySales Studio> Real call scoring,TC0017_ Check the call scoring when the integration is expired,arjun@paperflite.com,Validate When either of the integration is expired [Zoom / Hubspot] the call report should not be pushed,Manual,Medium,Functional,"Hey sales should be enabled
+Integration should be expired",NA,"1. Map a deal with a contact
+2. Expire the integration
+3. Have a zoom meeting with the contact
+4. Check the call report","1. User should be able to map a deal with a contact
+2. User should be able to expire the integration
+3. User should be able to have a zoom meeting with the contact
+4. When either of the integration is expired [Zoom / Hubspot] the call report should not be pushed",When either of the integration is expired [Zoom / Hubspot] the call report is not pushed,
+HeySales Studio> Real call scoring,TC0018_ Check the call duration for reports processing,arjun@paperflite.com,Validate If the call is less 2 mins the report should be generated,Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active deal mapped in hubspot",NA,"1. Map a deal with a contact
+2. Have a zoom meeting with the contact and end it witnin 2 mins
+3. Check the call report","1. User should be able to map a deal with a contact
+2. User should be able to have a zoom meeting with the contact
+3. If the call is less 2 mins the report should be generated",If the call is less 2 mins the report is generated,
+HeySales Studio> Real call scoring,TC0019_ Check the call scoring when a closed deal is reopened,arjun@paperflite.com,"Validate When the closed deal is reopend, after the zoom meeting the call report should be sent to the contact",Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active deal mapped in hubspot",NA,"1. Reopen a closed deal
+2. Have a zoom meeting with the contact
+3. Check the call report","1. User should be able to reopen a closed deal
+2. User should be able to have a zoom meeting with the contact
+3. When the closed deal is reopend, after the zoom meeting the call report should be sent to the contact","When the closed deal is reopend, after the zoom meeting the call report is sent to the contact",
+HeySales Studio> Real call scoring,TC0020_ Check multiple note to same contact,arjun@paperflite.com,Valdiate for every call a new report should be pushed as notes to the contact,Manual,Medium,Functional,"Hey sales should be enabled
+Invitee should have an active deal mapped in hubspot",NA,"1. Map a deal with a contact
+2. Have a zoom meeting with the contact
+3. Check the call report
+4. Have another Zoom meeting with the contact
+5.  Check the call report","1. User should be able to map a deal with a contact
+2. User should be able to have a zoom meeting with the contact
+3. Call Report should be sent as a note to the contact
+4. User should be able to have an another zoom meeting with the contact
+5. For every call a new report should be pushed as notes to the contact",For every call a new report is pushed as notes to the contact,

@@ -1,0 +1,414 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0001_ Check creating a new course,arjun@paperflite.com,Validate Admins / Content publishers should be able to create a course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Log in as Admin or Content publisher
+2. Navigate to Manage course
+3. Click on create new course","1. Admins / Content publishers should be able to login successfully
+2. The system should allow navigation to “Manage Courses” and display the list of available learnings, and a create new course button should be displayed
+3. Clicking on create new course button should create a new empty course",Admins / Content publishers are able to create a course,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0002_Check the course structure of an empty course [Newly created],arjun@paperflite.com,Validate In course structure along with add new section button add unit button in primary color should be displayed,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Navigate to Manage course
+2. Click on create new course
+3. Click on ""Create course structure"" in the empty course","1. The system should allow navigation to “Manage Courses” and display the list of available learnings, and a create new course button should be displayed
+2. Clicking on create new course button should create a new empty course
+4. In course structure along with add new section button add unit button in primary color should be displayed",In course structure along with add new section button add unit button in primary color is displayed,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0003_ Check the new add unit button in course structure,arjun@paperflite.com,"Validate Clicking on add unit should bring the adding unit slider with 3 options Lessons, Assessments and pick from studio",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on ""Create course structure"" in the empty course
+2. Click on Add new unit","1. In course structure along with add new section button add unit button in primary color should be displayed
+2. Clicking on add unit should bring the adding unit slider with 3 options Lessons, Assessments and pick from studio","Clicking on add unit brings the adding unit slider with 3 options Lessons, Assessments and pick from studio",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0004_ Check clicking on Lessons option in the adding unit slider,arjun@paperflite.com,"Validate clicking on Lessons in the adding unit slider should bring the add asset slider with 3 options From streams & collections, Personal drive, Add content URl and Cleverstory if integration enabled in account",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on Add new unit
+2. Click on Lessons","1. Clicking on add unit should bring the adding unit slider with 3 options Lessons, Assessments and pick from studio
+2. Clicking on Lessons in the adding unit slider should bring the add asset slider with 3 options From streams & collections, Personal drive, Add content URl and Cleverstory if integration enabled in account","Clicking on Lessons in the adding unit slider brings the add asset slider with 3 options From streams & collections, Personal drive, Add content URl and Cleverstory if integration enabled in account",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0005_ Check adding lessons to the course,arjun@paperflite.com,"Validate User should be able to add lessons from streams & collections, Personal drive, and via URL's within a section and outside the sections",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a section
+2. Add lessons from streams inside the section
+3. Add lessons from personal drive inside the section
+4. Add lessons as URL's inside the section
+5. Add lessons from streams outside the section
+6. Add lessons from personal drive outside the section
+7. Add lessons as URL's outside the section","1. User should be able to add a section to the course structure
+2. User should be able to add lessons from streams inside a section
+3. User should be able to add lessons from personal drive inside a section
+4. User should be able to add lessons from URL's inside a section
+5. User should be able to add lessons from streams outside a section
+6. User should be able to add lessons from personal drive outside a section
+7. User should be able to add lessons from URL's outside a section","User is able to add lessons from streams & collections, Personal drive, and via URL's within a section and outside the sections",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0006_ Check adding assessments,arjun@paperflite.com,Validate user should be able to add assessments within a section and outside the section,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a section
+2. Click on Add new unit
+3. Add an assessment inside the section
+4. Click on add new unit
+5. Add on assessment outside the section","1. User should be able to add a section to the course structure
+2. Adding units slider should be displayed
+3. User should be able to add assessment inside the section
+4. Adding units slider should be displayed
+5. User should be able to add assessment outside the section",User is be able to add assessments within a section and outside the section,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0007_ Check the pick from studio option in the adding unit slider,arjun@paperflite.com,Validate Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Add podcast
+4. Search for podcast
+5. Search for draft podcast
+6. Check for draft podcast in the library","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple podcasts at a time, and all the selected podcast should be listed in a new pane
+4. User should be able to search for the podcast, and respective results should be fetched
+5. Draft podcast should not be fetched in the search results
+6. Draft podcast should not be listed in the library",Clicking on the pick from studio option in the unit slider brings the library of published podcast and simulations in the account,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0008_ Check the UI and metadata of the podcast in the add asset slider,arjun@paperflite.com,"Validate In the add slider the podcast banner, duration, and last updated date should be displayed",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Check the UI and metadata of the podcast","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In the add slider the podcast banner, duration, and last updated date should be displayed","In the add slider the podcast banner, duration, and last updated date are displayed",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0009_ Check removing the added podcast from the add asset slider,arjun@paperflite.com,"Valdiate On hovering the added podast x should be displayed, and clicking on the x should remove the podcast from the add asset slider",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Add podcast
+4. Remove few added podcast","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple podcasts at a time, and all the selected podcast should be listed in a new pane
+4. On hovering the added podast x should be displayed, and clicking on the x should remove the podcast from the add asset slider","On hovering the added podast x is displayed, and clicking on the x remove the podcast from the add asset slider",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0010_ Check the deleted podcasts in the pick from studio library,arjun@paperflite.com,Validate The deleted podcasts should not be listed in the pick from studio library,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Navigate to studio
+2. Open any podcast and delete it
+3. Navigate to any course in manage course
+4. Click on add unit and click pick from studio","1. User should be able to navigate to studio
+2. User should be able to delete any published podcast
+3. User should be able to open any course from manage course
+4. The deleted podcasts should not be listed in the pick from studio library",The deleted podcasts are not listed in the pick from studio library,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0011_ Check the UI of the podcast in the course structure [Creator],arjun@paperflite.com,"Validate In The podcast name, Thaumbnail, duration, type, Details, Transcript, Play button, fwd / rws buttons, volume button, and playback speed button should be dislayed",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add podcast with image banner to the course
+2. Add podcast with video banner to the course
+3. Add a podcast with long name
+4. Check the UI of the podcast in course structure","1. Image banne should render in the course structure
+2. Video banne should render in the course structure
+3. If the name is long the UI should not break in the course structure
+4. In The podcast name, Thaumbnail, duration, type, Details, Transcript, Play button, fwd / rws buttons, volume button, and playback speed button should be dislayed","In The podcast name, Thaumbnail, duration, type, Details, Transcript, Play button, fwd / rws buttons, volume button, and playback speed button is dislayed",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0012_ Check editing the podcast in the course structure [Creator],arjun@paperflite.com,Validate User should not be able to edit the podcast in the course structure,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a podcast to the course
+2. Edit the name
+3. Edit the banner
+4. Edit the skill","1. User should be able to add podcast to the course
+2. User should not be able to edit the name of the podcast in the course structure
+3. User should not be able to edit the banner of the podcast in the course structure
+4. User should not be able to edit the skills of the podcast in the course structure",User is not able to edit the podcast in the course structure,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0013_ Check editing the podcast in the studio after adding it to a course [Creator],arjun@paperflite.com,"Validate Any edits made to the podcast in the studio after adding it to the course, the edits should not be reflecting in the course",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a podcast to the course
+2. Navigate to studio
+3. Open the podcast
+4. Edit the name
+5. Edit the banner
+6. Edit the skill
+7. Edit the duration
+8. Edit the description
+9. Edit the type of the podcast
+10. Open the podcast in the course","1. User should be able to add podcast to the course
+2. User should be able to navigate to studio
+3. User should be able to open the same podcast in studio
+4. User should be able to edit the name of the podcast
+5. User should be able to edit the banner of the podcast
+6. User should be able to edit the skill of the podcast
+7. User should be able to edit the duration of the podcast
+8. User should be able to edit the desctiption of the podcast
+9. User should be able to edit the type of the podcast
+10. Any edits made to the podcast in the studio after adding it to the course, the edits should not be reflecting in the course","Any edits made to the podcast in the studio after adding it to the course, the edits does not reflect in the course",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0014_ Check deleting the podcast after adding it to the course [Creator],arjun@paperflite.com,"Validate If the podcast is deleted form the account, it should not be available in the course",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a podcast to the course
+2. Navigate to studio, delete the podcast
+3. Open the course and check for podcast","1. User should be able to add podcast to the course
+2. User should be able to navigate to studio and delete the podcast
+3. If the podcast is deleted form the account, it should not be available in the course","If the podcast is deleted form the account, it is not available in the course",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0015_ Check adding a same podcast to multiple course,arjun@paperflite.com,Validate User should be able to add same podcast to multiple courses and if the podcast is deleted it should be removed from all the added courses,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a podcast to the course A, B, & C
+2. Navigate to studio, delete the podcast
+3. Open the course and check for podcast","1. User should be able to add podcast to the course A, B, & C
+2. User should be able to navigate to studio and delete the podcast
+3. User should be able to add same podcast to multiple courses and if the podcast is deleted it should be removed from all the added courses",User is able to add same podcast to multiple courses and if the podcast is deleted it is removed from all the added courses,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0016_ Check clicking cancel after adding the podcast in pick from studio,arjun@paperflite.com,Validate the selected podcasts in the pick from library should not be added to courses after clicking cancel button,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Select few podcasts
+4. Click cancel button in pick from studio tab","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple podcasts at a time, and all the selected podcast should be listed in a new pane
+4. Cancel button should be enabled and clickable","User is able to select multiple podcasts in the Pick from Studio panel and after clicking cancel, no podcast is added",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0017_Check deleting the added unit in the course,arjun@paperflite.com,Validate User should be able to delete the added podcasts unit in the course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Select few podcasts
+4. Click Add button
+5. Click Delete icon from the unit","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple podcasts at a time, and all the selected podcast should be listed in a new pane
+4. Clicking on Add button should be adding all the podcasts as separate unit
+5. Clicking on Delete icon should delete the specific podcast unit",If the added podcast unit is deleted then the selected podcast unit is deleted,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0018_Check deleting the added section in the course,arjun@paperflite.com,Validate User should be able to delete the added podcasts in section in the course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Select few podcasts
+4. Click Add button
+5. Click Delete icon in section","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple podcasts at a time, and all the selected podcast should be listed in a new pane
+4. Clicking on Add button should be adding all the podcasts as separate unit
+5. Clicking on Delete icon should delete the entire section",If the added podcast Section is deleted then the entire section is deleted,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0019_Check rearranging the added podcast in the course,arjun@paperflite.com,Validate the added podcasts as unit and section should be rearrangable within the course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Add few podcasts
+4. Click on Add new section
+5. Add few podcasts within the section
+6. Rearrange the podcast unit 
+7. Rearrange the podcast section","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple podcasts at a time, and all the selected podcast should be listed in a new pane
+4. Clicking on Add new section should be adding new section to the course
+5.  User should be able to add multiple podcasts at a time, and all the selected podcast should be listed and added to the newly created section
+6. Check for the rearrange icon on the left of every podcast unit should be displayed, dragging that should move and arrange the podcast anywehere
+7. Check for the rearrange icon which is up and down arrow of podcast section should be displayed, clicking that should move and arrange the section",User is able to rearrange the podcast unit and section using the icon,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0020_Check rearranging podcast unit to section in course,arjun@paperflite.com,Validate User should be able to rearrange the podcast unit inside any sections in course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Add few podcasts
+4. Click on Add new section
+5. Add few podcasts within the section
+6. Drag and rearrange the podcast unit inside section","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple podcasts at a time, and all the selected podcast should be listed in a new pane
+4. Clicking on Add new section should be adding new section to the course
+5.  User should be able to add multiple podcasts at a time, and all the selected podcast should be listed and added to the newly created section
+6.Try to rearrange the podcast units inside section in course",User is able to rearrange podcasts within and across sections successfully.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0021_Check search functionality of published podcasts in pick from Studio panel search bar,arjun@paperflite.com,"Validate in the pick from studio panel, searching all the published podcasts is filtered",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type any published podcasts","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, typing any published podcast name should bring all the podcast with the characters",Search displays only matching published podcasts in the pick from studio panel.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0022_Check search functionality of unpublished podcasts in pick from Studio panel search bar,arjun@paperflite.com,"Validate in the pick from studio panel, searching for the unpublished podcasts is not showing any result",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type for any unpublished podcasts","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, typing any unpublished podcast name should not bring all the podcast with the characters",Unpublished podcasts are not displayed in search results.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0023_Check the behaviour of the search functionality in pick from studio panel,arjun@paperflite.com,"Validate in the pick from studio panel, searching for special characters, podacast name in upper or lowercases, podcast name with no space in the search bar filters any podcasts",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type for special characters
+4. In Search bar, type for podacast name in upper or lowercases
+5. In Search bar. type podcast name with no required space ","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, type any special characters should bring all the podcast if any podcast named with that
+4. In Search bar, type any podcast name with lowercase should bring the respective podcast even if it in uppercase
+5. In Search bar, type podcast name without any space should bring the respective podcast even if it is with proper spaces","Search works correctly for special characters, case variations, and names without spaces.",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0024_Check search functionality with minimal characters of podcast name,arjun@paperflite.com,"Validate in the pick from studio panel, searching for single or half of the podcast name characters filters the results properly",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type single or few characters of published podcast","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, typing single or few characters of  published podcast name should bring all the podcast",Partial or single-character search filters podcasts correctly.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0025_Check search functionality of deleted podcasts in pick from studio panel,arjun@paperflite.com,"Validate in the pick from studio panel, searching for the deleted podcasts is not showing any result",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type the deleted podcasts name","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, typing any published podcast name should bring all the podcast with the characters",Deleted podcasts do not appear in search results.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0026_Check search functionality of unapplicable content in pick from studio panel,arjun@paperflite.com,"Validate in the pick from studio panel, searching for the course name or simulation name under podcast is not showing any result",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Select Podcast
+4. In Search bar, type any course name 
+5. In Search bar, type any simulation name ","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. Selecting podcast should display all the published podcasts
+3. In Search bar, typing any published course name shouldnot display any content
+4. UNder podcast selection Search bar, typing any published podcast name should not display any content",Searching by course or simulation name does not return any podcast results.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0027_ Check adding sections to the course,arjun@paperflite.com,Validate User should able to add mutiple podcasts inside sections within the course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add section
+2. Click on add new unit
+3. Click on Pick from studio
+4. Select multiple Podcasts
+5. Click add","1. New section should be added in the course
+2. New Unit inside section should be added in the course
+3. Clicking on add unit, should display all the published podcast and simulations
+4. User should able to choose the multiple podcasts
+5. Clicking on add should add all the selected podcasts inside section",User is able to add multiple podcasts within a section successfully.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0028_Check moving the section podcast outside of it,arjun@paperflite.com,Validate User should able to move any podcast from section to outside as single unit podcast,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add section
+2. Click on add new unit
+3. Click on Pick from studio
+4. Select multiple Podcasts
+5. Click add
+6. Try to move any podcast from section outside","1. New section should be added in the course
+2. New Unit inside section should be added in the course
+3. Clicking on add unit, should display all the published podcast and simulations
+4. User should able to choose the multiple podcasts
+5. Clicking on add should add all the selected podcasts inside section
+6. User should able to Rearrange the section podcasts outside it",User is able to move a podcast out of a section as a single unit.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0029_Check save functionality across different screen,arjun@paperflite.com,"Validate that the course is saved successfully from all available save options, including the Save button on the course page and within the course structure. Ensure changes made on any screen are retained consistently across the course.",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Open any course
+2. Click Edit Content Structure
+3. Add any podacst or simulation to the course
+4. Click Save 
+5. Click Back button
+6. Check the recently added podcast and simulation is displayed in course main page","1. Opening the existing course should display the content
+2. Clicking on Edit content structure should open the respective screen
+3. Click add unit and add podcast and smulation from the pick from studio panel
+4. User should able to save the update
+5. Clicking on back button should navigate back to course main page
+6. Recently added podcast and simulation should be listed",Course is saved successfully from all screens and save options.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0030_Check adding the Simulation in the course,arjun@paperflite.com,Validate User should able to add any published simulation from the list displayed in the pick from studio panel,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Select simulation option
+4. Choose simulations from the list
+5. Click Add button","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. Selecting Simulation should display all the published simulations in the account
+4. Choose multiple simulations from the list
+5. Clicking on Add button should be adding all the simulations as separate unit",User is able to add published simulations from the pick from studio panel.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0031_Check editing the simulation in the course structure [Creator],arjun@paperflite.com,Validate User should not be able to edit the simulation in the course structure,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a simulation to the course
+2. Edit the name
+3. Edit the banner
+4. Edit the skill","1. User should be able to add simulation to the course
+2. User should not be able to edit the name of the simluation in the course structure
+3. User should not be able to edit the banner of the simulation in the course structure
+4. User should not be able to edit the skills of the simulation in the course structure",User is not able to edit the simulation in the course structure,
+HeySales ManageCourses> Podcast and Simulation in Courses, TC0032_Check editing the simluation in the studio after adding it to a course [Creator]TC0032_,arjun@paperflite.com,"Validate Any edits made to the simluation in the studio after adding it to the course, the edits should not be reflecting in the course",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a simulation to the course
+2. Navigate to studio
+3. Open the simulation 
+4. Edit the name
+5. Edit the banner
+6. Edit the skill
+7. Edit the duration
+8. Edit the description
+9. Edit the type of the simulation 
+10. Open the simulation in the course","1. User should be able to add simulation to the course
+2. User should be able to navigate to studio
+3. User should be able to open the same simulation in studio
+4. User should be able to edit the name of the simulation 
+5. User should be able to edit the banner of the simulation 
+6. User should be able to edit the skill of the simulation 
+7. User should be able to edit the duration of the simulation 
+8. User should be able to edit the desctiption of the simulation 
+9. User should be able to edit the type of the simulation 
+10. Any edits made to the simulation in the studio after adding it to the course, the edits should not be reflecting in the course","Any edits made to the simulation in the studio after adding it to the course, the edits does not reflect in the course",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0033_Check deleting the simulation after adding it to the course [Creator],arjun@paperflite.com,"Validate If the simulation is deleted form the account, it should not be available in the course",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a simulation to the course
+2. Navigate to studio, delete the simulation 
+3. Open the course and check for simulation ","1. User should be able to add simulation to the course
+2. User should be able to navigate to studio and delete the simulation 
+3. If the simulation is deleted form the account, it should not be available in the course","If the simulation is deleted form the account, it is not available in the course",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0034_ Check adding a same simulation to multiple course,arjun@paperflite.com,Validate User should be able to add same simulation to multiple courses and if the simulation is deleted it should be removed from all the added courses,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Add a simulation to the course A, B, & C
+2. Navigate to studio, delete the simulation 
+3. Open the course and check for simulation ","1. User should be able to add simulation to the course A, B, & C
+2. User should be able to navigate to studio and delete the simulation 
+3. User should be able to add same simulation to multiple courses and if the simulation is deleted it should be removed from all the added courses",User is able to add same simulation to multiple courses and if the simulation is deleted it is removed from all the added courses,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0035_Check deleting the added unit in the course,arjun@paperflite.com,Validate User should be able to delete the added simulation unit in the course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Select few simulation 
+4. Click Add button
+5. Click Delete icon from the unit","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple simulation at a time, and all the selected simulation should be listed in a new pane
+4. Clicking on Add button should be adding all the simulation as separate unit
+5. Clicking on Delete icon should delete the specific simulation unit",If the added simulation unit is deleted then the selected simulation unit is deleted,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0036_Check deleting the added section in the course,arjun@paperflite.com,Validate User should be able to delete the added simulation in section in the course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Select few simulation 
+4. Click Add button
+5. Click Delete icon in section","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple simulation at a time, and all the selected simulation should be listed in a new pane
+4. Clicking on Add button should be adding all the simulation as separate unit
+5. Clicking on Delete icon should delete the entire section",If the added simulation Section is deleted then the entire section is deleted,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0037_Check rearranging the added simulation in the course,arjun@paperflite.com,Validate the added simulation as unit and section should be rearrangable within the course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Add few simulation 
+4. Click on Add new section
+5. Add few simulation within the section
+6. Rearrange the simulation unit 
+7. Rearrange the simulation section","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple simulation at a time, and all the selected simulation should be listed in a new panel
+4. Clicking on Add new section should be adding new section to the course
+5.  User should be able to add multiple simulation at a time, and all the selected simulation should be listed and added to the newly created section
+6. Check for the rearrange icon on the left of every simulation unit should be displayed, dragging that should move and arrange the simulation anywehere
+7. Check for the rearrange icon which is up and down arrow of simulation section should be displayed, clicking that should move and arrange the section",User is able to rearrange the simulation unit and section using the icon,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0038_Check rearranging simulation unit to section in course,arjun@paperflite.com,Validate User should be able to rearrange the simulation unit inside any sections in course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Add few simulation 
+4. Click on Add new section
+5. Add few simulation within the section
+6. Drag and rearrange the simulation unit inside section","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. User should be able to add multiple podcasts at a time, and all the selected simulation should be listed in a new pane
+4. Clicking on Add new section should be adding new section to the course
+5.  User should be able to add multiple simulation at a time, and all the selected simulation should be listed and added to the newly created section
+6.Try to rearrange the simulation units inside section in course",User is able to rearrange simulation within and across sections successfully.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0039_Check search functionality of published simulation in pick from Studio panel search bar,arjun@paperflite.com,"Validate in the pick from studio panel, searching all the published simulation is filtered",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type any published simulation ","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, typing any published simulation name should bring all the simulation with the characters",Search displays only matching published simulation in the pick from studio panel.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0040_Check search functionality of unpublished simulation in pick from Studio panel search bar,arjun@paperflite.com,"Validate in the pick from studio panel, searching for the unpublished simulation is not showing any result",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type for any unpublished simulation ","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, typing any unpublished simulation name should not bring all the simulation with the characters",Unpublished simulation are not displayed in search results.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0041_Check the behaviour of the search functionality in pick from studio panel,arjun@paperflite.com,"Validate in the pick from studio panel, searching for special characters, simulation name in upper or lowercases, simulation name with no space in the search bar filters any simulation ",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type for special characters
+4. In Search bar, type for simulation name in upper or lowercases
+5. In Search bar. type simulation name with no required space ","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, type any special characters should bring all the simulation if any simulation named with that
+4. In Search bar, type any simulation name with lowercase should bring the respective simulation even if it in uppercase
+5. In Search bar, type simulation name without any space should bring the respective simulation even if it is with proper spaces","Search works correctly for special characters, case variations, and names without spaces.",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0042_Check search functionality with minimal characters of simulation name,arjun@paperflite.com,"Validate in the pick from studio panel, searching for single or half of the simulation name characters filters the results properly",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type for any unpublished podcasts","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, typing single or few characters of  published simulation name should bring all the podcast",Partial or single-character search filters simulation correctly.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0043_Check search functionality of deleted simulation in pick from studio panel,arjun@paperflite.com,"Validate in the pick from studio panel, searching for the deleted simulation is not showing any result",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. In Search bar, type the deleted podcasts name","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. In Search bar, typing any published simulation name should bring all the simulation with the characters",Deleted simulation do not appear in search results.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0044_Check search functionality of unapplicable content in pick from studio panel,arjun@paperflite.com,"Validate in the pick from studio panel, searching for the course name or podcast name under simulation is not showing any result",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. Select Podcast
+4. In Search bar, type any course name 
+5. In Search bar, type any podcast name ","1. Adding units slider should be displayed
+2. Clicking on the pick from studio option in the unit slider should bring the library of published podcast and simulations in the account
+3. Selecting simulation should display all the published simulation 
+3. In Search bar, typing any published course name should not display any content
+4. Under simulation selection Search bar, typing any published simulation name should not display any content",Searching by course or simulation name does not return any simulation results.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0045_ Check adding sections to the course,arjun@paperflite.com,Validate User should able to add mutiple simulation inside sections within the course,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add section
+2. Click on add new unit
+3. Click on Pick from studio
+4. Select multiple Podcasts
+5. Click add","1. New section should be added in the course
+2. New Unit inside section should be added in the course
+3. Clicking on add unit, should display all the published podcast and simulations
+4. User should able to choose the multiple simulation 
+5. Clicking on add should add all the selected simulation inside section",User is able to add multiple simulation within a section successfully.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0046_Check moving the section simulation outside of it,arjun@paperflite.com,Validate User should able to move any simulation from section to outside as single unit simulation ,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add section
+2. Click on add new unit
+3. Click on Pick from studio
+4. Select multiple Podcasts
+5. Click add
+6. Try to move any podcast from section outside","1. New section should be added in the course
+2. New Unit inside section should be added in the course
+3. Clicking on add unit, should display all the published podcast and simulations
+4. User should able to choose the multiple simulation 
+5. Clicking on add should add all the selected simulation inside section
+6. User should able to Rearrange the section simulation outside it",User is able to move a simulation out of a section as a single unit.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0047_Check section supports adding all types of learnings,arjun@paperflite.com,"Validate User should be able to add all the learnings such as lessons, assessments, podcasts and simulation in a section",Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add section
+2. Click on add new unit
+3. Click lessons
+4. Select assets from all types of supported places
+5. Click on Assesment and add it
+6. Click on pick from studio
+7. Select few podcasts and simulations
+8. Click Add","1. New section should be added in the course
+2. New Unit inside section should be added in the course
+3. Clicking on lessons should shows multiple options to add assets
+4. Select assest from all the supported options
+5. Clicking on assessment shoould add assessment in the course
+6. Clicking on add unit, should display all the published podcast and simulations
+7. User should able to add podcast and simulations from the list
+8. Added podcast and simulations should be listed in the course
+","Section successfully supports adding all learning types including lessons, assessments, podcasts, and simulations.",
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0048_Verify course publish functionality across all screens,arjun@paperflite.com,Validate that the course can be published successfully using the Publish option from any course screen and that the published state is applied consistently.,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Open any course
+2. Click Edit Content Structure
+3. Add any podacst or simulation to the course
+4. Click Save and publish
+5. Click Back button
+6. Check the recently added podcast and simulation is displayed in course main page","1. Opening the existing course should display the content
+2. Clicking on Edit content structure should open the respective screen
+3. Click add unit and add podcast and smulation from the pick from studio panel
+4. User should able to save the update and publish
+5. Clicking on back button should navigate back to course main page
+6. Recently added podcast and simulation should be listed",Course is published successfully from all screens and publish options.,
+HeySales ManageCourses> Podcast and Simulation in Courses,TC0049_Verify Pick from Studio content display and scroll functionality,arjun@paperflite.com,Validate that clicking Pick from Studio displays podcasts under the Podcast option and simulations under the Simulation option. Also verify that scrolling works correctly when multiple podcasts or simulations are available.,Manual,Medium,Functional,"Hey sales should be enabled, User should have admin / content publisher access",NA,"1. Click on add new unit
+2. Click on Pick from studio
+3. By default podcast option displays all the podcast
+4. Scroll till the end
+5. Switch to Simulation option
+6. Scroll till the end","Add New Unit options should be displayed successfully.
+Pick from Studio panel should open successfully.
+Podcast option should be selected by default and all available podcasts should be displayed.
+List should scroll smoothly and all podcasts should be loaded and visible till the end.
+Simulation option should be selected and all available simulations should be displayed.
+List should scroll smoothly and all simulations should be loaded and visible till the end.
+","Pick from Studio displays the correct podcasts and simulations, and scrolling works properly when multiple items are present",

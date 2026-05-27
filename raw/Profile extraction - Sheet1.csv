@@ -1,0 +1,143 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Studio> Profile extraction,TC0001_Check creating a simulation,arjun@paperflite.com,Validate Admins should be able to create simulation successfully,Manual,Medium,Functional,User should have admin or Content publisher role,NA,"1. Login to the app
+2. Navigate to hey sales
+3. Create a simulation","1. Admin should be able to login 
+2. Hey sales module should render
+3. Admin should be able to create a simulation from scratch",Admins are able to create simulation successfully,
+HeySales Studio> Profile extraction,"TC0002_ Check the ""add source"" button in scenario screen",arjun@paperflite.com,"Validate In the scenario screen there should be an ""add source"" button available",Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available","In the scenario screen there is an ""add source"" button available",
+HeySales Studio> Profile extraction,"TC0003_ Click on the ""add source"" button",arjun@paperflite.com,Validate Clicking on the add source button should bring the Call recording slider,Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. Clicking on the add source button should bring the Call recording slider",Clicking on the add source button brings the Call recording slider,
+HeySales Studio> Profile extraction,TC0004_ Check the UI of call recording slider [no calls uploaded],arjun@paperflite.com,Validate In the call recording slider if no calls have been uploaded an empty message should be displayed,Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. In the call recording slider if no calls have been uploaded an empty message should be displayed",In the call recording slider if no calls have been uploaded an empty message is displayed,
+HeySales Studio> Profile extraction,TC0005_ Check the UI of the call recording slider,arjun@paperflite.com,"Validate In the call recording slider there should be upload new call button, list of all the uploded calls, add and cancel button",Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button
+4. Check the UI","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. In the call recording slider if no calls have been uploaded an empty message should be displayed
+4. In the call recording slider there should be upload new call button, list of all the uploded calls, add and cancel button","In the call recording slider there are upload new call button, list of all the uploded calls, add and cancel button",
+HeySales Studio> Profile extraction,"TC0006_ Click on the ""upload new call"" button in the call recording slider",arjun@paperflite.com,"Validate clicking on the ""upload new call""  should open the local file upload ",Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button
+4. Click on ""upload new call""","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. In the call recording slider if no calls have been uploaded an empty message should be displayed
+4.Clicking on the ""upload new call""  should open the local file upload ","Clicking on the ""upload new call""  opens the local file upload ",
+HeySales Studio> Profile extraction,TC0007_ Check uploading a video from local,arjun@paperflite.com,Validate User should be able to upload only MP4 and MP3 from local device,Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button
+4. Click on ""upload new call""","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. In the call recording slider if no calls have been uploaded an empty message should be displayed
+4.User should be able to upload only MP4 and MP3 from local device",User is able to upload only MP4 and MP3 from local device,
+HeySales Studio> Profile extraction,TC0008_ Check the add source button after uploading a video,arjun@paperflite.com,Validate After uploading a video the add souce button should update as generate,Manual,Medium,Functional,Create a simulation,NA,"1. Upload a video from local
+2. Check the add source button","1. User should be able to upload video from local
+2. After uploading a video the add souce button should update as generate",After uploading a video the add souce button updates to generate,
+HeySales Studio> Profile extraction,TC0009_ Click on the generate button,arjun@paperflite.com,Validate Clicking on the generate should start the extraction process,Manual,Medium,Functional,Create a simulation,NA,"1. Upload a video from local
+2. Click on generate","1. User should be able to upload video from local
+2. Clicking on the generate should start the extraction process",Clicking on the generate starts the extraction process,
+HeySales Studio> Profile extraction,TC0010_ Check the placeholder message during extraction,arjun@paperflite.com,"Validate While extraction ""transcribing the call recording"" placeholder message should be displayed",Manual,Medium,Functional,Create a simulation,NA,"1. Upload a video from local
+2. Click on generate","1. User should be able to upload video from local
+2. While extraction ""transcribing the call recording"" placeholder message should be displayed","While extraction ""transcribing the call recording"" placeholder message is displayed",
+HeySales Studio> Profile extraction,TC0011_ Check scenario screen after successful extraction,arjun@paperflite.com,"Validate After successfull extraction company profile, Buyer profile, and Buyer need should be updated from the call",Manual,Medium,Functional,Create a simulation,NA,"1. Upload a video from local
+2. Click on generate","1. User should be able to upload video from local
+2. After successfull extraction company profile, Buyer profile, and Buyer need should be updated from the file","After successfull extraction company profile, Buyer profile, and Buyer need are updated from the call",
+HeySales Studio> Profile extraction,TC0012_ Check uploading a random MP4 / MP3,arjun@paperflite.com,Validate Uploading a random file the extraction should fail,Manual,Medium,Functional,Create a simulation,NA,"1. Upload a video from local
+2. Click on generate","1. User should be able to upload a random MP4 /MP3 file from local
+2. Uploading a random file the extraction should fail",Uploading a random file the extraction fails,
+HeySales Studio> Profile extraction,TC0013_ Check the UI of the error state,arjun@paperflite.com,"Validate after the file fails to process, ""profile generation failed""  and retry upload new asset buttons should be displayed",Manual,Medium,Functional,Create a simulation,NA,"1. Upload a video from local
+2. Click on generate","1. User should be able to upload a random MP4 /MP3 file from local
+2. After the file fails to process, ""profile generation failed""  and retry upload new asset buttons should be displayed","After the file fails to process, ""profile generation failed""  and retry upload new asset buttons are displayed",
+HeySales Studio> Profile extraction,TC0014_ Check clicking on retry in the error state,arjun@paperflite.com,Validate Clicking on retry should retrigger the extraction process,Manual,Medium,Functional,Create a simulation,NA,"1. Upload a video from local
+2. Click on generate
+3. Click on Retry","1. User should be able to upload a random MP4 /MP3 file from local
+2. After the file fails to process, ""profile generation failed""  and retry upload new asset buttons should be displayed
+3. Clicking on retry should retrigger the extraction process",Clicking on retry retriggers the extraction process,
+HeySales Studio> Profile extraction,TC0015_ Check clicking on upload a new asset in the error state,arjun@paperflite.com,"Validate Clicking on upload a new asset should open the local file upload screen, and user should be able to upload a new file for extraction",Manual,Medium,Functional,Create a simulation,NA,"1. Upload a video from local
+2. Click on generate
+3. Click on Upload a new asset","1. User should be able to upload a random MP4 /MP3 file from local
+2. After the file fails to process, ""profile generation failed""  and retry upload new asset buttons should be displayed
+3. Clicking on upload a new asset should open the local file upload screen, and user should be able to upload a new file for extraction","Clicking on upload a new asset opens the local file upload screen, and user is able to upload a new file for extraction",
+HeySales Studio> Profile extraction,TC0016_ Check editing the extracted details,arjun@paperflite.com,Validate user should be able to edit the extracted details in all 3 sections of the simulation,Manual,Medium,Functional,Create a simulation,NA,"1. Upload a video from local
+2. Click on generate
+3. Edit the extracted details","1. User should be able to upload video from local
+2. After successfull extraction company profile, Buyer profile, and Buyer need should be updated from the call
+3. User should be able to edit the extracted details in all 3 sections of the simulation",User is able to edit the extracted details in all 3 sections of the simulation,
+HeySales Studio> Profile extraction,TC0017_ Check uploading an image / paged files for extraction,arjun@paperflite.com,Validate User should not be able to add image / paged files for extraction,Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button
+4. Try to upload image / paged files","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. Clicking on the add source button should bring the Call recording slider
+4. User should not be able to add image / paged files for extraction",User is not able to add image / paged files for extraction,
+HeySales Studio> Profile extraction,TC0018_ Check the call recording slider [with multiple calls uploaded],arjun@paperflite.com,Validate In the call recording slider all the previously uploaded calls should be listed and user should be able to scroll through list,Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. In the call recording slider all the previously uploaded calls should be listed and user should be able to scroll through list",In the call recording slider all the previously uploaded calls are listed and user is able to scroll through list,
+HeySales Studio> Profile extraction,TC0019_ Check creating a simulation with previously extracted call,arjun@paperflite.com,"Validate User should be able to create a simulation with previously extracted call, all the respective details should be  updated",Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button
+4. Select a call","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. Clicking on the add source button should bring the Call recording slider with all the previously uploaded calls
+4. User should be able to create a simulation with previously extracted call, all the respective details should be  updated","User is able to create a simulation with previously extracted call, all the respective details are  updated",
+HeySales Studio> Profile extraction,TC0020_ Check the UI of the previously extracted call,arjun@paperflite.com,"Validate In the call card, Uploaded files name, created date and time, Company name, Buyer name, Created by name with profile pic, and a delete icon should be displayed",Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button
+4.Check the UI","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. Clicking on the add source button should bring the Call recording slider with all the previously uploaded calls
+4. In the call card, Uploaded files name, created date and time, Company name, Buyer name, Created by name with profile pic, and a delete icon should be displayed","In the call card, Uploaded files name, created date and time, Company name, Buyer name, Created by name with profile pic, and a delete icon are displayed",
+HeySales Studio> Profile extraction,TC0021_ Check deleting an previously extracted call,arjun@paperflite.com,Validate User should be able to delete the previously extracted call ,Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button
+4.Click on the delete button
+5. Click on confirm in the confirmation slider","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. Clicking on the add source button should bring the Call recording slider with all the previously uploaded calls
+4. Clicking on the delete button should bring a delete confirmation slider
+5. Clicking on confirm should delete the call from the call recording slider",User is able to delete the previously extracted call ,
+HeySales Studio> Profile extraction,"TC0022_ Check after deleting an extracted call, the generated simulations should not be disturbed",arjun@paperflite.com,"Validate When an extracted call is deleted, all the simulations generated via the deleted call should not be disturbed",Manual,Medium,Functional,Create a simulation with a extracted call,NA,"1. Create a simulation with extracted call
+2. Delete the call
+3. Check the simulation","1. User should be able to create a simulation with extracted call
+2. User should be able to delete the call
+3. When an extracted call is deleted, all the simulations generated via the deleted call should not be disturbed","When an extracted call is deleted, all the simulations generated via the deleted call are not disturbed",
+HeySales Studio> Profile extraction,TC0023_ Check the transcript generation [in progress state],arjun@paperflite.com,Validate While the transcript is generating loading screen should be displayed ,Manual,Medium,Functional,Create a simulation,NA,"1. Create a simulation
+2. Navigate to scenario screen
+3. Click on ""add source"" button
+4. Click on ""upload new call""","1. Admin should be able to create a simulation
+2. In the scenario screen there should be an ""add source"" button available
+3. In the call recording slider if no calls have been uploaded an empty message should be displayed
+4.Clicking on the ""upload new call""  should open the local file upload, uploading the file transcript generation should start","Clicking on the ""upload new call""  should open the local file upload, uploading the file transcript generation starts",
+HeySales Studio> Profile extraction,TC0024_ Check that a call extracted under Account A is not visible under Account B,arjun@paperflite.com,Validate the call extracted under Account A should not be visible under Account B,Manual,Medium,Functional,"1. Account A and Account B exist in the system.
+2. User has valid access to both accounts
+3. A call extraction process is completed for Account A.",NA,"1. Login as learner from account A
+2. Create a simulation
+3. Click on add source, Upload a call
+4. Login as learner from account B
+5. Create a simulation
+6. Click on add source and check the list","1. Learner from account A should be able to login
+2. Simulation should be ceated
+3. Learner should be able to upload a call from local
+4. Learner from account B should be able to login
+5. Simulation should be created
+6. The call extracted under Account A should not be visible under Account B",The call extracted under Account A is not visible under Account B,
+HeySales Studio> Profile extraction,TC0025_ Check uploading a all while editing the simulation,arjun@paperflite.com,Valdiate User should be able to edit the published simulation and add a call to generate a new transcription,Manual,Medium,Functional,"1.User is logged into the system.
+2. A simulation already exists in Published status.
+3. User has the required permissions to edit simulations.
+4. Existing published simulation",NA,"1. Create a simulation
+2. Publish the simulation
+3. Edit the simulation, add a call
+4. Create profile from the call","1. Admin should be able to create a simulation
+2. Admin should be able to publish the simulation
+3. Admin should be able to edit the published simulation, and a call from local
+4. User should be able to edit the published simulation and add a call to generate a new transcription",User is able to edit the published simulation and add a call to generate a new transcription,

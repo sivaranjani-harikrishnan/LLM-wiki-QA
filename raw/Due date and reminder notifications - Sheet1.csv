@@ -1,0 +1,784 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales ManageCourses> Due date and reminder notifications,TC0001_ Check creating a new Learning,arjun@paperflite.com,Validate Admins and content publishers should be able to create a Learning,Manual,Medium,Functional,User should have admin or Content publisher permission,NA,"1. Log in as admin / content publisher
+2. Navigate to hey sales module
+3. Click on Manage Course tab
+4. Click on Create New Course Button","1. Admins should be able to login in successfully
+2. Hey sales module should render successfully
+3. Manage Courses screen should render successfully
+4. Clicking on the Create new course button, should create an empty course with Untitled course as name and empty banner","Clicking on the Create new course button, creates an empty course with Untitled course as name and empty banner",
+HeySales ManageCourses> Due date and reminder notifications,TC0002_ Check publishing the course,arjun@paperflite.com,Validatte Admins should be able to publish the course,Manual,Medium,Functional,Course should have been created.,NA,"1. Add a banner
+2. Add desciption
+3. Add Lessons and Assessments
+4. Add skills
+5. Click on save and Publish","1. Admin should be able to add a banner to the course
+2. Admin should be able to add description to the course
+3. Admin should be able to add Lessons and assessments to the course
+4. Admin should be able to add Skills to the course
+5. Admin should be able to save the course and Publish it",Admin is able to save the course and Publish it,
+HeySales ManageCourses> Due date and reminder notifications,TC0003_ Check adding learners to the course [with specific due date],arjun@paperflite.com,Validate Admins should be able to add learner to the created course [with specific due date ],Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Click on Add Learners button
+2. Check the new Due date option
+3. Click on the Due date option, Select a date from the date picker
+4. Assign a learner","1. Add Learner slider should be displayed
+2. In the slider above the add and cancel buttons, Due data with pick a date should be displayed
+3. Clicking on the Due date option should brign a date picker, and admins should be able to choose any date
+4. Admin should be able to assign a learner with the selected due date",Admin is able to assign a learner with the selected due date,
+HeySales ManageCourses> Due date and reminder notifications,TC0004_ Check adding learners to the course [with relative due date] [to the same course as TC0003 but to a different learner],arjun@paperflite.com,Validate Admins should be able to add learner to the created course [with relative due date],Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Click on Add Learners button
+2. Check the new Due date option
+3. Click on the Due date option, Select time from assignment in the drop down of the date picker
+4. Select one option from the list
+5. Assign a learner","1. Add Learner slider should be displayed
+2. In the slider above the add and cancel buttons, Due data with pick a date should be displayed
+3. Clicking on the Due date option should brign a date picker, and admins should be able select time from assignment in the drop down
+4. The drop down should have 2, 3, 7, 14 days, a month and 2 months as list values and admin should be able to choose any one of the list value
+5. Admin should be able to assign a learner with the selected due date",Admin is able to assign a learner with the selected due date,
+HeySales ManageCourses> Due date and reminder notifications,TC0005_ Check adding multiple learners in one go [Choose the learners first then select the due date],arjun@paperflite.com,"Validate Choosing multiple learners and assiging the due date, all the learners should be assigned with same due date",Manual,Medium,Functional,Admin should create a course add multiple learners and publish it,NA,"1. Create a new podcast
+2. Click on add learners
+3. Choose 5 learners
+4. Now click on Pick a date
+5. Choose a date
+6. Click on add","1. Admin should be able to create a new podcast
+2. Add Learner slider should be displayed
+3. Admin should be able to choose 5 Learners
+4. Clicking on the pick a date should open the data picker
+5. Admin should be able to choose a date
+6. All the selected learners should be added with the same due date","Choosing multiple learners and assiging the due date, all the learners are assigned with same due date",
+HeySales ManageCourses> Due date and reminder notifications,TC0006_ Check adding due date first then choose the learners,arjun@paperflite.com,"Validate Admin should be able to choose the date first and then select the learners, the assigned learners should follow the choosen due date",Manual,Medium,Functional,Admin should create a course and publish it and then add learners to the course,NA,"1. Create a new Simulation
+2. Click on add learners
+3. Now click on Pick a date
+4. Choose a date
+5. Choose 5 learners
+6. Click on add","1. Admin should be able to create a new podcast
+2. Add Learner slider should be displayed
+3. Clicking on the pick a date should open the data picker
+4. Admin should be able to choose a date
+5. Admin should be able to choose 5 Learners
+6. All the selected learners should be added with the same due date","Admin is able to choose the date first and then select the learners, the assigned learners follows the choosen due date",
+HeySales ManageCourses> Due date and reminder notifications,TC0007_ Check the time field in the due date,arjun@paperflite.com,"Validate When choosing a date from the date picker, Time should be by default 12:00AM and admin should not be able to change the time",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course
+2. Click on add learners
+3. Choose 5 learners
+4. Now click on Pick a date
+5. Choose a date
+6. Click on add","1. Admin should be able to create a new podcast
+2. Add Learner slider should be displayed
+3. Admin should be able to choose 5 Learners
+4. Clicking on the pick a date should open the data picker
+5. Admin should be able to choose a date and a default time of 12:00AM should be also added and user should not be able to change the time
+6. All the selected learners should be added with the same due date and time",Admin is able to choose a date and a default time of 12:00AM is also added and user is not able to change the time,
+HeySales ManageCourses> Due date and reminder notifications,TC0008_ Check adding learners to the course without any due date [to the same course as TC0003 but to a different learner],arjun@paperflite.com,Validate Admins should be able to add learner to the created course,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Click on Add Learners button
+2. Assign a learner
+3. Click on add button","1. Add Learner slider should be displayed
+2. Admin should be able to add learners to the course
+3. Clicking on the add button should assign the learner without any due date",Clicking on the add button assigns the learner without any due date,
+HeySales ManageCourses> Due date and reminder notifications,TC0009_ Check having leraners with different type of due dates in same course,arjun@paperflite.com,"Valdiate Admins should be able to add different type of due date to different learners in the same course. Eg: Learner A with specific due date, Learner B with relative due date and Learner c with no due date",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Log in as admin / content publisher
+2. Navigate to hey sales module
+3. Click on Manage Course tab
+4. Click on Create New Course Button 
+5. Click on save and Publish
+6. Click on Add Learners button
+7. Add a learner with specific due date
+8. Add a learner with relative due date
+9. Add a learner with no due date
+10. Click on add button","1. Admins should be able to login in successfully
+2. Hey sales module should render successfully
+3. Manage Courses screen should render successfully
+4. Clicking on the Create new course button, should create an new course
+5. Admin should be able to save the course and Publish it
+6. Add Learner slider should be displayed
+6. Admin should be able to choose learner A and set the due date as specific
+8. Admin should be able to choose learner B and set the due date as relative
+9. Admin should be able to choose learner C with no due date
+10. Clicking on the add button should assign the learner with their respective parameters","Admins are able to add different type of due to different learners in the same course. Eg: Learner A with specific due date, Learner B with relative due date and Learner c with no due date",
+HeySales ManageCourses> Due date and reminder notifications,TC0010_ Check adding leraners with different type of due dates in same course before publishing,arjun@paperflite.com,"Valdiate Admins should be able to add different type of due date to different learners in the same course. Eg: Learner A with specific due date, Learner B with relative due date and Learner c with no due date and then successfully publish the course",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Log in as admin / content publisher
+2. Navigate to hey sales module
+3. Click on Manage Course tab
+4. Click on Create New Course Button
+5. Click on Add Learners button
+6. Add a learner with specific due date
+7. Add a learner with relative due date
+8. Add a learner with no due date
+9. Click on add button
+10. Click on save and Publish","1. Admins should be able to login in successfully
+2. Hey sales module should render successfully
+3. Manage Courses screen should render successfully
+4. Clicking on the Create new course button, should create an new course
+5. Add Learner slider should be displayed
+6. Admin should be able to choose learner A and set the due date as specific
+7. Admin should be able to choose learner B and set the due date as relative
+8. Admin should be able to choose learner C with no due date
+9. Clicking on the add button should assign the learner with their respective parameters
+10. Admin should be able to save the course and Publish it","Admins are able to add different type of due to different learners in the same course. Eg: Learner A with specific due date, Learner B with relative due date and Learner c with no due date and then successfully publish the course",
+HeySales ManageCourses> Due date and reminder notifications,TC0011_ Check adding past date in the specific due date option,arjun@paperflite.com,Validate Admins should not be able to pick past dates in the specific due date picker,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Click on Add Learners button
+2. Check the new Due date option
+3. Try to choose past date in the data picker","1. Add Learner slider should be displayed
+2. In the slider above the add and cancel buttons, Due data with pick a date should be displayed
+3. Clicking on the Due date option should bring a date picker, and admins should not be able to choose a past date from the picker",Admins are not able to pick past dates in the specific due date picker,
+HeySales ManageCourses> Due date and reminder notifications,TC0012_ Check the learners list for learners assigned with due date,arjun@paperflite.com,"Validate In the learners list for learners assigned with due date, Under the User name and Profile pic Due date on date should be displayed",Manual,Medium,Functional,Admin should open any published learning,NA,"1. Create a new Simulation
+2. Click on add learners
+3. Now click on Pick a date
+4. Choose a date
+5. Choose 5 learners
+6. Click on add
+7. Check the learners list","1. Admin should be able to create a new podcast
+2. Add Learner slider should be displayed
+3. Clicking on the pick a date should open the date picker
+4. Admin should be able to choose a date
+5. Admin should be able to choose 5 Learners
+6. All the selected learners should be added with the same due date
+7. In the learners list for learners assigned with due date, Under the User name and Profile pic Due date on date should be displayed","In the learners list for learners assigned with due date, Under the User name and Profile pic Due date on date is displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0013_ Check the learners list for learners assigned with no due date,arjun@paperflite.com,"Validate In the learners list for learners assigned with no due date, Under the User name and Profile pic assigned on date should be displayed",Manual,Medium,Functional,Admin should open any published learning,NA,"1. Create a new Podcast
+2. Click on add learners
+3. Choose 5 learners
+4. Click on add
+5. Check the learners list","1. Admin should be able to create a new podcast
+2. Add Learner slider should be displayed
+3. Admin should be able to choose 5 Learner
+4. All the selected learners should be added with the no due date
+5. In the learners list for learners assigned with no due date, Under the User name and Profile pic assigned on date is displayed","In the learners list for learners assigned with no due date, Under the User name and Profile pic assigned on date is displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0014_ Check the learners list for learners enrolled to a learning,arjun@paperflite.com,"Validate For Learners who enrolled to a learning, In the learners list Under the User name and Profile pic enrolled date should be displayed ",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Login as a learner
+2. Navigate to Hey sales, Explore page
+3. Enroll to a learning
+4. Login as admin
+5. Open the learning
+6. Check the learners list","1. Learner should be able to login successfully
+2. Learner should be able to navigate to explore page in hey sales
+3. Learner should be able to open any course and should be able to self enroll them
+4. Admin should be able to Login successfully
+5. Admin should be able to open the course, which the learner has self assigned to
+6. For Learners who enrolled to a learning, In the learners list Under the User name and Profile pic enrolled date should be displayed ","For Learners who enrolled to a learning, In the learners list Under the User name and Profile pic enrolled date is displayed ",
+HeySales ManageCourses> Due date and reminder notifications,TC0015_ Check the due date is not mandatory,arjun@paperflite.com,Validate Admins should be able to create a learning and assign learners without any due date,Manual,Medium,Functional,Admin should create a course and publish it without any due date,NA,"1. Create a new Podcast
+2. Click on add learners
+3. Choose 5 learners
+4. Click on add","1. Admin should be able to create a new podcast
+2. Add Learner slider should be displayed
+3. Admin should be able to choose 5 Learner
+4. All the selected learners should be added with the no due date",Admins can create a learning and assign learners with out any due date,
+HeySales ManageCourses> Due date and reminder notifications,TC0016_ Check Learners list when the learners have completed the learning before the due date,arjun@paperflite.com,"Validate When a learner has completed a learning within the due date, in the admin view learners list on the Users profic pic an hourglass in green colour, completed on date and the percentage should be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. As an admin create a course
+2. Assign to a learner with due date [15th Jan 2026]
+3. Login as learner
+4. Complete the course within the due date [12th Jan 2026]
+5. Login as admin
+6. Check the learners list","1. Admin should be able to create a course
+2. Admin should be able to assign a learner to the course with due date
+3. Learner should be able to login 
+4. Learner should be able to complete the course within the due date
+5. Admin should be able to login successfully
+6. When a learner has completed a learning within the due date, in the admin view learners list on the Users profic pic an hourglass in green colour, completed on date and the percentage should be displayed","When a learner has completed a learning within the due date, in the admin view learners list on the Users profic pic an hourglass in green colour, completed on date and the percentage are displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0017_ Check Learners list when the learners have completed the learning after the due date,arjun@paperflite.com,"Validate When a learner has completed a learning after the due date, in the admin view learners list on the Users profic pic an hourglass in red colour, completed on date and the percentage should be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. As an admin create a course
+2. Assign to a learner with due date [15th Jan 2026]
+3. Login as learner
+4. Complete the course after the due date [17th Jan 2026]
+5. Login as admin
+6. Check the learners list","1. Admin should be able to create a course
+2. Admin should be able to assign a learner to the course with due date
+3. Learner should be able to login 
+4. Learner should be able to complete the course after the due date
+5. Admin should be able to login successfully
+6. When a learner has completed a learning after the due date, in the admin view learners list on the Users profic pic an hourglass in red colour, completed on date and the percentage should be displayed","When a learner has completed a learning after the due date, in the admin view learners list on the Users profic pic an hourglass in red colour, completed on date and the percentage should be displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0018_ Check hovering over the hourglass,arjun@paperflite.com,"Validate When admin hovers over the hourglass a tooltip with ""due on date"" should be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. As an admin create a course
+2. Assign to couple learners with due date [15th Jan 2026]
+3. Login as learner A
+4. Complete the course within the due date [12th Jan 2026]
+5. Now Login as Learner B
+6. Complete the course after the due date [17th Jan 2026]
+7. Login as admin
+8. Check the learners list","1. Admin should be able to create a course
+2. Admin should be able to assign couple of learner to the course with due date
+3. Learner A should be able to login 
+4. Learner A should be able to complete the course within the due date
+5. Learner B should be able to login 
+6. Learner B  should be able to complete the course after the due date
+7. Admin should be able to login successfully
+8. When admin hovers over the hourglass a tooltip with ""due on date"" should be displayed","When admin hovers over the hourglass a tooltip with ""due on date"" is displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0019_ Check Learners list when the learners are in progress before the due date,arjun@paperflite.com,Validate In the learners list for in progress learners the due on date and the progress of completion should be displayed,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course,make some progress do not complete it
+5. Log in as admin
+6. Check the Learners list","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course and make progress
+5. Admin should be able to Login
+6. In the learners list for in progress learners the due on date and the progress of completion should be displayed",In the learners list for in progress learners the due on date and the progress of completion is displayed,
+HeySales ManageCourses> Due date and reminder notifications,TC0020_ Check Learners list when the learners are in progress after the due date,arjun@paperflite.com,Validate In the learners list for in progress learners the overdue on date and the progress of completion should be displayed,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course after the due date,make some progress do not complete it
+5. Log in as admin
+6. Check the Learners list","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course and make progress
+5. Admin should be able to Login
+6. In the learners list for in progress learners the overdue on date and the progress of completion should be displayed",In the learners list for in progress learners the overdue on date and the progress of completion is displayed,
+HeySales ManageCourses> Due date and reminder notifications,TC0021_ Check Learners list when the learners are have started before the due date,arjun@paperflite.com,Validate In the learners list for Not Started learners the due on date should be displayed,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Check the Learners list","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. In the learners list for Not Started learners the due on date should be displayed",In the learners list for Not Started learners the due on date is displayed,
+HeySales ManageCourses> Due date and reminder notifications,TC0022_ Check Learners list when the learners have not started even after the due date,arjun@paperflite.com,Validate In the learners list for Not Started learners the overdue on date should be displayed,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Check the Learners list after Due date","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. In the learners list for Not Started learners the overdue on date should be displayed",In the learners list for Not Started learners the overdue on date is displayed,
+HeySales ManageCourses> Due date and reminder notifications,TC0023_ Check the course assigned to a learner with due date in the explore page,arjun@paperflite.com,Valdiate In the Explore page on the course card the due date should not be displayed,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner [A]
+3. Login as the learner [A]
+4. Navigae to Explore page
+5. Check the course card","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners [A] to the course
+3. Learner [A] should be able to login 
+4. Learner [A] should be able to access the Explore page
+5. In the Explore page on the course card the due date should not be displayed",In the Explore page on the course card the due date is not displayed,
+HeySales ManageCourses> Due date and reminder notifications,"TC0024_ Check the course assigned to a learner with due date, opened from My course page, Courses assigned [within due date]",arjun@paperflite.com,"Validate In the Course screen for learners, On the Start course button no of days left should be displayed and a due on with the date should be displayed in the course as a new metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course [ABC] with due date
+2. Add a learner [A]
+3. Login as the learner [A]
+4. Navigae to My Course
+5. Click on the Course [ABC]
+6. Check the due on date metadata","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners [A] to the course
+3. Learner [A] should be able to login 
+4. Learner should be able to navigate to My course page
+5. In the My course page course [ABC] should be displayed and user should be able to click on it
+6. In the Course screen for learners, On the Start course button no of days left should be displayed and a due on with the date should be displayed in the course as a new metadata","In the Course screen for learners, On the Start course button no of days left is displayed and a due on with the date is displayed in the course as a new metadata",
+HeySales ManageCourses> Due date and reminder notifications,"TC0025_ Check the course assigned to a learner with due date, opened from My course page, Courses assigned [Due date is overdue]",arjun@paperflite.com,"Validate In the Course screen for learners, On the Start course button no of days left should be displayed and a overdue on with the date should be displayed in the course as a new metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Simulation [ABC] with due date
+2. Add a learner [A]
+3. Login as the learner [A]
+4. Navigae to My Course
+5. Click on the Simulation [ABC] after the due date
+6. Check the due on date metadata","1. Admin should be able to create a Simulation with due date
+2. Admin should be able to add learners [A] to the Simulation
+3. Learner [A] should be able to login 
+4. Learner should be able to navigate to My course page
+5. In the My course page Simulation [ABC] should be displayed and user should be able to click on it
+6. In the Course screen for learners, On the Start Call button no of days left should be displayed and a overdue on with the date should be displayed in the course as a new metadata","In the Course screen for learners, On the Start Call button no of days left is displayed and a overdue on with the date is displayed in the course as a new metadata",
+HeySales ManageCourses> Due date and reminder notifications,"TC0026_ Check the inprogress learning with due date, opened from My course page, Courses InProgress [within due date]",arjun@paperflite.com,"Validate In the Course screen for learners, On the Resume course button no of days left should be displayed and a due on with the date should be displayed in the course as a new metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course,make some progress do not complete it
+5. Open My courses
+6. Click on the Course from in progress
+7. Check the due on date metadata","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course and make progress
+5. Learner should be able to navigate to Mycourse page
+6. In the My course page course [ABC] should be displayed in Inprogress section and user should be able to click on it
+7. In the Course screen for learners, On the Resume course button no of days left should be displayed and a due on with the date should be displayed in the course as a new metadata","In the Course screen for learners, On the Resume course button no of days left is displayed and a due on with the date is displayed in the course as a new metadata",
+HeySales ManageCourses> Due date and reminder notifications,"TC0027_ Check the inprogress learning with due date, opened from My course page, Courses InProgress [Due date is Overdue]",arjun@paperflite.com,"Validate In the Course screen for learners, On the Resume course button no of days left should be displayed and a overdue on with the date should be displayed in the course as a new metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course after the due date,make some progress do not complete it
+5. Open My courses
+6. Click on the Course from in progress
+7. Check the due on date metadata","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course after the due date and make progress
+5. Learner should be able to navigate to Mycourse page
+6. In the My course page course [ABC] should be displayed in Inprogress section and user should be able to click on it
+7. In the Course screen for learners, On the Resume course button no of days left should be displayed and a overdue on with the date should be displayed in the course as a new metadata","In the Course screen for learners, On the Resume course button no of days left is displayed and a due on with the date is displayed in the course as a new metadata",
+HeySales ManageCourses> Due date and reminder notifications,TC0028_ Check the completed course card [Completed within due date],arjun@paperflite.com,"Validate In the Course screen for learners, on the banner only Retake course button should be displayed and the due date data should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course after the due date, complete the course [within due date]
+5. Open My courses
+6. Click on the Course from Completed
+7. Check the due on date metadata","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course with in the due date and complete it
+5. Learner should be able to navigate to Mycourse page
+6. In the My course page course [ABC] should be displayed Completed section and user should be able to click on it
+7. In the Course screen for learners, on the banner only Retake course button should be displayed and the due date data should not be displayed","In the Course screen for learners, on the banner only Retake course button is displayed and the due date data is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0029_ Check the completed course card [Completed after due date],arjun@paperflite.com,"Validate In the Course screen for learners, on the banner only Retake course button should be displayed and the due date data should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course after the due date, complete the course [after due date]
+5. Open My courses
+6. Click on the Course from Completed
+7. Check the due on date metadata","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course after the due date and complete it
+5. Learner should be able to navigate to Mycourse page
+6. In the My course page course [ABC] should be displayed Completed section and user should be able to click on it
+7. In the Course screen for learners, on the banner only Retake course button should be displayed and the due date data should not be displayed","In the Course screen for learners, on the banner only Retake course button is displayed and the due date data is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0030_ Check a Not Started Simulation with due date that is opened from explore page [Within due date],arjun@paperflite.com,"Validate In the Simulation screen for learners, On the Start Call button no of days left should be displayed and a due on with the date should be displayed in the Simulation as a new metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Simulation [ABC] with due date
+2. Add a learner [A]
+3. Login as the learner [A]
+4. Navigae to Explore page
+5. Click on the Simulation [ABC]
+6. Check the due on date metadata","1. Admin should be able to create a Simulation with due date
+2. Admin should be able to add learners [A] to the Simulation
+3. Learner [A] should be able to login 
+4. Learner should be able to navigate to Explore page
+5. In the Explore page Simulation [ABC] should be displayed and user should be able to click on it
+6. In the Simulation screen for learners, On the Start Call button no of days left should be displayed and a due on with the date should be displayed in the course as a new metadata","In the Course screen for learners, On the Start call button no of days left is displayed and a due on with the date is displayed in the course as a new metadata",
+HeySales ManageCourses> Due date and reminder notifications,TC0031_ Check a Not Started simulation with due date that is opened from explore page [after due date],arjun@paperflite.com,"Validate In the Simulation screen for learners, On the Start call button no of days left should be displayed and overdue on with the date should be displayed in the Simulation as a new metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Simulation [ABC] with due date
+2. Add a learner [A]
+3. Login as the learner [A]
+4. Navigae to Explore page
+5. Click on the Simulation [ABC]
+6. Check the due on date metadata","1. Admin should be able to create a Simulation with due date
+2. Admin should be able to add learners [A] to the Simulation
+3. Learner [A] should be able to login 
+4. Learner should be able to navigate to Explore page
+5. In the Explore page Simulation [ABC] should be displayed and user should be able to click on it
+6. In the Simulation screen for learners, On the Start Call button no of days left should be displayed and overdue on with the date should be displayed in the course as a new metadata","In the Course screen for learners, On the Start call button no of days left is displayed and overdue on with the date is displayed in the course as a new metadata",
+HeySales ManageCourses> Due date and reminder notifications,TC0032_ Check a Inprogress course with due date that is opened from explore page [Within due date],arjun@paperflite.com,"Validate In the Course screen for learners, On the Resume course button no of days left should be displayed and due on with the date should be displayed in the course as a new metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course within the due date, make some progress and do not complete it
+5. Open Explore page
+6. Click on the course
+7. Check the due on date metadata","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course with in the due date and make some progress
+5. Learner should be able to navigate to Explore page
+6. In the Explore page course should be displayed and user should be able to click on it
+7. In the Course screen for learners, On the Resume course button no of days left should be displayed and due on with the date should be displayed in the course as a new metadata","In the Course screen for learners, On the Resume course button no of days left is displayed and due on with the date is displayed in the course as a new metadata",
+HeySales ManageCourses> Due date and reminder notifications,TC0033_ Check a Inprogress course with due date that is opened from explore page [after due date],arjun@paperflite.com,"Validate In the Course screen for learners, On the Resume course button no of days left should be displayed and overdue on with the date should be displayed in the course as a new metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course after the due date, make some progress and do not complete it
+5. Open Explore page
+6. Click on the course
+7. Check the due on date metadata","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course with in the due date and make some progress
+5. Learner should be able to navigate to Explore page
+6. In the Explore page course should be displayed and user should be able to click on it
+7. In the Course screen for learners, On the Resume course button no of days left should be displayed and overdue on with the date should be displayed in the course as a new metadata","In the Course screen for learners, On the Resume course button no of days left is displayed and overdue on with the date is displayed in the course as a new metadata",
+HeySales ManageCourses> Due date and reminder notifications,TC0034_ Check a completed course with due date that is opened from explore page [Within due date],arjun@paperflite.com,"Validate In the Course screen for learners, on the banner only Retake course button should be displayed and the due date data should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course within the due date, complete it
+5. Open Explore page
+6. Click on the course
+7. Check the due on date metadata","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course with in the due date and complete it
+5. Learner should be able to navigate to Explore page
+6. In the Explore page course should be displayed and user should be able to click on it
+7. In the Course screen for learners, on the banner only Retake course button should be displayed and the due date data should not be displayed","In the Course screen for learners, on the banner only Retake course button is displayed and the due date data is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0035_ Check a completed course with due date that is opened from explore page [after due date],arjun@paperflite.com,"Validate In the Course screen for learners, on the banner only Retake course button should be displayed and the due date data should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Login as the learner
+4. Start the course after the due date, complete it
+5. Open Explore page
+6. Click on the course
+7. Check the due on date metadata","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Learner  should be able to login 
+4. Learner should be able to start the course after in the due date and complete it
+5. Learner should be able to navigate to Explore page
+6. In the Explore page course should be displayed and user should be able to click on it
+7. In the Course screen for learners, on the banner only Retake course button should be displayed and the due date data should not be displayed","In the Course screen for learners, on the banner only Retake course button is displayed and the due date data is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0036_ Check for courses with no due date opened from My courses,arjun@paperflite.com,Validate For courses with no due date Start course / Resume course / Retake Course buttons should be displayed without any due date,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course without Due date
+2. Add a learners [A,B and C]
+3. Login as learner A and complete the course
+4. Login as learner B and keep it Inprogress
+5. Login as learner C and Do not start the course
+6. Open My course as Learner A and click on the completed course
+7. Open My course as Learner B and click on the Inprogress course
+8. Open My course as Learner C and click on the Not Started course","1. Admin should be able to create a course without due date
+2. Admin should be able to add learners A, B and C to the course
+3. Learner A should be able to login and complete the course
+4. Learner B should be able to login and start the course and keep it inprogress
+5. Learner C should be able to login and not start the course
+6. For Learner A in the course screen only the Retake course button should be displayed without due
+7. For Learner B in the course screen only the Resume course button should be displayed without due
+8. For Learner C in the course screen only the Start course button should be displayed without due",For courses with no due date Start course / Resume course / Retake Course buttons are displayed without any due date,
+HeySales ManageCourses> Due date and reminder notifications,TC0037_ Check for courses with no due date opened from Explore Page,arjun@paperflite.com,Validate For courses with no due date Start course / Resume course / Retake Course buttons should be displayed without any due date,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course without Due date
+2. Add a learners [A, and B][Do not assign to Learner C]
+3. Login as learner A and complete the course
+4. Login as learner B and keep it Inprogress
+5. Login as learner C and Do not start the course
+6. Open Explore page as Learner A and click on the completed course
+7. Open Explore page as Learner B and click on the Inprogress course
+8. Open Explore page as Learner C and click on the Not Started course","1. Admin should be able to create a course without due date
+2. Admin should be able to add learners A, and B to the course
+3. Learner A should be able to login and complete the course
+4. Learner B should be able to login and start the course and keep it inprogress
+5. Learner C should be able to login and not start the course
+6. For Learner A in the course screen only the Retake course button should be displayed without due
+7. For Learner B in the course screen only the Resume course button should be displayed without due
+8. For Learner C in the course screen only the Start course button should be displayed without due",For courses with no due date Start course / Resume course / Retake Course buttons are displayed without any due date,
+HeySales ManageCourses> Due date and reminder notifications,TC0038_ Check the Due date data for podcast in My course page [Not Started],arjun@paperflite.com,"Validate For podcast opened from My course, Only Due date data should be displayed, and no of days left should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Podcast with Due date
+2. Add a learners A
+3. Login as learner A
+4. Navigate to My course
+5. Click on the assigned podcast from Courses assigned tab
+6. Check the due date data","1. Admin should be able to create a Podcast with due date
+2. Admin should be able to add learner A  to the podcast
+3. Learner A should be able to login
+4. Learner A should be able to navigate to My course screen
+5. Clicking on the podcast should open the podcast playing screen
+6. For podcast opened from My course, Only Due date data should be displayed, and no of days left should not be displayed","For podcast opened from My course, Only Due date data is displayed, and no of days left is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0039_ Check the Due date data for podcast in My course page [Courses In progress],arjun@paperflite.com,"Validate For podcast opened from My course, Only Due date data should be displayed, and no of days left should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Podcast with Due date
+2. Add a learners A
+3. Login as learner A
+4. Navigate to My course
+5. Click on the assigned podcast from Courses inprogress tab
+6. Check the due date data","1. Admin should be able to create a Podcast with due date
+2. Admin should be able to add learner A  to the podcast
+3. Learner A should be able to login
+4. Learner A should be able to navigate to My course screen
+5. Clicking on the podcast should open the podcast playing screen
+6. For podcast opened from My course, Only Due date data should be displayed, and no of days left should not be displayed","For podcast opened from My course, Only Due date data is displayed, and no of days left is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0040_ Check the Due date data for podcast in My course page [Courses Completed],arjun@paperflite.com,"Validate For podcast opened from My course, Only Due date data should be displayed, and no of days left should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Podcast with Due date
+2. Add a learners A
+3. Login as learner A
+4. Navigate to My course
+5. Click on the assigned podcast from Courses Completed tab
+6. Check the due date data","1. Admin should be able to create a Podcast with due date
+2. Admin should be able to add learner A  to the podcast
+3. Learner A should be able to login
+4. Learner A should be able to navigate to My course screen
+5. Clicking on the podcast should open the podcast playing screen
+6. For podcast opened from My course, Only Due date data should be displayed, and no of days left should not be displayed","For podcast opened from My course, Only Due date data is displayed, and no of days left is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0041_ Check the Due date data for podcast in Explore page [Not Started podcast],arjun@paperflite.com,"Validate For podcast opened from Explore page, Enroll Podcast and Only Due date data should be displayed, and no of days left should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Podcast with Due date
+2. Login as learner 
+3. Navigate to Explore
+4. Click on the podcast
+5. Check the due date data","1. Admin should be able to create a Podcast with due date
+2. Learner A should be able to login
+3. Learner should be able to navigate to Explore oage
+4. Clicking on the podcast should open podcast play screen
+5. For podcast opened from Explore page, Enroll Podcast and Only Due date data should be displayed, and no of days left should not be displayed","For podcast opened from Explore page, Enroll Podcast and Only Due date data is displayed, and no of days left is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0042_ Check the Due date data for podcast in Explore page [In progress podcast],arjun@paperflite.com,"Validate For podcast opened from Explore page, Only Due date data should be displayed, and no of days left should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Podcast with Due date
+2. Add a learners A
+3. Login as learner A and Start the podcast pause it midway
+4. Navigate to Explore page
+5. Click on the podcast
+6. Check the due date data","1. Admin should be able to create a Podcast with due date
+2. Admin should be able to add learner A  to the podcast
+3. Learner A should be able to login and start the podcast and pause it midway
+4. Learner A should be able to navigate to Explore screen
+5. Clicking on the podcast should open the podcast playing screen
+6. For podcast opened from Explore page, Only Due date data should be displayed, and no of days left should not be displayed","For podcast opened from Explore page, Only Due date data is displayed, and no of days left is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0043_ Check the Due date data for podcast in Explore page [Completed podcast],arjun@paperflite.com,"Validate For podcast opened from Explore page, Only Due date data should be displayed, and no of days left should not be displayed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Podcast with Due date
+2. Add a learners A
+3. Login as learner A and Start the podcast and complete it
+4. Navigate to Explore page
+5. Click on the podcast
+6. Check the due date data","1. Admin should be able to create a Podcast with due date
+2. Admin should be able to add learner A  to the podcast
+3. Learner A should be able to login and star the podcast and complete it
+4. Learner A should be able to navigate to Explore screen
+5. Clicking on the podcast should open the podcast playing screen
+6. For podcast opened from Explore page, Only Due date data should be displayed, and no of days left should not be displayed","For podcast opened from Explore page, Only Due date data is displayed, and no of days left is not displayed",
+HeySales ManageCourses> Due date and reminder notifications,TC0044_ Check the Learnings card for learning which has due date as today in My course screen,arjun@paperflite.com,"Validate For learnings with due date as today, in the learnings screen on the Start / resume / restart button due on today should be displayed and due on date should be displayed as the learnings metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with Due date as the same day
+2. Add a learners [A,B and C]
+3. Login as learner A and complete the course
+4. Login as learner B and keep it Inprogress
+5. Login as learner C and Do not start the course
+6. Open My course as Learner A and click on the completed course
+7. Open My course as Learner B and click on the Inprogress course
+8. Open My course as Learner C and click on the Not Started course","1. Admin should be able to create a course with due date as the same day
+2. Admin should be able to add learners A, B and C to the course
+3. Learner A should be able to login and complete the course
+4. Learner B should be able to login and start the course and keep it inprogress
+5. Learner C should be able to login and not start the course
+6. For Learner A in the course screen the Retake course button ""due on Today"" should be displayed with the due date
+7. For Learner B in the course screen the Resume course button ""due on Today"" should be displayed with the due date
+8. For Learner C in the course screen the Start course button ""due on Today"" should be displayed with the due date","For learnings with due date as today, in the learnings screen on the Start / resume / restart button due on today is displayed and due on date is displayed as the learnings metadata",
+HeySales ManageCourses> Due date and reminder notifications,TC0045_ Check the Learnings card for learning which has due date as today in Explore page,arjun@paperflite.com,"Validate For learnings with due date as today, in the learnings screen on the Start / resume / restart button due on today should be displayed and due on date should be displayed as the learnings metadata",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with Due date as the same day
+2. Add a learners [A, and B][Do not assign to Learner C]
+3. Login as learner A and complete the course
+4. Login as learner B and keep it Inprogress
+5. Login as learner C and Do not start the course
+6. Open Explore page as Learner A and click on the completed course
+7. Open Explore page as Learner B and click on the Inprogress course
+8. Open Explore page as Learner C and click on the Not Started course","1. Admin should be able to create a course with due date as the same day
+2. Admin should be able to add learners A, and B 
+3. Learner A should be able to login and complete the course
+4. Learner B should be able to login and start the course and keep it inprogress
+5. Learner C should be able to login and not start the course
+6. For Learner A in the course screen the Retake course button ""due on Today"" should be displayed with the due date
+7. For Learner B in the course screen the Resume course button ""due on Today"" should be displayed with the due date
+8. For Learner C in the course screen only the Enroll course button should be displayed without any due date","For learnings with due date as today, in the learnings screen on the Start / resume / restart button due on today is displayed and due on date is displayed as the learnings metadata",
+HeySales ManageCourses> Due date and reminder notifications,TC0046_ Check editing the due date ,arjun@paperflite.com,Validate Admins / Learning creator should not be able to edit the assigned due date of a learner,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date
+2. Add a learner
+3. Try to edit the due date","1. Admin should be able to create a course with due date
+2. Admin should be able to add learners to the course
+3. Admins / Learning creator should not be able to edit the assigned due date of a learner",Admins / Learning creator are not able to edit the assigned due date of a learner,
+HeySales ManageCourses> Due date and reminder notifications,TC0047_ Check reassigning a learning to an existing learner with new due date [Due date should be ahead of the current assigned date] [eg: from 31/12/2025 to 30/01/2026] for Learners who are Inprogress or Not Started the learning,arjun@paperflite.com,"Validate For the In progress or the not started learners the due date should not be updated with the new reassignment data, the due date should still be the initially assigned date",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date [eg: 31/12/2025]
+2. Add a learner
+3. Login as the learner
+4. Check the course card in My course
+5. Login as admin
+6. Reassign the course to the same learner with new due date [eg: 30/01/2026]
+7. Login as the learner
+8. Check the course card in My course","1. Admin should be able to create a course 
+2. Admin should be able to add a learner to the course with due date as [31/12/2025]
+3. Learner should be able to Login 
+4. In the course card Start course button or Resume course button / X days left should be disoplayed [eg: 30 days]
+5. Admin should be able to login
+6. Admin should be able to reassign the course to the same learner [in step 2] with new due date [eg: 30/01/2026]
+7. Learner should be able to login
+8. In the Course card Start course or Resume course button  / X days should be displayed [eg: 30 days] and the days should be calculated based on the first assignment not the second assignment","For the In progress or the not started learners the due date does not updated with the new reassignment data, the due date is still the initially assigned date",
+HeySales ManageCourses> Due date and reminder notifications,TC0048_ Check reassigning a learning to an existing learner with new due date [Due date should be prior of the current assigned date] [eg: from 31/12/2025 to 30/11/2025] for Learners who are Inprogress or Not Started the learning,arjun@paperflite.com,"Validate For the In progress or the not started learners the due date should not be updated with the new reassignment data, the due date should still be the initially assigned date",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 31/12/2025]
+3. Login as the learner
+4. Check the course card in My course
+5. Login as admin
+6. Reassign the course to the same learner with new due date [eg: 30/11/2025]
+7. Login as the learner
+8. Check the course card in My course","1. Admin should be able to create a course 
+2. Admin should be able to add a learner to the course with due date as [31/12/2025]
+3. Learner should be able to Login 
+4. In the course card Start course button or Resume course button  / X days left should be disoplayed [eg: 30 days]
+5. Admin should be able to login
+6. Admin should be able to reassign the course to the same learner [in step 2] with new due date [eg: 30/11/2025]
+7. Learner should be able to login
+8. In the Course card Start course or Resume course button  / X days should be displayed [eg: 30 days] and the days should be calculated based on the first assignment not the second assignment","For the In progress or the not started learners the due date does not updated with the new reassignment data, the due date is still the initially assigned date",
+HeySales ManageCourses> Due date and reminder notifications,TC0049_ Check reassigning a learning to an existing learner with new due date [Due date should be ahead of the current assigned date] [eg: from 31/12/2025 to 30/01/2026] for Learners who have completed the course,arjun@paperflite.com,Validate For the completed learners the due date should be updated with the new reassignment data,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course with due date [eg: 31/12/2025]
+2. Add a learner
+3. Login as the learner and complete the course
+4. Check the course card in My course
+5. Login as admin
+6. Reassign the course to the same learner with new due date [eg: 30/01/2026]
+7. Login as the learner
+8. Check the course card in My course","1. Admin should be able to create a course 
+2. Admin should be able to add a learner to the course with due date as [31/12/2025]
+3. Learner should be able to Login and complete the course
+4. In the course card only the Retake course button should be displayed
+5. Admin should be able to login
+6. Admin should be able to reassign the course to the same learner [in step 2] with new due date [eg: 30/01/2026]
+7. Learner should be able to login
+8. In the Course card Start course or Resume course button  / X days should be displayed [eg: 30 days] and the days should be calculated based on the Second assignment not the first assignment",For the completed learners the due date is updated with the new reassignment data,
+HeySales ManageCourses> Due date and reminder notifications,TC0050_ Check adding a due date to a user group,arjun@paperflite.com,"Valdiate When admin adds a due date to the user group, all the users in the group should be assigned with the due date",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course
+2. Click on add learners
+3. Choose a User group
+4. Now click on Pick a date
+5. Choose a date
+6. Click on add","1. Admin should be able to create a new podcast
+2. Add Learner slider should be displayed
+3. Admin should be able to choose a user group
+4. Clicking on the pick a date should open the data picker
+5. Admin should be able to choose a date and a default time of 12:00AM should be also added
+6. All the learners in the selected user group should be added with the same due date and time","When admin adds a due date to the user group, all the users in the group is assigned with the due date",
+HeySales ManageCourses> Due date and reminder notifications,TC0051_ Check adding due date for a learner who is already added to the course without any due date,arjun@paperflite.com,Validate If the learner has not started the course or in inprogess the new assignment date should not be added to the learner,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a course
+2. Add a Learner without any due date
+3. Login as learner, start the course do not complete it
+4. Log in as admin
+5. Reassign the leaner with due date
+6. Login as learner and check the course card","1. Admin should be able to create a course
+2. Admin should be assign a learner without any due date
+3. Learner should be able to login and start the course
+4. Admin should be able to Log in
+5. Admin should be able to reassign the learner with due date
+6. The due date should not be added to the learner in the course card",If the learner has not started the course or in inprogess the new assignment date is not added to the learner,
+HeySales ManageCourses> Due date and reminder notifications,TC0052_ Check adding due date for a learner who is already added to the course without any due date [add due date after the learner has completed the course],arjun@paperflite.com,Validate If the learner has completed the course the new assignment date should be added to the learner,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a course
+2. Add a Learner without any due date
+3. Login as learner, start the course complete it
+4. Log in as admin
+5. Reassign the leaner with due date
+6. Login as learner and check the course card","1. Admin should be able to create a course
+2. Admin should be assign a learner without any due date
+3. Learner should be able to login and complete the course
+4. Admin should be able to Log in
+5. Admin should be able to reassign the learner with due date
+6. The due date should be added to the learner in the course card",If the learner has completed the course the new assignment date is added to the learner,
+HeySales ManageCourses> Due date and reminder notifications,TC0053_ Check the Custom date field in relative due date,arjun@paperflite.com,"Validate Admin should be able to add X number days in the custom date field, and the due date should calculated based on the current date + the number of days added [eg: current date is 30/10/2025 and the added number of days in 30 days then the due date should be 28/11/2025]",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Click on Add Learners button
+2. Check the new Due date option
+3. Click on the Due date option, Select time from assignment in the drop down of the date picker
+4. Add number of days in the Custom date field [eg: 30 days]
+5. Assign a learner","1. Add Learner slider should be displayed
+2. In the slider above the add and cancel buttons, Due data with pick a date should be displayed
+3. Clicking on the Due date option should brign a date picker, and admins should be able select time from assignment in the drop down
+4. Admin should be able to add number of days as 30 days
+5. Admin should be able to assign a learner with the selected due date","Admin is able to add X number days in the custom date field, and the due date is calculated based on the current date + the number of days added [eg: current date is 30/10/2025 and the added number of days in 30 days then the due date is 28/11/2025]",
+HeySales ManageCourses> Due date and reminder notifications,TC0054_ Check the default selected option in the time from assignment [relative due date],arjun@paperflite.com,"Validate When admin choose Time from assignment, by default Custom date should be choosen",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course 
+2. Click on Add Learners button
+3. Click on the Due date option, Select time from assignment in the drop down of the date picker
+4. Check the default selected option","1. Admin should be able to create a course 
+2. Add Learner slider should be displayed
+3. Clicking on the Due date option should brign a date picker, and admins should be able select time from assignment in the drop down
+4. When admin choose Time from assignment, by default Custom date should be choosen","When admin choose Time from assignment, by default Custom date is choosen",
+HeySales ManageCourses> Due date and reminder notifications,TC0055_ Check the Custom date field in the time from assignment,arjun@paperflite.com,"Validate Admin should be able to enter only numeric values, no Spl characters and alphabets are allowed",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course 
+2. Click on Add Learners button
+3. Click on the Due date option, Select time from assignment in the drop down of the date picker
+4. Enter any number in the Custom date field
+5. Enter any spl character in the custom date field
+6. Enter any alphabet in the custom date field
+7. Check the max number limit of the custom date field","1. Admin should be able to create a course 
+2. Add Learner slider should be displayed
+3. Clicking on the Due date option should brign a date picker, and admins should be able select time from assignment in the drop down
+4. Admin should be able to add number to the custom date field
+5. Admin should not  be able to add Spl characters to the custom date field
+6. Admin should not be able to add alphabets to the custom date field
+7. Product is yet to confirm","Admin is able to enter only numeric values, no Spl characters and alphabets are allowed",
+HeySales ManageCourses> Due date and reminder notifications,TC0056_ Check assignment notification includes due date,arjun@paperflite.com,Validate The notification emails when a learning is assigned should have the due date as new metadata,Manual,Medium,Functional,Learning assigned with a due date,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 31/12/2025]
+3. Chcek the learners email","1. Admin should be able to create a course 
+2. Admin should be able to add a learner to the course with due date as [31/12/2025]
+3. The notification emails when a learning is assigned should have the due date as new metadata",The notification emails when a learning is assigned has the due date as new metadata,
+HeySales ManageCourses> Due date and reminder notifications,TC0057_ Check 50% duration reminder trigger (even duration),arjun@paperflite.com,Validate If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day).,Manual,Medium,Functional,Wait till Dec 16 (15th day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 31st dec] on 1st dec
+3. Check the learners email","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [31/12/2025]
+3. If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day).",If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification is triggered on Dec 16 (15th day).,
+HeySales ManageCourses> Due date and reminder notifications,TC0058_ Check 50% duration reminder trigger (Odd duration),arjun@paperflite.com,Validate If the is Assignment date is Dec 1 and Due date is Jan 1 (31 days gap) a reminder notification should be triggered on Dec 16 (15th day).,Manual,Medium,Functional,Wait till Dec 16 (15th day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 1st jan] on 1st dec
+3. Check the learners email","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [31/12/2025]
+3. If the is Assignment date is Dec 1 and Due date is Jan 1 (31 days gap) a reminder notification should be triggered on Dec 16 (15th day).",If the is Assignment date is Dec 1 and Due date is Jan 1 (31 days gap) a reminder notification is triggered on Dec 16 (15th day).,
+HeySales ManageCourses> Due date and reminder notifications,TC0059_ Check the 7th day reminder trigger,arjun@paperflite.com,"Valdiate If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email should be triggered]",Manual,Medium,Functional,Wait till Dec 23 (7th day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 31st dec] on 1st dec
+3. Check the learners email on Dec 16
+4. Check the learners email on Dec 23rd","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [31/12/2025]
+3. If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day).
+4. If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email should be triggered]","If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification is triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email is triggered]",
+HeySales ManageCourses> Due date and reminder notifications,TC0060_ Check the 3rd day reminder trigger,arjun@paperflite.com,"Valdiate If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification should be triggered and on 3rd day a notification should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email should be triggered and on 27th an email should be triggered]",Manual,Medium,Functional,Wait till Dec 27 (3rd day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 31st dec] on 1st dec
+3. Check the learners email on Dec 16
+4. Check the learners email on Dec 23rd
+5. Check the learners email on Dec 27th","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [31/12/2025]
+3. If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day).
+4. If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email should be triggered]
+5. If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification should be triggered and on 3rd day a notification should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email should be triggered and on 27th an email should be triggered]","If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification is triggered and on 3rd day a notification is triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email is triggered and on 27th an email is triggered]",
+HeySales ManageCourses> Due date and reminder notifications,TC0061_ Check the 1 day reminder trigger,arjun@paperflite.com,"Valdiate If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification should be triggered and on 3rd day a notification should be triggered and on and last day befor the assigned day an email is triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email should be triggered and on 27th an email should be triggered and on 30th an email should be triggered]",Manual,Medium,Functional,Wait till Dec 30 (1 day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 31st dec] on 1st dec
+3. Check the learners email on Dec 16
+4. Check the learners email on Dec 23rd
+5. Check the learners email on Dec 27th
+6. Check the learners email on Dec 30th","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [31/12/2025]
+3. If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day).
+4. If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email should be triggered]
+5. If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification should be triggered and on 3rd day a notification should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email should be triggered and on 27th an email should be triggered]
+6. If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification should be triggered and on 3rd day a notification should be triggered and last day befor the assigned day an email should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email should be triggered and on 27th an email should be triggered and on 30th an email should be triggered]","If the assigned duration is more than 30 days after the 50% email, 7th day reminder notification is triggered and on 3rd day a notification is triggered and last day befor the assigned day an email is triggered [Eg: Assignment date: Dec 1; Due date: Dec 31 (30 days gap), after the Dec 16th email on Dec 23rd an email is triggered and on 27th an email is triggered and on 30th an email is triggered]",
+HeySales ManageCourses> Due date and reminder notifications,TC0062_ Check the 7th day remiender email is not triggered if the assigned duration is lessthan 30 days,arjun@paperflite.com,Valdiate If the assigned duration is less than 30 days 7th day email reminder should not be triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email should be triggered],Manual,Medium,Functional,Wait till Dec 18 (7th day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 25th dec] on 1st dec
+3. Check the learners email for 50% duration reminder trigger
+4. Check the learners email for 7th day remiender on Dec 18th","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [25/12/2025]
+3. If the  Assignment date is Dec 1 and Due date is Dec 25 (24 days gap) a reminder notification should be triggered on Dec 12 (12th day).
+4.If the assigned duration is less than 30 days 7th day email reminder should not be triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email should be triggered]",If the assigned duration is less than 30 days 7th day email reminder is not triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email is triggered],
+HeySales ManageCourses> Due date and reminder notifications,TC0063_ Check the 3rd day reminder trigger if the assigned duration is lessthan 30 days,arjun@paperflite.com,Valdiate If the assigned duration is less than 30 days 7th day email reminder should not be triggered but the 3rd day remiender should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email should be triggered and on 22nd email should be triggered],Manual,Medium,Functional,Wait till Dec 22 (3rd day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 25th dec] on 1st dec
+3. Check the learners email for 50% duration reminder trigger
+4. Check the learners email for 7th day remiender on Dec 18th
+5. Check the learners email for 3rd day remiender on Dec 22nd","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [25/12/2025]
+3. If the  Assignment date is Dec 1 and Due date is Dec 25 (24 days gap) a reminder notification should be triggered on Dec 12 (12th day).
+4.If the assigned duration is less than 30 days 7th day email reminder should not be triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email should be triggered]
+5. If the assigned duration is less than 30 days 7th day email reminder should not be triggered but the 3rd day remiender should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email should be triggered and on 22nd an email should be triggered]","If the assigned duration is less than 30 days 7th day email reminder is not triggered but the 3rd day remiender is triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email is triggered, but on 18th no email is triggered and on 22nd an email is triggered]",
+HeySales ManageCourses> Due date and reminder notifications,TC0064_ Check the 1 day reminder trigger if the assigned duration is lessthan 30 days,arjun@paperflite.com,Valdiate If the assigned duration is less than 30 days 7th day email reminder should not be triggered but the 3rd day remiender should be triggered and 1 day email should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email should be triggered and 22nd email should be triggered and and 24th an email should be triggered],Manual,Medium,Functional,Wait till Dec 24 (1 day).,NA," 1. Create a new Course 
+2. Add a learner with due date [eg: 25th dec] on 1st dec
+3. Check the learners email for 50% duration reminder trigger
+4. Check the learners email for 7th day remiender on Dec 18th
+5. Check the learners email for 3rd day remiender on Dec 22nd
+6. Check the learners email for 3rd day remiender on Dec 24th","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [25/12/2025]
+3. If the  Assignment date is Dec 1 and Due date is Dec 25 (24 days gap) a reminder notification should be triggered on Dec 12 (12th day).
+4.If the assigned duration is less than 30 days 7th day email reminder should not be triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email should be triggered]
+5. If the assigned duration is less than 30 days 7th day email reminder should not be triggered but the 3rd day remiender should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email should be triggered and on 22nd an email should be triggered]
+6. If the assigned duration is less than 30 days 7th day email reminder should not be triggered but the 3rd day remiender should be triggered and 1 day email should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email should be triggered and 22nd email should be triggered and and 24th an email should be triggered]",If the assigned duration is less than 30 days 7th day email reminder is not triggered but the 3rd day remiender is triggered and 1 day email is triggered [Eg: Assignment date: Dec 1; Due date: Dec 25 (24 days gap) on Dec 18th no email is triggered and 22nd email is triggered and and 24th an email is triggered],
+HeySales ManageCourses> Due date and reminder notifications,TC0065_ Check the 3rd day remiender email is not triggered if the assigned duration is lessthan 10 days,arjun@paperflite.com,Valdiate If the assigned duration is less than 10 days 3rd day email reminder should not be triggered [Eg: Assignment date: Dec 1; Due date: Dec 9 (8 days gap) on Dec 3rd no email should be triggered],Manual,Medium,Functional,Wait till Dec 6 (3 day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 25th dec] on 1st dec
+3. Check the learners email for 50% duration reminder trigger
+4. Check the learners email for 3rd day remiender on Dec 3rd","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [9/12/2025]
+3. If the  Assignment date is Dec 1 and Due date is Dec 9 (8 days gap) a reminder notification should be triggered on Dec 4 (4th day).
+4. If the assigned duration is less than 10 days 3rd day email reminder should not be triggered [Eg: Assignment date: Dec 1; Due date: Dec 9 (8 days gap) on Dec 3rd no email should be triggered]",If the assigned duration is less than 10 days 3rd day email reminder is not triggered [Eg: Assignment date: Dec 1; Due date: Dec 9 (8 days gap) on Dec 3rd no email is triggered],
+HeySales ManageCourses> Due date and reminder notifications,TC0066_ Check the 1 day reminder trigger if the assigned duration is lessthan 10 days,arjun@paperflite.com,Valdiate If the assigned duration is less than 10 days 3rd day email reminder should not be triggered but 1 day remiender email should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 9 (8 days gap) on Dec 3rd no email should be triggered but on 7th an email should be triggered],Manual,Medium,Functional,Wait till Dec 8 (3 day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 25th dec] on 1st dec
+3. Check the learners email for 50% duration reminder trigger
+4. Check the learners email for 3rd day remiender on Dec 6rd
+5. Check the learners email for 1 day remiender on Dec 8rd","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [9/12/2025]
+3. If the  Assignment date is Dec 1 and Due date is Dec 9 (8 days gap) a reminder notification should be triggered on Dec 4 (4th day).
+4. If the assigned duration is less than 10 days 3rd day email reminder should not be triggered [Eg: Assignment date: Dec 1; Due date: Dec 9 (8 days gap) on Dec 3rd no email should be triggered]
+5. If the assigned duration is less than 10 days 3rd day email reminder should not be triggered but 1 day remiender email should be triggered [Eg: Assignment date: Dec 1; Due date: Dec 9 (8 days gap) on Dec 3rd no email should be triggered but on 7th an email should be triggered]",If the assigned duration is less than 10 days 3rd day email reminder is not triggered but 1 day remiender email is triggered [Eg: Assignment date: Dec 1; Due date: Dec 9 (8 days gap) on Dec 3rd no email is triggered but on 7th an email is triggered],
+HeySales ManageCourses> Due date and reminder notifications,"TC0067_ Check the 1 day reminder trigger if the assigned duration is lessthan 3 days [As the 50% of 2 days is 1 day and the there is also 1 day trigger, notifications should not clash only 1 email should be triggered]",arjun@paperflite.com,Valdiate If the assigned duration is less than 3 days 50% email reminder should not be triggered but the 1 day email should be triggered[Eg: Assignment date: Dec 1; Due date: Dec 3 (2 days gap) on Dec 2 only one email should be triggered],Manual,Medium,Functional,Wait till Dec 8 (3 day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 3rd dec] on 1st dec
+3. Check the learners email for 2nd of dec","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [3/12/2025]
+3. If the assigned duration is less than 3 days 50% email reminder should not be triggered but the 1 day email should be triggered[Eg: Assignment date: Dec 1; Due date: Dec 3 (2 days gap) on Dec 2 only one email should be triggered]",If the assigned duration is less than 3 days 50% email reminder is not triggered but the 1 day email is triggered[Eg: Assignment date: Dec 1; Due date: Dec 3 (2 days gap) on Dec 2 only one email is triggered],
+HeySales ManageCourses> Due date and reminder notifications,TC0068_ Check reminder not triggered after learning completion,arjun@paperflite.com,Valdiate If the learner completed the course within the due date consecutive reminder emails should not be triggered,Manual,Medium,Functional,Wait till Dec 16 (15th day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 30th dec] on 1st dec
+3. Login as Learner on 27th dec and complete the learning
+4. Check the learnerns email on dec 15th","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [30/12/2025]
+3. Learner should be able to login on 27th dec and complete the course
+4. If the learner completed the course within the due date consecutive reminder emails should not be triggered",If the learner completed the course within the due date consecutive reminder emails are not triggered,
+HeySales ManageCourses> Due date and reminder notifications,TC0069_ Check reminder not triggered after learning completion [One email should be triggered for 50% trigger after that complete the learning],arjun@paperflite.com,"Validate If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day), and if the learner completed the course on dec 18th consecutive reminder emails should not be triggered",Manual,Medium,Functional,Wait till Dec 16 (15th day).,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 31st dec] on 1st dec
+3. Check the learner email on Dec 15th
+4. Login as Learner on 18th dec and complete the learning
+5. Check the learnerns email on dec 30th dec","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [30/12/2025]
+3. If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day).
+4. Learner should be able to login and complete the course on dec 18th
+5. If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day), and if the learner completed the course on dec 18th consecutive reminder emails should not be triggered","If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification is triggered on Dec 16 (15th day), and if the learner completed the course on dec 18th consecutive reminder emails are not triggered",
+HeySales ManageCourses> Due date and reminder notifications,TC0070_ Check if the learner has not started or in inprogress the reassignment should not override previous due date,arjun@paperflite.com,"Validate if the learner has not started or in inprogress the reassignment should not override previous due date, the notification should follow the inital assignment date",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a course
+2. Add a learner with due date [eg: 31st dec] on 1st dec
+3. Check the learner email on Dec 15th
+4. Login as Learner on 18th dec and start the course do not complete it
+5. Login as admin 
+6. Reassign the learning to the same user with due date as dec 25th on dec 19th
+7. Chek the learner email","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [30/12/2025]
+3. If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day).
+4. Learner should be able to login on dec18th and start the course but should not complete it
+5. Admin should be able to login
+6. Admin should be able to reassign the learning to the same learner from 30th dec to 25th dec
+7. If the learner has not started or in inprogress the reassignment should not override previous due date, the notification should follow the inital assignment date. i.e the next email should be on 23rd dec which is the 7th day remiender email","If the learner has not started or in inprogress the reassignment does not override previous due date, the notification follows the inital assignment date. i.e the next email is on 23rd dec which is the 7th day remiender email",
+HeySales ManageCourses> Due date and reminder notifications,TC0071_ Check if the learner has completed the learning the reassignment should override previous due date,arjun@paperflite.com,"Validate if the learner has completed the course the reassignment should override previous due date, the notification should follow the new assignment date",Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a course
+2. Add a learner with due date [eg: 31st dec] on 1st dec
+3. Check the learner email on Dec 15th
+4. Login as Learner on 18th dec and start the course complete it
+5. Login as admin 
+6. Reassign the learning to the same user with due date as dec 25th on dec 19th
+7. Chek the learner email","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [30/12/2025]
+3. If the is Assignment date is Dec 1 and Due date is Dec 31 (30 days gap) a reminder notification should be triggered on Dec 16 (15th day).
+4. Learner should be able to login on dec18th and start the course should complete it
+5. Admin should be able to login
+6. Admin should be able to reassign the learning to the same learner from 30th dec to 25th dec
+7. If the learner has completed the course the reassignment should override previous due date, the notification should follow the new assignment date. i.e the next email should be on 22rd dec which is the 50% remiender email","If the learner has completed the course the reassignment overrides previous due date, the notification follows the new assignment date. i.e the next email is on 22rd dec which is the 50% remiender email",
+HeySales ManageCourses> Due date and reminder notifications,TC0072_ Check the when due date = assignment date,arjun@paperflite.com,Validate If the Due date is same as the assignment date only the course assigned email should be triggered,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course 
+2. Add a learner with due date [eg: 1st dec] on 1st dec
+3. Check the learners email","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course with due date as [1/12/2025]
+3. If the Due date is same as the assignment date only the course assigned email should be triggered",If the Due date is same as the assignment date only the course assigned email is triggered,
+HeySales ManageCourses> Due date and reminder notifications,TC0073_ Check adding due date for a learner who is already added to the course without any due date [Leaners has not started or in inprogress],arjun@paperflite.com,Validate if the learner has not started or in inprogress the reassignment should not trigger any notifications,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course 
+2. Add a learner without due date
+3. Check the learners email
+4. Now Login as the learner and start the course but do not complete it
+5. Login as admin
+6. Reassign the course with due date
+7. Check the learner email","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course without due date
+3. Notification email should be triggered without the due date metadata
+4. Learner should be able to login and start the course and should not complete it
+5. Admin should be able to login
+6. Admin should be able to reassign the learner with due date
+7. The reassignment should not trigger any notifications",The reassignment does not trigger any notifications,
+HeySales ManageCourses> Due date and reminder notifications,TC0074_ Check adding due date for a learner who is already added to the course without any due date [Leaners has completed the course],arjun@paperflite.com,Validate if the learner has completed the course the reassignment should trigger remiender notifications,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course 
+2. Add a learner without due date
+3. Check the learners email
+4. Now Login as the learner and start the course and complete it
+5. Login as admin
+6. Reassign the course with due date
+7. Check the learner email","1. Admin should be able to create a course
+2. Admin should be able to add a learner to the course without due date
+3. Notification email should be triggered without the due date metadata
+4. Learner should be able to login and start the course and complete it
+5. Admin should be able to login
+6. Admin should be able to reassign the learner with due date
+7. The reassignment should trigger remiender notifications",The reassignment triggers remiender notifications,
+HeySales ManageCourses> Due date and reminder notifications,TC0075_ Check reminders not sent for deactivated,arjun@paperflite.com,Validate the deactivated user should not receive any remiender notification emails,Manual,Medium,Functional,Admin should create a course and publish it,NA,"1. Create a new Course 
+2. Add a deactivated learner with due date
+3. Check the learners email","1. Admin should be able to create a course
+2. Admin should be able to add a deactivated learner to the course with due date
+3. The deactivated user should not receive any remiender notification emails",The deactivated user does not receive any remiender notification emails,

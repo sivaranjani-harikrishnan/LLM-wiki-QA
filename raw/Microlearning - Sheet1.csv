@@ -1,0 +1,177 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Let's Learn> Microlearning,TC0001_ Check the let's learn module in hey sales nav bar,arjun@paperflite.com,Validate There should be a new module Let's learn in heysales nav bar for every user in the account irrespective of the User role,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales
+3. Login as Normal user / BI Analyst
+4. Navigate to Hey sales","1. User should be able to login in successfully
+2. There should be a new module Let's learn in heysales nav bar for every user in the account irrespective of the User role 
+3. User should be able to login in successfully
+4. There should be a new module Let's learn in heysales nav bar for every user in the account irrespective of the User role ",There is a new module Let's learn in heysales nav bar for every user in the account irrespective of the User role ,
+HeySales Let's Learn> Microlearning,TC0002_ Check the UI of the Let's learn landing page,arjun@paperflite.com,"Validate On the top left module name should be displayed, an input field with add button should be displayed",Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on Let's learn module
+2. Check the UI of the landing page","1. User should be landed in the Let's learn landing page
+2. On the top left module name should be displayed, an input field with add button should be displayed","On the top left module name is displayed, an input field with add button is displayed",
+HeySales Let's Learn> Microlearning,TC0003_ Check the Input field in the let's learn module,arjun@paperflite.com,Valdiate User should be able to add any alpha numeric and Spl character in the input field,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Add any alpha numeric in the input field
+2. Add any spl character in the input field
+3. Check the max character limit of the input filed","1. User should be able to add any alphanumeric to the input field
+2. User should be able to add any spl character to the input field
+3. Yet to confirm with the product",User is able to add any alpha numeric and Spl character in the input field,
+HeySales Let's Learn> Microlearning,TC0004_ Check the add buton in the input field,arjun@paperflite.com,Validate Clicking on the Add button should bring the add asset slider,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on Let's learn module
+2. Click on the Add button","1. User should be landed in the Let's learn landing page
+2. Clicking on the Add button should bring the add asset slider",Clicking on the Add button brings the add asset slider,
+HeySales Let's Learn> Microlearning,TC0005_ Check adding assets to the learning,arjun@paperflite.com,"Validate User should be able to add Paged assets [PDF, DOC, & PPT's] and link assets [URL's, CS assets]",Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on the Add button
+2. Add Paged assets [PDF, DOC, PPT] from Stream & Collections
+3. Add URL assets from Stream & Collections
+4. Add Video /audio / Image / Scrom / HTML / from stream and collections
+5. Add paged assets [PDF, DOC, PPT] from persoal drive
+6. Add Video /audio / Image / Scrom / HTML / from personal drive
+7. Add CS assets
+8. Add URL assets via add content URL","1. Add assets slider should be displaed with Stream & Collection, Personal Drive, URL, & CS if cleverstory is integrated
+2. User should be able to add paged assets [PDF, DOC, PPT] from streams and collections
+3. User should be able to add URL assets from streams and collections
+4. User should not be able to add any non paged assets from streams and collections
+5. User should be able to add paged assets [PDF, DOC, PPT] from personal drive
+6. User should not be able to add any non paged assets from personal drive
+7. If the cs integration is active, user should be able to add cs storyboards as link assets
+8. User should be able to add URL's. via add content URL","User is able to add Paged assets [PDF, DOC, & PPT's] and link assets [URL's, CS assets]",
+HeySales Let's Learn> Microlearning,TC0006_ Check the max asset upload,arjun@paperflite.com,Validate User should not be able to upload more than 5 assets to a learning,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on the Add button
+2. Add 7 assets from streams and collections
+3. Click on confirm
+4. Add 6 assets from personal drive
+5. Click on confirm
+6. Add 8 URL's via add content URL
+7. Click on confirm","1. Add assets slider should be displaed
+2. User should be able to choose 7 assets from streams and collections
+3. On confirm an error message should be displayed
+4. User should be able to add 6 assets from personal drive
+5. On confirm an error message should be displayed
+6. User should be able to add 8 URL's via add content URL
+7. On confirm an error message should be displayed",User is not able to upload more than 5 assets to a learning,
+HeySales Let's Learn> Microlearning,TC0007_ Check the UI of the input field after assets are added,arjun@paperflite.com,Valdiate In the input field all the added assets should be displayed with their thumbnail,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on the Add button
+2. Add assets 
+3. Check the UI","1. Add assets slider should be displaed
+2. User should be able to add asset
+3. In the input field all the added assets should be displayed with their thumbnail",In the input field all the added assets are displayed with their thumbnail,
+HeySales Let's Learn> Microlearning,TC0008_ Check removing the added assets,arjun@paperflite.com,"Validate On hovering the assets in the input filed, user should be able to remove the added asset",Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on the Add button
+2. Add assets 
+3. Hover over the asset
+4. Click on the x icon on the asset","1. Add assets slider should be displaed
+2. User should be able to add asset
+3. On hovering the asset the remove icon [x] should be displayed
+4. On hovering the assets in the input filed, user should be able to remove the added asset","On hovering the assets in the input filed, user is able to remove the added asset",
+HeySales Let's Learn> Microlearning,TC0009_ Check creating an article ,arjun@paperflite.com,"Valdiate After adding the assets, User should be able to input a valid prompt and generate an article",Manual,Medium,Functional,Hey sales should be enabled for the account,Create me a learning out of these documents,"1. Click on the Add button
+2. Add assets 
+3. Add a valid prompt
+4. Click on enter","1. Add assets slider should be displaed
+2. User should be able to add asset
+3. User should be able to add a valid prompt
+4. After adding the assets, User should be able to input a valid prompt and generate an article","After adding the assets, User is able to input a valid prompt and generate an article",
+HeySales Let's Learn> Microlearning,TC0010_ Check creating an article without adding any assets,arjun@paperflite.com,Valdiate When user tries to create an article without inputing any asset an error should be displayed,Manual,Medium,Functional,Hey sales should be enabled for the account,How do I position paperflite against Highspot,"1. Click on Let's learn module
+2. Do not add any asset
+3. Enter an valid prompt","1. User should be landed in the Let's learn landing page
+2. User should not add any asset
+3. When user tries to create an article without inputing any asset an error should be displayed",When user tries to create an article without inputing any asset an error is displayed,
+HeySales Let's Learn> Microlearning,TC0011_ Check creating an article with an invalid prompt,arjun@paperflite.com,Valdiate When user tries to create an article with invalid prompt an error should be displayed,Manual,Medium,Functional,Hey sales should be enabled for the account,"QWET%^&*()) _+{}:""?>< NBMBJH %&% FDG","1. Click on the Add button
+2. Add assets 
+3. Add a valid prompt
+4. Click on enter","1. Add assets slider should be displaed
+2. User should be able to add asset
+3. User should be able to add a valid prompt
+4. When user tries to create an article with invalid prompt an error should be displayed",When user tries to create an article with invalid prompt an error is displayed,
+HeySales Let's Learn> Microlearning,TC0012_ Check adding 2 different prompts in the input,arjun@paperflite.com,"Validate When user adds 2 different prompt, Agent should understand and generate an article from the uploaded asset",Manual,Medium,Functional,Hey sales should be enabled for the account,"1. Create me a learning out of these documents
+2. How do I position paperflite against Highspot","1. Click on the Add button
+2. Add assets 
+3. Add a valid prompt
+4. Click on enter","1. Add assets slider should be displaed
+2. User should be able to add asset
+3. User should be able to add a valid prompt
+4. When user adds 2 different prompt, Agent should understand and generate an article from the uploaded asset","When user adds 2 different prompt, Agent understands and generate an article from the uploaded asset",
+HeySales Let's Learn> Microlearning,TC0013_ Check the UI of the article generation,arjun@paperflite.com,"Valdiate After adding assets and prompts the article generation should start, a loader with help text ""reading through the source material"" should be displayed",Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on the Add button
+2. Add assets 
+3. Add a valid prompt
+4. Click on enter","1. Add assets slider should be displaed
+2. User should be able to add asset
+3. User should be able to add a valid prompt
+4. After adding assets and prompts the article generation should start, a loader with help text ""reading through the source material"" should be displayed","After adding assets and prompts the article generation starts, a loader with help text ""reading through the source material"" is displayed",
+HeySales Let's Learn> Microlearning,TC0014_ Check the generated article,arjun@paperflite.com,"Validate The generated article should have a Heading, Banner image [Optional], Content as text, Back button, Modify button, Source, and History button",Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Open a generated article
+2. Check the UI of the artcle","1. User should be open any generated article
+2. The generated article should have a Heading, Banner image [Optional], Content as text, Back button, Modify button, Source, and History button","The generated article has a Heading, Banner image [Optional], Content as text, Back button, Modify button, Source, and History button",
+HeySales Let's Learn> Microlearning,TC0015_ Check scrolling through the article,arjun@paperflite.com,Validate user should be able to scroll through the article,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Open a generated article
+2. Scroll through the article","1. User should be open any generated article
+2. User should be able to scroll through the article",User is able to scroll through the article,
+HeySales Let's Learn> Microlearning,TC0016_ Check the scource tab in the article,arjun@paperflite.com,"Validate In the source tab, all the assets used to generate the article with their thumbnails and file type should be displayed",Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Open a generated article
+2. Click on Source tab","1. User should be open any generated article
+2. In the source tab, all the assets used to generate the article with their thumbnails and file type should be displayed","In the source tab, all the assets used to generate the article with their thumbnails and file type are displayed",
+HeySales Let's Learn> Microlearning,TC0017_ Check the modify button,arjun@paperflite.com,Validate Clicking on the modify button should bring a prompt field,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Open a generated article
+2. Click on Modify button
+3. Add any alpha numeric in the input field
+4. Add any spl character in the input field
+5. Check the max character limit of the input filed","1. User should be open any generated article
+2. Clicking on the modify button should bring a prompt field
+3. User should be able to add any alphanumeric to the input field
+4. User should be able to add any spl character to the input field
+5. Yet to confirm with the product",Clicking on the modify button brings a prompt field,
+HeySales Let's Learn> Microlearning,TC0018_ Check modifying the article,arjun@paperflite.com,Validate User should be able to modify the article by inputing a promt,Manual,Medium,Functional,Hey sales should be enabled for the account,What specific pain points do customer experience,"1. Open a generated article
+2. Click on Modify button
+3. Give a valid prompt","1. User should be open any generated article
+2. Clicking on the modify button should bring a prompt field
+3. User should be able to modify the article by inputing a promt",User is able to modify the article by inputing a promt,
+HeySales Let's Learn> Microlearning,TC0019_ Check modifying the article with invalid prompt,arjun@paperflite.com,Validate User should not be able to modify the article by inputing an invalid promt,Manual,Medium,Functional,Hey sales should be enabled for the account,"QWET%^&*()) _+{}:""?>< NBMBJH %&% FDG","1. Open a generated article
+2. Click on Modify button
+3. Give an invalid prompt","1. User should be open any generated article
+2. Clicking on the modify button should bring a prompt field
+3. User should not be able to modify the article by inputing an invalid promt",User is not able to modify the article by inputing an invalid promt,
+HeySales Let's Learn> Microlearning,TC0020_ Check the history pane in the article,arjun@paperflite.com,Validate Clicking on the history button should bring all the modifications made to the articles ,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Open a generated article
+2. Click on History button","1. User should be open any generated article
+2. Clicking on the history button should bring all the modifications made to the articles ",Clicking on the history button brings all the modifications made to the articles ,
+HeySales Let's Learn> Microlearning,TC0021_ Check scrolling through the list in the history pane,arjun@paperflite.com,Validate user should be able to scroll through all the modification prompts in the history pane,Manual,Medium,Functional,Hey sales should be enabled for the account & Modify the article more than 10 times,NA,"1. Open a generated article
+2. Click on History button
+3. Scroll through the list","1. User should be open any generated article
+2. Clicking on the history button should bring all the modifications made to the articles 
+3. User should be able to scroll through all the modification prompts in the history pane",User is able to scroll through all the modification prompts in the history pane,
+HeySales Let's Learn> Microlearning,TC0022_ Check switching between different prompts in the history pane,arjun@paperflite.com,Validate By clicking on any of the modification prompt in the history pane should change the article to the respective version,Manual,Medium,Functional,Hey sales should be enabled for the account & Modify the article more than 10 times,NA,"1. Open a generated article
+2. Click on History button
+3. Click on any of the modification prompt","1. User should be open any generated article
+2. Clicking on the history button should bring all the modifications made to the articles 
+3. By clicking on any of the modification prompt in the history pane should change the article to the respective version",By clicking on any of the modification prompt in the history pane changes the article to the respective version,
+HeySales Let's Learn> Microlearning,TC0023_ Check the default landing of the article when it's opened,arjun@paperflite.com,"Validate When an article is opened, the last modified version should be displayed and the same should be highlighted in the history pane",Manual,Medium,Functional,Hey sales should be enabled for the account & Modify the article more than 10 times,NA,"1. Open an article
+2. Check the article version","1.User should be able to open any generated article
+2. When an article is opened, the last modified version should be displayed and the same should be highlighted in the history pane","When an article is opened, the last modified version is displayed and the same is highlighted in the history pane",
+HeySales Let's Learn> Microlearning,TC0024_ Check the access of the articles,arjun@paperflite.com,Validate All the articles created by the users should be specific to the user and not available to other users,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Login as User A
+2. Create an article
+3. Login as User B","1. User A should be able to login successfully
+2. User A should be able to create an article
+3. User B should be able to login successfully, and the article created by the user A should not be available for User B",All the articles created by the users are specific to the user and not available to other users,
+HeySales Let's Learn> Microlearning,TC0025_ Check the list of articles in the let's learn landing page,arjun@paperflite.com,Validate All the created articles by the user should be listed under the prompt field and the user should be able to scroll through it,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Open Let's learn module
+2. Check the list of created articles
+3. Scroll through the list","1. User should land in the let's learn landing screen
+2. All the created articles by the user should be listed under the prompt field 
+3. User should be able to scroll through it",All the created articles by the user are be listed under the prompt field and the user is able to scroll through it,
+HeySales Let's Learn> Microlearning,TC0026_ Check the Start new learning button in the article screen,arjun@paperflite.com,Validate Clicking on the Start new learning should navigate the user to the Prompt screen and user should be able to create a new article,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Open a generated article
+2. Click on Start a new learning button","1. User should be open any generated article
+2. Clicking on the Start new learning should navigate the user to the Prompt screen and user should be able to create a new article",Clicking on the Start new learning navigates the user to the Prompt screen and user is able to create a new article,
+HeySales Let's Learn> Microlearning,TC0027_ Check the parent prompt in the history pane,arjun@paperflite.com,Valdiate In the history pane the parent prompt [used to generate the article] should be dissplayed,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on the Add button
+2. Add assets 
+3. Add a valid prompt
+4. Click on enter
+5. Open the history pane","1. Add assets slider should be displaed
+2. User should be able to add asset
+3. User should be able to add a valid prompt
+4. After adding the assets, User should be able to input a valid prompt and generate an article
+5. In the history pane the parent prompt [used to generate the article] should be dissplayed",In the history pane the parent prompt [used to generate the article] is dissplayed,
+HeySales Let's Learn> Microlearning,TC0028_ Check the home page of let's learn for all the generated articles,arjun@paperflite.com,Validate In the home page all the generated articles by the user should be displayed,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on Let's learn module
+2. Check the list of articles in the home page","1. User should be landed in the Let's learn landing page
+2. In the home page all the generated articles by the user should be displayed",In the home page all the generated articles by the user is displayed,
+HeySales Let's Learn> Microlearning,TC0029_ Check scrolling through the generated articles in the home page,arjun@paperflite.com,Validate User should be able to scroll through the generated articles and clicking on it should open the article,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on Let's learn module
+2. Scroll through the list
+3. Click on any of the article","1. User should be landed in the Let's learn landing page
+2. User should be able to scroll through the generated articles
+3. Clicking on it should open the article",User is able to scroll through the generated articles and clicking on it opens the article,
+HeySales Let's Learn> Microlearning,TC0030_ Check deleting the generated article,arjun@paperflite.com,Validate User should be able to delete the generated article from the let's learn home page,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on Let's learn module
+2. Delete the generated article","1. User should be landed in the Let's learn landing page
+2. User should be able to delete the generated article from the let's learn home page",User is able to delete the generated article from the let's learn home page,
+HeySales Let's Learn> Microlearning,TC0031_ Check uploading an error asset for the article generation,arjun@paperflite.com,Validate When an error asset is uploded the article generation should fail,Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Click on the Add button
+2. Add error assets 
+3. Add a valid prompt
+4. Click on enter","1. Add assets slider should be displaed
+2. User should be able to add asset
+3. User should be able to add a valid prompt
+4. When an error asset is uploded the article generation should fail",When an error asset is uploded the article generation fails,

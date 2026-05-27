@@ -1,0 +1,553 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test data,Steps,Expected Result,Actual Result
+HeySales Studio> Elevator pitch Learners view ,TC0001 - Verify published assigned simulation is displayed in My Courses with Start Call CTA,porsudar@paperflite.com,Validate that assigned and published Elevator Pitch simulation is visible in My Courses with Start Call button,Manual,High,UI,"1. Simulation is published
+2. Simulation is assigned to learner",NA,"1. Login to HeySales as learner
+2. Navigate to My Courses
+3. Locate Elevator Pitch simulation","1.user should be logged in to heysales as learner
+2.user should navigate to the Mycourses
+3.On clicking assigned elevator pitch simulation, start call CTA shouldd be displayed",Published assigned simulation is displayed in My Courses with active “Start Call” CTA.
+HeySales Studio> Elevator pitch Learners view ,TC0002 - Verify unassigned simulation appears in Explore with Enroll Call CTA,porsudar@paperflite.com,Validate that unassigned simulation is visible only in Explore with Enroll Call option,Manual,High,UI,Simulation is published but NOT assigned,NA,"1. Login as learner
+2. Navigate to Explore
+3. Search Elevator Pitch","1.user should be logged in to heysales as learner
+2.user should navigate to the Explore
+3.On clicking unassigned elevator pitch simulation, Enroll call CTA shouldd be displayed",Unassigned simulation is displayed in Explore section with “Enroll Call” CTA.
+l,TC0003 - Verify UI elements in Elevator Pitch simulation detail page,porsudar@paperflite.com,"Validate Duration pill, Call Type, Creator Name, Profile Icon, Scenario and Audience description",Manual,High,UI,Simulation is published,NA,"1. Login as learner
+2. Open simulation detail page ","1.learner should be logged in 
+2.Check following items are displayed in the simulation UI after clicking Elevetor pitch simulation:
+Title and banner along with start/Enroll call CTA 
+Duration pill in seconds/Minutes
+Simulation type 
+Creator name and icon
+Pitch Scenario details
+Company Audience details 
+Skills 
+",All configured UI elements are displayed correctly in the simulation detail page.
+HeySales Studio> Elevator pitch Learners view ,TC0004 - Verify browser permission prompt appears on clicking Start Call,porsudar@paperflite.com,Validate that microphone (audio) or microphone & camera (video) permission popup is triggered when user clicks Start Call,Manual,Medium,Functional,"1. Simulation is enrolled
+2. Browser permissions not previously granted",NA,"1. Login as learner
+2. Navigate to My Courses
+3. Open Elevator Pitch simulation
+4. Click “Start Call”","1.Learner should be logged in
+2.Learner should navigate to the Mycourses
+3.Learner should open the assigned Simulation
+4.On clicking start call, Browser permission prompt is displayed ",Browser permission prompt appears when Start Call is clicked.
+HeySales Studio> Elevator pitch Learners view ,TC0005 - Verify countdown starts only after granting permissions,porsudar@paperflite.com,Validate 3–2–1 countdown appears only after mic/camera permission,Manual,Medium,Functional,"1. Simulation is enrolled
+2. Browser permissions not previously granted",NA,"1. Click Start Call
+2. Allow permission","1.On clicking start call , browser permission prompt should be displayed
+2.User should allow camera and microphone to proceed video simulation counttown resume ",Countdown starts only after camera and microphone permissions are granted.
+HeySales Studio> Elevator pitch Learners view ,TC0006 - Verify Video recording screen UI after camera & mic permission is granted,porsudar@paperflite.com,Validate countdown screen and live video recording UI after permissions are allowed,Manual,Medium,Functional,"1. Simulation is published with video type 
+2. Simulation is assigned to learner",NA,"1. Login as learner
+2. Navigate to My Courses
+3. Click Start Call
+4. Allow camera & microphone permission
+5.Check Count starts from 3 2 1 with black screen","1.Learner should be logged in
+2.Learner should be navigated to mycourses
+3.Learner should start the call
+4.User should allow camera and Microphone permission in the permission prompt
+5.Counttown should start with black screen after clicking Camera and Microphone permission along with timer, info  icon, restart icon,  End CTA and Name of the simulaion at the top of the screen",Video recording screen UI is displayed correctly after permissions are granted.
+HeySales Studio> Elevator pitch Learners view ,TC0007 - Verify UI elements during active video pitch,porsudar@paperflite.com,"Validate timer, end button, info icon ,restart icon, and layout alignment during active video recording",Manual,Medium,UI,"1. Simulation is published with video type 
+2. Simulation is assigned to learner",NA,"1. Start video pitch
+2. Observe screen layout","1.Learner should start the video pitch after the countown starts
+2.Check the screen layout after counttown completes
+Name should be displayed along with the close icon
+Video feed should be centered
+Timer should decrement correctly
+End button should be enabled
+Restart icon should be enabled
+Info icon should be displayed 
+ ",All required UI elements are visible and functioning during active video pitch.
+HeySales Studio> Elevator pitch Learners view ,TC0008 - Verify Audio recording screen UI after permission is granted,porsudar@paperflite.com,Validate countdown screen and audio recording UI elements after mic permission is allowed,Manual,Medium,Functional,"1. Simulation is published with Audio format
+2. Simulation is assigned to learner",NA,"1. Login as learner
+2. Navigate to My Courses
+3. Click Start Call
+4. Allow microphone permission
+5.Check Count starts from 3 2 1 with avator","1.Learner should be logged in
+2.Learner should be navigated to mycourses
+3.Learner should start the call
+4.User should allow Microphone permission in the permission prompt
+5.Counttown should start with blank screen after clicking Microphone permission along with timer, info  icon, restart icon,  End CTA and Name of the simulaion at the top of the screen",Audio recording screen UI is displayed correctly after permission is granted.
+HeySales Studio> Elevator pitch Learners view ,TC0009 - Verify UI elements during active audio pitch,porsudar@paperflite.com,"Validate timer, info icon ,end button, restart icon during audio recording",Manual,Medium,UI,"1. Simulation is published with Audio format
+2. Simulation is assigned to learner",NA,"1. Start audio pitch
+2. Observe screen layout","1.Learner should start the audio pitch after the countown starts
+2.Check the screen layout after counttown completes
+Name should be displayed along with the close icon
+Avator should be centered
+Timer should decrement correctly
+End button should be enabled
+Restart icon should be enabled
+Info icon should be displayed 
+ ",All required UI elements are visible and functioning during active audio pitch.
+HeySales Studio> Elevator pitch Learners view ,TC0010 - Verify navigation on clicking info icon,porsudar@paperflite.com,Validate navigation on clicking info icon,Manual,Medium,Functional,"1. Simulation is published with Audio/video format
+2. Simulation is assigned to learner",NA,"1. Start  pitch
+2. click info icon
+3.Click Top right Arrow icon","1.Leaner should start the pitch
+2.On clicking info icon, user should be navgated to slider on the right side pane with details showing - Title: Call info along with arrow icon ,Pitch scenario and  Compmay audience , duration, call type
+3.On clicking Top right arrow icon, user should be naviagted back to the same previous screen",Clicking info icon navigates to the correct information screen.
+HeySales Studio> Elevator pitch Learners view ,TC0011 - Verify restart option during ongoing recording - video,porsudar@paperflite.com,Validate confirmation slider appears and recording restarts with countdown,Manual,Medium,Functional,1.Simulation - video type call should be started,NA,"1. Start speaking
+2. Click Restart
+3.Check confirmation slider is displayed
+4. Confirm restart from the slider
+5..Check the duration 
+6.Click restart again 
+7.Click cancel","1.user should start speaking 
+2.After few seconds, click restart button
+3.Confirmation slider should be displayed with confirm and cancel option
+4.Learner should click confirm in the slider to restart the call
+5.On clicking confirming, countown should appear again with black screen and the timer should start from the first
+6.After few seconds, click restart again
+7.On clicking cancel, user should navigate to the previous screen with same timer where they stopped 
+",Restart option works correctly and restarts the video recording with countdown.
+HeySales Studio> Elevator pitch Learners view ,TC0012 - Verify restart option during ongoing recording - audio,porsudar@paperflite.com,Validate confirmation slider appears and recording restarts with countdown,Manual,Medium,Functional,1.Simulation- audio type call should be started,NA,"1. Start speaking
+2. Click Restart
+3.Check confirmation slider is displayed
+4. Confirm restart from the slider
+5..Check the duration 
+6.Click restart again 
+7.Click cancel","1.user should start speaking 
+2.After few seconds, click restart button
+3.Confirmation slider should be displayed with confirm and cancel option
+4.Learner should click confirm in the slider to restart the call
+5.On clicking confirming, countown should appear again with blank screen and the timer should start from the first
+6.After few seconds, click restart again
+7.On clicking cancel, user should navigate to the previous screen with same timer where they stopped 
+",Restart option works correctly and restarts the audio recording with countdown.
+HeySales Studio> Elevator pitch Learners view ,TC0013 - Verify learner can manually end pitch before duration,porsudar@paperflite.com,Validate learner can stop recording anytime and submit,Manual,High,Functional,1.Simulation call should be started,NA,"1. Start pitch
+2. Click End before duration completes","1.Learner should start speaking
+2.After few seconds,user should be able to end the call by clicking end call",Learner is able to manually end the pitch before the defined duration.
+HeySales Studio> Elevator pitch Learners view ,TC0014 - Verify Ending Pitch slider appears on manual End click,porsudar@paperflite.com,Validate that ending pitch slider is displayed when user manually clicks End during recording,Manual,Medium,Functional,1.Simulation call should be started,NA,"1.Click end 
+2.Check slider appears","1.User should be able to end the call by clicking end CTA
+2.On clicking end - Confirmation slider should appears with Confirm and  cancel",Ending Pitch slider appears correctly on clicking End.
+HeySales Studio> Elevator pitch Learners view ,TC0015 - Verify clicking confirm ends call and starts assessment generation,porsudar@paperflite.com,Validate that clicking  confirm stops recording and initiates assessment processing,Manual,High,Functional,1.Simulation call should click end CTA in the pitch,NA,"1. Click Cancel in the slider
+2.Click End button
+3.Click confirm in the slider","1.On clicking cancel in the slider - it should return back to same previous state with same timer and it should starts resuming 
+2.After few seconds, User should Click End CTA
+3.In the slider, on clicking confirm , it should start processing call and proceed with report generation",Call ends successfully and assessment generation starts after confirmation.
+HeySales Studio> Elevator pitch Learners view ,TC0016 - Verify pitch automatically ends at duration limit,porsudar@paperflite.com,Validate pitch stops exactly at configured duration,Manual,High,Functional,1.Simulation call should be started,NA,"1. Start pitch
+2. Speak until the total duration
+","1.User should start the pitch
+2.On completing the pitch , Ending Pitch confirmation slider appears with Exit and restart option",Pitch automatically ends when the defined duration limit is reached.
+HeySales Studio> Elevator pitch Learners view ,TC0017 - Verify pitch restarts with countdown after confirming restart,porsudar@paperflite.com,Validate recording resets and countdown appears again after restart confirmation,Manual,High,Functional,1.Simulation call should be started,NA,"1. Click Restart
+2.After completing fully, in the slider appears again","1.On clicking confirming, countown should appear again with blank screen and the timer should start from the first
+2.On completing , the end call confirmation screen appears again",Pitch restarts with countdown after confirming restart.
+HeySales Studio> Elevator pitch Learners view ,TC0018 - Verify clicking Exit ends call and starts assessment generation,porsudar@paperflite.com,Validate that clicking Exit stops recording and initiates assessment processing,Manual,High,Functional,1.Simulation call should be completed fully,NA,"1. Click Exit in the slider
+","1.On clicking Exit,it should start processing call and proceed with report generation",Clicking Exit ends the call and initiates assessment generation.
+HeySales Studio> Elevator pitch Learners view ,TC0019 - Verify Processing Screen UI after clicking Exit,porsudar@paperflite.com,Validate all UI elements are displayed correctly on the processing screen after exiting the Elevator Pitch simulation,Manual,Medium,UI,Simulation call should be started and user clicks Exit after completion,NA,"1. Click Exit in slider
+2. Observe the processing screen","1. User navigates to processing screen successfully
+2. check following items are displayed in the screen:
+Simulation name is displayed at the top of the screen correctly
+Close (X) icon is visible at the top of the screen
+Avatar is displayed at the center of the screen
+Call duration is displayed below the avatar accurately
+Processing Call button is visible and enabled
+Exit CTA is visible
+No UI misalignment or broken elements observed",Processing screen UI is displayed correctly after clicking Exit.
+HeySales Studio> Elevator pitch Learners view ,"TC0020 - Verify Exit/Close navigation, CTA states and View Report flow",porsudar@paperflite.com,Validate navigation from processing screen to learner landing screen and correct CTA updates after processing,Manual,Medium,Functional,1.Simulation call should be started,NA,"1. Start Elevator Pitch simulation
+2. Click Exit to navigate to processing screen
+3. Click Close (X) icon
+4. Repeat steps 1–2 and click Exit CTA
+5. Observe landing screen CTAs
+","1.Elevatorpitch should be started
+2.User should click exit in the slider and should proceed processing screen
+3. Clicking Close (X) navigates back to Learner Simulation Landing screen
+4. Clicking Exit CTA also navigates back to Learner Simulation Landing screen
+5. Landing screen displays Retake Simulation and Processing Simulation CTA (while processing pending)
+",Exit/Close navigation works correctly and CTA states update as per flow.
+HeySales Studio> Elevator pitch Learners view ,TC0021 - Verify CTA update after call processing completion,porsudar@paperflite.com,"Validate that after call processing is completed, the landing screen displays View Report and Retake Simulation CTAs",Manual,Medium,Functional,1.Simulation call should be completed,NA,1. Observe the transiition from the processing call CTA to view report after call is processed,1.“View Report” CTA and “Retake Simulation” CTA is displayed after call processed successfully,CTA updates correctly after call processing is completed.
+HeySales Studio> Elevator pitch Learners view ,TC0022 - Verify score percentage display in simulation landing screen,porsudar@paperflite.com,"Validate that after processing, score in percentage (out of 100) at the top right of the screen",Manual,High,UI,1.Simulation call should be completed,NA,1.Observe the score is displayed at the top right of the screen after call is processed,"1.Score is displayed in percentage format (e.g., 85%) out of 100 and is  positioned at the top right corner of the screen",Score percentage is displayed correctly in the simulation landing screen.
+HeySales Studio> Elevator pitch Learners view ,TC0023 - Verify detailed report contains configured scorecard and breakdown,porsudar@paperflite.com,Validate that clicking View Report navigates to Detailed Report screen and displays the same configured scorecard along with score breakdown,Manual,High,Functional,1.Simulation call should be completed,NA,"1. Click View Report CTA
+2. Observe Detailed Report screen
+3.Observe overall score is displayed along with Call logged date and time and duration
+4.Observe view recording and close icon at the top of the screen","1. User navigates successfully to Detailed Report screen
+2. Same scorecard parameters configured during simulation creation should be displayed and Score breakdown is shown for each parameter for out of 10
+3.Overall score should be displayed out of 10 along with call logged date and time and duration
+4.View call recording and close icon should be displayed at the top of the screen ",Detailed report displays the configured scorecard and breakdown correctly.
+HeySales Studio> Elevator pitch Learners view ,TC0024 - Verify View Call Recording slider UI for Video Pitch,porsudar@paperflite.com,Validate that the recording slider displays a video player when a learner submits a video elevator pitch.,Manual,High,Functional,1.Simulation call should be completed,NA,"1. Click on ""View Call Recording"".
+2.Observe the recording section in the slider.","1. The recording slider should open successfully.
+2. The recorded video of the learner should be displayed and Video playback controls (Play, Pause, Seek) and collapse player should be functional along with the transcript in the right side slider.",View Call Recording slider UI is displayed correctly for Video Pitch.
+HeySales Studio> Elevator pitch Learners view ,TC0025 - Verify View Call Recording slider UI for Audio Pitch,porsudar@paperflite.com,Validate that the recording slider displays a single avatar when a learner submits an audio-only elevator pitch.,Manual,High,Functional,1.Simulation call should be completed,NA,"1. Click on ""View Call Recording"".
+2.Observe the recording section in the slider.","1. The recording slider should open successfully.
+2.Since it is a one-sided audio pitch, exactly one avatar representing the learner should be displayed and Audio should be playable and collase player with a functional seek bar along with the transcript in the right side slider.",View Call Recording slider UI is displayed correctly for Audio Pitch.
+HeySales Studio> Elevator pitch Learners view ,TC0026 - Verify Close icon navigation from Recording screen to Reports screen,porsudar@paperflite.com,Validate that clicking Close icon on the Call Recording screen navigates to the Reports screen,Manual,Medium,Functional,1.Simulation call should be completed,NA,"1.On Call Recording screen, click Close (X) icon",1.User navigates to Reports screen,Clicking Close icon navigates from Recording screen to Reports screen.
+HeySales Studio> Elevator pitch Learners view ,TC0027 - Verify Close icon navigation from Reports screen to Simulation Landing screen,porsudar@paperflite.com,Validate that clicking Close icon on Reports screen navigates to Simulation Landing screen,Manual,Medium,Functional,1.Simulation call should be completed,NA,"1.In Detailed Report screen, Click Close (X) icon",1. User navigates to Simulation Landing screen,Clicking Close icon navigates from Reports screen to Simulation Landing screen.
+HeySales Studio> Elevator pitch Learners view ,TC0028 - Verify simulation moves to Course Completion section with percentage displayed in My Courses,porsudar@paperflite.com,"Validate that after completing and exiting the report flow, simulation appears in Course Completion section with percentage score on card",Manual,Medium,Functional,1.Simulation call should be completed,NA,"1. Click Back from Simulation Landing screen
+2. Check Course Completion section in mycourses","1. On clicking back button, it should navigate to the mycourses
+2.Simulation appears under Course Completion section and Simulation card displays percentage score (e.g., 85%)
+",Simulation moves to Course Completion section with percentage displayed correctly.
+HeySales Studio> Elevator pitch Learners view ,TC0029 - Verify Learner Can Retake Simulation and Latest Score is Displayed After Completion,porsudar@paperflite.com,"Validate that once a learner completes a simulation, they are allowed to retake it. After retaking and completing the simulation, the system should update and display the latest score for the learner in the report screen without affecting previous attempt records.",Manual,High,Functional,1.Simulation call should be completed,NA,"1.Login as learner.
+2.Navigate to My Courses and open the assigned simulation.
+3.Complete the simulation with an initial score (e.g., 65%).
+4.Click on the Retake option for the same simulation.
+5.Complete the simulation again with a new score (e.g., 85%).
+6.Navigate to the learner report / detailed report screen.
+7.Observe the latest score card.","1.Learner should be able to login successfully.
+2.The assigned simulation should be visible and accessible under My Courses.
+3.The learner should be able to complete the simulation and receive the initial score of 65%.
+4.The Retake option should be available and clickable after completion.
+5.The learner should be able to retake and complete the simulation with a new score of 85%.
+6.The learner report / detailed report screen should render successfully.
+7.The latest score card should display the most recent attempt score (85%) for the learner.",Learner is able to retake simulation and latest score is displayed correctly.
+HeySales Studio> Elevator pitch Learners view ,TC0030 - Verify Learner Status and Score Update in Course Creation Screen After Simulation Completion,porsudar@paperflite.com,"Validate that after a learner completes the simulation and the report is generated, the learner status in the Course Creation screen moves from In Progress to Completed, the score is updated correctly, and the appropriate icon is displayed (Flag icon )",Manual,High,Functional,1.Simulation call should be published,NA,"1.Login as admin.
+2.Create and publish a course with a simulation and assign it to a learner.
+3.Login as learner.
+4.Navigate to My Courses and start the assigned simulation.
+5.Complete the simulation and generate the report.
+6.Login back as admin.
+7.Navigate to the Course Creation screen.
+8.Open the learner list section for the course.
+9.Observe the learner status and score display","1.Admin user should be able to login successfully.
+2.The simulation should be created, published, and assigned successfully.
+3.Learner should be able to login successfully.
+4.The assigned simulation should be accessible under My Courses.
+5.The learner should be able to complete the simulation and the report should be generated successfully.
+6.Admin user should be able to login successfully.
+7.The Course Creation screen should render successfully.
+8.The learner list section should display the assigned learner.
+9.The learner status should move from In Progress to Completed, the score should be updated correctly, and if the learner has passed, a flag icon should be displayed",Learner status updates to Completed and score is reflected correctly in Course Creation screen.
+HeySales Studio> Elevator pitch Learners view ,TC0031 - Verify Completion Rate Card Displays Correct Percentage and Updates Dynamically,porsudar@paperflite.com,Validate the completion rate card updates correctly as learners complete the elevator pitch,Manual,Medium,Functional,Elevator pitch assigned to multiple learners,Learners complete at different times,"1. Login as learner A and complete the elevator pitch
+.2. Login as learner B and complete the elevator pitch
+.3. Login as admin.
+4. Open the detailed report screen of the simulation
+.5. Check the completion rate card.","1.Learner A should be able to login and complete the elevator pitch successfully.
+2.Learner B should be able to login and complete the elevator pitch successfully.
+3.Admin user should be able to login successfully.
+4.The elevator pitch report screen should render successfully.
+5.The completion rate card should display the correct percentage based on completed learners out of total assigned learners and update dynamically.",Completion Rate Card displays correct percentage and updates dynamically.
+HeySales Studio> Elevator pitch Learners view ,TC0032 - Verify Completion Card Displays 0% for Newly Created Elevator Pitch with No Learners,porsudar@paperflite.com,Validate newly created elevator pitch with no assigned learners shows 0% completion,Manual,Medium,Functional,Elevator pitch created but no learners assigned,No learners,"1. Login as admin
+.2. Create a new elevator pitch.
+3. Open the detailed report screen.
+4. Check the completion rate card.","1.Admin user should be able to login successfully.
+2.The elevator pitch should be created successfully.
+3.The report screen should render successfully.
+4.The completion rate card should display 0% when no learners are assigned or completed.",Completion Card displays 0% when no learners are assigned or completed.
+HeySales Studio> Elevator pitch Learners view ,TC0033 - Verify Average Score Card Calculation for Single and Multiple Attempts,porsudar@paperflite.com,Validate average score card calculation across learners and attempts,Manual,Medium,Functional,Elevator pitch assigned and completed by multiple learners,Simulation A should be published for learner A and B,"1. Learner A completes pitch with 70
+.2. Learner B completes pitch with 80.
+3. Learner A retakes and scores 90.
+4. Login as admin.
+5. Open detailed report screen.
+6. Check average score card.","1.Learner A should be able to complete the elevator pitch with score 70%.
+2.Learner B should be able to complete the elevator pitch with score 80%.
+3.Learner A should retake the pitch with score 90%
+4.Admin user should be able to login successfully.
+5.The detailed report screen should render successfully.
+6.The average score card should display the calculated average score of all completed learners.",Average Score Card calculates correctly for single and multiple attempts.
+HeySales Studio> Elevator pitch Learners view ,TC0034 - Verify Average Score Card UI Follows Design Specifications,porsudar@paperflite.com,Validate UI design of the average score card,Manual,Medium,UI,Elevator pitch completed,NA,"1. Login as admin.
+2. Open detailed report screen
+3. Check average score card UI.","1.Admin user should be able to login successfully.
+2.The detailed report screen should render successfully.
+3.The average score card UI should follow the design specifications including layout, font, and primary color.",Average Score Card UI matches design specifications.
+HeySales Studio> Elevator pitch Learners view ,TC0035 - Verify Average Time Spent Card Calculation with and without Retakes,porsudar@paperflite.com,Validate cumulative time calculation,Manual,Medium,Functional,Learner completes multiple attempts,NA,"1. Login as learner.
+2. Complete elevator pitch in 2 mins.
+3. Retake pitch and complete in 1 mins 30 sec.
+4. Login as admin.
+5. Open detailed report screen.
+6. Check average time spent card.","1.Learner should be logged in
+2.Learner should be able to complete the elevator pitch in 2 minutes successfully.
+3.Learner should be able to retake and complete the elevator pitch in 1 minutes 3o sec successfully.
+4.Admin user should be able to login successfully.
+5.The detailed report screen should render successfully.
+6.The average time spent card should display the calculated cumulative/average time correctly.",Average Time Spent is calculated correctly with and without retakes.
+HeySales Studio> Elevator pitch Learners view ,TC0036 - Verify Average Time Spent Card UI Compliance,porsudar@paperflite.com,Validate UI of average time spent card,Manual,Medium,UI,Elevator pitch completed,NA,"1. Login as admin.
+2. Open detailed report screen.
+3. Check average time spent card UI.","1.Admin user should be able to login successfully.
+2.The detailed report screen should render successfully.
+3.The average time spent card UI should follow the design specifications including layout and primary color.",Average Time Spent Card UI matches design specifications.
+HeySales Studio> Elevator pitch Learners view ,TC0037 - Verify Navigation from Learner List to Detailed Report Screen,porsudar@paperflite.com,Validate clicking a learner navigates correctly,Manual,High,Functional,Multiple learners completed pitch,NA,"1. Login as admin.
+2. Open elevator pitch.
+3. Click any learner from the list.
+4. Observe detailed report screen.","1.Admin user should be able to login successfully.
+2.The elevator pitch report screen should render successfully.
+3.Clicking on a learner should navigate to the detailed report screen.
+4.The selected learner’s data should be displayed correctly.",Clicking learner navigates correctly to Detailed Report screen.
+HeySales Studio> Elevator pitch Learners view ,TC0038 - Verify Detailed Report Screen UI Elements and Layout,porsudar@paperflite.com,Validate all UI elements and layout on detailed report screen,Manual,Medium,UI,Learner completed pitch,Completed learners,"1. Login as admin.
+2. Open detailed report screen.
+3. Check all UI elements.","1.Admin user should be able to login successfully.
+2.The detailed report screen should render successfully.
+3.All cards, breakdown section, dropdowns, and layout should follow the design specifications.",Detailed Report screen UI elements and layout are displayed correctly.
+HeySales Studio> Elevator pitch Learners view ,TC0039 - Verify Latest Score Card Displays Most Recent Attempt Score,porsudar@paperflite.com,Validate latest attempt score displayed,Manual,Medium,Functional,"1.Simulation should be published 
+2.Multiple attempts should be taken",NA,"1.Login as learner and complete the elevator pitch with 60%.
+2.Retake and complete the elevator pitch with 85%.
+3.Login as admin.
+4.Open the detailed report screen.
+5.Check the latest score card.","1.Learner should be able to complete the elevator pitch with 60%.
+2.Learner should be able to retake and complete the elevator pitch with 85%.
+3.Admin user should be able to login successfully.
+4.The detailed report screen should render successfully.
+5.The latest score card should display the most recent attempt score 85%",Latest Score Card displays the most recent attempt score correctly.
+HeySales Studio> Elevator pitch Learners view ,TC0040 - Verify Team Average Best Score Calculation Across Completed Learners,porsudar@paperflite.com,Validate average best score for team displayed,Manual,Medium,Functional,Multiple learners completed,"Scores: 70%, 85%, 90%","""1. Login as a learner A
+2. Open My courses
+3. Start the simulation and complete
+4. Login as a learner B
+5. Open My courses
+6. Start the simulation and complete
+7. Now Login as admin
+8. Click on any completed learner
+9. Check the latest score card""","""1. User A should be able to login successfully
+2. User A should be able to open My courses in hey sales and locate the assigned simulation
+3. User A should be able to start the simulation and successfully complete it with respective score
+4. User B should be able to login successfully
+5. User B should be able to open My courses in hey sales and locate the assigned simulation
+6. User B should be able to start the simulation and successfully complete it with respective score
+7.  Admin user should be able to login successfully
+8. The completed learmer should be added in the list and clicking on the learner A should navigate the admin to detailed report screen
+9. The latest score card A should be the last attempts score in percentage and the average of team should be best score cumalation of User A and User B divided by number of completed users""",Team Average Best Score is calculated correctly across completed learners.
+HeySales Studio> Elevator pitch Learners view ,TC0041 - Verify Attempts Taken Card Displays Correct Attempt Count and Graph,porsudar@paperflite.com,Validate attempts count and graphical representation,Manual,Medium,Functional,Learner completed multiple attempts,3 attempts,"1.Login as learner and complete the elevator pitch.
+2.Retake the elevator pitch and complete it again.
+3.Retake the elevator pitch a third time and complete it.
+4.Login as admin.
+5.Open the detailed report screen.
+6.Check the attempts taken card.","1.Learner should be able to complete the elevator pitch successfully.
+2.Learner should be able to retake and complete the elevator pitch successfully.
+3.Learner should be able to complete the third attempt successfully.
+4.Admin user should be able to login successfully.
+5.The detailed report screen should render successfully.
+6.The attempts taken card should display #3 and show graphical representation of all attempt scores.",Attempts Taken card displays correct attempt count and graph representation.
+HeySales Studio> Elevator pitch Learners view ,TC0042 - Verify Ramp-Up Rate Card Displays Accurate Completion Time Difference,porsudar@paperflite.com,Validate time difference between assigned/enrolled and completion,Manual,Medium,Functional,Learner completed pitch,Completed after 2 hrs,"1.Login as admin and assign the elevator pitch to a learner.
+2.Login as learner.
+3.Complete the elevator pitch after 2 hours from assignment.
+4.Login as admin.
+5.Open the detailed report screen.
+6.Check the ramp-up rate card.","1.Admin should be able to assign the elevator pitch successfully.
+2.Learner should be able to login successfully.
+3.Learner should be able to complete the elevator pitch after 2 hours.
+4.Admin user should be able to login successfully.
+5.The detailed report screen should render successfully.
+6.The ramp-up rate card should display 2 hrs in primary color with subtext showing the assigned date.",Ramp-Up Rate Card displays accurate completion time difference.
+HeySales Studio> Elevator pitch Learners view ,TC0043 - Verify Time Spent Card Displays Cumulative Time Across Attempts,porsudar@paperflite.com,Validate total time spent across attempts,Manual,Medium,Functional,Learner completed multiple attempts,NA,"1.Login as learner and complete the elevator pitch in 1 minutes 30 sec
+2.Retake the elevator pitch and complete it in 2 minutes.
+3.Login as admin.
+4.Open the detailed report screen.
+5.Check the time spent card.","1.Learner should be able to complete the elevator pitch in 1 minutes 20 sec successfully.
+2.Learner should be able to retake and complete the elevator pitch in 2 minutes successfully.
+3.Admin user should be able to login successfully.
+4.The detailed report screen should render successfully.
+5.The time spent card should display cumulative time ",Time Spent Card displays cumulative time across all attempts.
+HeySales Studio> Elevator pitch Learners view ,TC0044 - Verify Learner Ranking is Calculated Based on Best Score and Updates Dynamically,porsudar@paperflite.com,Validate rank updates correctly as new scores are added,Manual,High,Functional,Learner completed multiple attempts,NA,"1.Login as learner A and complete the elevator pitch with 70%.
+2.Login as admin and check the ranking.
+3.Login as learner B and complete the elevator pitch with 90%.
+4.Login as admin again.
+5.Open the detailed report screen.
+6.Check the updated ranking","1.Learner A should be able to complete the elevator pitch with 70% successfully.
+2.The ranking should reflect learner A’s position based on score.
+3.Learner B should be able to complete the elevator pitch with 90% successfully.
+4.Admin user should be able to login successfully.
+5.The detailed report screen should render successfully.
+6.The ranking should be recalculated dynamically based on best score, placing learner B above learner A.",Learner ranking is calculated based on best score and updates dynamically.
+HeySales Studio> Elevator pitch Learners view ,TC0045 - Verify Breakdown Section and Attempts Dropdown Functionality,porsudar@paperflite.com,Validate breakdown section displays call details and attempts dropdown works,Manual,Medium,Functional,Learner completed multiple attempts,Multiple attempts,"1.Login as learner and complete the elevator pitch.
+2.Retake the elevator pitch and complete it again.
+3.Login as admin.
+4.Open the detailed report screen.
+5.Verify the breakdown section.
+6.Click on the attempts dropdown.
+7.Switch between attempts.","1.Learner should be able to complete the elevator pitch successfully.
+2.Learner should be able to retake and complete successfully.
+3.Admin user should be able to login successfully.
+4.The detailed report screen should render successfully.
+5.The breakdown section should display last call logged date and duration and call recording should be displayed
+6.The attempts dropdown should display all attempts with percentage and logged date and time.
+7.Switching between attempts should update the respective attempt data correctly",Breakdown section and attempts dropdown function correctly.
+HeySales Studio> Elevator pitch Learners view ,TC0046 - Verify Breakdown Displays Respective Score Card of the Simulation,porsudar@paperflite.com,Validate Breakdown Displays Respective Score Card of the Simulation,Manual,Medium,UI,Learner completed pitch,NA,"1.Login as learner and complete the elevator pitch simulation.
+2.Login as admin.
+3.Navigate to the Elevator Pitch report screen.
+4.Click on a completed learner from the learners list.
+5.Navigate to the Breakdown section.
+6.Select a score category (e.g., Conversation Quality).
+7.Observe the displayed score and related details.","1.Learner should be able to complete the elevator pitch simulation successfully.
+2.Admin user should be able to login successfully.
+3.The Elevator Pitch report screen should render successfully.
+4.Clicking on the completed learner should navigate to the detailed report screen.
+5.The Breakdown section should be displayed successfully.
+6.The selected score category should be highlighted correctly.
+7.The Breakdown section should display the respective score card details of the selected simulation including score, description, and scenario information.",Breakdown displays the respective configured scorecard correctly.
+HeySales Studio> Elevator pitch Learners view ,TC0047 - Verify Call Recording Screen is Displayed on Clicking Call Recording,porsudar@paperflite.com,Validate Call Recording Screen is Displayed on Clicking Call Recording,Manual,High,Functional,Learner completed pitch,NA,"1.Login as admin.
+2.Navigate to the Elevator Pitch report screen.
+3.Click on a completed learner from the learners list.
+4.Navigate to the Breakdown section.
+5.Click on the Call Recording button.
+6.Observe the right-side panel/screen.","1.Admin user should be able to login successfully.
+2.The Elevator Pitch report screen should render successfully.
+3.Clicking on the completed learner should navigate to the detailed report screen.
+4.The Breakdown section should be displayed successfully.
+5.The Call Recording button should be clickable.
+6.On clicking the Call Recording button, the call recording panel should open on the right side displaying call transcript, waveform player, timestamps, speaker details, and playback controls.",Call Recording screen is displayed successfully on clicking Call Recording.
+HeySales Studio> Elevator pitch Learners view ,TC0048 - Verify Video is Displayed at the Top for Video Pitch with Same Detailed Report Behavior,porsudar@paperflite.com,Validate video is Displayed at the Top for Video Pitch with Same Detailed Report Behavior,Manual,High,Functional,Learner completed pitch,NA,"1.Login as admin.
+2.Navigate to the Video Pitch report screen.
+3.Click on a completed learner from the learners list.
+4.Click on the Video Recording option.
+5.Observe the detailed report screen layout.
+6.Verify the playback controls of the video.
+","1.Admin user should be able to login successfully.
+2.The Video Pitch report screen should render successfully.
+3.Clicking on the completed learner should navigate to the detailed report screen.
+4.The Video Recording option should be clickable and open successfully.
+5.The recorded video should be displayed at the top of the screen.
+6.The video player should display playback controls such as play, pause, seek bar, and duration.
+",Video is displayed at the top for Video Pitch and detailed report behavior remains consistent.
+HeySales Studio> Elevator pitch Learners view ,TC0049 - Verify Updating Simulation Does Not Affect Completed Learners and Reports,porsudar@paperflite.com,Validate Updating Simulation Settings Does Not Affect Completed Learners and Reports,Manual,High,Functional,Learner completed pitch,NA,"1.Login as admin.
+2.Create a new simulation (Video/ Elevator Pitch) with defined time, pitch scenario, company, audience, type, and scorecard.
+3.Assign the simulation to a learner.
+4.Login as learner and complete the simulation.
+5.Login back as admin.
+6.Navigate to the simulation settings and update time limit, pitch scenario, company, audience, type, and scorecard.
+7.Save the updated simulation.
+8.Navigate to the completed learner’s detailed report screen.
+9.Verify the report data of the completed learner.","1.Admin user should be able to login successfully.
+2.The simulation should be created successfully with defined configurations.
+3.The simulation should be assigned to the learner successfully.
+4.Learner should be able to complete the simulation successfully.
+5.Admin user should be able to login successfully.
+6.The admin should be able to update the simulation successfully.
+7.The updated simulation settings should be saved successfully.
+8.The completed learner’s detailed report screen should render successfully.
+9.The completed learner’s report data including score, breakdown, attempts, time spent, and ranking should remain unchanged and should not be affected by the updated simulation settings in both learners and admin report",Updating simulation does not affect completed learners’ data or reports.
+HeySales Studio> Elevator pitch Learners view ,TC0050 - Verify Updated Simulation Settings Reflect for Untaken and Retaken Simulations,porsudar@paperflite.com,Validate Updated Simulation Settings Reflect for Untaken and Retaken Simulations,Manual,High,Functional,"1.Simulation should be published 
+2.One more simulation should be completed",NA,"1.Login as admin.
+2.Create a new simulation with defined time, pitch scenario, company, audience, type, and scorecard.
+3.Assign the simulation to a learner.
+4.Login as admin and update the simulation settings (time, pitch scenario, company, audience, type, scorecard).
+5.Save the updated simulation details
+6.Login as learner who has not yet taken the simulation.
+7.Start the simulation.
+8.Complete the simulation.
+9.Login as admin and update the simulation settings (time, pitch scenario, company, audience, type, scorecard).
+10.Retake the simulation (if already completed once before update).","1.Admin user should be able to login successfully.
+2.The simulation should be created successfully with defined configurations.
+3.The simulation should be assigned to the learner successfully.
+4.The admin should be able to update the simulation settings successfully.
+5.The updated simulation details should be saved successfully.
+6.Learner should be able to login successfully.
+7.The updated simulation configuration (time, pitch scenario, company, audience, type, scorecard) should be reflected before starting the simulation.
+8.The learner should be able to complete the simulation with the updated configuration.
+9.On retaking the simulation, the updated configuration should be applied and reflected accordingly but not to the previous attempts reports details ",Updated simulation settings reflect correctly for untaken and retaken simulations.
+HeySales Studio> Elevator pitch Learners view ,TC0051 - Verify Simulation is Removed from List After Deletion,porsudar@paperflite.com,Validate Simulation is Removed from List After Deletion,Manual,High,Functional,1.Simulation should be completed,NA,"1.Login as admin.
+2.Navigate to the Simulation / Elevator Pitch module.
+3.Ensure a simulation is available in the list.
+4.Click on the Delete option for the selected simulation.
+5.Confirm the deletion in the confirmation popup.
+6.Observe the simulation list.","1.Admin user should be able to login successfully.
+2.The Simulation / Elevator Pitch module should render successfully.
+3.The simulation should be visible in the list.
+4.The Delete option should be clickable and display a confirmation popup.
+5.Upon confirming deletion, the simulation should be deleted successfully.
+6.The deleted simulation should no longer appear in the studio, explore, mycourses and manage courses",Simulation is removed from the list after deletion.
+HeySales Studio> Elevator pitch Learners view ,TC0052 - Verify adding learners with specific due date,porsudar@paperflite.com,Validate Admin can assign learners with specific due date,Manual,High,Functional,Elevator Pitch simulation published,Future date,"1.Click on Add Learners.
+2.Select Specific Due Date option.
+3.Choose a future date from date picker.
+4.Select learner.
+5.Click Add.","1.Add Learners popup should open successfully.
+2.Date picker should be displayed.
+3.Past dates should be disabled and only future dates selectable.
+4.Learner should be selected successfully.
+5.Learner should be assigned with selected due date and default time 12:00 AM",Learners are assigned successfully with the selected specific due date.
+HeySales Studio> Elevator pitch Learners view ,TC0053 - Verify adding learners with relative due date,porsudar@paperflite.com,Validate Admin can assign learners with relative due date,Manual,High,Functional,Elevator Pitch simulation published,,"1.Click on Add Learners.
+2.Select Time from Assignment option.
+3.Choose predefined value (e.g., 7 days).
+4.Assign learner.","1.Add Learners popup should open successfully.
+2.Dropdown should display options (1 day, 3 days,1 week, 2 weeks, 1 month, 2 months).
+3.Due date should be auto-calculated correctly.
+4.Learner should be assigned successfully with calculated due date.",Learners are assigned successfully with the calculated relative due date.
+HeySales Studio> Elevator pitch Learners view ,TC0054 - Verify learner view – Not Started (Within Due Date),porsudar@paperflite.com,Validate due date metadata displayed correctly for not started simulation,Manual,Medium,Functional,Learner assigned with due date,NA,"1. Login as learner.
+2. Navigate to My Courses.
+3. Open Elevator Pitch simulation.","1. Learner should login successfully.
+2. My courses screen should load successfully.
+3. Start Call button, “Due on” date and remaining days should be displayed correctly.",Learner login was successful. Assigned Elevator Pitch simulation appeared in My Simulations/My Courses with status Not Started and due date displayed. Simulation was accessible and no overdue indicator was shown.
+HeySales Studio> Elevator pitch Learners view ,TC0055 - Verify learner view – Overdue Simulation,porsudar@paperflite.com,Validate overdue metadata displayed after due date,Manual,Medium,Functional,Simulation due date passed,NA,"
+1. Login as learner.
+2. Navigate to My Courses.
+3. Open Elevator Pitch simulation after due date.","1. Learner should login successfully.
+2. My courses screen should load successfully.
+3. Start Call button, Overdue label with due date should be displayed in pill and remaining days in the button",Learner login was successful. Simulation appeared with Overdue status once the due date passed. Overdue indicator and due date were displayed correctly in learner view.
+HeySales Studio> Elevator pitch Learners view ,TC0056 - Verify completion before due date,porsudar@paperflite.com,Validate status when learner completes Elevator Pitch before due date,Manual,Medium,Functional,Assigned with future due date,NA,"1. Login as learner.
+2. Navigate to My Courses.
+3. Open Elevator Pitch.
+4. Start and complete the simulation before due date.","1. Learner should login successfully.
+2. Mycourses detail screen should open.
+3. Learner should be able to start the simulation.
+4. Simulation should be marked Completed in Learners List within due date.",Learner completed the Elevator Pitch simulation before the due date. Status was updated to Completed and no overdue indicator was shown. Completion time was recorded successfully.
+HeySales Studio> Elevator pitch Learners view ,TC0057 - Verify completion after due date,porsudar@paperflite.com,Validate status when learner completes Elevator Pitch after due date,Manual,Medium,Functional,Assigned with due date,NA,"1. Login as learner.
+2. Navigate to My Courses.
+3. Open Elevator Pitch after due date.
+4. Start and complete the simulation.","1. Learner should login successfully.
+2. Mycourse detail screen should open.
+3. Learner should be able to start the simulation even after due date.
+4. Simulation should be marked Completed in Learners List after due date","Learner completed the simulation after the due date. Status was updated to Completed, and the system marked it as Completed after due date with overdue indication."
+HeySales Studio> Elevator pitch Learners view ,TC0058 - Verify reminder email – 50% duration,porsudar@paperflite.com,Validate reminder email triggered at 50% duration,Manual,Medium,Functional,Assignment with 30-day duration,NA,"1. Assign Elevator Pitch with 30-day due date.
+2. Wait until 50% duration (15 days).
+3. Check learner email","1. Simulation should be assigned successfully.
+2. System should reach 50% duration of assignment.
+3. Reminder email should be triggered to learner.",Reminder email was successfully triggered when 50% of the due date duration elapsed. Email included simulation name and due date information.
+HeySales Studio> Elevator pitch Learners view ,TC0059 - Verify assignment notification includes due date,porsudar@paperflite.com,Validate assignment email includes due date metadata,Manual,Medium,Functional,Assign simulation with due date,NA,"1. Assign Elevator Pitch simulation to learner.
+2. Set due date.
+3. Check learner email.","1. Simulation should be assigned successfully.
+2. Due date should be saved correctly.
+3. Assignment email should contain due date metadata.","Assignment notification email was successfully received by learner. Email included simulation title, assignment details, and due date information."
+HeySales Studio> Elevator pitch Learners view ,TC0060 - Verify Learners list – Completed within due date (Green Hourglass),porsudar@paperflite.com,Validate green timely icon appears when learner completes before due date,Manual,Medium,Functional,Elevator Pitch assigned with due date,NA,"1. Assign simulation with due date.
+2. Learner completes simulation before due date.
+3. Admin opens Learners list.","1. Simulation should be assigned successfully.
+2. Learner should complete simulation before due date.
+3. Green hourglass icon should appear in learners list.","In the learners list, the learner who completed the simulation before the due date displayed Green Hourglass icon indicating completion within due date."
+HeySales Studio> Elevator pitch Learners view ,TC0061 - Verify Learners list – Completed after due date (Red Hourglass),porsudar@paperflite.com,Validate red overdue icon appears when learner completes after due date,Manual,Medium,Functional,Elevator Pitch assigned with due date,NA,"1. Assign simulation with due date.
+2. Learner completes simulation after due date.
+3. Admin opens Learners list.","1. Simulation should be assigned successfully.
+2. Learner should complete simulation after due date.
+3. Red hourglass icon should appear in learners list.","In the learners list, the learner who completed the simulation after the due date displayed Red Hourglass icon indicating late completion."
+HeySales Studio> Elevator pitch Learners view ,TC0062 - Verify Learners list – In Progress (Within Due Date),porsudar@paperflite.com,Validate due date and progress displayed correctly for in-progress learners,Manual,Medium,Functional,Assigned with future due date,NA,"1. Assign simulation with due date.
+2. Learner starts simulation but does not complete.
+3. Admin opens learners list","1. Simulation should be assigned successfully.
+2. Learner status should be In Progress.
+3. Due in days and progress indicator should be displayed correctly.",Learner who started the simulation but did not complete it before due date was displayed with In Progress status without overdue indication.
+HeySales Studio> Elevator pitch Learners view ,TC0063 - Verify Learners list – In Progress (Overdue),porsudar@paperflite.com,Validate overdue label shown for in-progress learners after due date,Manual,Medium,Functional,Due date passed,NA,"1. Assign simulation with due date.
+2. Learner starts simulation but does not complete.
+3. Due date passes.
+4. Admin opens learners list.","1. Simulation should be assigned successfully.
+2. Learner status should be In Progress.
+3. System should mark assignment as Overdue.
+4. Overdue in days hourly icon should appear in learners list.",Learner who started but did not complete the simulation after due date was displayed as In Progress (Overdue) in the learners list.
+HeySales Studio> Elevator pitch Learners view ,TC0064 - Verify Learners list – Not Started (Within Due Date),porsudar@paperflite.com,Validate due date displayed for not started learners,Manual,Medium,Functional,Assigned with due date,NA,"1. Assign simulation with due date.
+2. Learner does not start simulation.
+3. Admin opens learners list","1. Simulation should be assigned successfully.
+2. Learner status should be Not Started.
+3. Due date metadata should be displayed correctly.",Learner who had not started the simulation before due date appeared with Not Started status in the learners list.
+HeySales Studio> Elevator pitch Learners view ,TC0065 - Verify Learners list – Not Started (After Due Date),porsudar@paperflite.com,Validate overdue shown when learner never starts and due date passes,Manual,Medium,Functional,Due date passed,NA,"1. Assign simulation with due date.
+2. Learner does not start simulation.
+3. Due date passes.
+4. Admin opens learners list","1. Simulation should be assigned successfully.
+2. Learner status should remain Not Started.
+3. Assignment should be marked Overdue.
+4. Overdue label should appear in learners list.",Learner who had not started the simulation even after due date appeared with Not Started (Overdue) indication in the learners list.
+HeySales Studio> Elevator pitch Learners view ,TC0066 - Verify learners with no due date in learners list,porsudar@paperflite.com,Validate no due date metadata or icon displayed when not assigned,Manual,Medium,Functional,Assigned without due date,NA,"1. Assign Elevator Pitch without due date.
+2. Open learners list.","1. Simulation should be assigned successfully.
+2. No due date metadata or icon should be displayed",Learners assigned without a due date were displayed in the learners list without due date indicator or overdue status.
+HeySales Studio> Elevator pitch Learners view ,TC0067 - Verify learners with due date as Today,porsudar@paperflite.com,Validate “Due Today” label appears correctly,Manual,Medium,Functional,Due date set as current date,NA,"1. Assign simulation with due date set as today.
+2. Open learners list.","1. Simulation should be assigned successfully.
+2. Learner entry should display “Due Today” label.",Learners assigned with due date set as today were displayed correctly with due date indication and simulation remained accessible until the end of the day.
+HeySales Studio> Elevator pitch Learners view ,TC0068 - Verify adding Elevator Pitch simulation inside a course,porsudar@paperflite.com,Validate that admin can add Elevator Pitch simulation to a course during course creation,Manual,High,Functional,1.Elevator Pitch should be published,NA,"1. Login as admin.
+2. Navigate to HeySales Studio → Courses.
+3. Click Create Course or open an existing course.
+4. Add Elevator Pitch simulation as a module in the course structure.
+5. Save and publish the course.","1. Admin should login successfully.
+2. Courses page should render successfully.
+3. Course creation/edit screen should open.
+4. Elevator Pitch simulation should be selectable and added to the course structure.
+5. Course should be saved and published successfully with the simulation included.",Admin successfully added Elevator Pitch simulation to the course structure. Course was saved and published successfully with the simulation included.
+HeySales Studio> Elevator pitch Learners view ,TC0069 - Verify Elevator Pitch simulation inside course and report generation,porsudar@paperflite.com,"Validate that when Elevator Pitch simulation is added inside a course, learners can take the call within the course and reports are generated for both simulation and course",Manual,High,Functional,1.Elevator Pitch should be published,NA,"1. Login as learner.
+2. Navigate to My Courses.
+3. Open the course that contains Elevator Pitch simulation
+4. Click Start Call for the Elevator Pitch simulation inside the course
+5. Complete the simulation call
+6. Navigate to the Reports / Analytics section.
+7.End the course 
+","1. Learner should login successfully.
+2. My Courses screen should render successfully.
+3. Course detail page should open and Elevator Pitch simulation should be visible inside the course structure.
+4. Learner should be able to start the call from within the course.
+5. Simulation should be completed successfully 
+6.Reports should be generated 
+7.After ending the course, it should be updated for the course report Analytics","Learner successfully accessed the Elevator Pitch simulation within the course, completed the call, and reports were generated for both the simulation and the course progress."
+HeySales Studio> Elevator pitch Learners view ,TC0070 - Verify Elevator Pitch simulation is added in Report and percentage is added there for Learners and Teams,porsudar@paperflite.com,Validate that the Elevator Pitch simulation is reflected in the Main Report and that the percentage score is displayed correctly for both Learners and Teams.,Manual,High,Functional,"1.Elevator Pitch should be published
+2.Learner should have completed the call",NA,"1.Login to the application as an Admin.
+2.Navigate to the Reports / Main Report section.
+3.Ensure that the Elevator Pitch simulation is assigned and completed by learners.
+4.Check the report entries for the Elevator Pitch simulation.
+5.Verify the percentage score displayed for Learners and Teams.","1.Admin should be logged into the application successfully.
+2.Main Report page should be displayed.
+3.Completed Elevator Pitch simulation data should be available in the system.
+4.Elevator Pitch simulation should be listed in the Main Report.
+5.Percentage score should be displayed correctly for both Learners and Teams.",Elevator Pitch simulation is displayed in the Main Report and the percentage score is correctly shown for both Learners and Teams.

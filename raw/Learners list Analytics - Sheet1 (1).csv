@@ -1,0 +1,73 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Steps,Test Data,Expected Result,Actual Result
+HeySales ManageCourses> Learners list Analytics,TC0001_Check the Learners list for Courses and Podcast,arjun@paperflite.com,"Validate for admins and content publishers in Courses and Podcast in the learners list along with All Learners, Completed and Not Started there should be a new inprogress column",Manual,Medium,Functional,"1. Log in to application
+2. Navigate to hey sales
+3. Open any course
+4. Open any podcast",,NA,"For admins and content publishers in Courses and Podcast in the learners list along with All Learners, Completed and Not Started there should be a new inprogress column","For admins and content publishers in Courses and Podcast in the learners list along with All Learners, Completed and Not Started there is a new inprogress column"
+HeySales ManageCourses> Learners list Analytics,TC0002_Check the Learners list for simulation,arjun@paperflite.com,Valiadte for admins and content publishers in Simulations in learners list inprogress column should not be available,Manual,Medium,Functional,"1. Log in to application
+2. Navigate to hey sales
+3. Open any Simulation",,NA,For admins and content publishers in Simulations in learners list inprogress column should not be available,For admins and content publishers in Simulations in learners list inprogress column is not available
+HeySales ManageCourses> Learners list Analytics,TC0003_Check the All learners column in learnings,arjun@paperflite.com,"Validate All the assigned learners with their profile picture, Full name and the total count of assigned learners should be listed in All learners column and the scroll should work as expected",Manual,Medium,Functional,"1. Navigate to hey sales
+2. Open any course
+3. Open any podcast
+4. Open any simulation",,NA,"All the assigned learners with their profile picture, Full name and the total count of assigned learners should be listed in All learners column and the scroll should work as expected","All the assigned learners with their profile picture, Full name and the total count of assigned learners are listed in All learners column and the scroll works as expected"
+HeySales ManageCourses> Learners list Analytics,TC0004_Check the Not Started column in learnings,arjun@paperflite.com,"Validate All the assigned learners with their profile picture, Full name and the total count of assigned learners should be listed and assigned/enrolled date should be displayed and the scroll should work as expected",Manual,Medium,Functional,"1. Navigate to hey sales
+2. Open any course
+3. Open any podcast
+4. Open any simulation",,NA,"All the assigned learners with their profile picture, Full name and the total count of assigned learners should be listed and assigned/enrolled date should be displayed and the scroll should work as expected","All the assigned learners with their profile picture, Full name and the total count of assigned learners is listed and assigned/enrolled date is displayed and the scroll works as expected"
+HeySales ManageCourses> Learners list Analytics,TC0005_Check the Inprogress column in Courses and podcast,arjun@paperflite.com,"Validate When a course or podcast is started by a user, the user data should be removed from Not started and should be displayed in inprogress",Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Start any podcasr or Course
+4. As admin check the learning",,NA,"When a course or podcast is started by a user, the user data should be removed from Not started and should be displayed in inprogress","When a course or podcast is started by a user, the user data is removed from Not started and displayed in inprogress"
+HeySales ManageCourses> Learners list Analytics,TC0006_Check the UI of Inprogress column in Courses and podcast,arjun@paperflite.com,"Validate All the inprogress learners with their profile picture, Full name and the total count of learners should be listed and the scroll should work as expected",Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Start any podcasr or Course
+4. As admin check the learning",,NA,"All the inprogress learners with their profile picture, Full name and the total count of learners should be listed and the scroll should work as expected","All the inprogress learners with their profile picture, Full name and the total count of learners is listed and the scroll works as expected"
+HeySales ManageCourses> Learners list Analytics,TC0007_Check the data point in inprogress column for courses,arjun@paperflite.com,Validate With respect to number of lessons and assessments the users has completed from the total list the progress should be calculated and progress bar should be displayed in line with the user name,Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Start any Course
+4. As admin check the learning",,NA,With respect to number of lessons and assessments the users has completed from the total list the progress should be calculated and progress bar should be displayed in line with the user name,With respect to number of lessons and assessments the users has completed from the total list the progress is calculated and progress bar is displayed in line with the user name
+HeySales ManageCourses> Learners list Analytics,TC0008_Check the started date for course in progress,arjun@paperflite.com,Valdiate The date when the user has started the course should be displayed,Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Start any Course
+4. As admin check the learning",,NA,The date when the user has started the course should be displayed,The date when the user has started the course is displayed
+HeySales ManageCourses> Learners list Analytics,TC0009_Check the data point in inprogress column for podcast,arjun@paperflite.com,Validate With respect to the total duration of the podcast and how much the user has listened the progress should be calculated and a progress bar should be displayed in line with the user name and the last engaged date should be displayed,Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Start any Podcast
+4. As admin check the learning",,NA,With respect to the total duration of the podcast and how much the user has listened the progress should be calculated and a progress bar should be displayed in line with the user name and the last engaged date should be displayed,With respect to the total duration of the podcast and how much the user has listened the progress is calculated and a progress bar is displayed in line with the user name and the last engaged date is displayed
+HeySales ManageCourses> Learners list Analytics,TC0010_Check the completed column for learnings,arjun@paperflite.com,"Validate When a course, podcase, or simulation is completed, the user data should be removed from Not started, inprogress and it should be displayed in completed column",Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Complete any Podcast
+4. As admin check the learning",,NA,"When a course, podcase, or simulation is completed, the user data should be removed from Not started, inprogress and it should be displayed in completed column","When a course, podcase, or simulation is completed, the user data is removed from Not started, inprogress and it is displayed in completed column"
+HeySales ManageCourses> Learners list Analytics,TC0011_Check the UI of completed column,arjun@paperflite.com,"Validate All the completed learners with their profile picture, Full name, the total count of learners, a completion flag for all the learnings, Percentage scored in a course, timespent in a podcast, score earned in s simulation, completed on ‘date’ for a course, last call logged on ‘date’ for simulation and last engaged on ‘date’ for podcast should be displayed and the scroll should work as expected",Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Complete any Course
+4. As admin check the learning",,NA,"All the completed learners with their profile picture, Full name, the total count of learners, a completion flag for all the learnings, Percentage scored in a course, timespent in a podcast, score earned in s simulation, completed on ‘date’ for a course, last call logged on ‘date’ for simulation and last engaged on ‘date’ for podcast should be displayed and the scroll should work as expected","All the completed learners with their profile picture, Full name, the total count of learners, a completion flag for all the learnings, Percentage scored in a course, timespent in a podcast, score earned in s simulation, completed on ‘date’ for a course, last call logged on ‘date’ for simulation and last engaged on ‘date’ for podcast is displayed and the scroll works as expected"
+HeySales ManageCourses> Learners list Analytics,TC0012_Check the completed column for Course with assessments,arjun@paperflite.com,Vaidate Next to the user name the completion flag is displayed and if the user has passed the course then the percentage should be displayed in green color if the user has failed then the percentage should be displayed in red and  completed on ‘date’ should be displayed,Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Complete any Course
+4. As admin check the learning",,NA,Next to the user name the completion flag is displayed and if the user has passed the course then the percentage should be displayed in green color if the user has failed then the percentage should be displayed in red and  completed on ‘date’ should be displayed,Next to the user name the completion flag is displayed and if the user has passed the course then the percentage is displayed in green color if the user has failed then the percentage is displayed in red and  completed on ‘date’ is displayed
+HeySales ManageCourses> Learners list Analytics,TC0013_Check the completed column for Course without assessments,arjun@paperflite.com,Vaidate Next to the user name the completion flag is displayed and completed on ‘date’ should be displayed,Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Complete any Course
+4. As admin check the learning",,NA,Next to the user name the completion flag is displayed and completed on ‘date’ should be displayed,Next to the user name the completion flag is displayed and completed on ‘date’ is displayed
+HeySales ManageCourses> Learners list Analytics,TC0014_Check the completed on 'data' when a course is retaken,arjun@paperflite.com,"Validate when a user retakes the course, in the learners list under the user name count of the attempt | started on date should be displayed",Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Retake any Course
+4. As admin check the learning",,NA,"when a user retakes the course, in the learners list under the user name count of the attempt | started on date should be displayed","when a user retakes the course, in the learners list under the user name count of the attempt | started on date is displayed"
+HeySales ManageCourses> Learners list Analytics,TC0015_Check the data transition when the user has retaken a course but not completed it,arjun@paperflite.com,"Validate when the user has retaken a course but not completed it, the data should be displayed in inprogress the completion flag should not be displayed and should not be displayed in completed",Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Retake any Course
+4. As admin check the learning",,NA,"When the user has retaken a course but not completed it, the data should be displayed in inprogress the completion flag should not be displayed and should not be displayed in completed","When the user has retaken a course but not completed it, the data is displayed in inprogress the completion flag is not displayed and  is not displayed in completed"
+HeySales ManageCourses> Learners list Analytics,TC0016_Check the completed column for podcast,arjun@paperflite.com,Vaidate Next to the user name the completion flag with total time spent should be displayed and last engaged on ‘date’ should be displayed,Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Complete any podcast
+4. As admin check the learning",,NA,Next to the user name the completion flag with total time spent should be displayed and last engaged on ‘date’ should be displayed,Next to the user name the completion flag with total time spent is displayed and last engaged on ‘date’ is displayed
+HeySales ManageCourses> Learners list Analytics,TC0017_Check the completed column for simulation,arjun@paperflite.com,Vaidate Next to the user name the completion flag is displayed with the score earned and last call logged on ‘date’ should be displayed,Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Complete any simulation
+4. As admin check the learning",,NA,Next to the user name the completion flag is displayed with the score earned and last call logged on ‘date’ should be displayed,Next to the user name the completion flag is displayed with the score earned and last call logged on ‘date’ is displayed
+HeySales ManageCourses> Learners list Analytics,TC0018_Check the simulation score for which no report is generated,arjun@paperflite.com,Valdiate In the user ends a simulation within 2 mins no reports will be generated and in learners list instead of score NA should be displayed,Manual,Medium,Functional,"1. Navigate to hey sales
+2. Navigate to Manage course
+3. Start any simulation
+4. End it within 2 mins
+5. As admin check the learning",,NA,If the user ends a simulation within 2 mins no reports will be generated and in learners list instead of score NA should be displayed,If the user ends a simulation within 2 mins no reports will be generated and in learners list instead of score NA is displayed

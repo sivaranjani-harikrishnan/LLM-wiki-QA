@@ -1,0 +1,82 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Studio> Custom Scorecards - Simulation creation,TC0001_Check the Scorecard option in settings,arjun@paperflite.com,"Validate In the heysales enabled account Under settings for Admins and Content publishers there should be a new option ""Scorecard""",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Log in as admin / Content publisher
+2. Navigate to settings","1. User should be able to login in successfully
+2. In the heysales enabled account Under settings for Admins and Content publishers there should be a new option ""Scorecard"" ","In the heysales enabled account Under settings for Admins and Content publishers there is a new option ""Scorecard"" ",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0002_ Check the scorecard option in settings as a non admin user,arjun@paperflite.com,Validate In the heysales enabled account Under settings for Normal user and BI Analyst the scorecard option should not be available,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Normal user / BI Analyst access",NA,"1. Log in as admin / Content publisher
+2. Navigate to settings","1. User should be able to login in successfully
+2. In the heysales enabled account Under settings for Normal user and BI Analyst the scorecard option should not be available",In the heysales enabled account Under settings for Normal user and BI Analyst the scorecard option is not available,
+HeySales Studio> Custom Scorecards - Simulation creation,TC0003_ Check the Scorecard option in settings in an account does not have heysales enabled,arjun@paperflite.com,"Validate If the heysales is not enabled, Under settings for for all the users the scorecard option should not be available",Manual,Medium,Functional,Hey sales should not bebe enabled,NA,"1. Log into the account
+2. Navigate to settings","1. User should be able to login in successfully
+2. If the heysales is not enabled, Under settings for for all the users the scorecard option should not be available","If the heysales is not enabled, Under settings for for all the users the scorecard option is not available",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0004_ Check the UI of the Scorecard ,arjun@paperflite.com,"Validate In the scorecard screen, heading ""scorecard"" and a sub text, a default scorecard, a delete button, Rename button, clone button, and Create new scorecard button should be displayed.",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Log in as admin / Content publisher
+2. Navigate to settings -> Scorecard","1. User should be able to login in successfully
+2. In the scorecard screen, heading ""scorecard"" and a sub text, a default scorecard, a delete button, Rename button, clone button, and Create new scorecard button should be displayed.","In the scorecard screen, heading ""scorecard"" and a sub text, a default scorecard, a delete button, Rename button, clone button, and Create new scorecard button are displayed.",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0005_ Check deleting the default scorecard,arjun@paperflite.com,"Valdiate User should not be able to delete the default scorecard, when user clicks on the delete button the default scorecard should not be available for selection",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open the scorecard screen
+2. Click on the delete button","1. User should be able to click on the scorecard screen, and the scorecard screen with the default scorecard should be displayed
+2. User should not be able to delete the default scorecard, when user clicks on the delete button the default scorecard should not be available for selection","User is not able to delete the default scorecard, when user clicks on the delete button the default scorecard is not available for selection",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0006_ Check the UI of the scorecard,arjun@paperflite.com,"Validate In the scorecard the card name, Active / draft, type of the card, default tag, Parameter count, sub-parameter count, and last updated date should be displayed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Log into the account
+2. Navigate to settings
+3. Click on the Scorecard","1. User should be able to login in successfully
+2. User should be able to navigate to the settings
+3. In the scorecard the card name, Active / draft, type of the card, default tag, Parameter count, sub-parameter count, and last updated date should be displayed","In the scorecard the card name, Active / draft, type of the card, default tag, Parameter count, sub-parameter count, and last updated date are displayed",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0007_ Check renaming the default scorecard,arjun@paperflite.com,"Valdiate User should not be able to rename the default scorecard, when user clicks on the rename button the default scorecard should not be available for selection",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open the scorecard screen
+2. Click on the rename button","1. User should be able to click on the scorecard screen, and the scorecard screen with the default scorecard should be displayed
+2. User should not be able to rename the default scorecard, when user clicks on the rename button the default scorecard should not be available for selection","User is not able to rename the default scorecard, when user clicks on the rename button the default scorecard is not available for selection",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0008_ Check having multiple scorecards as default,arjun@paperflite.com,Validate In an account there should be only one scorecard should be tagged as default,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Open Scorecard A, make it default
+2. Check the UI of the scorecard A in settings
+3. Open scorecard B, make it default
+4. Check the UI of the scorecard B in settings","1. User should be able to make a scorecard A as default
+2. When scoredcard A is made default, In the settings on the scorecard A the default tag should be displayed
+3. User should be able to make a scorecard B as default
+4. When scoredcard B is made default, In the settings on the scorecard B the default tag should be displayed and scorecard A should be removed from default","When scoredcard B is made default, In the settings on the scorecard B the default tag is displayed and scorecard A is removed from default",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0009_ Check deleting the default scorecard,arjun@paperflite.com,"Validate When a default scorecard is deleted, the simulations to which the scorecard is tagged should not be affected. After the default scorecard is deleted system should make the paperflite scorecard as default",Manual,Medium,Functional,Simulation should be assigned to 5 learners and 2 learners should complete the call,NA,"1. Open scorecard X, make it default
+2. Create 2 simulation
+3. Assign it to 5 learners
+4. As learner [A and B], complete the simulation
+5. As admin delete the scorecard X
+6. Check the UI of scorecards in settings","1. Admin should be able to make scorecard X as default
+2. Admin should be able to create a simulation and scorecard X should be the tagged scorecard for the simulation
+3. Admin should be able to add learners to the simulation
+4. Learners shoudl be able to start the simulation and complete. The generated report should be based on scorecard X
+5. Admin should be able to delete the scorecard X
+6. When a default scorecard is deleted, the simulations to which the scorecard is tagged should not be affected. After the default scorecard is deleted system should make the paperflite scorecard as default","When a default scorecard is deleted, the simulations to which the scorecard is tagged are not affected. After the default scorecard is deleted the system makes the paperflite scorecard as default",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0010_ Check the simulation creation flow,arjun@paperflite.com,"Validate During the simulation creation there should be 2 steps. 1st step to setup the Time, Difficulty level, and Scorecard selection. 2nd Step to create the profile",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation","1. Admin should be able to navigate to studio
+2. During the simulation creation there should be 2 steps. 1st step to setup the Time, Difficulty level, and Scorecard selection. 2nd Step to create the profile","During the simulation creation there are 2 steps. 1st step to setup the Time, Difficulty level, and Scorecard selection. 2nd Step to create the profile",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0011_ Check the prepopulated scorecard,arjun@paperflite.com,Validate By default the default scorecard should be tagged during the simulation creation,Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation
+3. Check the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a simulation
+3. By default the default scorecard should be tagged during the simulation creation",By default the default scorecard is tagged during the simulation creation,
+HeySales Studio> Custom Scorecards - Simulation creation,TC0012_ Check the preview button in the scorecard,arjun@paperflite.com,"Validate By clicking on the preview, user should be navigated to the detailed scorecard screen of the selected scorecard",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation
+3. Click on preview in the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a simulation
+3. By clicking on the preview, user should be navigated to the detailed scorecard screen of the selected scorecard","By clicking on the preview, user is navigated to the detailed scorecard screen of the selected scorecard",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0013_ Check the change button in the scorecard,arjun@paperflite.com,"Validate By clicking on the change, user should be navigated to the list of scorecard screen and user should be able to pick and choose the required scorecard for the call",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation
+3. Click on change in the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a simulation
+3. By clicking on the change, user should be navigated to the list of scorecard screen and user should be able to pick and choose the required scorecard for the call","By clicking on the change, user is navigated to the list of scorecard screen and user is able to pick and choose the required scorecard for the call",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0014_ Check the list of scorecards available in the selection screen,arjun@paperflite.com,Validate Scorecard which matchs the simulation type [eg: simulation is cold call] only those scorecards and scorecards which are tagged as all type should be displayed,Manual,Medium,Functional,"Create a coldcall simulation, and check changing the scorecard",NA,"1. Navigate to studio, heysales
+2. Create a cold call simulation
+3. Click on change in the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a cold simulation
+3. Scorecard which matchs the simulation type [eg: simulation is cold call] only those scorecards should be displayed and scorecards which are tagged as all type should be displayed",Scorecard which matchs the simulation type [eg: simulation is cold call] only those scorecards are displayed and scorecards which are tagged as all type are displayed,
+HeySales Studio> Custom Scorecards - Simulation creation,TC0015_ Check the empty message in the selection screen if the simlation type [eg:discovery] does not have any scorecard,arjun@paperflite.com,"Validate If the account does not have any scorecard type with respect to the simulation type, in the selection screen an empty message should be displayed",Manual,Medium,Functional,"Create a discovery simulation, and account should have only coldcall scorecards",NA,"1. Navigate to studio, heysales
+2. Create a cold discovery simulation
+3. Click on change in the scorecard","1. Admin should be able to navigate to studio
+2. Admin should be able to create a cold simulation
+3. If the account does not have any scorecard type with respect to the simulation type, in the selection screen an empty message should be displayed","If the account does not have any scorecard type with respect to the simulation type, in the selection screen an empty message is displayed",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0016_ Check the UI of the scorecard section during simulation creation,arjun@paperflite.com,"Validate Scorecard as heading and the scorecard name, a sub text, parameter count, sub-parameter count, preview and change button should be displayed",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Navigate to studio, heysales
+2. Create a simulation
+3. Check the UI of the scorecard section","1. Admin should be able to navigate to studio
+2. Admin should be able to create a simulation
+3. Scorecard as heading and the scorecard name, a sub text, parameter count, sub-parameter count, preview and change button should be displayed","Scorecard as heading and the scorecard name, a sub text, parameter count, sub-parameter count, preview and change button is displayed",
+HeySales Studio> Custom Scorecards - Simulation creation,TC0017_ Check the simulation completion flow,arjun@paperflite.com,"Validate Once after the learner completed a call, the report should be generated based on the tagged scorecard",Manual,Medium,Functional,"Hey sales should be enabled, and user should have Admin / Content publisher access",NA,"1. Create a simulation
+2. Assign a learner
+3. Login as the learner
+4. Start and complete the simulation","1. Admin should be able to create a simulation
+2. Admin should be able to assign learners to the simulation
+3. Learner should be able to login 
+4. Once after the learner completed a call, the report should be generated based on the tagged scorecard","Once after the learner completed a call, the report is generated based on the tagged scorecard",

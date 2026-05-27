@@ -1,0 +1,228 @@
+Sprint Name ,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Steps,Expected Result,Actual Result
+HeySales Studio> Call Library,TC0001_Verify Call Library Navigation Click,porsudar@paperflite.com,Validate that Call Library module opens on clicking from left navigation,Manual,High,Functional,1.Heysales should be enabled,"1. Login as admin/Conten publisher/BI Analyst/Normal user
+2. Navigate to Heysales Module
+3. Click on ""Call Library"" module","1. User should login successfully
+2. Call Library option should be visible in left navigation
+3. On clicking Call Library, the module page should open successfully","Verified that on clicking the Call Library module from the navigation panel, the user is successfully navigated to the Call Library page."
+HeySales Studio> Call Library,TC0002_Verify Call Library Page Rendering,porsudar@paperflite.com,Validate that Call Library module renders properly without UI break,Manual,High,UI,1.Heysales should be enabled,"1. Login to HeySales
+2. Click on Call Library
+3. Observe page loading and UI layout","1. User should login successfully
+2. Call Library page should load
+3. Page should render completely without UI distortion and All UI elements (call list, dates, score, metadata) should be visible properly",Verified that the Call Library page loads successfully and all UI components render properly without layout or loading issues.
+HeySales Studio> Call Library,TC0003_Verify Call Library Access for Admin,porsudar@paperflite.com,Validate that Admin user can access and view Call Library module,Manual,High,Functional,1.Heysales should be enabled,"1. Login as Admin/Content Publisher user
+2. Click on Call Library","1. Admin should login successfully
+2. Call Library module should open and Calls list should be displayed",Verified that the Admin user is able to access the Call Library module and view the available call records successfully.
+HeySales Studio> Call Library,TC0004_Verify Call Library Access for Learner,porsudar@paperflite.com,Validate that Leaner can access and view Call Library module,Manual,High,Functional,1.Heysales should be enabled,"1. Login as Normal user/BI Analyst
+2. Click on Call Library","1. User should login successfully
+2. Call Library module should open and all the calls list should be displayed",Verified that the Learner user is able to access the Call Library module and view the call records without any access issues.
+HeySales Studio> Call Library,TC0005_Verify Calls Fetched Based on Account Integration,porsudar@paperflite.com,Validate that Call Library displays calls taken using integrations configured for the account,Manual,High,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated","1. Login to HeySales with an account that has CRM integration enabled
+2. Click on Call Library module
+3. Observe the call records displayed","1. User should login successfully
+2. Call Library module should open
+3. System should fetch calls recorded using the integrations configured for that account and  All such calls should be displayed in the Call Library",Verified that the system fetches and displays calls associated with the CRM integrations configured for the account.
+HeySales Studio> Call Library,TC0006_Verify Fresh Zoom Call Appears in Call Library (Zoom X Hubspot),porsudar@paperflite.com,Validate that a newly conducted Zoom call appears in Real Call Library after the meeting ends,Manual,High,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated","1. Login to HeySales
+2. Ensure Zoom × HubSpot integration is configured for the account
+3. Schedule or start a Zoom meeting
+4. Conduct the call
+5. End the meeting
+6. Navigate to Call Library","1. User should login successfully
+2. Zoom × HubSpot integration should be active
+3. Meeting should be conducted in Zoom
+4. Once meeting ends, call recording/report should be generated
+5. Call data should be pushed to HubSpot Notes
+6. Call should be fetched from DB and displayed in Real Call Library","Verified that after completing a Zoom meeting with HubSpot integration, the meeting report is generated and the call appears in the Call Library successfully."
+HeySales Studio> Call Library,TC0007_Verify Fresh Zoom Call Appears in Call Library (Zoom X MS Dynamics),porsudar@paperflite.com,Validate that a newly conducted Zoom call appears in Real Call Library after the meeting ends when MS Dynamics integration is configured,Manual,High,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated","1. Login to HeySales
+2. Ensure Zoom × MS Dynamics integration is configured for the account
+3. Schedule or start a Zoom meeting
+4. Conduct the call
+5. End the meeting
+6. Navigate to Call Library","1. User should login successfully
+2. Zoom × MS Dynamics integration should be active
+3. Meeting should be conducted in Zoom
+4. Once meeting ends, call recording/report should be generated
+5. Call data should be pushed to MS Dynamics Activity / Opportunity
+6. Call should be fetched from DB and displayed in Real Call Library","Verified that after completing a Zoom meeting with MS Dynamics integration, the meeting report is generated and the call appears in the Call Library successfully."
+HeySales Studio> Call Library,TC0008_Verify UI elements of Real Call Library list for a completed Zoom meeting,porsudar@paperflite.com,"Validate that after a Zoom meeting ends and the report is generated via HubSpot/MS Dynamics integration, the call record is displayed in the Real Call Library with correct details",Manual,Medium,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated","1. Conduct the meeting with one invitee/Multiple Invite
+2 Verify that the meeting report is generated in HubSpot Notes/MS Dynamics Opportunity or Activity
+3. Navigate to Call Library module.
+4. Verify the UI banner details displayed.","1. Meeting should be conducted and ended successfully in Zoom.
+2. Meeting report should be generated in HubSpot Notes / MS Dynamics Opportunity ot activity
+3. The call record should appear in the Real Call Library.
+4. The banner should display correct UI details including:
+Meeting Date from Zoom,Meeting Title from Zoom,Meeting Summary ,Prospect displayed as invitee email,Sales Rep displayed as meeting host,Call timing should displayed correctly, (i.e., 6 - 6:30AM) and Score converted from 5-point scale to percentage (e.g., 3.3/5 → 66%).","Verified that the call card displays correct UI elements including meeting date, meeting title, prospect details, sales rep, duration, and score."
+HeySales Studio> Call Library,TC0009_Verify Only Integration Based Calls Are Displayed,porsudar@paperflite.com,Validate that only calls from the configured integration of the account are displayed,Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated","1. Login to an account integrated with Zoom × HubSpot / Zoom x MS Dynamics
+2. Open Call Library
+","1. Only calls taken using Zoom × HubSpot integration  and Zoom X MS Dynamics should be displayed
+2. Calls from other integrations or accounts should not appear",Verified that only calls related to the configured CRM integration for the account are displayed in the Call Library list.
+HeySales Studio> Call Library,TC0010_Verify Call Data Consistency With Database,porsudar@paperflite.com,Validate that calls shown in Call Library match the call recordings stored in the database,Manual,High,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated","1. Check call recordings stored in database for the account integration
+2. Open Call Library","1. System should fetch call records from database
+2. All calls stored in DB for that account integration should be displayed in the UI",Verified that the call data displayed in the Call Library matches the records stored in the database.
+HeySales Studio> Call Library,TC0011_Verify Recent Call Appears on Top,porsudar@paperflite.com,Validate that the most recently generated call is displayed at the top of the call list,Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated","1. Login to HeySales
+2. Ensure Zoom × CRM integration is configured
+3. Conduct multiple Zoom calls at different times
+4. Navigate to Call Library","1. User should login successfully
+2. Calls should be displayed in the Call Library
+3. The most recently created call should appear at the top of the list",Verified that the most recently generated call appears at the top of the Call Library list.
+HeySales Studio> Call Library,TC0012_Verify Scroll Functionality in Call Library,porsudar@paperflite.com,Validate that scroll functionality works properly when multiple calls are available,Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales
+2. Navigate to Call Library
+3. Scroll through the call list","1.User should login successfully 
+2.Call Library page should load successfully
+3. User should be able to scroll through the call list smoothly and All calls should load and display without UI break or lag",Verified that the scroll functionality works properly and users are able to view all available calls by scrolling through the list.
+HeySales Studio> Call Library,TC0013_Verify Today Pill Display,porsudar@paperflite.com,"Validate that calls created on the current day are grouped under the ""Today"" pill",Manual,Medium,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Conduct a Zoom call today
+2. Navigate to Call Library","1. Call record should appear in the call list
+2. The call should be grouped under Today pill",Verified that calls created on the current day are grouped under the Today pill.
+HeySales Studio> Call Library,TC0014_Verify Yesterday Pill Display,porsudar@paperflite.com,"Validate that calls created yesterday appear under the ""Yesterday"" pill",Manual,Medium,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Conduct a Zoom call yesterday
+2. Navigate to Call Library","1. Call record should appear in the call list
+2. The call should be grouped under Yesterday pill",Verified that calls created on the previous day are grouped under the Yesterday pill.
+HeySales Studio> Call Library,TC0015_Verify This Week Pill Display,porsudar@paperflite.com,"Validate that calls created earlier in the current week appear under ""This Week""",Manual,Medium,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Conduct a Zoom call earlier in the current week
+2. Navigate to Call Library","1. Call should appear in the list
+2. Call should be grouped under This Week pill",Verified that calls created earlier in the current week appear under the This Week pill.
+HeySales Studio> Call Library,TC0016_Verify Last Week Pill Display,porsudar@paperflite.com,"Validate that calls created in the previous week appear under ""Last Week""",Manual,Medium,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Conduct a Zoom call in the previous week
+2. Navigate to Call Library","1. Call record should appear in the list
+2. Call should be grouped under Last Week pill",Verified that calls created in the previous week appear under the Last Week pill.
+HeySales Studio> Call Library,TC0017_Verify Weeks Ago Pill Display,porsudar@paperflite.com,"Validate that calls older than last week appear under ""2 weeks ago"", ""3 weeks ago"", etc.",Manual,Medium,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Ensure calls exist from 2 weeks or more ago
+2. Navigate to Call Library","1. Older calls should appear in the list
+2. Calls should be grouped under 2 weeks ago, 3 weeks ago, etc. based on call date","Verified that calls older than last week appear under labels such as 2 weeks ago, 3 weeks ago, etc."
+HeySales Studio> Call Library,TC0018_Verify Month Grouping for Older Calls,porsudar@paperflite.com,Validate that calls older than several weeks are grouped by month and year,Manual,Medium,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Ensure calls exist from previous months
+2. Navigate to Call Library","1. Older calls should appear in the list
+2. Calls should be grouped by Month and Year (e.g., January 2026, December 2025)",Verified that calls older than several weeks are grouped correctly by Month and Year.
+HeySales Studio> Call Library,TC0019_Verify Navigation to Call Record Details Screen,porsudar@paperflite.com,Validate that clicking a call card from the Call Library list navigates the user to the Call Record Details screen,Manual,High,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials
+2. Navigate to the Call Library module.
+3. Click on any call card from the list.","1. User should login successfully.
+2. Call Library module should open and display the list of calls.
+3. On clicking any call card, the system should navigate to the Call Record Details screen and should load successfully displaying the call information.",Verified that clicking any call card from the list navigates the user to the Call Record Details screen successfully.
+HeySales Studio> Call Library,TC0020_Verify Meeting Metadata Display in Call Record Details Screen,porsudar@paperflite.com,Validate that the meeting metadata is displayed correctly in the banner section of the Call Record Details screen,Manual,High,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials.
+2. Navigate to the Call Library module.
+3. Click on any call card from the list
+4. Observe the banner section in the Call Record Details screen.","1. User should login successfully.
+2. Call Library module should open with available calls.
+3. On clicking a call card, the Call Record Details screen should open.
+4. It should display meeting metadata including:
+Meeting Date fetched from Zoom,Meeting Title fetched from Zoom,Prospect ID showing all invitees from the Zoom meeting,Sales Rep ID showing the meeting host and Duration of the meeting displayed correctly ","Verified that meeting metadata including meeting date, meeting title, prospect details, sales rep (host), and call duration are displayed correctly in the banner section."
+HeySales Studio> Call Library,TC0021_Verify Summary Section in Call Record Details,porsudar@paperflite.com,"Validate that the Summary section displays generated call report details such as Positives, Observations, and Suggestions",Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials.
+2 Navigate to Call Library module.
+3. Click on any call card from the list.
+4. Navigate to the Summary section in the Call Record Details screen.","1. User should login successfully.
+2. Call Library module should open with available calls.
+3. On clicking a call card, the Call Record Details screen should open.
+4. The Summary section should be displayed and the section should display generated report details including:
+Positives, Observations and Suggestions that are generated for the call and pushed to CRM.","Verified that the Summary section displays generated report details including Positives, Observations, and Suggestions correctly."
+HeySales Studio> Call Library,TC0022_Verify Scorecard Section in Call Record Details,porsudar@paperflite.com,Validate that the Scorecard section displays the detailed scoring generated for the call,Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials
+.2. Navigate to Call Library.
+3. Click on any call card
+4. Navigate to the Scoring section.
+5.Observe the details in that screen","1. User should be logged in successfully
+2.Call Record should display in the list.
+3. On clicking a call card, the Call Record Details screen should open.
+4.The Scoring section should be visible.
+5. The Default Scorecard detailed view generated in the CRM should be displayed.andThe scoring details should match the scorecard data generated for the call.",Verified that the Scorecard section displays the default scoring details generated for the call.
+HeySales Studio> Call Library,TC0023_Verify Recording Section in Call Record Details,porsudar@paperflite.com,Validate that the audio recording of the call is available and playable in the Recording section,Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials.
+2. Navigate to Call Library.
+3. Click on any call card.
+4. Navigate to the Recording section
+5. Play the audio recording.","1. Call Record Details screen should open successfully.
+2. The Recording section should display the audio recording of the call.
+3. The audio player controls should be visible.
+4. User should be able to play the recording without errors.",Verified that the Recording section displays the call audio and the audio player works as expected.
+HeySales Studio> Call Library,TC0024_Verify Real Call Score Display and Percentage Conversion,porsudar@paperflite.com,"Validate that the Real Call Score is displayed on the top right corner of the Call Record Details screen, converted to percentage, and matches the score displayed in the Call Library list",Manual,High,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials.
+2. Navigate to the Call Library module.
+3. Note the score displayed for any call card in the call list.
+4. Click on the same call card to open the Call Record Details screen.
+5. Observe the Real Call Score displayed in the top right corner.
+6.Now go back to the homepage","1. User should login successfully.
+2. Call Library module should display the list of calls with scores.
+3. Score should be noted
+4.On clicking a call card, the Call Record Details screen should open.
+5. The Real Call Score should be displayed on the top right corner of the screen and the score generated out of 5 fetched from the CRM
+6. The score should be converted to percentage (100%)and the percentage score displayed in the Homepage should match the score displayed in the Call detail screen","Verified that the Real Call Score is displayed in the top right corner, converted to percentage correctly, and matches the score shown in the Call Library list."
+HeySales Studio> Call Library,TC0025_Verify Back to Meetings Navigation,porsudar@paperflite.com,Validate that clicking Back to Meetings navigates the user back to the Call Library homepage displaying the call list,Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials.
+2. Navigate to the Call Library module.
+3. Click on any call card from the list
+4. On the Call Record Details screen, click Back to Meetings.","1. User should login successfully.
+2. Call Library module should display the call list.
+3. On clicking a call card, the Call Record Details screen should open.
+4. Clicking Back to Meetings should navigate the user to the Call Library homepage showing the list of calls.",Verified that clicking Back to Meetings navigates the user back to the Call Library homepage displaying the call list.
+HeySales Studio> Call Library,TC0026_Verify User Can Open Any Call Record from Call List,porsudar@paperflite.com,Validate that users can open any call record from the call list in Call Library,Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials.
+2. Navigate to Call Library.
+3. Observe the list of call cards.
+4. Click on multiple call cards one by one.","1. User should login successfully.
+2. Call Library should display available call records.
+3. On clicking any call card, the system should navigate to the Call Record Details screen.
+4. The corresponding call details should be displayed correctly.",Verified that the user is able to open and view details of any call record from the Call Library list successfully.
+HeySales Studio> Call Library,TC0027_Verify Empty State When No Calls Are Available,porsudar@paperflite.com,Validate that the system displays an empty state message when no call recordings exist,Manual,Medium,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials.
+2. Navigate to Call Library for an account where no calls are recorded.","1. User should login successfully.
+2. Call Library page should load successfully and When no calls are available, the system should display the message ""No calls added yet!"".","Verified that when no call records are available, the system displays the message ""No calls added yet!"" correctly."
+HeySales Studio> Call Library,TC0028_Verify Message When Audio Recording Is Not Available,porsudar@paperflite.com,Validate that the system displays a message when a call record exists but the audio recording is not available,Manual,Medium,UI,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+3.Call scoring should be pushed to Real call library","1. Login to HeySales with valid credentials
+2. Navigate to Call Library
+3. Click on a call card where recording is not available and Navigate to the Recording section.","1. User should login successfully.
+2. Call Record Details screen should open.
+3. Under the Recording section, if audio is not available, the system should display ""No Audio available"" message.","Verified that when a call record does not have an audio recording, the system displays the message ""No Audio available"" in the recording section."
+HeySales Studio> Call Library,TC0029_Verify event pushed to CRM for each call when multiple calls exist for same deal,porsudar@paperflite.com,Validate that every call made for the same deal generates a separate event in CRM and appears in Real Call Library,Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+","1.Login to the platform.
+2.Ensure CRM integration is active.
+3.Map a contact to a deal in CRM.
+4.Conduct multiple calls(same Meeting id) for the same deal.
+5.Allow the calls to sync with the platform.
+6.Navigate to Real Call Library.
+7.Check CRM activity timeline for the deal.","1.User should login successfully.
+2.CRM integration should be active for the account.
+3.Contact should be successfully mapped to the deal.
+4.Multiple calls should be completed for the same deal.
+5.Call data should be synced to the platform.
+6.Each call should appear separately in the Real Call Library.
+7.Separate call events should be created in the CRM activity timeline for each call.",Multiple calls for the same deal were conducted and each call was pushed as a separate event to CRM and displayed individually in the Real Call Library.
+HeySales Studio> Call Library,TC0030_Verify call record pushed only once when one contact is mapped to multiple deals,porsudar@paperflite.com,"Validate that when a single contact is mapped to multiple deals, the call record is pushed only once to CRM to avoid duplicate entries",Manual,Medium,Functional,"1.Heysales should be enabled
+2.CRM and Zoom should be Integrated
+","1.Login to the platform.
+2.Ensure CRM integration is active.
+3.Map one contact to multiple deals in CRM.
+4.Conduct a call with the contact..
+5.Navigate to CRM activity timeline.
+6.Verify the number of call records created.","1.User should login successfully.
+2.CRM integration should be active for the account.
+3.Contact should be mapped successfully to multiple deals.
+4.Call should be conducted with the mapped contact.
+5.CRM activity timeline should display the call record.
+6.Only one call record should be created in CRM and duplicate entries should not be generated.","Call record was pushed only once to CRM even when the contact was mapped to multiple deals, and no duplicate records were created."

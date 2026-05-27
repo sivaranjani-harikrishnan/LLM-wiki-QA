@@ -1,0 +1,797 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales ManageCourses> Course Reports,TC0001_Check the completion rate card in the Course,arjun@paperflite.com,"Validate For admins and content publishers the completion card should be displayed in the top right of the Course, and the completion percentage should be calculated based on total number of learners assigned versus total number learners completed the Course",Manual,Medium,Functional,The Course should be assigned to x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the Completion rate card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any Course
+4. The completion rate card should be displayed with respection percentage","For admins and content publishers the completion card is displayed in the top right of the Course, and the completion percentage is calculated based on total number of learners assigned versus total number learners completed the Course",
+HeySales ManageCourses> Course Reports,TC0002_Check the completion rate card if the completion is 0%,arjun@paperflite.com,Validate When no learners have completed the course or not started the course the percentage should be 0 and the sub text should be 0 out of x number of learners have completed,Manual,Medium,Functional,The Course should be assigned to 10 number of learners and no learner should complete,NA,"1. Create a Course
+2. Assign the Course to 10 learners
+3. Check the completion rate card","1. Admin / content publisher should be able to create a Course
+2. User should be able to assign 10 learners to the silumation
+3. If no user has completed the course, on the completion card the percentage should be 0 and the sub text should read 0 of 10 learners have completed",When no learners have completed the course or not started the course the percentage is 0 and the sub text is 0 out of x number of learners have completed,
+HeySales ManageCourses> Course Reports,TC0003_Check the completion rate card if the completion is X%,arjun@paperflite.com,"Validate When a certain number of learners have complete the course [eg: 2 learners], the percentage should be updated respectively. And the sub text should read X out of x number of learners have completed",Manual,Medium,Functional,The Course should be assigned to 10 learners and 2 learner should complete the course,Use the same course used in TC0002,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete
+4. Repate the same for Learner B
+5. Now Login as admin
+6. Check the completion card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to login as Learner B and should be able to start a course and successfully complete it
+5. Admin user should be able to login successfully
+6. In the completion card, the percenatge should be 20% and and the sub text should read 2 of 10 learners have completed","When a certain number of learners have complete the course [eg: 2 learners], the percentage is updated respectively. And the sub text reads X out of x number of learners have completed",
+HeySales ManageCourses> Course Reports,TC0004_Check adding new learner to the Course and validate the count updation in sub text of the completion rate card,arjun@paperflite.com,"Validate When new list of learners are added to the Course or new learners enrolled themselves , the count of the learner and the percentage in the sub text should be updated respectively",Manual,Medium,Functional,The Course should be assigned to 10 learners and add 2 new learner,Use the same course used in TC0002,"1. Open a Course with 10 assigned learners / Enroll as 2 learners
+2. Check the completion card 
+3. Assign 2 new learners
+4. Check the completion card","1. User should be able to open the Course
+2. In the completion card number of total number learners count should be 10 and the completion rate should be X
+3. User should be able to assign 2 new learners to the Course
+4. In the completion card number of total number learners count should be 12 and the completion rate should be updated respectively","When new list of learners are added to the Course or new learners enrolled themselves , the count of the learner and the percentage in the sub text is updated respectively",
+HeySales ManageCourses> Course Reports,TC0005_Check the completion rate card in a newly created Course with no completion and no users assigned,arjun@paperflite.com,"Valdiate For a newly created Course with no completion and no users assigned, the completion rate card should display 0% and subtext as 0 of 0 learners have completed",Manual,Medium,Functional,A new course with 0 learners assigned,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Create a Course
+4. Check the Completion rate card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to create a Course
+4. The completion rate card should be displayed 0% and sub text as 0 of 0 learners have completed","For a newly created Course with no completion and no users assigned, the completion rate card displays 0% and subtext as 0 of 0 learners have completed",
+HeySales ManageCourses> Course Reports,TC0006_ Check the completion rate card by assigning to a user group,arjun@paperflite.com,Validate All the users in a group should be accounted in the completion card,Manual,Medium,Functional,A new course assign to a user group with 3 users,NA,"1. Create a Course
+2. Assign the Course to a user group
+3. Check the completion rate card","1. Admin / content publisher should be able to create a Course
+2. User should be able to assign the course to a user gorup
+3. All the users in a group should be accounted in the completion card",All the users in a group are accounted in the completion card,
+HeySales ManageCourses> Course Reports,TC0007_Check the UI of the completion rate card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the Completion rate card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,
+HeySales ManageCourses> Course Reports,TC0008_Check the pass % card in the Course,arjun@paperflite.com,"Validate For admins and content publishers the pass % card should be displayed in the top right of the Course, and the pass % should be calculated based on total number of learners passed versus total number learners completed the Course",Manual,Medium,Functional,The Course should be assigned to x number of learners,Pass % is 50,"1. Create a course
+2. Set the pass % as 50
+3. Assign it to 5 users","1. User should be able create a course
+2. User should be able to set the pass percentage as 50 %
+3. User should be able to assign the course to 5 learners","For admins and content publishers the pass % card is displayed in the top right of the Course, and the pass % is calculated based on total number of learners passed versus total number learners completed the Course",
+HeySales ManageCourses> Course Reports,TC0009_ Check the pass % card when 2 learners have passed the course and 3 learners have not started the course,arjun@paperflite.com,Validate The pass % card should be 100% with sub text as 2 of 2 learnes have passed the course should be displayed. [Note: The not started learners should not be accounted in the calculation],Manual,Medium,Functional,The Course should be assigned to x number of learners,Pass % is 50,"1. Login a Learner A
+2. Complete the course with more than 50%
+3. Login a Learner B
+4. Complete the course with more than 50%
+5. Login as admin
+6. Check the Pass % card","1. Learner A should be able to login 
+2. Learner A should complete the course with more than 50%
+3. Learner B should be able to login 
+4. Learner B should complete the course with more than 50%
+5. Admin should be able to login
+6. The pass % card should be 100% with sub text as 2 of 2 learnes have passed the course should be displayed. [Note: The not started learners should not be accounted in the calculation]",The pass % card 100% with sub text as 2 of 2 learnes have passed the course is displayed. [Note: The not started learners are not accounted in the calculation],
+HeySales ManageCourses> Course Reports,"TC0010_ Check the pass % card when 2 learners have passed the course, 2 learners hace failed the course and 1 learners have not started the course",arjun@paperflite.com,Validate The pass % card should be 50% with sub text as 2 of 4 learnes have passed the course should be displayed. [Note: The not started learners should not be accounted in the calculation],Manual,Medium,Functional,The Course should be assigned to x number of learners,Use the same course used in TC0009,"1. Login a Learner C
+2. Complete the course with less than 50%
+3. Login a Learner D
+4. Complete the course with less than 50%
+5. Login as admin
+6. Check the Pass % card","1. Learner C should be able to login 
+2. Learner C should complete the course with less than 50%
+3. Learner D should be able to login 
+4. Learner D should complete the course with less than 50%
+5. Admin should be able to login
+6. The pass % card should be 50% with sub text as 2 of 4 learnes have passed the course should be displayed. [Note: The not started learners should not be accounted in the calculation]",The pass % card 50% with sub text as 2 of 4 learnes have passed the course is displayed. [Note: The not started learners are not accounted in the calculation],
+HeySales ManageCourses> Course Reports,TC0011_ Check retaking the course as a failed learner,arjun@paperflite.com,"Validate When a failed learner retakes the course and score more than the pass percentage, the pass % card should be updated",Manual,Medium,Functional,As Learner C pass the course,Use the same course used in TC0009,"1. Login a Learner C
+2. Retake and Complete the course with more than 50%
+3. Login as admin
+4. Check the Pass % card","1. Learner C should be able to login 
+2. Learner C should retake the course and complete it with more than 50%
+3. Admin should be able to login
+4. The pass % card should be 75% with sub text as 3 of 4 learnes have passed the course should be displayed. [Note: The not started learners should not be accounted in the calculation]",The pass % card  is 75% with sub text as 3 of 4 learnes have passed the course is displayed. [Note: The not started learners are not accounted in the calculation],
+HeySales ManageCourses> Course Reports,TC0012_ Check changing the pass percentage after few learners completed course,arjun@paperflite.com,Validate Updating the pass score of the course should not affect the value in the pass % card. The update score should be applicable for the newly completing learners,Manual,Medium,Functional,"In TC0011 Learner A,B,C and D would have completed the course with pass % as 50. Now updating the percentage to 70 will be accounted only for Learner E or when the any of the completed learner retakes the course ",Use the same course used in TC0009,"1. Login a Learner E
+2. Complete the course with more than 70%
+3. Login as admin
+4. Check the Pass % card","1. Learner E should be able to login 
+2. Learner E should be able to complete the course with more than 70%
+3. Admin should be able to login
+4. The pass % card should be 100% with sub text as 5 of 5 learnes have passed the course should be displayed.",The pass % card should be 100% with sub text as 5 of 5 learnes have passed the course is displayed.,
+HeySales ManageCourses> Course Reports,TC0013_ Check retaking the course after the pass score is updated,arjun@paperflite.com,"Validate When a completed learner retakes the course and the pass percentage is updated, the pass % card should be updated with respect to the retaking learners status",Manual,Medium,Functional,"In TC0012 Learner A,B,C,D and E would have completed the course. Now updating the percentage to 90 and as Learner A retake the course and score less than 90",Use the same course used in TC0009,"1. Login a Learner A
+2. Complete the course with more than 90%
+3. Login as admin
+4. Check the Pass % card","1. Learner A should be able to login 
+2. Learner A should be able to complete the course with more than 90%
+3. Admin should be able to login
+4. The pass % card should be 80% with sub text as 4 of 5 learnes have passed the course should be displayed.",The pass % card should be 80% with sub text as 4 of 5 learnes have passed the course is displayed.,
+HeySales ManageCourses> Course Reports,TC0014_Check the completion rate card if the completion is 0%,arjun@paperflite.com,Validate When no learners have completed the course or not started the course the percentage should be 0 and the sub text should be 0 out of x number of learners have passed,Manual,Medium,Functional,The Course should be assigned to 10 number of learners and no learner should complete the course,NA,"1. Create a Course
+2. Assign the Course to 10 learners
+3. Check the pass % card","1. Admin / content publisher should be able to create a Course
+2. User should be able to assign 10 learners to the silumation
+3. If no user has completed the course, on the pass % card the percentage should be 0 and the sub text should read 0 of 10 learners have passed","If no user has completed the course, on the pass % card the percentage is 0 and the sub text should read 0 of 10 learners have passed",
+HeySales ManageCourses> Course Reports,TC0015_Check the pass % card in a newly created Course with and no users assigned,arjun@paperflite.com,"Validiate For a newly created Course with no completion and no users assigned, the pass % card should display 0% and subtext as 0 of 0 learners have passed",Manual,Medium,Functional,A new course with 0 learners assigned,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Create a Course
+4. Check the pass % card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to create a Course
+4. For a newly created Course with no completion and no users assigned, the pass % card should display 0% and subtext as 0 of 0 learners have passed","For a newly created Course with no completion and no users assigned, the pass % card displays 0% and subtext as 0 of 0 learners have passed",
+HeySales ManageCourses> Course Reports,TC0016_Check the UI of the pass % card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the pass % card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,
+HeySales ManageCourses> Course Reports,TC0017_Check the avg score card in the Course,arjun@paperflite.com,"Validate For admins and content publishers the avg score card should be displayed in the top right of the Course, and the avg score among the learners should be calculated based on total number of learners assigned versus total number learners completions including any number of attempts by a specific learner",Manual,Medium,Functional,The Course should be completed to x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the Completion rate card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any Course
+4. The avg score card should be displayed with respection score","For admins and content publishers the avg score card is displayed in the top right of the Course, and the avg score among the learners are calculated based on total number of learners assigned versus total number learners completions including any number of attempts by a specific learner",
+HeySales ManageCourses> Course Reports,TC0018_Check the avg score card if no learner has completed the Course,arjun@paperflite.com,Validate When no learners have completed the course or not started the course the Avg score card should display NA,Manual,Medium,Functional,The Course should be assigned to 3 number and no learner should complete the Course,NA,"1. Create a Course
+2. Assign the Course to 3 learners
+3. Check the avg score card","1. Admin / content publisher should be able to create a Course
+2. User should be able to assign 3 learners to the silumation
+3. If no user has completed the course, the avg score card should display as NA with no sub text as no learners has completed",When no learners have completed the course or not started the course the avg score card should display as NA with no sub text as no learners has completed,
+HeySales ManageCourses> Course Reports,TC0019_Check the avg score card when one learner has completed the Course,arjun@paperflite.com,Validate The card should display the score of the learner [eg: 20] and the sub text should be X% across X attempts completed,Manual,Medium,Functional,"Create a course and assign to 5 Learners
+Complete the course as User A",NA,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Check the completion card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. In the avg score card, the percenatge should be X% and and the sub text should read across x attempts completed",The card displays the score of the learner [eg: 20] and the sub text is X% across x attempts completed [eg: 20% across 1 attempts completed],
+HeySales ManageCourses> Course Reports,TC0020_Check the avg score card when same learner [from TC0020] has retake the Course and completes it,arjun@paperflite.com,Validate The card should display the avg score of the learner [eg: 75 + 50 (in 2nd attempt) / 2 (no of attempts)] and the sub text should be X% across X attempts completed,Manual,Medium,Functional,Retake the Course as User A and complete it,NA,"1. Login as a learner A
+2. Open My courses
+3. Again retake the Course [TC0020] and complete it
+4. Now Login as admin
+5. Check the completion card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to retake the same Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. In the avg score card, the percenatge should be X% and and the sub text should read across 2 attempts completed",The card displays the avg score of the learner [eg: 75 + 50 (in 2nd attempt) / 2 (no of attempts)] and the sub text is X% across X attempts completed,
+HeySales ManageCourses> Course Reports,TC0021_Check the logic of the avg score card,arjun@paperflite.com,Validate The data in avg score card should be calculated by the total score earned by the learners and divided by the total number of attempts of all the completed learners,Manual,Medium,Functional,"Complete the Course as User A and User B
+Retake the Course as User B",NA,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete
+4. Login as a learner B
+5. Open My courses
+6. Start the Course and complete
+7. Retake and complete the Course as user B
+8. Now Login as admin
+9. Check the completion card in admin view","1. User A should be able to login successfully
+2. User A should be able to open My courses in hey sales and locate the assigned Course
+3. User A should be able to start the Course and successfully complete it with respective score
+4. User B should be able to login successfully
+5. User B should be able to open My courses in hey sales and locate the assigned Course
+6. User B should be able to start the Course and successfully complete it with respective score
+7. User B should be able to retake the same Course and successfully complete it with respective score
+8. Admin user should be able to login successfully
+9. In the avg score card, the percenatge should be X% and and the sub text should read across 3 attempts completed",The data in avg score card is calculated by the total score earned by the learners and divided by the total number of attempts of all the completed learners,
+HeySales ManageCourses> Course Reports,TC0022_ Check the failed attemps are accounted in avg score card,arjun@paperflite.com,Validate For the avg score card all the completed learners [passed and failed] should be accounted,Manual,Medium,Functional,"Complete the Course as User A and User B
+As User C fail the course",NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the Completion rate card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any Course
+4. For the avg score card all the completed learners [passed and failed] should be accounted",For the avg score card all the completed learners [passed and failed] is accounted,
+HeySales ManageCourses> Course Reports,TC00023_Check the UI of the avg score card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the avg score card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,
+HeySales ManageCourses> Course Reports,TC0024_Check the avg time spent card in the Course,arjun@paperflite.com,"Validate For admins and content publishers the avg time spent should be displayed in the top right of the Course, and the avg time spent should be calculated based on the cumulative time spent by the all the completed learners divided by number of completed learners",Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the avg time spent card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any Course
+4. The completion rate card should be displayed with respection percentage","For admins and content publishers the avg time spent is displayed in the top right of the Course, and the avg time spent is calculated based on the cumulative time spent by the all the completed learners divided by number of completed learners",
+HeySales ManageCourses> Course Reports,TC0025_Check the avg time spent card if no learner has completed the Course,arjun@paperflite.com,Validate When no learners have completed the Course or not started the Avg time spent card should displayed 0,Manual,Medium,Functional,The Course should be assigned to 2 number and no learner should complete the Course,NA,"1. Create a Course
+2. Assign the Course to 2 learners
+3. Check the avg time spent card","1. Admin / content publisher should be able to create a Course
+2. User should be able to assign 2 learners to the silumation
+3. If no user has completed the course, the avg score card should display 0",When no learners have completed the course or not started the Avg time spent card should displayed 0,
+HeySales ManageCourses> Course Reports,TC0026_Check the avg time spent card when one learner has completed the Course,arjun@paperflite.com,Validate The card should display the time spent by the learner in the Course,Manual,Medium,Functional,Complete the Course as User A,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Check the avg time spent card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. In the avg time spent card, the time spent by the learner should be displayed",The card displays the time spent by the learner in the Course,
+HeySales ManageCourses> Course Reports,TC0027_Check the avg time spent card when same learner [from TC0026] has retake the Course and completes it,arjun@paperflite.com,Validate When the same user retakes the Course the data in the avg time spent card should be cumulative of both attempt 1 and attempt 2 [eg: 1st 5min and 2nd 3 mins = total 8 mins / 2 = 4mins],Manual,Medium,Functional,Retake the Course as User A and complete it,NA,"1. Login as a learner A
+2. Open My courses
+3. Again retake the Course [TC0026] and complete it
+4. Now Login as admin
+5. Check the completion card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to retake the same Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. In the avg time spent card, the data should be cumulative of 2 attempts completed",When the same user retakes the Course the data in the avg time spent card is cumulative of both attempt 1 and attempt 2 [eg: 1st 5min and 2nd 3 mins = total 8 mins / 2 = 4mins],
+HeySales ManageCourses> Course Reports,TC0028_Check the logic of the avg time spent card,arjun@paperflite.com,Validate the avg time spent should be calculated based on the cumulative time spent by the all the completed learners divided by number of completed learners and the average should not include the retakes of the user,Manual,Medium,Functional,"Complete the Course as User A and User B
+Retake the Course as User B",NA,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete
+4. Login as a learner B
+5. Open My courses
+6. Start the Course and complete
+7. Retake and complete the Course as user B
+8. Now Login as admin
+9. Check the completion card in admin view","1. User A should be able to login successfully
+2. User A should be able to open My courses in hey sales and locate the assigned Course
+3. User A should be able to start the Course and successfully complete it with respective score and time spent
+4. User B should be able to login successfully
+5. User B should be able to open My courses in hey sales and locate the assigned Course
+6. User B should be able to start the Course and successfully complete it with respective score and time spent
+7. User B should be able to retake the same Course and successfully complete it with respective score
+8. Admin user should be able to login successfully
+9. In the avg time spent card, the avg time spent should be cumulative user A [eg: 5mins] and User B [eg: 1st attempt 5 mins and 2nd attempt 2mins] divided by 2 [as the retakes should be not accounted]. Which is 12/ 2 = 6mins",The avg time spent is calculated based on the cumulative time spent by the all the completed learners divided by number of completed learners and the average does not include the retakes of the user,
+HeySales ManageCourses> Course Reports,TC0029_Check the UI of the avg time spent card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the avg time spent card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,
+HeySales ManageCourses> Course Reports,TC0030_Check the navigation from Learners List [From All Learners drop down],arjun@paperflite.com,"Valiadte Admins and Content publisher should be able to click on the completed user [on name, profile pic], and they should be navigted to detailed report screen of the user and should not be able to click on the Not started learners",Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Click on any completed learner from the learner list
+5. Click on any Not Started learner from the learner list","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. User should be navigated to detailed report screen
+5. The Not started learners in the list should not be clickable and no UI navigation should happen","Admins and Content publisher are able to click on the completed user [on name, profile pic], and they are navigted to detailed report screen of the user and admins are not able to click on the Not started learners",
+HeySales ManageCourses> Course Reports,TC0031_Check the navigation from Learners List [From Completed Learners drop down],arjun@paperflite.com,"Valiadte Admins and Content publisher should be able to click on the completed user [on name, profile pic], and they should be navigted to detailed report screen of the user",Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Click on any completed learner from the learner list","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. User should be navigated to detailed report screen","Admins and Content publisher are able to click on the completed user [on name, profile pic], and they are navigted to detailed report screen of the user",
+HeySales ManageCourses> Course Reports,TC0032_Check the navigation from Learners List [From Not Started Learners drop down],arjun@paperflite.com,Validate Not started learners in the list should not be clickable and no UI navigation should happen,Manual,Medium,Functional,The Course should be assigned to x number of learners and no learner should start the Course,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Click on any Not started learner from the learner list","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. The Not started learners in the list should not be clickable and no UI navigation should happen",Not started learners in the list are not clickable and no UI navigation happen,
+HeySales ManageCourses> Course Reports,TC0033_Check the UI in the detailed report screen,arjun@paperflite.com,"Validate On top left of the screen there should be a Back arrow with ""back and the Course name"" clicking on it should navigate the user back to Course home screen, Under the back button ""Completed learners"" heading with the count in bracket should be displayed, under the Completed learners heading a search bar and the list of learners with their profile pic, score, course logged date should be displayed and the respictive user from where the admin ended up in the detailed screen should be highlighted in the list and the detailed report should be displayed in the right side of the screen",Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Click on any completed learner from the learner list
+5. Check the UI in the detailed report screen","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. User should be navigated to detailed report screen
+5. The UI and Font should follow the design and the percentage should be in primary color","On top left of the screen there is a Back arrow with ""back text and the Course name"" clicking on it navigates the user back to Course home screen, Under the back button ""Completed learners"" heading with the count in bracket is displayed, under the Completed learners heading a search bar and the list of learners with their profile pic, score, course logged date are displayed and the respictive user from where the admin ended up in the detailed screen is highlighted in the list and the detailed report is displayed in the right side of the screen",
+HeySales ManageCourses> Course Reports,"TC0034_Check new data points in ""Completed learners"" list inside the detailed report screen",arjun@paperflite.com,Validate when a new user completes the Course the data should be added in the Completed learners list with their score and the scroll should work as expected in the list,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Click on any completed learner
+6. Scroll through the list","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. Admin should be able to scroll through the list without any issue",when a new user completes the Course the data is added in the Completed learners list with their score and the scroll works as expected in the list,
+HeySales ManageCourses> Course Reports,TC0035_Check the search bar in the detailed report screen,arjun@paperflite.com,"Validate User should be able to search for any learner in the list and exact result should be featched, searching for an invalid user in the list should display not found message",Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1.Click on any completed learner
+2. Search for any completed learner
+3. Search for any not started learner","1. Clicking on the learner should navigate the admin to detailed report screen
+2. The exact learner should be filtered and fetched
+3. No learner found error message should be displayed","User is able to search for any learner in the list and exact result is featched, searching for an invalid user in the list displays not found message",
+HeySales ManageCourses> Course Reports,TC0036_Check the UI in the right side screen of the detailed report page,arjun@paperflite.com,"Validate The Learners Full name, Profile Pic, email ID, their rank in the Course, Latest score card, attemps taken card, Ramp up date card, time spent card, breakdown of the course, Percentage scored in the course with number of attemps dropdown and the properties break down of the course should be displayed",Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Click on any completed learner
+6. Check the UI","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. The UI and Font should follow the design and the percentage should be in primary color","The Learners Full name, Profile Pic, email ID, their rank in the Course, Latest score card, attemps taken card, Ramp up date card, time spent card, breakdown of the course, Percentage scored in the course with number of attemps dropdown and the properties break down of the course are displayed",
+HeySales ManageCourses> Course Reports,TC0037_Check the latest score card in report screen,arjun@paperflite.com,Validate The latest score earned by the learner should be displayed in X% and with a sub text average best score across the team x%,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Click on any completed learner
+6. Check the latest score card","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. The score earned by the learner percentage should be in primary color with sub text average best score across the team x%",The latest score earned by the learner is displayed in X% and with a sub text average best score across the team x%,
+HeySales ManageCourses> Course Reports,TC0038_Check the logic of the latest score card,arjun@paperflite.com,"Validate if the user has only one attempt then that score should be displayed, or if the user has multiple attempts [eg:5] the last attempts score shoud be displayed",Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Click on any completed learner
+6. Check the latest score card
+7. New Log in as same learner
+8. Retake the Course and complete it
+9. Now Login as admin
+10. Click on any completed learner
+11. Check the latest score card","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. The score earned by the learner percentage should be in primary color with sub text average best score across the team x%
+7. User should be able to login successfully
+8. User should be able to open My courses in hey sales and locate the completed Course and User should be able to retake the Course and successfully complete it with respective score
+9.  Admin user should be able to login successfully
+10. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+11. The latest score earned by the learner percentage should be in primary color with sub text average best score across the team x%","If the user has only one attempt then that score is displayed, or if the user has multiple attempts [eg:5] the last attempts score is displayed",
+HeySales ManageCourses> Course Reports,TC0039_Check the logic of the average best score across the team in latest score card,arjun@paperflite.com,Validate The average should be calculated based on the cumulation of all the best scores of all the completed learners divided by the number of completed learners,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same simulatio again
+5. Login as a learner B
+6. Open My courses
+7. Start the Course and complete
+8. Retake the same simulatio again
+9. Now Login as admin
+10. Click on any completed learner
+11. Check the latest score card","1. User A should be able to login successfully
+2. User A should be able to open My courses in hey sales and locate the assigned Course
+3. User A should be able to start the Course and successfully complete it with respective score
+4. User A should be able to retake the Course and successfully complete it with updated score
+5. User B should be able to login successfully
+6. User B should be able to open My courses in hey sales and locate the assigned Course
+7. User B should be able to start the Course and successfully complete it with respective score
+8. User B should be able to retake the Course and successfully complete it with updated score
+9.  Admin user should be able to login successfully
+10. The completed learmer should be added in the list and clicking on the learner A should navigate the admin to detailed report screen
+11. The latest score card A should be the last attempts score in percentage and the average of team should be best score cumulation of User A and User B divided by number of completed users",The average is calculated based on the cumalation of all the best scores of all the completed learners divided by the number of completed learners,
+HeySales ManageCourses> Course Reports,TC0040_Check the average best score across the team in latest score card if all the completed learners has only one attempt,arjun@paperflite.com,Validate If all the completed users has only one attempt the same score should be used for the team average score calculation,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete
+4. Login as a learner B
+5. Open My courses
+6. Start the Course and complete
+7. Now Login as admin
+8. Click on any completed learner
+9. Check the latest score card","1. User A should be able to login successfully
+2. User A should be able to open My courses in hey sales and locate the assigned Course
+3. User A should be able to start the Course and successfully complete it with respective score
+4. User B should be able to login successfully
+5. User B should be able to open My courses in hey sales and locate the assigned Course
+6. User B should be able to start the Course and successfully complete it with respective score
+7.  Admin user should be able to login successfully
+8. The completed learmer should be added in the list and clicking on the learner A should navigate the admin to detailed report screen
+9. The latest score card A should be the last attempts score in percentage and the average of team should be best score cumulation of User A and User B divided by number of completed users",If all the completed users has only one attempt the same score is used for the team average score calculation,
+HeySales ManageCourses> Course Reports,TC0041_ Check the failed attemps are accounted in latest score card,arjun@paperflite.com,Validate For the latest score card all the completed learners [passed and failed] should be accounted,Manual,Medium,Functional,"Complete the Course as User A and User B
+As User C fail the course",NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the latest score card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any Course
+4. For the latest score card all the completed learners [passed and failed] should be accounted",For the latest score card all the completed learners [passed and failed] is accounted,
+HeySales ManageCourses> Course Reports,TC0042_Check the UI of the latest score card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Click on any completed learner
+5. Check the latest score card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. The completed learmer should be added in the list and clicking on the learner A should navigate the admin to detailed report screen
+5. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,
+HeySales ManageCourses> Course Reports,TC0043_Check the attempts taken card in report screen,arjun@paperflite.com,"Validate Number of attemps count, a horizontal bar graph with percentage should be displayed and the latest graph should be highlighted",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Click on any completed learner
+6. Check the attempts taken card","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. The respective data should be displayed in the attempts taken card","Number of attemps count, a horizontal bar graph with percentage is displayed and the latest graph is highlighted",
+HeySales ManageCourses> Course Reports,"TC0044_Check the attempts taken card in report screen, if the user has no retakes",arjun@paperflite.com,"Valdiate If the learner has completed the Course and has no retakes, in the attempts taken card should display #1 indicating the user has completed the Course only once",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Click on any completed learner
+6. Check the attempts taken card","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. In the attemps taken card #1 should be displayed in primary color","If the learner has completed the Course and has no retakes, in the attempts taken card displays #1 indicating the user has completed the Course only once",
+HeySales ManageCourses> Course Reports,"TC0045_Check the attempts taken card in report screen, if the user has 2 retakes",arjun@paperflite.com,"Valdiate If the learner has completed the Course and has 2 retakes, in the attempts taken card should display #3 indicating the user has completed the Course 3 times and a bar graphical representation with all 3 scores should be displayed",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners and 2 retakes,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same simulatio 2 more times
+5. Now Login as admin
+6. Click on any completed learner
+7. Check the attempts taken card","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the course 2 more times successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. In the attemps taken card #3 should be displayed in primary color with the graph","If the learner has completed the Course and has 2 retakes, the attempts taken card displays #3 indicating the user has completed the Course 3 times and a bar graphical representation with all 3 scores are displayed",
+HeySales ManageCourses> Course Reports,"TC0046_Check the attempts taken card in report screen, if the user has 5 retakes",arjun@paperflite.com,"Valdiate If the learner has completed the Course and has 5 retakes, in the attempts taken card should display #6 indicating the user has completed the Course 6 times and a bar graphical representation with last 3 scores should be displayed",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners and 5 retakes,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same simulatio 5 more times
+5. Now Login as admin
+6. Click on any completed learner
+7. Check the attempts taken card","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the course 5 more times successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. In the attemps taken card #6 should be displayed in primary color and last 3 attemps graph should be displayed","If the learner has completed the Course and has 5 retakes, the attempts taken card displays #6 indicating the user has completed the Course 6 times and a bar graphical representation with last 3 scores is displayed",
+HeySales ManageCourses> Course Reports,TC0047_Check the UI of the attempts taken card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners and 5 retakes,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Click on any completed learner
+5. Check the attempts taken card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. The completed learmer should be added in the list and clicking on the learner A should navigate the admin to detailed report screen
+5. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,
+HeySales ManageCourses> Course Reports,TC0048_Check the ramp-up rate card in report screen,arjun@paperflite.com,"Validate The in the ramp-up rate card the difference between the time when a Course is assigned to a learner or enrolled by the learner and when the learner completes the Course should be recored [Data point: In Days (If more than 24 hrs), In Hrs (If more than an hour)] and a sub text to inform if the course is assigned or enrolled should be displayed",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module 
+3. Create a Course and assign to a learner
+4. Login as a learner
+5. Open My courses
+6. Start the Course after 2 hrs from assigned time and complete
+7. Now Login as admin
+8. Click on any completed learner
+9. Check the Ramp-up rate card","1. Admin should be able to login in successfully
+2. Hey sales module should render successfully
+3. Admin should be able to create a Course successfully 
+4. Learner should be able to login successfully
+5. Learner should be able to open My courses in hey sales and locate the assigned Course
+6. User should be able to start the Course after 2 hrs from assigned time and successfully complete it with respective score
+7. Admin user should be able to login successfully
+8. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+9. In the ramp-up rate card 2 hrs should be displayed in primary color and a sub text that reads assigned on the date, month and year should be displayed","The in the ramp-up rate card the difference between the time when a Course is assigned to a learner or enrolled by the learner and when the learner completes the Course is recored [Data point: In Days (If more than 24 hrs), In Hrs (If more than an hour)] and a sub text to inform if the course is assigned or enrolled is displayed",
+HeySales ManageCourses> Course Reports,"TC0049_Check the ramp-up rate card in report screen, if the Course is started and completed after 1 day from assigned",arjun@paperflite.com,"Validate In the ramp-up rate card 1 day should be displayed with sub text assigned on date, month and year ",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module 
+3. Create a Course and assign to a learner
+4. Login as a learner
+5. Open My courses
+6. Start the Course after 1 day from assigned time and complete
+7. Now Login as admin
+8. Click on any completed learner
+9. Check the Ramp-up rate card","1. Admin should be able to login in successfully
+2. Hey sales module should render successfully
+3. Admin should be able to create a Course successfully 
+4. Learner should be able to login successfully
+5. Learner should be able to open My courses in hey sales and locate the assigned Course
+6. Learner should be able to start the Course after 1 day from assigned time and successfully complete it with respective score
+7. Admin user should be able to login successfully
+8. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+9. In the ramp-up rate card 1 day should be displayed in primary color and a sub text that reads assigned on the date, month and year should be displayed","In the ramp-up rate card 1 day is displayed with sub text assigned on date, month and year ",
+HeySales ManageCourses> Course Reports,"TC0050_Check the ramp-up rate card in report screen, if the Course is started and completed after 1 hr after enrolled",arjun@paperflite.com,"Validate In the ramp-up rate card 1hr should be displayed with sub text enrolled on date, month and year ",Manual,Medium,Functional,The Course should be enrolled by a learners and completed by the learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module 
+3. Create a Course
+4. Login as a learner, open explore and enroll to the Course
+5. Open My courses
+6. Start the Course after 1hr from enroll time and complete
+7. Now Login as admin
+8. Click on any completed learner
+9. Check the Ramp-up rate card","1. Admin should be able to login in successfully
+2. Hey sales module should render successfully
+3. Admin should be able to create a Course successfully 
+4. Learner should be able to login successfully
+5. Learner should be able to open explore and enroll to the Course successfully
+6. Learner should be able to start the Course after 1hr from assigned time and successfully complete it with respective score
+7. Admin user should be able to login successfully
+8. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+9. In the ramp-up rate card 1hr should be displayed in primary color and a sub text that reads enrolled on the date, month and year should be displayed","In the ramp-up rate card 1 day is displayed with sub text enrolled on date, month and year ",
+HeySales ManageCourses> Course Reports,TC0051_Check the time spend card in report screen,arjun@paperflite.com,Validate In the Time spend card cumulative time user spent on this Course across attempts should be displayed,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete it in 5 mins
+4. Now Login as admin
+5. Click on any completed learner 
+6. Check the attempts taken card","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. In the time spend card 5 mins should be displayed",In the Time spend card cumulative time user spent on this Course across attempts is displayed,
+HeySales ManageCourses> Course Reports,TC0052_Check the time spend card in report screen after retaking the Course,arjun@paperflite.com,Validate In the time spend card the data should be updated with respect to the new attempt,Manual,Medium,Functional,Learners retakes and completes the Course,NA,"1. Login as a learner
+2. Open My courses
+3. Retake the Course and complete it in 7 mins
+4. Now Login as admin
+5. Click on any completed learner 
+6. Check the attempts taken card","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the completed Course
+3. User should be able to retake the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. In the time spend card 12 mins should be displayed [5 in 1st attempt and 7 in 2nd attempt = 12 mins]",In the time spend card the data is updated with respect to the new attempt,
+HeySales ManageCourses> Course Reports,TC0053_Check the ranking of the learner,arjun@paperflite.com,Validate In the top right corner of the detailed page the rank of the particular learner should be displayed with sub text best score XX%,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete it in 5 mins
+4. Now Login as admin
+5. Click on any completed learner 
+6. Check the ranking of the learner","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the completed Course
+3. User should be able to retake the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. The respective data should be displayed in the ranking",In the top right corner of the detailed page the rank of the particular learner is displayed with sub text best score XX%,
+HeySales ManageCourses> Course Reports,TC0054_Check the ranking logic of the learner,arjun@paperflite.com,Validate The ranking should be calculated based on the ‘best score’ of all the completed learners(across their attempts),Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same simulatio 2 more times
+5. Now Login as admin
+6. Click on any completed learner
+7. Check the ranking","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the course 2 more times successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. The learner should ranked bases on the best scroe amoung their 3 completion with respect to the other completed learners",The ranking is calculated based on the ‘best score’ of all the completed learners(across their attempts),
+HeySales ManageCourses> Course Reports,TC0055_Check the ranking is updated dynamicoursey,arjun@paperflite.com,Validate The other learners scores should impact the ranking of the current learner,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete [eg: score is 70]
+4. Now Login as admin
+5. Click on any completed learner
+6. Check the ranking of Learner A
+7. Login as a learner B
+8. Open My courses
+9. Start the Course and complete [eg: score is 90]
+10. Now Login as admin
+11. Click on any completed learner
+12. Check the ranking of Learner B","1. Learner A should be able to login successfully
+2. Learner A should be able to open My courses in hey sales and locate the assigned Course
+3. Learner A should be able to start the Course and successfully complete it with respective score [eg:70]
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. The Learner A should be ranked as #1 with sub text best score as 70
+7. Learner B should be able to login successfully
+8. Learner B should be able to open My courses in hey sales and locate the assigned Course
+9. Learner B should be able to start the Course and successfully complete it with respective score [eg:90]
+10. Admin user should be able to login successfully
+11. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+12. The Learner B should be ranked as #1 with sub text best score as 90 and Learner A should be updated to rank 2",The other learners scores impacts the ranking of the current learner,
+HeySales ManageCourses> Course Reports,TC0056_Check the ranking if only one learner is assigned to a Course,arjun@paperflite.com,"Validate If only one learner is assigned to a Course, the learner should be ranked as #1 after completing the Course",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module 
+3. Create a Course and assign to a only one learner
+4. Login as a learner
+5. Open My courses
+6. Start the Course and complete
+7. Now Login as admin
+8. Click on any completed learner
+9. Check the ranking","1. Admin should be able to login in successfully
+2. Hey sales module should render successfully
+3. Admin should be able to create a Course successfully 
+4. Learner should be able to login successfully
+5. Learner should be able to open My courses in hey sales and locate the assigned Course
+6. Learner should be able to start the Course and successfully complete it with respective score
+7. Admin user should be able to login successfully
+8. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+9. The learner should be ranked as #1 irrespective of their score","If only one learner is assigned to a Course, the learner is ranked as #1 after completing the Course",
+HeySales ManageCourses> Course Reports,TC0057_Check the breakdown section under the cards,arjun@paperflite.com,Valdiate Under the cards the breakdown section should be displayed with completed on date and duration spent in the course,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Click on any completed learner
+6. Check the breakdown section","1. Learner should be able to login successfully
+2. Learner should be able to open My courses in hey sales and locate the assigned Course
+3. Learner should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. The breakdown section should display the completed on date and time and the duration",Under the cards the breakdown section is displayed with completed ondate and duration spent in the course,
+HeySales ManageCourses> Course Reports,TC0058_Check the breakdown section after the learner retakes the Course,arjun@paperflite.com,Validate the completed on date and time should be updated and the duration of the course should be updated,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same Course
+5. Now Login as admin
+6. Click on any completed learner
+7. Check the attempts taken card","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the course and complete it successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. The breakdown section should be updated with the last completed course data",The completed on date and time is updated and the duration of the course is updated,
+HeySales ManageCourses> Course Reports,TC0059_Check the attempts drop down,arjun@paperflite.com,Validate Next to the breakdown section the scroe dropdown should be displayed with the last attempts percentage,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same Course
+5. Now Login as admin
+6. Click on any completed learner
+7. Check the dropdown","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the course and complete it successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. The dropdown should display the last attemps percentage 80% and the count of the attempt 4th",Next to the breakdown section the scroe dropdown is displayed with the last attempts percentage,
+HeySales ManageCourses> Course Reports,TC0060_Check the data in dropdown,arjun@paperflite.com,"Validate On click the dropdown should expand with all the attempts data, Attempt number, percentage, completed on date and time should be displayed",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same Course
+5. Now Login as admin
+6. Click on any completed learner
+7. Click on the dropdown","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the course and complete it successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. The dropdown should expand with all the attempts data, Attempt number, percentage, completed on date and time should be displayed","On click the dropdown expands with all the attempts data, Attempt number, percentage, completed on date and time is displayed",
+HeySales ManageCourses> Course Reports,TC0061_Check switching between attempts in the dropdown,arjun@paperflite.com,Validate Switching between the attempts the the respective attempts course property and it's data should be updated,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same Course
+5. Now Login as admin
+6. Click on any completed learner
+7. Choose one attempt from the dropdown","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the course and complete it successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. Switching between the attempts the the respective attempts course property and it's data should be updated",Switching between the attempts the the respective attempts course property and it's data is updated,
+HeySales ManageCourses> Course Reports,TC0062_ Check the course propert in the attempts dropdown [No section course],arjun@paperflite.com,"Validate The entire course sturcture, all the lessons with their thumbnail and repsective time spent, all the assessments with its respective score and time spent should be displayed",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same Course
+5. Now Login as admin
+6. Click on any completed learner
+7. Choose one attempt from the dropdown
+8. Scroll throught the list","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the course and complete it successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. The entire course sturcture, all the lessons with their thumbnail and repsective time spent, all the assessments with its respective score and time spent should be displayed
+8. Admin should be able to scroll throught the list","The entire course sturcture, all the lessons with their thumbnail and repsective time spent, all the assessments with its respective score and time spent are displayed",
+HeySales ManageCourses> Course Reports,TC0063_ Check the course propert in the attempts dropdown [section course],arjun@paperflite.com,"Validate The entire course sturcture, all the section and its description, all the lessons with their thumbnail and repsective time spent, all the assessments with its respective score and time spent should be displayed",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same Course
+5. Now Login as admin
+6. Click on any completed learner
+7. Choose one attempt from the dropdown
+8. Scroll throught the list","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the course and complete it successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. The entire course sturcture, all the section and its description, all the lessons with their thumbnail and repsective time spent, all the assessments with its respective score and time spent should be displayed
+8. Admin should be able to scroll throught the list","The entire course sturcture, all the section and its description, all the lessons with their thumbnail and repsective time spent, all the assessments with its respective score and time spent are displayed",
+HeySales ManageCourses> Course Reports,TC0064_ Check clicking on the assessment,arjun@paperflite.com,"Validate Clicking on the assessment should expand the Q&A slider with Attemps breakdown as header, a close button, ""here's your overall score for this assessment x%"" completed on date, duration, all the question with its respective asnwer and correct questions with a green tick mark and red x mark for wrong questions should be displayed",Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Click on the Assessment
+2. Scroll through the slider","1. Clicking on the assessment should expand the Q&A slider with Attemps breakdown as header, a close button, ""here's your overall score for this assessment x%"" completed on date, duration, all the question with its respective asnwer and correct questions with a green tick mark and red x mark for wrong questions should be displayed
+2. Admin should be able to scroll through the list","Clicking on the assessment expands the Q&A slider with Attemps breakdown as header, a close button, ""here's your overall score for this assessment x%"" completed on date, duration, all the question with its respective asnwer and correct questions with a green tick mark and red x mark for wrong questions are displayed",
+HeySales ManageCourses> Course Reports,TC0065_ Check clicking on the questions [ all 3 types of questions] in the slider,arjun@paperflite.com,Validate Clicking on the questions should bring a drop down with question type and the answer,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Click on the Assessment
+2. Click on the question","1. Clicking on the assessment should expand the Q&A Slider
+2. Clicking on the questions should bring a drop down with question type and the answer",Clicking on the questions brings a drop down with question type and the answer,
+HeySales ManageCourses> Course Reports,TC0066_ Check for courses with no assessments,arjun@paperflite.com,Validate In the attempts dropdown only lessons should be displayed,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Create a course with only lesson
+2. Assign few learners
+3. Login as a learner
+4. Complete the course
+5. Now as admin check the breakdown","1. Admin should be able to create a course with only lessons
+2. Admin should be able to assign learners
+3. Learner should be able to login
+4. Learner should be able to complete the course
+5. In the attempts dropdown only lessons should be displayed",In the attempts dropdown only lessons are displayed,
+HeySales ManageCourses> Course Reports,TC0067_Check scroll inside the dropdown,arjun@paperflite.com,Validate Admins should be able to scroll inside the dropdown,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same Course for 5 times
+5. Now Login as admin
+6. Click on any completed learner
+7. Scrol inside the dropdown","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the Course for 5 times and complete it successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. Users should be able to scroll inside the dropdown",Admins should be able to scroll inside the dropdown,
+HeySales ManageCourses> Course Reports,"TC0068_Check the attempts drop down, if the learner has only completed the Course once no retake",arjun@paperflite.com,Validate if the learner has only completed the Course once no retake the dropdown should not be available in the UI,Manual,Medium,Functional,The Course should be assigned to a learners and completed by the learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Click on any completed learner
+6. Check the dropdown","1. Learner should be able to login successfully
+2. Learner should be able to open My courses in hey sales and locate the assigned Course
+3. Learner should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. If the learner has only completed the Course once no retake the dropdown should not be available in the UI",If the learner has only completed the Course once no retake the dropdown is not available in the UI,
+HeySales ManageCourses> Course Reports,TC0069_Check the sorting order of the completed learners list in the detailed report screen,arjun@paperflite.com,Valdiate The completed learners list should be sorted based on their last course logged date,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Click on any completed learner
+6. Check the list","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+6. The completed learners list should be sorted based on their last course logged date",The completed learners list is sorted based on their last course logged date,
+HeySales ManageCourses> Course Reports,"TC0070_Check the navigation from learners list to the detailed report screen, when admin clicks on the 4th completed learner",arjun@paperflite.com,Validate The detailed report page should open and the 4th learner should be highlighted and their course data should reflect on the right side of the screen,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Click on 4th completed learner from the learners list
+5. Check the detailed report page","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. The completed learmer should be added in the list and clicking on the learner A should navigate the admin to detailed report screen
+5. The detailed report page should open and the 4th learner should be highlighted and their course data should reflect on the right side of the screen",The detailed report page opens and the 4th learner is highlighted and their course data reflects on the right side of the screen,
+HeySales ManageCourses> Course Reports,TC0071_Check the no of attemps data between the learners list and attempts taken card in the detailed reports screen,arjun@paperflite.com,"Validate When the learner has multiple attempt, the count in the learners list and the attempt take card in detailed report screen should match",Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner
+2. Open My courses
+3. Start the Course and complete
+4. Retake the same Course for 2 times
+5. Now Login as admin
+6. Click on any completed learner
+7. Check the learners list and the attempts taken card in reports screen","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. User should be able to retake the Course for 2 times and complete it successfully
+5. Admin user should be able to login successfully
+6. The completed learmer should be added in the list and clicking on the learner should navigate the admin to detailed report screen
+7. If the learner has multiple attempts, the count in the learners list (2) and the attempt take card (2) in detailed report screen should match","When the learner has multiple attempt, the count in the learners list and the attempt take card in detailed report screen matchs",
+HeySales ManageCourses> Course Reports,TC0072_Check the total time spent card in the Course,arjun@paperflite.com,"Validate For admins and content publishers the total time spent should be displayed in the top right of the Course, and the total time spent should be calculated based on the cumulative time spent by the all the completed learners across attempts",Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the Total time spent card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open / create any Course
+4. The total time spent card should be displayed with respection percentage","For admins and content publishers the total time spent is displayed in the top right of the Course, and the total time spent is calculated based on the cumulative time spent by the all the completed learners across attempts",
+HeySales ManageCourses> Course Reports,TC0073_Check the total time spent card if no learner has completed the Course,arjun@paperflite.com,Validate When no learners have completed the Course or not started the total time spent card should displayed 0,Manual,Medium,Functional,The Course should be assigned to 2 number and no learner should complete the Course,NA,"1. Create a Course
+2. Assign the Course to 2 learners
+3. Check the Total time spent card","1. Admin / content publisher should be able to create a Course
+2. User should be able to assign 2 learners to the silumation
+3. If no user has completed the course, the total score card should display 0",When no learners have completed the course or not started the total time spent card displays 0,
+HeySales ManageCourses> Course Reports,TC0074_Check the total time spent card when one learner has completed the Course,arjun@paperflite.com,Validate The card should display the time spent by the learner in the Course,Manual,Medium,Functional,Complete the Course as User A,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Check the Total time spent card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. In the total time spent card, the time spent by the learner should be displayed",The card displays the time spent by the learner in the Course,
+HeySales ManageCourses> Course Reports,TC0075_Check the total time spent card when same learner [from TC0074] has retake the Course and completes it,arjun@paperflite.com,Validate When the same user retakes the Course the data in the total time spent card should be cumulative of both attempt 1 and attempt 2 [eg: 1st 5min and 2nd 3 mins = total 8 mins],Manual,Medium,Functional,Retake the Course as User A and complete it,NA,"1. Login as a learner A
+2. Open My courses
+3. Again retake the Course [TC0075] and complete it
+4. Now Login as admin
+5. Check the completion card in admin view","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to retake the same Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. In the total time spent card, the data should be cumulative of 2 attempts completed",When the same user retakes the Course the data in the total time spent card is cumulative of both attempt 1 and attempt 2 [eg: 1st 5min and 2nd 3 mins = total 8 mins ],
+HeySales ManageCourses> Course Reports,TC0076_Check the UI of the Total time spent card,arjun@paperflite.com,Validate The UI and Font should follow the design and the percentage should be in primary color,Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any Course
+4. Check the Total time spent card","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open any Course
+4. The UI and Font should follow the design and the percentage should be in primary color",The UI and Font follows the design and the percentage is in primary color,
+HeySales ManageCourses> Course Reports,TC0077_ Check the time spent captured in the breakdown for lessons and assessments,arjun@paperflite.com,Validate Time spent by the learner in a lesson and an assessment should be captured and should differ for every attempts [with respect to the time spent by the learner in every attempt],Manual,Medium,Functional,The Course should be assigned to x number of learners and completed by x number of learners,NA,"1. Login as a learner A
+2. Open My courses
+3. Start the Course and complete
+4. Now Login as admin
+5. Check the breakdown
+6. Login as a learner A
+7. Open My courses
+8. Again retake the Course and complete it
+9. Now Login as admin
+10. Check the breakdown","1. User should be able to login successfully
+2. User should be able to open My courses in hey sales and locate the assigned Course
+3. User should be able to start the Course and successfully complete it with respective score
+4. Admin user should be able to login successfully
+5. Learners time spent in a lesson and assessments should be displayed
+6. User should be able to login successfully
+7. User should be able to open My courses in hey sales and locate the assigned Course
+8. User should be able to retake the same Course and successfully complete it with respective score
+9. Admin user should be able to login successfully
+10. Learners time spent in a lesson and assessments should be displayed",Time spent by the learner in a lesson and an assessment is captured and differs for every attempts [with respect to the time spent by the learner in every attempt],

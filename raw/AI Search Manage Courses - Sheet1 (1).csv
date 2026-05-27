@@ -1,0 +1,194 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags,
+HeySales ManageCourses> AI Search Manage Courses,TC0001_ Check navigation to the Manage Course in hey sales module,arjun@paperflite.com,"Validated Users should be able to navigate to Hey sales, Manage course screen",Manual,Medium,Functional,Hey sales should be enabled for the account,NA,"1. Log in as a User
+2. Navigate to hey sales module
+3. Click on Manage Course tab","1. Admins should be able to login in successfully
+2. Hey sales module should render successfully
+3. Manage Courses screen should render successfully","Users is able to navigate to Hey sales, Manage course screen",,
+HeySales ManageCourses> AI Search Manage Courses,TC0002_ Check searching a learning,arjun@paperflite.com,Valdiate User should be able to Search for any published learning and the results should be fetched,Manual,Medium,Functional,Search for a learning,NA,"1. Click on the search bar
+2. Search for a published course
+3. Search for a published podcast
+4. Search for a published simulation","1. User should be able to click on the search bar, the cursor should be displayed in the search field
+2. User sould be able to search for a published course and the results should be fetched
+3. User sould be able to search for a published podcast and the results should be fetched
+4. User sould be able to search for a published simulation and the results should be fetched",User is able to Search for any published learning and the results are fetched,,
+HeySales ManageCourses> AI Search Manage Courses,TC0003_ Check searching an unpublished / draft learning,arjun@paperflite.com,Validate When user searchs for an unpublished or a draft learning no results should be fetched and an empty screen should be displayed,Manual,Medium,Functional,"Create a course, do not publish it",NA,"1. Create a course and do not publish it
+2. Create a podcast and do not publish it
+3. Create a Simulation and do not publish it
+4. Search for the unpublished course
+5. Search for the unpublished podcast
+6. Search for the unpublished simulation","1. User should be able to create a course and not publish it
+2. User should be able to create a podcast and not publish it
+3. User should be able to create a simulation and not publish it
+4. User sould be able to search for the unpublished course and the no results should be fetched with an empty screen
+5. User sould be able to search for the unpublished podcast and the no results should be fetched with an empty screen
+6. User sould be able to search for the unpublished simulation and the no results should be fetched with an empty screen",When user searchs for an unpublished or a draft learning no results are fetched and an empty screen is displayed,,
+HeySales ManageCourses> AI Search Manage Courses,TC0004_ Check searching a Skill,arjun@paperflite.com,Valdiate User should be able to search for any assigned skill and the results should be fetched,Manual,Medium,Functional,"Create a course, podcast and a simulation. Assign the skill ""Test""",Test,"1. Create a course and assign a skill ""Test""
+2. Create a podcast and assign a skill ""Test""
+3. Create a Simulation and assign a skill ""Test""
+4. Search with the skill name 'Test""","1. User should be able to create a course and assign the skill ""Test""
+2. User should be able to create a podcast and assign the skill ""Test""
+3. User should be able to create a simulation and assign the skill ""Test""
+4. All learnings assigned with the skill ""Test""  should be fetched [Course, Podcast, and Simulations]","All learnings assigned with the skill ""Test""  are fetched [Course, Podcast, and Simulations]",,"Course: Error check for Course
+Podcast: Regg due date Podcast
+Simulation: Without org info"
+HeySales ManageCourses> AI Search Manage Courses,TC0005_ Check searching a Skill which is not assigned in any learnings,arjun@paperflite.com,Valdiate User should be able to Search for any unassigned skill and the results should be fetched,Manual,Medium,Functional,"Create a new skill ""Random""",Random,"1. Navigate to settings create a new skill ""Random""
+2. Create a course and assign a skill ""Test""
+3. Create a podcast and assign a skill ""Test""
+4. Create a Simulation and assign a skill ""Test""
+5. Search for the skill ""Random""","1. User should be able to navigate to settings and create a new skill ""Random""
+2. User should be able to create a course and assign the skill ""Test""
+3. User should be able to create a podcast and assign the skill ""Test""
+4. User should be able to create a simulation and assign the skill ""Test""
+5. User should be able to search with the skill ""Random"", no results should be fetched with an empty screen","User is able to search with the skill ""Random"", no results are fetched with an empty screen",,"Course: Error check for Course
+Podcast: Regg due date Podcast
+Simulation: Without org info"
+HeySales ManageCourses> AI Search Manage Courses,TC0006_ Check searching the description of a learning,arjun@paperflite.com,Valdiate User should be able to Search for any published learning with it's description and the results should be fetched,Manual,Medium,Functional,Search for a learning [Use a long description min of 200 characters],NA,"1. Click on the search bar
+2. Search the description of a published course
+3. Search the description of a published podcast
+4. Search the description of a published simulation","1. User should be able to click on the search bar, the cursor should be displayed in the search field
+2. User sould be able to search the description of a published course and the results should be fetched
+3. User sould be able to search the description of a published podcast and the results should be fetched
+4. User sould be able to search the description of a published simulation and the results should be fetched",User is able to Search for any published learning with it's description and the results are fetched,,
+HeySales ManageCourses> AI Search Manage Courses,TC0007_ Check searching the description of a learning an unpublished / draft learning,arjun@paperflite.com,Validate When user searchs the description of an unpublished or a draft learning no results should be fetched and an empty screen should be displayed,Manual,Medium,Functional,"Create a course, do not publish it",NA,"1. Create a course add a description and do not publish it
+2. Create a podcast add a description and do not publish it
+3. Create a Simulation add a description and do not publish it
+4. Search the description of the unpblished course
+5. Search the description of the unpublished podcast
+6. Search the description of the unpublished simulation","1. User should be able to create a course add description and not publish it
+2. User should be able to create a podcast add description and not publish it
+3. User should be able to create a simulation add description and not publish it
+4. User sould be able to search the description of the unpblished course and the no results should be fetched with an empty screen
+5. User sould be able to search the description of the unpblished Podcast and the no results should be fetched with an empty screen
+6. User sould be able to search fthe description of the unpblished simulation and the no results should be fetched with an empty screen",When user searchs the description of an unpublished or a draft learning no results are fetched and an empty screen is displayed,,
+HeySales ManageCourses> AI Search Manage Courses,"TC0008_ Check searching with Learning Type [Course, Podcast or Simulation]",arjun@paperflite.com,Valdiate User should be able to Search for any published learning by their Type,Manual,Medium,Functional,"Search for a learning with Type Course, Podcast or Simulations",NA,"1. Click on the search bar
+2. Search with input as Course
+3. Search with input as Podcast
+4. Search with input as Simulation","1. User should be able to click on the search bar, the cursor should be displayed in the search field
+2. Only the Published courses should be fetched
+3. Only the Published podcasts should be fetched
+4. Only the Published simulations should be fetched",User is able to Search for any published learning by their Type,,
+HeySales ManageCourses> AI Search Manage Courses,"TC0009_ Check the search ranking based on Name,  Skill, Description, and Type weightage.",arjun@paperflite.com,Validate The search should follow Name > Skill > Description as the weightage,Manual,Medium,Functional,"Create 3 learnings 
+1. Course with name ""Weightage""
+2. Podcast with skill as ""Weightage""
+3. Simulation with description that has ""Weightage"" in it",NA,"1. Create a course and name it as ""Weightage""
+2. Create a podcast and assign a skill as ""Weightage""
+3. Create a Simulation with ""Weightage"" a part in the description
+4. Search with the keyword as ""Weightage""","1. User should be able to create a course and name it as ""Weightage""
+2. User should be able to create a podcast and assign a skill as ""Weightage""
+3. User should be able to create a simulation with ""Weightage"" a part in the description
+4. All 3 learnings should be fetched and the order should be based on Name, Skill, and description [Course, Podcast and Simulation]",The search follows Name > Skill > Description as the weightage,,"Course: Atom and its weightage
+Podcast: Welcome to paperflite
+Simulation: PF for devops"
+HeySales ManageCourses> AI Search Manage Courses,TC0010_ Check the search with only spaces.,arjun@paperflite.com,"Validate Search should not execute, or an appropriate prompt/message should be displayed shown.",Manual,Medium,Functional,Add 4 white space in the search field,NA,"1. Click on the search bar
+2. Hit the space bar
+3. Hit Enter","1. User should be able to click on the search bar, the cursor should be displayed in the search field
+2. User should be able to input white space in the search field
+3. Search should not execute, or an appropriate prompt/message should be displayed shown.","Search does not execute, or an appropriate prompt/message is shown.",,
+HeySales ManageCourses> AI Search Manage Courses,TC0011_ Check using special characters/symbols in the search field,arjun@paperflite.com,"Validate relevant results are returned if the spl characters are involved in learning name, skill and description",Manual,Medium,Functional,Create a course and name it as C++ Notes,NA,"1. Create a course and name it as ""C++""
+2. Search for the course","1. User should be able to create a course and name it as ""C++""
+2. The relevent course should be returned in the search result",The relevent course is returned in the search result,,Course: Learn about C+++++
+HeySales ManageCourses> AI Search Manage Courses,TC0012_ Check the keyword extraction from a simple request.,arjun@paperflite.com,"Validate The keword should be extracted from the input and the matching [name, skill, and description] learning should be returned as the result ",Manual,Medium,Functional,"Create 3 learnings 
+1. Course with name ""Cars in india""
+2. Podcast with skill as ""Cars""
+3. Simulation with description that has ""Cars"" in it","Search for: ""Can you give me courses on Cars?""","1. Create a course and name it as ""Cars""
+2. Create a podcast and assign a skill as ""cars""
+3. Create a Simulation with ""Cars"" a part in the description
+4. Search with the keyword as ""Can you give me courses on Cars?""","1. User should be able to create a course and name it as ""Cars""
+2. User should be able to create a podcast and assign a skill as ""cars""
+3. User should be able to create a simulation with ""Cars"" a part in the description
+4. All 3 learnings should be fetched and the order should be based on Name, Skill, and description [Course, Podcast and Simulation]","The keword is extracted from the input and the matching [name, skill, and description] learnings are be returned as the result ",,"Course: Cars in India
+Podcast: Listen to this podcast
+Simulation: Dry  run Simulation"
+HeySales ManageCourses> AI Search Manage Courses,TC0013_ Check the keyword extraction from a complex request.,arjun@paperflite.com,"Validate The keword should be extracted from the input and the matching [name, skill, and description] learning should be returned as the result ",Manual,Medium,Functional,"Create 4 learnings 
+1. Course with name ""HTML""
+2. Course with name ""QuickBooks""
+3. Podcast with skill as ""small business ""
+4. Simulation with description that has ""accounting"" in it","Search for: ""I need an tutorial about HTML to use QuickBooks for small business accounting.""","1. Create a course and name it as ""HTML""
+2. Create a course and name it as ""Quickbooks""
+3. Create a podcast and assign a skill as ""small business""
+4. Create a Simulation with ""accounting"" a part in the description
+5. Search with the keyword as ""I need an tutorial about HTML to use QuickBooks for small business accounting.""","1. User should be able to create a course and name it as ""HTML""
+2. User should be able to create a course and name it as ""Quickbook""
+3. User should be able to create a podcast and assign a skill as ""small business""
+4. User should be able to create a simulation with ""accounting"" a part in the description
+5. All 4 learnings should be fetched and the order should be based on Name, Skill, and description [Course, Podcast and Simulation]","The keword is extracted from the input and the matching [name, skill, and description] learning are returned as the result ",,"Course 1: HTML a detailed walkthrough
+Course 2: Quickbook for fixes
+Podcast: Retail Shop
+Simulation: Coldest Simulation"
+HeySales ManageCourses> AI Search Manage Courses,TC0014_ Check with no relevant keywords.,arjun@paperflite.com,Validate No results should be fetched and an empty screen should be displayed,Manual,Medium,Functional,Uses the same learning as TC0013,"Search for: ""Hello, how are you doing today?""","1. Create a course and name it as ""HTML""
+2. Create a course and name it as ""Quickbooks""
+3. Create a podcast and assign a skill as ""small business""
+4. Create a Simulation with ""accounting"" a part in the description
+5. Search with the keyword as ""Hello, how are you doing today?""","1. User should be able to create a course and name it as ""HTML""
+2. User should be able to create a course and name it as ""Quickbook""
+3. User should be able to create a podcast and assign a skill as ""small business""
+4. User should be able to create a simulation with ""Cars"" a part in the description
+5. No results should be fetched and an empty screen should be displayed",No results are fetched and an empty screen is displayed,,"Course 1: HTML a detailed walkthrough
+Course 2: Quickbook for fixes
+Podcast: Retail Shop
+Simulation: Coldest Simulation"
+HeySales ManageCourses> AI Search Manage Courses,TC0015_ Check the Loading UI in during results fetching,arjun@paperflite.com,"Validate While fetching results in the UI ""Loading"" message should be displayed",Manual,Medium,Functional,Search for a learning,NA,"1. Click on the search bar
+2. Search for a published course
+3. Check the UI","1. User should be able to click on the search bar, the cursor should be displayed in the search field
+2. User sould be able to search for a published course and the results should be fetched
+3. While fetching results in the UI ""Loading"" message should be displayed"," While fetching results in the UI ""Loading"" message is displayed",,
+HeySales ManageCourses> AI Search Manage Courses,TC0016_ Check the Scroll in the fetched results,arjun@paperflite.com,Validate User should be able to scroll through the fetched results,Manual,Medium,Functional,Search for a learning,NA,"1. Click on the search bar
+2. Search for a published course
+3. Check scrolling through the result","1. User should be able to click on the search bar, the cursor should be displayed in the search field
+2. User sould be able to search for a published course and the results should be fetched
+3. User should be able to scroll through the fetched results",User is able to scroll through the fetched results,,
+HeySales ManageCourses> AI Search Manage Courses,TC0017_ Check the empty screen for an invalid search,arjun@paperflite.com,"Validate When user performs an invalid search an empty screen ""no learning found"" should be displayed",Manual,Medium,Functional,Search for a learning,NA,"1. Click on the search bar
+2. Search for a unpublished course
+3. Check the empty screen","1. User should be able to click on the search bar, the cursor should be displayed in the search field
+2. User sould be able to search for a published course and the results should be fetched
+3. When user performs an invalid search an empty screen ""no learning found"" should be displayed","When user performs an invalid search an empty screen ""no learning found"" is displayed",,
+HeySales ManageCourses> AI Search Manage Courses,TC0018_ Check the suggestions in the empty screen,arjun@paperflite.com,"Validate When user performs an invalid search an empty screen ""no learning found"" should be displayed and also related keywords should be displayed",Manual,Medium,Functional,"Create 1 learnings 
+1. Course with name ""Cars in india""","Search for: ""Can you give me courses on Bikes?""","1. Create a course and name it as ""Cars""
+2. Search with the keyword as ""Can you give me courses on Bikes?""","1. User should be able to create a course and name it as ""Cars""
+2. An empty message should be displayed with the suggestion about Cars","When user performs an invalid search an empty screen ""no learning found"" is displayed and also related keywords are displayed",,Course: Cars in India
+HeySales ManageCourses> AI Search Manage Courses,TC0019_ Check clicking on the suggested keyword,arjun@paperflite.com,"Validate When user clicks on the suggested keyword, the respective results should be fetched",Manual,Medium,Functional,"Create 1 learnings 
+1. Course with name ""Cars in india""","Search for: ""Can you give me courses on Bikes?""","1. Create a course and name it as ""Cars""
+2. Search with the keyword as ""Can you give me courses on Bikes?""
+3. Click on the ""Cars"" keyword","1. User should be able to create a course and name it as ""Cars""
+2. An empty message should be displayed with the suggestion about Cars
+3. When user clicks on the suggested keyword, the respective results should be fetched","When user clicks on the suggested keyword, the respective results are fetched",,Course: Cars in India
+HeySales ManageCourses> AI Search Manage Courses,TC0020_ Check searching for a deleted learning,arjun@paperflite.com,"Validate When user search for a deleted learning an empty screen ""no learning found"" should be displayed",Manual,Medium,Functional,Delete a learning,NA,"1. Delete a course
+2. Search for the deleted course","1. User should be able to delete the course
+2. When user search for a deleted learning an empty screen ""no learning found"" should be displayed","When user search for a deleted learning an empty screen ""no learning found"" is displayed",,
+HeySales ManageCourses> AI Search Manage Courses,TC0021_ Check searching for a deleted skill,arjun@paperflite.com,"Validate When user search for a deleted skill an empty screen ""no learning found"" should be displayed",Manual,Medium,Functional,Delete a skill,NA,"1. Delete a Skill
+2. Search for the deleted skill","1. User should be able to delete the skill
+2. When user search for a deleted skill an empty screen ""no learning found"" should be displayed","When user search for a deleted skill an empty screen ""no learning found"" is displayed",,
+HeySales ManageCourses> AI Search Manage Courses,TC0022_ Check renaming a learning,arjun@paperflite.com,"Valdiate When a learning is renamed, searching with the old name should throw an empty screen. Searching with the current name should fetch the result",Manual,Medium,Functional,Rename a learning,NA,"1. Rename a course
+2. Search with the old name
+3. Search with the new name","1. User should be able to renmae the course
+2. When user search for learning with the old name an empty screen ""no learning found"" should be displayed
+3. When a learning is renamed, searching with the old name should throw an empty screen. Searching with the current name should fetch the result","When a learning is renamed, searching with the old name throws an empty screen. Searching with the current name fetchs the result",,
+HeySales ManageCourses> AI Search Manage Courses,TC0023_ Check renaming a Skill,arjun@paperflite.com,"Valdiate When a skill is renamed, searching with the old skill should throw an empty screen. Searching with the current skill should fetch the result",Manual,Medium,Functional,Rename a skill,NA,"1. Rename a skill
+2. Search with the old skill name
+3. Search with the new skill name","1. User should be able to renmae the skill
+2. When user search for learning with the old skill name an empty screen ""no learning found"" should be displayed
+3. When a skill is renamed, searching with the old skill name should throw an empty screen. Searching with the current skill name should fetch the result","When a skill is renamed, searching with the old skill name throws an empty screen. Searching with the current skill name fetchs the result",,
+HeySales ManageCourses> AI Search Manage Courses,TC0024_ Check search using a partial Learning Name.,arjun@paperflite.com,"Validate When User search with a partial Learning Name, respective result should be fetched",Manual,Medium,Functional,Search for a learning,"Course name: Python coaching
+Seach keyword: python","1. Create a course and name it as ""Python coaching""
+2. Search with the keyword as ""python""","1. User should be able to create a course and name it as ""Python coaching""
+2. When User search with a partial Learning Name, respective result is fetched","When User search with a partial Learning Name, respective result is fetched",,
+HeySales ManageCourses> AI Search Manage Courses,TC0025_ Check search using a partial Skill Mapped.,arjun@paperflite.com,"Validate When User search with a partial Skill Name, respective result should be fetched",Manual,Medium,Functional,Search for a learning,"Course name: Sales and marketing
+Seach keyword: sales","1. Create a course and assign the skill  ""Sales and marketing""
+2. Search with the keyword as ""sales""","1. User should be able to create a course and assign the skill as ""Sales and marketing""
+2. When User search with a partial Learning Name, respective result is fetched","When User search with a partial Skill Name, respective result is fetched",,
+HeySales ManageCourses> AI Search Manage Courses,TC0026_ Check search handles plural terms in the query,arjun@paperflite.com,"Validate Results should include learnings matching the singular term ""Learning"" and/or ""Learning's"".",Manual,Medium,Functional,Search for a learning,"Course name: Learning's on Python
+Seach keyword: Learning","1. Create a course and name it as ""Learning's on Python""
+2. Search with the keyword as ""Learning""","1. User should be able to create a course and assign the skill as ""Learning's on Python""
+2. Results should include learnings matching the singular term ""Learning"" and/or ""Learning's"".","Results include learnings matching the singular term ""Learning"" and/or ""Learning's"".",,
+HeySales ManageCourses> AI Search Manage Courses,TC0027_ Check search functions with emojis used as keywords,arjun@paperflite.com,Validate Relevant Learnings should be returned (assuming the search engine processes the emoji as a character).,Manual,Medium,Functional,Search for a learning,"Course name: ""Wheels to move 🚗🏎️""
+Seach keyword: Wheels to move 🚗🏎️""","1. Create a course and name it as ""Wheels to move 🚗🏎️""
+2. Search with the keyword as ""Wheels to move 🚗🏎️""","1. User should be able to create a course and assign the skill as ""Wheels to move 🚗🏎️""
+2. Relevant Learnings should be returned (assuming the search engine processes the emoji as a character).",Relevant Learnings are returned (assuming the search engine processes the emoji as a character).,,
+HeySales ManageCourses> AI Search Manage Courses,TC0028_ Check search handles a query consisting only of emojis.,arjun@paperflite.com,Validate Relevant Learnings should be returned (assuming the search engine processes the emoji as a character).,Manual,Medium,Functional,Search for a learning,"Course name: ""🐒🦋🐘🦒🐶🐱""
+Seach keyword: 🐒🦋🐘🦒🐶🐱","1. Create a course and name it as ""🐒🦋🐘🦒🐶🐱""
+2. Search with the keyword as 🐒🦋🐘🦒🐶🐱","1. User should be able to create a course and assign the skill as ""🐒🦋🐘🦒🐶🐱
+2. Relevant Learnings should be returned (assuming the search engine processes the emoji as a character).",Relevant Learnings are returned (assuming the search engine processes the emoji as a character).,,
+HeySales ManageCourses> AI Search Manage Courses,TC0029_ Check search handles incorrect spelling (typos) in the query.,arjun@paperflite.com,Validate The search engine (Atlas Search) should tolerate the typo and return results,Manual,Medium,Functional,Search for a learning,"Course name: ""Java progamming""
+Seach keyword: Jav progammi","1. Create a course and name it as ""Java progamming""
+2. Search with the keyword as Jav progammi","1. User should be able to create a course and assign the skill as ""Java progamming""
+2. The search engine (Atlas Search) should tolerate the typo and return results",The search engine (Atlas Search) tolerates the typo and return results,,

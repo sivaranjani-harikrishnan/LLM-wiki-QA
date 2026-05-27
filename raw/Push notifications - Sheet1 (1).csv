@@ -1,0 +1,51 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales ManageCourses> Push notifications,TC0001_ Check notification permission prompt is displayed during first session of Hey sales app,arjun@paperflite.com,"Validate When the user log in for the first time, user should be asked if they would like to allow notifications from our application on their device.",Manual,Medium,Functional,Fresh app install; user not yet logged in,NA,"1. Install and open the app for the first time.
+2. Log in to the application.","1. User should be able to Instal the app successfully
+2. When the user log in for the first time, user should be asked if they would like to allow notifications from our application on their device.","When the user log in for the first time, user is asked if they would like to allow notifications from our application on their device.",Devices
+HeySales ManageCourses> Push notifications,TC0002_ Check clicking on Allow in the prompt,arjun@paperflite.com,Validate App should register successfully for push notifications. User should start receiving notifications when triggered.,Manual,Medium,Functional,Permission prompt displayed,NA,1. Select Allow on the system prompt.,1. App should register successfully for push notifications. User should start receiving notifications when triggered.,App registers successfully for push notifications. User starts receiving notifications when triggered.,
+HeySales ManageCourses> Push notifications,TC0003_ Check clicking on deny in the prompt,arjun@paperflite.com,Validate App should not receive any push notifications. No background notifications appear.,Manual,Medium,Functional,Permission prompt displayed,NA,1. Select Don’t Allow (iOS) / Deny (Android).,1. App should not receive any push notifications. No background notifications appear.,App does not receive any push notifications. No background notifications appear.,
+HeySales ManageCourses> Push notifications,TC0004_ Check the permission prompt when logging in for the second time,arjun@paperflite.com,Validate Prompt should not appear again. Notification behavior should follow prior selection. [as TC0002 & TC0003],Manual,Medium,Functional,User has already selected “Allow” or “Deny” once,NA,"1. Close and relaunch the app.
+2. Observe whether permission prompt reappears.","1. User should be able to close the app and relaunch it
+2. Prompt should not appear again. Notification behavior should follow prior selection",Prompt does not appear again. Notification behavior follows prior selection,
+HeySales ManageCourses> Push notifications,TC0005_ Check push notification is received when learning assignment is triggered,arjun@paperflite.com,Validate Push notification should appear on device with correct title and message format as configured.,Manual,Medium,Functional,"1. Notifications are allowed.
+2. A new “Currently Learning” assignment is assigned.",NA,"1. Log in to web app
+2. Assign a learning to a learner [Who is logged out the mobile app]
+3. Trigger a learning notification event.","1. Admin should be able to login to web app
+2. Admin should be able to assign a learning to a learner [Who has logged in the mobile app]
+3. Push notification should appear on device with correct title and message format as configured.",Push notification appears on device with correct title and message format as configured.,
+HeySales ManageCourses> Push notifications,TC0006_ Check the deeplink behavior of push notification,arjun@paperflite.com,Validate App should open directly to the respective Learning Preview Page.,Manual,Medium,Functional,"1. Notification received on device.
+2. App is installed and user is logged in.",NA,1. Tap on the received notification.,1. App should open directly to the respective Learning Preview Page.,App opens directly to the respective Learning Preview Page.,
+HeySales ManageCourses> Push notifications,TC0007_ Check the deeplink behavior when user is logged out,arjun@paperflite.com,Validate Notification is not received. (Push notifications are not sent to logged-out users.),Manual,Medium,Functional,User is logged out of app.,NA,"1. Log in to web app
+2. Assign a learning to a learner [Who is logged out the mobile app]
+3. Trigger a learning notification event.","1. Admin should be able to login to web app
+2. Admin should be able to assign a learning to a learner [Who has logged in the mobile app]
+3. Notification should not be received. (Push notifications are not sent to logged-out users.)",Notification is not received. (Push notifications are not sent to logged-out users.),
+HeySales ManageCourses> Push notifications,TC0008_ Check the app behavior after disabling notifications from system settings,arjun@paperflite.com,Validate No notification should appear on device.,Manual,Medium,Functional,Notifications are turned off,NA,"1. Navigate to device settings
+2. Turn off the App Notifications
+3. Log in to web app as admin
+4. Assign a learning to a learner
+5. Check the mobile notification","1. Learner should be able to navigate to device settings
+2. Learer should be able to turn off the device notification
+3. Admin should be able to login to web app
+4. Admin should be able to assign a learning to a learner
+5. No notification should appear on device.",No notification appears on device.,
+HeySales ManageCourses> Push notifications,TC0009_ Check the app behavior after re-enabling notifications from system settings,arjun@paperflite.com,Validate Push notifications should be received correctly.,Manual,Medium,Functional,User had denied earlier and manually enabled notifications from settings.,NA,"1. Go to phone settings → enable notifications for the app.
+2. Trigger notification.","1. Learer should be able to turn on the device notification
+2. Push notifications should be received correctly.",Push notifications are received correctly.,
+HeySales ManageCourses> Push notifications,TC0010_ Check push notification behavior across iOS and Android,arjun@paperflite.com,Validate Notifications should be delivered and displayed correctly on both OS platforms.,Manual,Medium,Functional,Both OS test environments configured,NA,1. Trigger the same notification for test user accounts on both devices,1. Notifications should be delivered and displayed correctly on both OS platforms.,Notifications are delivered and displayed correctly on both OS platforms.,
+HeySales ManageCourses> Push notifications,TC0011_ Check the app handling when device is offline,arjun@paperflite.com,Validate Notification should not appear if the device is offline,Manual,Medium,Functional,User is logged in; notifications allowed.,NA,"1. Turn off network.
+2. Trigger a notification.
+3. Check the notification in device
+4. Turn On the network","1. Learner should be able to turn off the network
+2. Admin should assign a learning
+3. No notifications should be displayed
+4. Notification should appear once device reconnects to network",Notification appears once device reconnects to network,
+HeySales ManageCourses> Push notifications,TC0012_ Check the deeplink behavior for a deleted learning,arjun@paperflite.com,Validate No content error message should be displayed,Manual,Medium,Functional,User is logged in; notifications allowed.,NA,"1. Log in to web app
+2. Assign a learning to a learner
+3. Trigger a learning notification event.
+4. Now delete the assigned learning in web
+5. Click on the notification in mobile app","1. Admin should be able to login to web app
+2. Admin should be able to assign a learning to a learner [Who has logged in the mobile app]
+3. Push notification should appear on device with correct title and message format as configured.
+4. Admin should be able to delete the assigned learning 
+5. No content error message should be displayed", No content error message is displayed,

@@ -1,0 +1,35 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales ManageCourses> Deeplinking,TC0001_Check the Deeplink navigation when user is logged in,arjun@paperflite.com,Validate Clicking on the Get started Button in the notification mailer should navigate them to the learing in the app,Manual,Medium,Functional,"1.User has the mobile app installed (iOS/Android).
+2.User is already logged in to the app.
+3. User has received a notification mailer containing a deeplink to a learning.",NA,"1. Open the notification mailer.
+2. Click on the learning deeplink.
+3. Validate if User lands in ""My Space"" page","1. Notification mailer should contain learnings details and Get started button
+2. Deep Linking redirection from Notification mailer should open the iOS/Android app directly.
+3. User should land on the specific learning’s preview page in “My Space”.",Clicking on the Get started Button in the notification mailer navigates them to the learing in the app,Devices
+HeySales ManageCourses> Deeplinking,TC0002_Check Deeplink navigation when user is logged out,arjun@paperflite.com,Validate Clicking on the Get started Button in the notification mailer should navigate them to the log in page of the app,Manual,Medium,Functional,"1. User has the mobile app installed (iOS/Android).
+2. User is logged out of the app.
+2. User has received a notification mailer containing a deeplink to a learning.",NA,"1. Open the notification mailer.
+2. Click on the learning deeplink.
+3. Enter valid credentials on the login page and log in.","1. Notification mailer should contain learnings details and Get started button
+2. App should open and lands on the login page prompting user to login.
+3. Upon successful login, user should be redirected to the specific learning’s preview page in “My Space”.",Clicking on the Get started Button in the notification mailer navigates them to the log in page of the app,Devices
+HeySales ManageCourses> Deeplinking,TC0003_Check Deeplink navigation when app is not installed,arjun@paperflite.com,Validate User should be redirected to the App Store (iOS) or Play Store (Android) page of the application for installation.,Manual,Medium,Functional,"1. User does not have the mobile app installed on device.
+2. User has received a notification mailer containing a deeplink to a learning.",NA,"1. Open the notification mailer.
+2. Click on the learning deeplink.","1. Notification mailer should contain learnings details and Get started button
+2. User should be redirected to the App Store (iOS) or Play Store (Android) page of the application for installation.",User is redirected to the App Store (iOS) or Play Store (Android) page of the application for installation.,Devices
+HeySales ManageCourses> Deeplinking,TC0004_Check Deeplink navigation with invalid/expired session,arjun@paperflite.com,Validate Clicking on the Get started Button in the notification mailer should navigate them to the log in page of the app,Manual,Medium,Functional,"1. User has the app installed.
+2. User session is invalid/expired (e.g., token expired).
+3. User has received a notification mailer containing a deeplink to a learning.",NA,"1. Open the notification mailer.
+2. Click on the learning deeplink.
+3. Enter valid credentials on the login page and log in.","1. User should receive the mailer
+2. App opens and shows login page.
+3. After successful login, user is redirected to the specific learning’s preview page in “My Space”",Clicking on the Get started Button in the notification mailer navigates them to the log in page of the app,Devices
+HeySales ManageCourses> Deeplinking,TC0005_Check Deeplink navigation with different user login,arjun@paperflite.com,"Valdiate When the user tries to log in to the app as a user with no access to the learning, no content error message should be displayed",Manual,Medium,Functional,"1. User has the app installed (logged in or logged out).
+2. User has received a notification mailer",NA,"1. Open the notification mailer.
+2. Click on the Learning deeplink.
+3. Log in as unassigned user","1. User should receive the mailer 
+2. App opens directly.
+3. No content error message should be displayed","When the user tries to log in to the app as a user with no access to the learning, no content error message is displayed",Devices
+HeySales ManageCourses> Deeplinking,TC0006_Check Deeplink navigation cross-platform validation,arjun@paperflite.com,Validate Clicking the link notification from iPhone should navigate the user to app store and clicking the link notification from android should navigate the user to Play store,Manual,Medium,Functional,Notification mailer is sent to both iOS and Android users.,NA,"1.Click on the deeplink from iOS device.
+2. Click on the deeplink from Android device.","1. User should be navigated to App store
+2. User should be navigated to Play store",Clicking the link notification from iPhone navigates the user to app store and clicking the link notification from android navigates the user to Play store,Devices

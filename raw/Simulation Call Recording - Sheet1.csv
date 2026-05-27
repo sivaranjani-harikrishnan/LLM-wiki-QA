@@ -1,0 +1,65 @@
+Sprint Name,Test Case Title,Test Assignee,Description,Mode,Priority,Type,Precondition,Test Data,Steps,Expected Result,Actual Result,Tags
+HeySales Studio> Simulation Call Recording,TC0001_Check the call recording button in the detailed report screen,arjun@paperflite.com,Validate For admins and content publishers in the detailed report screen in line with the break down and attempts dropdown the Call recording button should be displayed,Manual,Medium,Functional,The simulation should be assigned to x number of learners and few learners should have completed the simulation,NA,"1. Log in as admin / Content publisher
+2. Navigate to Hey sales module
+3. Open any simulation
+4. Click on any completed learner
+5. Check the Call recording button","1. User should be able to login in successfully
+2. Hey sales module should render successfully
+3. User should be able to open simulation
+4. User should be able to click on any completed learner
+5. In the detailed report screen, in line with the break down and attempts dropdown the Call recording button should be displayed","In the detailed report screen, in line with the break down and attempts dropdown the Call recording button is displayed",
+HeySales Studio> Simulation Call Recording,TC0002_Check the UI of the call recording button in the detailed report screen,arjun@paperflite.com,"Validate The call recording button should have ""call recording"" text and a audio logo",Manual,Medium,Functional,The simulation should be assigned to x number of learners and few learners should have completed the simulation,NA,"1. Open any simulation
+2. Click on any completed learner
+3. Check the Call recording button","1. Admin should be able to open simulation
+2. Admin should be able to click on any completed learner
+3. The call recording button should have ""call recording"" text and a audio logo","The call recording button has ""call recording"" text and a audio logo",
+HeySales Studio> Simulation Call Recording,TC0003_ Check the placement of the Call recording button when a learner has no retakes,arjun@paperflite.com,"Validate If the learner has no retakes the attempts dropdown should not be displayed, only the call recording button should displayed",Manual,Medium,Functional,The simulation should be assigned to x number of learners and few learners should have completed the simulation,NA,"1. Open any simulation
+2. Click on any completed learner
+3. Check the Call recording button","1. Admin should be able to open simulation
+2. Admin should be able to click on any completed learner
+3. If the learner has no retakes the attempts dropdown should not be displayed, only the call recording button should displayed","If the learner has no retakes the attempts dropdown is not displayed, only the call recording button is displayed",
+HeySales Studio> Simulation Call Recording,TC0004_ Click on the Call recording button,arjun@paperflite.com,Validate Clicking on the Call recording button should bring a slider with the respective attempts call log,Manual,Medium,Functional,The simulation should be assigned to x number of learners and few learners should have completed the simulation,NA,"1. Open any simulation
+2. Click on any completed learner
+3. Click the Call recording button","1. Admin should be able to open simulation
+2. Admin should be able to click on any completed learner
+3. Clicking on the Call recording button should bring a slider with the respective attempts call log",Clicking on the Call recording button brings a slider with the respective attempts call log,
+HeySales Studio> Simulation Call Recording,TC0005_ Check the UI in the call recording slider,arjun@paperflite.com,"Validate In the call recording slider there should be heading ""call recording"" on the top left of the slider, a Close button [x] on top right of the screen, Call type [Follow up, Cold call etcc], Challenge Level of the call, transcript of the learner and the AI with their respective profile pics and time stamp, audio slider, Volume button, Play / pause, forward / reverse 15s buttons, play back speed button are displayed",Manual,Medium,Functional,The simulation should be assigned to x number of learners and few learners should have completed the simulation,NA,"1. Open any simulation
+2. Click on any completed learner
+3. Click the Call recording button","1. Admin should be able to open simulation
+2. Admin should be able to click on any completed learner
+3. In the call recording slider there should be heading ""call recording"" on the top left of the slider, a Close button [x] on top right of the screen, Call type [Follow up, Cold call etcc], Challenge Level of the call, transcript of the learner and the AI with their respective profile pics and time stamp, audio slider, Volume button, Play / pause, forward / reverse 15s buttons, play back speed button should be displayed","In the call recording slider, heading ""call recording"" on the top left of the slider, a Close button [x] on top right of the screen, Call type [Follow up, Cold call etcc], Challenge Level of the call, transcript of the learner and the AI with their respective profile pics and time stamp, audio slider, Volume button, Play / pause, forward / reverse 15s buttons, play back speed button are displayed",
+HeySales Studio> Simulation Call Recording,TC0006_ Check the UI shift when call recording button is clicked,arjun@paperflite.com,Validate When the call recording button is clicked the slider should be displayed and the List of completed learners should slide out of the UI,Manual,Medium,Functional,The simulation should be assigned to x number of learners and few learners should have completed the simulation,NA,"1. Open any simulation
+2. Click on any completed learner
+3. Click the Call recording button","1. Admin should be able to open simulation
+2. Admin should be able to click on any completed learner
+3. When the call recording button is clicked the slider should be displayed and the List of completed learners should slide out of the UI",When the call recording button is clicked the slider is displayed and the List of completed learners slides out of the UI,
+HeySales Studio> Simulation Call Recording,TC0007_ Check Call recording log of different attempts,arjun@paperflite.com,Validate The call log in the recording screen should be updated with respect to the attempt,Manual,Medium,Functional,The simulation should be assigned to x number of learners and few learners should have completed the simulation,NA,"1. Open any simulation
+2. Click on any completed learner
+3. Click the Call recording button
+4. Switch between attempts
+5. Click the Call recording button","1. Admin should be able to open simulation
+2. Admin should be able to click on any completed learner
+3. Clicking on the Call recording button should bring a slider with the respective attempts call log
+4. Admin should be able to switch between attempt
+5. The current attempts call log should be displayed",The call log in the recording screen is updated with respect to the attempt,
+HeySales Studio> Simulation Call Recording,TC0008_ Check Call recording of NA call [Learner ends the call within 2 mins],arjun@paperflite.com,Validate For call with no sufficient data [NA call] in the call recording slider an error message should be displayed,Manual,Medium,Functional,The learner should end the call with in 2 mins,NA,"1. Open any simulation
+2. Click on any completed learner
+3. Switch to NA attempt from dropdown
+4. Click the Call recording button","1. Admin should be able to open simulation
+2. Admin should be able to click on any completed learner
+3. Admin should be able to choose NA record from the attempts dropdown
+4. For call with no sufficient data [NA call] in the call recording slider an error message should be displayed",For call with no sufficient data [NA call] in the call recording slider an error message is displayed,
+HeySales Studio> Simulation Call Recording,TC0009_ Check audio playback options in the slider,arjun@paperflite.com,"Validate Admins should be able to Play / Pause, skip forward / reverse, increase / decrease play back speed, Drop or Jump to a particular time in the audio playback slider and the audio track should sync to the current selections",Manual,Medium,Functional,The simulation should be assigned to x number of learners and few learners should have completed the simulation,NA,"1. Open any simulation
+2. Click on any completed learner
+3. Click the Call recording button
+4. Click on Play / Pause, skip forward / reverse, increase / decrease play back speed, Drop or Jump to a particular time in the audio playback slider","1. Admin should be able to open simulation
+2. Admin should be able to click on any completed learner
+3. Clicking on the Call recording button should bring a slider with the respective attempts call log
+4. Admins should be able to Play / Pause, skip forward / reverse, increase / decrease play back speed, Drop or Jump to a particular time in the audio playback slider and the audio track should sync to the current selections","Admins are able to Play / Pause, skip forward / reverse, increase / decrease play back speed, Drop or Jump to a particular time in the audio playback slider and the audio track syncs to the current selections",
+HeySales Studio> Simulation Call Recording,TC0010_ Check scrolling through the transcript in the slider,arjun@paperflite.com,Validate Admins should be able to scroll through the transcript in the call recording screen,Manual,Medium,Functional,The simulation should be assigned to x number of learners and few learners should have completed the simulation,NA,"1. Open any simulation
+2. Click on any completed learner
+3. Click the Call recording button
+4. Scroll through the transcript","1. Admin should be able to open simulation
+2. Admin should be able to click on any completed learner
+3. Clicking on the Call recording button should bring a slider with the respective attempts call log
+4. Admins should be able to scroll through the transcript in the call recording screen",Admins are able to scroll through the transcript in the call recording screen,
